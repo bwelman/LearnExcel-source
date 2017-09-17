@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="worksheet_activate" xml:lang="en-US">
+    <title>Task: Activating worksheet</title>
+    <shortdesc>Instructions on how to activate a worksheet.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Worksheet<indexterm>activate</indexterm></indexterm>
+                <indexterm>Activating<indexterm>worksheet</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context><p>A workbook can have multiple worksheets, all identified by a tab at the bottom
+                left of the window. A worksheet must be activated before you can use it. When there
+                is only one worksheet, then this sheet is automatically activated. When there are
+                more worksheets, then you can activate a sheet by clicking on the tab of the
+                worksheet. The tab of the active worksheet has a white background.</p><note
+                type="other" othertype="File"><filepath>Consolidation.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Click alternately on one of the tabs of the worksheets.</cmd>
+                <stepresult>The worksheet becomes visible and the tab gets a white background
+                        color.<note type="tip">t is possible that the tab is not visible when a
+                        workbook has a lot of worksheets. Then use the scroll buttons at the bottom
+                            left.<image keyref="Worksheet_Tab_Scrollbuttons">
+                            <alt>Tab scroll buttons</alt>
+                        </image></note></stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

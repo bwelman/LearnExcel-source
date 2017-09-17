@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="calculation_boolean" xml:lang="en-US">
+    <title>True/False formulas</title>
+    <shortdesc>Possibilities with formulas with true or false outcome.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Formulas<indexterm>true / false</indexterm></indexterm>
+                <indexterm>Logical functions<indexterm>less than</indexterm><indexterm>greater
+                        than</indexterm><indexterm>equals</indexterm><indexterm>not
+                        equal</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>There are formulas that don't perform calculations, but rather compare two things. Such
+            formulas have only two possible outcomes: <systemoutput>TRUE</systemoutput> or
+                <systemoutput>FALSE</systemoutput>.</p>
+        <p>In these formulas you can use the following operators:</p>
+        <simpletable frame="all">
+            <sthead>
+                <stentry>Operator</stentry>
+                <stentry>Meaning</stentry>
+            </sthead>
+            <strow>
+                <stentry>=</stentry>
+                <stentry>equal</stentry>
+            </strow>
+            <strow>
+                <stentry>&lt;></stentry>
+                <stentry>not equal to</stentry>
+            </strow>
+            <strow>
+                <stentry>&lt;</stentry>
+                <stentry>less than</stentry>
+            </strow>
+            <strow>
+                <stentry>&lt;=</stentry>
+                <stentry>less than or equal to</stentry>
+            </strow>
+            <strow>
+                <stentry>></stentry>
+                <stentry>greater than</stentry>
+            </strow>
+            <strow>
+                <stentry>>=</stentry>
+                <stentry>greater than or equal to</stentry>
+            </strow>
+        </simpletable>
+        <p>In the table below there are some examples of such formulas. In order to understand its
+            functioning well you could enter these in a cell. The parentheses you see in the
+            formulas are not really necessary, but provide more clarity on the intent of the
+            formula. Therefore it is recommended to always use parentheses.</p>
+        <simpletable frame="all">
+            <sthead>
+                <stentry>Formula</stentry>
+                <stentry>Result</stentry>
+            </sthead>
+            <strow>
+                <stentry>=(1=1)</stentry>
+                <stentry>TRUE</stentry>
+            </strow>
+            <strow>
+                <stentry>=(1=2)</stentry>
+                <stentry>FALSE</stentry>
+            </strow>
+            <strow>
+                <stentry>=(1&lt;>1)</stentry>
+                <stentry>FALSE</stentry>
+            </strow>
+            <strow>
+                <stentry>=(1&lt;>2)</stentry>
+                <stentry>TRUE</stentry>
+            </strow>
+            <strow>
+                <stentry>=(1&lt;1)</stentry>
+                <stentry>FALSE</stentry>
+            </strow>
+            <strow>
+                <stentry>=(1&lt;2)</stentry>
+                <stentry>TRUE</stentry>
+            </strow>
+            <strow>
+                <stentry>=(1&lt;=1)</stentry>
+                <stentry>TRUE</stentry>
+            </strow>
+            <strow>
+                <stentry>=(1&lt;=2)</stentry>
+                <stentry>TRUE</stentry>
+            </strow>
+            <strow>
+                <stentry>=(1>2)</stentry>
+                <stentry>FALSE</stentry>
+            </strow>
+            <strow>
+                <stentry>=("a"="b")</stentry>
+                <stentry>FALSE</stentry>
+            </strow>
+            <strow>
+                <stentry>=("a"&lt;>"b")</stentry>
+                <stentry>TRUE</stentry>
+            </strow>
+        </simpletable>
+        <note type="attention">In operations text should always be placed between double
+            quotes.</note>
+        <p>Just putting such formulas in cells does not make much sense. However, it is important
+            that they can appear in calculations. In that case Excel uses the following numerical
+            values: <ul>
+                <li>TRUE = 1</li>
+                <li>FALSE = 0</li>
+            </ul></p>
+        <p>Because of these numerical values you can calculate with it and create conditions in a
+            calculation. The result depends of the outcome of the condition. In the following
+            example the postage for orders depends of the ordered quantity.</p>
+        <example>
+            <title>Example</title>
+            <p>At a internet shop an order is delivered without postage for orders from $ 25. In the
+                next figure you can see that the postage is calculated with a true/false formula. At
+                the beginning of the formula is <codeph>(B5&lt;$B$2)</codeph>. This part has two
+                possible outcomes, TRUE (=1) or FALSE (=0). And this result is again multiplied by $
+                3,50. There are only two possible outcomes: <ul>
+                    <li>1 * 3.50 = 3.50</li>
+                    <li>0 * 3.50 = 0</li>
+                </ul>
+                <fig>
+                    <title>Example with a true/false formula</title>
+                    <image keyref="Example_Boolean">
+                        <alt>Example with a true/false formula</alt>
+                    </image>
+                </fig>
+                <note type="tip">Create this example and check the correct working by entering
+                    different values in the cells B1, B2 and B5.</note>
+            </p>
+        </example>
+    </conbody>
+</concept>

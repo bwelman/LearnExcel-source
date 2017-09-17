@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="solver_activation" xml:lang="en-US">
+	<title>Task: Enabling Solver</title>
+	<shortdesc>Instructions on how to check if the <term>Solver</term> is available in Excel, and if
+		not how to enable the Solver.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Solver<indexterm>availability</indexterm></indexterm>
+				<indexterm>Add-in<indexterm>solver</indexterm></indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<taskbody>
+		<context>
+			<p>The <term>Solver</term> is an <term>add-in</term> and isn't available by default through the
+				menu of Excel. If the Solver is not present on the ribbon, then it has to be
+				activated first. This is a one time action.</p>
+		</context>
+		<steps>
+			<step>
+                <cmd>Choose <uicontrol>tab Data</uicontrol> and check if the <uicontrol>group
+                        Analyze</uicontrol> exists and if so whether the
+                        <uicontrol>Solver</uicontrol> is present.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Group Analyze with Solver on the ribbon</title>
+                        <image keyref="excel_ribbon_analyze">
+                            <alt>Group analysis with solver on the ribbon</alt>
+                        </image>
+                    </fig>
+                    <note type="attention">Only proceed if the <uicontrol>group Analyze</uicontrol>
+                        with the <uicontrol>Solver</uicontrol> is not present.</note>
+                </stepresult>
+            </step>
+			<step>
+				<cmd>Choose <menucascade>
+						<uicontrol>File</uicontrol>
+						<uicontrol>Options</uicontrol>
+						<uicontrol>Add-Ins</uicontrol>
+					</menucascade></cmd>
+				<stepresult>A list with Microsoft Office Add-ins is displayed.</stepresult>
+			</step>
+			<step>
+				<cmd>Select <option>Excel Add-ins</option> in the box <varname>Manage</varname>.</cmd>
+				<stepresult>
+					<fig>
+                        <title>Choice of Add-Ins to manage</title>
+                        <image keyref="excel_options_addins_manage">
+                            <alt>Choice of add-ins to mange</alt>
+                        </image>
+                    </fig>
+				</stepresult>
+			</step>
+			<step>
+				<cmd>Click on <uicontrol>Go...</uicontrol>.</cmd>
+				<stepresult>A list of available Add-ins is displayed.</stepresult>
+			</step>
+			<step>
+				<cmd>Select the check box for <option>Solver Add-in</option> and click on
+						<uicontrol>OK</uicontrol>.</cmd>
+			</step>
+			<step>
+				<cmd>Repeat the check in the first step.</cmd>
+			</step>
+		</steps>
+	</taskbody>
+</task>

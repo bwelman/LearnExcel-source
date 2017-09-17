@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="calculation_over" xml:lang="en-US">
+    <title>What are calculations?</title>
+    <shortdesc>How you can make formulas for calculations.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Calculations</indexterm>
+                <indexterm>Formulas<indexterm>entering</indexterm><indexterm>operations</indexterm></indexterm>
+                <indexterm>Operators</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Calculations are performed using formulas. Formulas contain numbers or references to
+            cells with numbers. Between the numbers there are the symbols for the calculations to be
+            carried out, such as + , - , * , / , etc.</p>
+        <note type="attention">A formula should always begin with the <userinput>=</userinput>
+            symbol. It is possible to start a formula with a <userinput>+</userinput>, but in that
+            case Excel translates this in <systemoutput>=</systemoutput> after entering the
+            data.</note>
+        <p>To enter a formula you start typing <userinput>=</userinput> and then you enter the
+            calculation as you would do it on a calculator. Instead of numbers, you also can type
+            cell addresses or cell names where the numbers are. Also, instead of typing in the cell
+            addresses, you can designate it with the mouse.</p>
+        <p>In the formulas you can use the following symbols (operators) for calculations:</p>
+        <simpletable>
+            <sthead>
+                <stentry>symbol</stentry>
+                <stentry>meaning</stentry>
+                <stentry>example</stentry>
+                <stentry>result</stentry>
+            </sthead>
+            <strow>
+                <stentry>+</stentry>
+                <stentry>addition</stentry>
+                <stentry>=4+5</stentry>
+                <stentry>9</stentry>
+            </strow>
+            <strow>
+                <stentry>-</stentry>
+                <stentry>subtraction</stentry>
+                <stentry>=29-6</stentry>
+                <stentry>23</stentry>
+            </strow>
+            <strow>
+                <stentry>*</stentry>
+                <stentry>multiplication</stentry>
+                <stentry>=7*8</stentry>
+                <stentry>56</stentry>
+            </strow>
+            <strow>
+                <stentry>/</stentry>
+                <stentry>division</stentry>
+                <stentry>=6/2</stentry>
+                <stentry>3</stentry>
+            </strow>
+            <strow>
+                <stentry>^</stentry>
+                <stentry>exponentiation</stentry>
+                <stentry>=2^3</stentry>
+                <stentry>8</stentry>
+            </strow>
+            <strow>
+                <stentry>( )</stentry>
+                <stentry>parentheses for operator precedence</stentry>
+                <stentry>=30-(4+6)</stentry>
+                <stentry>20</stentry>
+            </strow>
+        </simpletable>
+        <note type="tip">You can simply try out these examples in a worksheet.</note>
+    </conbody>
+</concept>

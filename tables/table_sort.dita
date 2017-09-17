@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="table_sort" xml:lang="en-US">
+	<title>Task: Sort a table</title>
+	<shortdesc>How you can sort a table based on the values in a single column and multiple
+        columns.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Sorting</indexterm>
+				<indexterm>Table<indexterm>sorting</indexterm></indexterm>
+				<indexterm>List<indexterm>sorting</indexterm></indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<taskbody>
+		<context>
+			<p>Sorting is a common action associated with lists. If a cell in a column is selected, clicking
+                the sort button will sort the whole table. It will be sorted in ascending or
+                descending order according to the values in that column.</p>
+			<note type="attention" id="sort_attention">Restoring the table in the original order is only possible using the
+                    <uicontrol>Undo</uicontrol> button on the on the <wintitle>Quick Access
+                    Toolbar</wintitle>. An alternative is before starting to create a temporary new
+                column with  sequential numbering. By sorting this column afterwards you are back to
+                the original state.</note>
+			<note type="other" othertype="File"><filepath>Personnel.xlsx</filepath></note>
+		</context>
+		<steps>
+			<step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+				<cmd/>
+			</step>
+		    <step>
+                <cmd>Convert the data range to a table.</cmd>
+            </step>
+		    <step>
+                <cmd>Click on the arrow besides the field name <varname>Department</varname> and
+                    select <uicontrol><image keyref="icon_sort_az"/> Sort A to Z</uicontrol>.</cmd>
+                <stepresult>
+                    <p>The table is sorted in ascending order of column
+                            <varname>Department</varname>.</p>
+                </stepresult>
+            </step>
+			<step>
+                <cmd>Click on the arrow besides the field name <varname>Division</varname> and
+                    select <uicontrol><image keyref="icon_sort_za"/> Sort Z to A</uicontrol> .</cmd>
+                <stepresult>
+                    <p>The table is sorted in descending order of column
+                        <varname>Division</varname>.</p>
+                </stepresult>
+            </step>
+            <stepsection>
+                <p>You can sort a table on multiple levels, based on the values ​​in different
+                    columns. One of the columns will be the first level where you sort on. After
+                    that you can add new levels of sorting. Another column provides the second level
+                    of sorting, etc.</p>
+            </stepsection>
+		    <step>
+                <cmd>Select any cell in the table and click <menucascade>
+                        <uicontrol>Home</uicontrol>
+                        <uicontrol>Sort &amp; Filter (group Editing)</uicontrol>
+                        <uicontrol><image keyref="icon_sort_custom"/> Custom Sort ...</uicontrol>
+                    </menucascade></cmd>
+                <stepresult>
+                    <p>The dialogbox <wintitle>Sort</wintitle> is displayed where you can specify
+                        the sort conditions.</p>
+                </stepresult>
+            </step>
+		    <step>
+		        <cmd>Choose Sort by <option>Division</option>.</cmd>
+		    </step>
+		    <step>
+		        <cmd>Click on <uicontrol>Add Level</uicontrol> and choose to sort departments
+		            next.</cmd>
+		        <stepresult>
+		            <fig>
+                        <title>Dialog box <wintitle>Sort</wintitle> with two levels</title>
+                        <image keyref="personnel_sort_multiple">
+                            <alt>Dialog box sort with two levels.</alt>
+                        </image>
+                    </fig>
+		        </stepresult>
+		    </step>
+		    <step>
+		        <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+		        <stepresult>
+		            <p>First of all, the values in column Division are sorted in ascending order,
+		                then the values in the column Department.</p>
+		        </stepresult>
+		    </step>
+		</steps>
+	</taskbody>
+</task>

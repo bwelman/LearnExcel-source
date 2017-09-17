@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="worksheet_cell" xml:lang="en-US">
+    <title>Cell: content and format</title>
+    <shortdesc>An explanation of the key difference between the content and format (appearance) of a
+        cell.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Cell<indexterm>format</indexterm></indexterm>
+                <indexterm>Cell<indexterm>content</indexterm></indexterm>
+                <indexterm>Format<indexterm>cell</indexterm></indexterm>
+                <indexterm>Content<indexterm>cell</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>A cell has a <term>content</term> and a <term>format</term>. It is very important to keep
+            this difference in mind! A poor understanding of this is often the source of errors. As
+            an example see the following figure. In the cells A1:A10 always the same number 40299
+            has been entered. So these cells have the same content. Yet they still look different
+            and that's because the formatting of these cells is different.</p>
+        <fig>
+            <title>Example of cells with the same content and different formatting</title>
+            <image keyref="Worksheet_Cell_Formats">
+                <alt>Example of cells with the same content and different formatting.</alt>
+            </image>
+        </fig>
+        <!--image comes from Cellformat.xlsx-->
+        <p>Looking at the figure it is difficult to see what the format and what the content is.
+            Content and formatting are two different things.</p>
+        <note type="attention">Make sure you do not type the formatting when entering data in a
+            cell. For example if you type in cell A9 <userinput>40.299 hours</userinput>, then is
+            considered as text and not a number. And because it is a text you cannot calculate with
+            the content. It is possible to only enter the number and then format the cell so that it
+            has the appearance as shown. The content of the cell is than a number with which you can
+            make calculations.</note>
+        <note type="tip">The preferred method is first enter the content in the cell and give the
+            cell the desired format after that.</note>
+    </conbody>
+</concept>

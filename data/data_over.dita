@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="data_over" xml:lang="en-US">
+    <title>Entering data</title>
+    <shortdesc>Instructions on how to enter data in a cell.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Entering dT</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Entering data in a cell in a brief:<ol>
+                <li>Select cell.</li>
+                <li>Start typing.</li>
+                <li>End with <uicontrol>Enter key</uicontrol>.<note type="attention">Beware, if
+                        there is already content in the cell, this content will be
+                        overwritten.</note></li>
+            </ol></p>
+        <p>After using the <uicontrol>Enter key</uicontrol> the cell pointer moves automatically one
+            cell downwards.</p>
+    </conbody>
+</concept>

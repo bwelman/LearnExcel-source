@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept id="forecasts_ets" xml:lang="en-US">
+    <title>Exponential smoothing (ETS)</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2016-11-10"/>
+            <revised modified="2016-11-10"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm/>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Exponential smoothing is a analysis method time series which weights the observations.
+            The base of it is that most recent observations are more important for making
+            predictions than the older ones. To the most recent observations are therefore heavier
+            weighted than older observations.</p>
+        <p>In the following formula, <codeph>F<sub>t+1</sub></codeph>  is the forecasted value for
+            the next period <codeph>t+1</codeph>. And the <codeph>Y</codeph> values are the values
+            for the current period <codeph>t</codeph> and the preceding periods <codeph>t-1, t-2,
+                ...</codeph>. Thes <codeph>Y</codeph> values are multiplied with coefficients in
+            which an α occurs. This α is called the smoothing coefficient or smoothing constant and
+            has a value between 0 and 1.</p>
+        <codeblock>F<sub>t+1</sub> = αY<sub>t</sub> + α(1-α)Y<sub>t-1</sub> + α(1-α)<sup>2</sup>Y<sub>t-2</sub> + α(1-α)<sup>3</sup>Y<sub>t-3</sub> + ...</codeblock>
+        <p>When for example α is 0.6 the formula looks like</p>
+        <codeblock>F<sub>t+1</sub> = 0.6Y<sub>t</sub> + 0.24Y<sub>t-1</sub> + 0.096Y<sub>t-2</sub> + 0.038Y<sub>t-3</sub> + ...</codeblock>
+        <p>The following figure shows the weights plotted against time in descending order. You can
+            clearly see that the weights decrease exponentially in time.</p>
+        <fig>
+            <title>Exponential smoothing weights</title>
+            <image keyref="alpha_weights">
+                <alt>Exponential smoothing weights</alt>
+            </image>
+        </fig>
+        <p>The exponential smoothing methods are currently the best and most used methods. The ETS
+            (Exponential Smoothing) method is available in Excel 2016. The biggest advantage of the
+            ETS method is that it has the ability to automatically discover seasonality patterns in
+            the data series and can create a confidence interval for the predictions.</p>
+        <p>The <wintitle>Forecast Sheet</wintitle> in Excel 2016 automatically calculates forecasts
+            based on the AAA version of the ETS algorithm.</p>
+    </conbody>
+</concept>

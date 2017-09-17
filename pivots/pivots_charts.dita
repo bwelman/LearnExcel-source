@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="pivots_charts" xml:lang="en-US">
+    <title>Task: Pivot Charts</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>PivotTables<indexterm>charts</indexterm></indexterm>
+                <indexterm>PivotCharts</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>A PivotChart shows data series, categories, and chart axes the same way a standard
+                chart does. But it also gives you interactive filtering so you can quickly analyze a
+                subset of your data. And you can using slicers for filtering data.</p>
+            <note type="other" othertype="File"><filepath>Sales.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select worksheet <wintitle>PivotTable</wintitle> and then select any cell in
+                    the PivotTable on this worksheet.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Insert</uicontrol>
+                        <uicontrol>PivotChart (group Charts)</uicontrol>
+                        <uicontrol>Clustered Column</uicontrol>
+                        <uicontrol>OK</uicontrol>
+                    </menucascade></cmd>
+                <stepresult>
+                    <fig>
+                        <image keyref="sales_chart_clustered-column"/>
+                    </fig>
+                    <p>In the PivotChart are filters for Region and Salesman. When you use a filter
+                        in the chart, then also the data in the PivotTable will be filtered.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Experiment with filtering on a salesman and observe the results. End with
+                    displaying the data for all salesman.</cmd>
+            </step>
+            <step>
+                <cmd>Add a slicer for <varname>Month</varname> and experiment with it.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

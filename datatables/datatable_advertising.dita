@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="datatable_advertising" xml:lang="en-US">
+    <title>Task: Revenues advertising campaign</title>
+    <shortdesc>An exampl of a data table with 2 <term>input cells</term> for the calculation of the
+        effect of an advertising campaign.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>A company wants to run an advertising campaign by sending direct mail flyers to
+                potential customers. Use a calculation model, to calculate the expected profit of
+                this advertising campaign.</p>
+            <fig>
+                <title>Calculation model advertising campaign</title>
+                <image keyref="advertising_model">
+                    <alt>Calculation model advertising campaign</alt>
+                </image>
+            </fig>
+            <p>The calculation model uses 2 variables: the number of flyers sent and the response
+                percentage. The printing and shipping costs are fixed data, as well as the expected
+                revenue per response. The number of responses and total revenues, costs and profits
+                are calculated using formulas.</p>
+            <p>The range for the data table is <userinput>B14:I23</userinput>. The two input cells
+                are B1 and B2. The values for input cell B1 are in column
+                    <userinput>B15:B23</userinput>. The values for input cell B2 are in row
+                    <userinput>C14:I14</userinput>. In B14 is a reference to the total profit
+                formula, which in turn references to the two input cells.</p>
+            <note type="other" othertype="File"
+                ><filepath>Advertising_Campaign.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select the range for the data table <uicontrol>B14:I23</uicontrol>.</cmd>
+            </step>
+            <step conref="datatable_rental_fixed.dita#datatable_rental_fixed/datatable_insert">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Put the cursor in box <option>Row input cell</option> and click on cell
+                        <userinput>B2</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Put the cursor in box <option>Column input cell</option> and click on cell
+                        <userinput>B1</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Results advertising campaign</title>
+                        <image keyref="advertising_results">
+                            <alt>Results advertising campaign</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+        </steps>
+        <result>The formula in the result cells is an <term>array formula</term>:
+                <systemoutput>{=TABLE(B2,B1)}</systemoutput>. Check this.</result>
+    </taskbody>
+</task>

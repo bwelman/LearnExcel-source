@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="import" xml:lang="en-US">
+    <title>Importing data</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>In practice, a lot of data is coming from external sources: text/csv, web, excel files,
+            databases, ... To analyze these data in Excel they must be imported first and sometimes
+            transformed and restructured. Excel 2016 has integrated the <term>Power Query</term>
+            technology under the <uicontrol>Get &amp; Transform</uicontrol> group in the
+                <uicontrol>Data</uicontrol> ribbon. With this technology you can make connections
+            to several data sources, shape that data (for example remove a column, change a data
+            type) or transform the data. And all your steps are collected in a query script which
+            lets you undo, redo or modify any step. With this script you can repeatable refresh the
+            import of the data.</p>
+        <note type="notice">These features are also present Microsoft Power BI and in the Power
+            Query Add-In for previous versions of Excel.</note>
+    </conbody>
+</concept>

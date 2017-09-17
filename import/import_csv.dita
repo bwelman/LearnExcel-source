@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="import_csv" xml:lang="en-US">
+    <title>Task: Import text/csv</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata> </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>A lot of data in external sources is available as text (filetype
+                    <filepath>.txt</filepath>) or as comma (or character) separated values (filetype
+                    <filepath>.csv</filepath>).</p>
+            <note type="other" othertype="File"><filepath>SalesJan2009.csv</filepath></note>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open a new blank workbook.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Data</uicontrol>
+                        <uicontrol>From Text/CSV (group Get &amp; Transform Data)</uicontrol>
+                    </menucascade>.</cmd>
+            </step>
+            <step>
+                <cmd>Browse to the practice file and click <uicontrol>Import</uicontrol>.</cmd>
+                <stepresult>
+                    <p>A preview of the data will be displayed.</p>
+                    <fig>
+                        <title>Preview of SalesJan2009 data</title>
+                        <image keyref="salesjan2009_preview">
+                            <alt>Preview of SalesJan2009 data</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Edit</uicontrol>.</cmd>
+                <stepresult>
+                    <p id="start_que">The Query Editor is started in a new window. On the right site below
+                            <wintitle>Query Settings</wintitle> under <uicontrol>Applied
+                            Steps</uicontrol> you see the steps already applied.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Select the columns <varname>Account_Created, Last_Login, Latitude,
+                        Longitude</varname>) by clicking on the column header and holding the CTRL
+                    key. Then choose <menucascade>
+                        <uicontrol>Remove Columns (group Manage Columns)</uicontrol>
+                        <uicontrol>Remove Columns</uicontrol>
+                    </menucascade>.</cmd>
+                <info>An alternative is right mouseclick and then select trhe appropriate
+                    action.</info>
+                <stepresult>The columns are removed and this step is added to the <uicontrol>Applied
+                        Steps</uicontrol>.</stepresult>
+            </step>
+            <stepsection>
+                <p>In each column header is on the left site an icon that indicates the applied data
+                    type. When you select a column you see the data type also on the ribbon. And
+                    this is also the place where you can change the data type.</p>
+                <fig>
+                    <image keyref="ribbon_datatype_wholenumber"/>
+                </fig>
+                <p><varname>Price</varname> has data type <option>Whole Number</option>, all other
+                    columns have data type <option>Text</option>.</p>
+            </stepsection>
+            <step>
+                <cmd>Select the first column <varname>Transaction_date</varname> and then <menucascade>
+                        <uicontrol>Data Type (group Transform)</uicontrol>
+                        <uicontrol>Date/Time</uicontrol>
+                    </menucascade>. When a dialog box appears to ask if the existing conversion
+                    needs to be replaced, then choose to replace the current conversion.</cmd>
+            </step>
+            <stepsection>
+                <p>In column <varname>Name</varname> most names started with a capital, but not
+                    all.</p>
+            </stepsection>
+            <step>
+                <cmd>Select column <varname>Name</varname>, Right Click and select <menucascade>
+                        <uicontrol>Transform</uicontrol>
+                        <uicontrol>Capitalize Each Word</uicontrol>
+                    </menucascade>.</cmd>
+            </step>
+            <step id="step_close_load">
+                <cmd>Choose <menucascade>
+                        <uicontrol>Close &amp; Load (group Close)</uicontrol>
+                        <uicontrol>Close &amp; Load</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult><p>The data is loaded in an Excel table in a new sheet. You can work with the data and save the the
+                        Excel map for later use.</p>
+                    <note type="note">It is always possible to change the query afterwards. For this
+                        select a cell in the table and choose <menucascade>
+                            <uicontrol>tab Query</uicontrol>
+                            <uicontrol>Edit (group Edit)</uicontrol>
+                        </menucascade>. From here you can also refresh your data, all steps will
+                        then repeated.</note></stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

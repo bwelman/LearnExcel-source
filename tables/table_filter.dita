@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="table_filter" xml:lang="en-US">
+    <title>Task: Filter a table</title>
+    <shortdesc>How to filter a table.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Custom filter</indexterm>
+                <indexterm>Date filter</indexterm>
+                <indexterm>Filter</indexterm>
+                <indexterm>Number filter</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>When filtering a table only those <term>records</term> that meet certain conditions
+            are displayed. The other <term>records</term> are hidden.<note type="other"
+                othertype="File"><filepath>Personnel.xlsx</filepath></note></context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open"
+                conrefend="../common/reuse_task_parts.dita#reuse_task_parts/Select_Cell">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Convert the data range to a table.</cmd>
+            </step>
+            <step>
+                <cmd>Click on the arrow besides the field name <varname>Division</varname> and only
+                    select <option>Copiers</option>, then <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>Only the records for the Copiers division are now displayed. The arrow
+                    at the column header <varname>Division</varname> is changed in the filter symbol
+                        <image keyref="icon_filter"/></stepresult>
+            </step>
+            <step>
+                <cmd>Now refine your selection by filtering on the Accounting department.</cmd>
+                <stepresult>In the status bar at the bottom is displayed how may reacords are
+                    found.</stepresult>
+            </step>
+            <step id="filter_clear">
+                <cmd>Clear the filter with <menucascade>
+                        <uicontrol>Data</uicontrol>
+                        <uicontrol>Clear (group Sort &amp; Filter)</uicontrol>
+                    </menucascade>.</cmd>
+            </step>
+            <stepsection>
+                <p>When the contents of a field are numbers, specific filter actions can be
+                    performed. Such filters fall under the category <term>Number filters</term>. The
+                    following example will be used to determine the top 10 salaries.</p>
+            </stepsection>
+            <step>
+                <cmd>Click on the arrow besides the field name <varname>Salary</varname> and choose <menucascade>
+                        <uicontrol>Number Filters</uicontrol>
+                        <uicontrol>Top 10...</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box <wintitle>Top 10 Autofilter</wintitle></title>
+                        <image keyref="filter_top10">
+                            <alt>Dialog box top 10 autofilter</alt>
+                        </image>
+                    </fig>
+                    <note type="tip"> In this window there are three options:<ul>
+                            <li>Top or Bottom</li>
+                            <li>Any number for the count</li>
+                            <li>Percent or Items</li>
+                        </ul></note>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>The 10 records with the highest salary are displayed now.</stepresult>
+            </step>
+            <step>
+                <cmd/>
+            </step>
+            <step conref="#table_filter/filter_clear">
+                <cmd/>
+            </step>
+            <stepsection>
+                <p>If you want to use filters on the number fields other than the default filters,
+                    you will need to use a custom filter. The following example will be used to show
+                    the records of all people with a salary from $ 20,000 to $ 25,000.</p>
+            </stepsection>
+            <step>
+                <cmd>Click on the arrow besides the field name <varname>Salary</varname> and choose <menucascade>
+                        <uicontrol>Number Filters</uicontrol>
+                        <uicontrol>Custom Filter...</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <p>The dialogbox <wintitle>Custom AutoFilter</wintitle> is displayed where you
+                        can specify the filter conditions.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Create the next two conditions for the salary.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box <wintitle>Custom Autofilter</wintitle> with two
+                            conditions</title>
+                        <image keyref="personnel_filter_custom">
+                            <alt>Dialog box custom autofilter with two conditions</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult> 10 records are found. </stepresult>
+            </step>
+            <step conref="#table_filter/filter_clear">
+                <cmd/>
+            </step>
+            <stepsection><p>When the contents of a field are dates, specific filter actions for
+                    dates can be performed. Such filters fall under the category <term>Date
+                        filters</term>. The following example will be used to determine the records
+                    with a start date in September.</p></stepsection>
+            <step>
+                <cmd>Click on the arrow besides the field name <varname>Start date</varname> and
+                    choose <menucascade>
+                        <uicontrol>Date Filters</uicontrol>
+                        <uicontrol>All Dates in the Period</uicontrol>
+                        <uicontrol>September</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>11 records are found.</stepresult>
+            </step>
+            <step conref="#table_filter/filter_clear">
+                <cmd/>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="formatting" xml:lang="en-US">
+    <title>Formatting worksheet and data</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+    </prolog>
+    <conbody>
+        <p>Excel offers many opportunities for the appearance of a worksheet and data in cells. This
+            can make a worksheet more readable and presentable.</p>
+    </conbody>
+</concept>

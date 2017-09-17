@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="calculation" xml:lang="en-US">
+    <title>Modeling Calculations</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>One of the most important aspects of working with Excel is to perform calculations. You
+            need formulas in these calculations. In order to work effectively and efficiently with
+            formulas, it is important for you to think in advance carefully about what to put where
+            in the worksheet. This can save you a lot of time and trouble.</p>
+    </conbody>
+</concept>

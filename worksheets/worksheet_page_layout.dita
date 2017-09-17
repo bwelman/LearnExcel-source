@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="worksheet_page_layout" xml:lang="en-US">
+    <title>Page Setup</title>
+    <shortdesc>An overview of the main settings for printing a page.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Printing<indexterm>grid lines</indexterm></indexterm>
+                <indexterm>Page<indexterm>setup</indexterm><indexterm>header</indexterm><indexterm>lay-out</indexterm><indexterm>margins</indexterm><indexterm>footer</indexterm><indexterm>adjusting</indexterm><indexterm>scaling</indexterm></indexterm>
+                <indexterm>Grid lines</indexterm>
+                <indexterm>Header</indexterm>
+                <indexterm>Footer</indexterm>
+                <indexterm>Margins</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>By clicking on <uicontrol>Page Setup</uicontrol> you get a dialog box with four tabs each
+            with a lot of print options. The most common options are discussed in this section.</p>
+        <fig>
+            <title>Page Setup - Page</title>
+            <image keyref="Worksheet_Pagesetup_Page">
+                <alt>Settings for the pagea</alt>
+            </image>
+        </fig>
+        <p>The page orientation is important: Portrait of Landscape. Very useful are the choices in
+            the area under Scaling. Through <q>Adjust to</q> you can manually customize the number
+            of pages. It is also possible to let Excel do this automatically through <q>Fit to</q>
+            by specifying how many pages the printout should have.</p>
+        <fig>
+            <title>Page Setup - Margins</title>
+            <image keyref="Worksheet_Pagesetup_Margins">
+                <alt>Settings for the margins</alt>
+            </image>
+        </fig>
+        <p>Here you can set the dimensions for the top-, bottom-, left- and right margin.
+            Furthermore, the distance to the edge of the header and footer can be specified. These
+            distances should be less than the corresponding margins otherwise the headers and
+            footers overlap with the regular print.</p>
+        <fig>
+            <title>Page Setup - Header/Footer</title>
+            <image keyref="Worksheet_Pagesetup_HeaderFooter">
+                <alt>Settings for header and footer</alt>
+            </image>
+        </fig>
+        <p>By clicking the arrow at the end of the header and footer boxes you can select from a set
+            of predefined texts. Here you have also the choice <q>(none)</q> if you don't want a
+            header or footer. If you want to design your own header or footer, then click the button
+            for the custom text. You'll get a dialog box where you can type text and format it.</p>
+        <fig>
+            <title>Content and format of header and footer</title>
+            <image keyref="Worksheet_Pagesetup_HeaderFooter_Content">
+                <alt>Content and format of header and footer</alt>
+            </image>
+        </fig>
+        <p>Headers and footers have three sections each (left, center and right). In each section
+            you can enter your text. You can also enter predefined content through the available
+            buttons, such as:<ul>
+                <li>Page Number</li>
+                <li>Number of Pages</li>
+                <li>Date and Time</li>
+                <li>File Path, File Name and the Sheet Name</li>
+            </ul></p>
+        <fig>
+            <title>Page Setup - Sheet</title>
+            <image keyref="Worksheet_Pagesetup_Sheet">
+                <alt>Settings for the sheet</alt>
+            </image>
+        </fig>
+        <p>VaakOften there are titles in the first row(s) or column(s) of a worksheet. And if the
+            worksheet is bigger than one page, you can indicate how that row( s) and / or column(s )
+            should appear on each page.</p>
+        <p>An interesting option is that you can indicate that the grid lines of the worksheet
+            should be printed.</p>
+        <note type="tip">The settings of the page setup are also accessible through the menue <menucascade>
+                <uicontrol>Page Layout</uicontrol>
+                <uicontrol>group Page Setup</uicontrol>
+            </menucascade>.</note>
+    </conbody>
+</concept>

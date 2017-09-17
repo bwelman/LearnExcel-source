@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="scen" xml:lang="en-US">
+    <title>Scenarios</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>A scenario is a <q>what-if</q> model. It allows you to explore and calculate different
+            future situations (scenarios) without changing values in the worksheet. It is
+            particularly useful for answering <q>what-if</q> questions in the field of economics and
+            management.</p>
+        <p>Excel's scenario manager enables you to create and save sets of different input values
+            that produce different calculated results (such as Most Positive, Most Negative). You
+            can easily compare the results in a generated summary report. Other what-if analysis
+            tools such as Goal Seek and Solver, don't have this.</p>
+    </conbody>
+</concept>

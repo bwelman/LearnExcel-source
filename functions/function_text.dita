@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="function_text" xml:lang="en-US">
+    <title>Task: Text Functions</title>
+    <shortdesc>A task splitting a text in different parts by using four text functions.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Functions<indexterm>text</indexterm><indexterm>LEN</indexterm><indexterm>LEFT</indexterm><indexterm>RIGHT</indexterm><indexterm>SEARCH</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context><p>Excel has several functions for performing operations on texts. For example, you
+                can determine the length of a text and retrieve certain pieces of text from a larger
+                text.</p><p>In the following figure you see some full names in column A. The idea is
+                to extract the first and last names out of the full names and put these in separate
+                columns. In the example the first and last names are separated by a space. To
+                extract the different parts you need to know the location of the space. The text
+                before the space is the first name and the text after the space is the last name. <fig>
+                    <title>Data to use with the text functions and their results</title>
+                    <image keyref="Example_Text_Result">
+                        <alt>Data to use with the text functions and their results</alt>
+                    </image>
+                </fig></p>
+            <note type="other" othertype="File"><filepath>Names.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <stepsection>Part: determine the length of the text with the function LEN.</stepsection>
+            <step>
+                <cmd>Select cell <uicontrol>B2</uicontrol> and press the button <uicontrol>Insert
+                        Function</uicontrol> on the formula bar.</cmd>
+            </step>
+            <step>
+                <cmd>Select in the <option>Text</option> category the function <option>LEN</option>
+                    and click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult> The <wintitle>Function Arguments</wintitle> dialog box
+                    appears.</stepresult>
+            </step>
+            <step>
+                <cmd>Put the cursor in the <varname>Text</varname> box, select in the worksheet cell
+                        <userinput>A2</userinput> and click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>The value <systemoutput>10</systemoutput> appears in cell B2 appears.
+                    So, the text in A2 contains 10 characters.</stepresult>
+            </step>
+            <stepsection>Part: determine the space location with the function SEARCH</stepsection>
+            <step>
+                <cmd>Select cell <uicontrol>C2</uicontrol> and press the button <uicontrol>Insert
+                        Function</uicontrol> on the formula bar.</cmd>
+            </step>
+            <step>
+                <cmd>Select in the <option>Text</option> category the function
+                        <option>SEARCH</option> and click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult> The <wintitle>Function Arguments</wintitle> dialog box
+                    appears.</stepresult>
+            </step>
+            <step>
+                <cmd>Enter the values for the arguments in the <wintitle>Function
+                        Arguments</wintitle> dialog box as displayed in the following figure.</cmd>
+                <info>Enter a <userinput>space</userinput> in the <varname>Find_text</varname> box.
+                    Excel surrounds this automatically with double quotes</info>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box function SEARCH</title>
+                        <image keyref="Example_Text_Search">
+                            <alt>Dialog box function SEARCH</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>The value <systemoutput>6</systemoutput> appears in cell C2. So, the
+                    space is at position 6 in the text.</stepresult>
+            </step>
+            <stepsection>Part: determine the first name with the function LEFT</stepsection>
+            <step>
+                <cmd>Select cell <uicontrol>D2</uicontrol> and press the button <uicontrol>Insert
+                        Function</uicontrol> on the formula bar.</cmd>
+            </step>
+            <step>
+                <cmd>Select in the <option>Text</option> category the function <option>LEFT</option>
+                    and click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>The <wintitle>Function Arguments</wintitle> dialog box
+                    appears.</stepresult>
+            </step>
+            <step>
+                <cmd>Enter the values for the arguments in the <wintitle>Function
+                        Arguments</wintitle> dialog box as displayed in the following figure.</cmd>
+                <info>In the <varname>Num_chars</varname> box you need to specify the length of the
+                    text to extract. This is one less than the position of the space and that
+                    position can be found in cell C2.</info>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box function LEFT</title>
+                        <image keyref="Example_Text_Left">
+                            <alt>Dialog box function LEFT</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>The first name appears in cell D2.</stepresult>
+            </step>
+            <stepsection>Part: determine the last name with the function RIGHT</stepsection>
+            <step>
+                <cmd>Select cell <uicontrol>E2</uicontrol> and press the button <uicontrol>Insert
+                        Function</uicontrol> on the formula bar.</cmd>
+            </step>
+            <step>
+                <cmd>Select in the <option>Text</option> category the function
+                        <option>RIGHT</option> and click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult> The <wintitle>Function Arguments</wintitle> dialog box
+                    appears.</stepresult>
+            </step>
+            <step>
+                <cmd>Enter the values for the arguments in the <wintitle>Function
+                        Arguments</wintitle> dialog box as displayed in the following figure.</cmd>
+                <info>In the <varname>Num_chars</varname> box you need to specify the length of the
+                    text to extract. This is equal to the total length of the text (in B2) minus the
+                    position of the space (in C2).</info>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box function RIGHT</title>
+                        <image keyref="Example_Text_Right">
+                            <alt>Dialog box function RIGHT</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>The last name appears in cell E2.</stepresult>
+            </step>
+            <stepsection>Part: formulas copying to the other rows</stepsection>
+            <step>
+                <cmd>Select <uicontrol>B2:E2</uicontrol> and drag the fill handle to E5.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

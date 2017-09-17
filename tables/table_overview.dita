@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="table_overview" xml:lang="en-US">
+  <title>Overview Filtering</title>
+  <shortdesc>Overview of the options for number and date filters.</shortdesc>
+  <prolog>
+    <critdates>
+        <created date="2017-08-31"/>
+        <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <indexterm>Filter</indexterm>
+        <indexterm>Number filter</indexterm>
+                <indexterm>Date filter</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section>
+      <title>Number Filters</title>
+      <p>With number filters, you have the following options:</p>
+      <ul>
+        <li>Equals</li>
+        <li>Does Not Equal</li>
+        <li>Greater Than</li>
+        <li>Greater Than or Equal To</li>
+        <li>Less Than</li>
+        <li>Less Than or Equal To</li>
+        <li>Between</li>
+        <li>Top 10</li>
+        <li>Above Average</li>
+        <li>Below Average</li>
+        <li>Custom Filter</li>
+      </ul>
+    </section>
+      <section>
+          <title>Date Filters</title>
+          <p>With date filters, you have the following options:</p>
+          <ul>
+              <li>Equals</li>
+                <li>Before</li>
+                <li>After</li>
+                <li>Between</li>
+                <li>Tomorrow</li>
+                <li>Today</li>
+                <li>Yesterday</li>
+                <li>Next Week</li>
+                <li>This Week</li>
+                <li>Last Week</li>
+                <li>Next Month</li>
+                <li>This Month</li>
+                <li>Last Month</li>
+                <li>Next Quarter</li>
+                <li>This Quarter</li>
+                <li>Last Quarter</li>
+                <li>Next Year</li>
+                <li>This Year</li>
+                <li>Last Year</li>
+                <li>Year to Date</li>
+                <li>All Dates in the Period</li>
+                <li>Custom Filter</li>
+          </ul>
+      </section>
+  </refbody>
+</reference>

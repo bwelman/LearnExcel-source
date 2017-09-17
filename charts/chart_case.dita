@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="chart_case" xml:lang="en-US">
+ <title>Case</title>
+ <shortdesc>A case with instructions to create a line graph with various adjustments.</shortdesc>
+ <prolog>
+  <critdates>
+   <created date="2017-08-31"/>
+   <revised modified="2017-08-31"/>
+  </critdates>
+  <metadata>
+   <keywords>
+    <indexterm>Charts<indexterm>case</indexterm></indexterm>
+   </keywords>
+  </metadata>
+ </prolog>
+ <conbody>
+  <example>
+   <title>Case Stock Quotes</title>
+   <p>You can see the average monthly stock price of four companies for the months January through
+    March in the following figure:</p>
+   <fig>
+                <title>Average monthly stock prices</title>
+                <image keyref="case_data">
+                    <alt>Average monthly stock prices</alt>
+                </image>
+            </fig>
+   <p>Create a line chart from these data.<note type="other" othertype="File"
+     ><filepath>Stocks.xlsx</filepath></note></p>
+   <p>At a later stage, the entries for April are published:<fig>
+                    <title>Average prices April</title>
+                    <image keyref="case_data_april">
+                        <alt>Average prices April</alt>
+                    </image>
+                </fig> This data should be added at a later moment to the chart.</p>
+   <p>The final result should look like this<fig>
+                    <title>Chart with average monthly stock prices</title>
+                    <image keyref="case_chart">
+                        <alt>Chart with average monthly stock prices</alt>
+                    </image>
+                </fig>
+            </p>
+  </example>
+  <section>
+   <title>Directions for the chart</title>
+   <ul>
+    <li>Data for January through April are in the practice file.</li>
+    <li>Chart type is a line chart (line with markers)</li>
+    <li>When you create a chart Excel takes the rows as data series instead of the columns. Change
+     this situation by switching rows / columns.</li>
+    <li>Add chart title. Format the text of the title in Palatino, 14 pt, bold.</li>
+    <li>Add a vertical axis title.</li>
+    <li>Scale the vertical axis so that the primary unit is10.</li>
+    <li>Put a legend under the horizontal axis and stretch the legend so that all texts are in a
+     row.</li>
+    <li>Add horizontal dotted gridlines</li>
+    <li>Chart dimensions: width = 4" and height = 4"</li>
+   </ul>
+  </section>
+ </conbody>
+</concept>

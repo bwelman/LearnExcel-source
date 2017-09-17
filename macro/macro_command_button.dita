@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="macro_command_button" xml:lang="en-US">
+	<title>Task: Creating a Command Button</title>
+	<shortdesc>How to create a command button to run a macro.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Macro</indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<taskbody>
+		<prereq>To perform this task it is necessary that the macro CellFormat was created.</prereq>
+		<context>
+			<p>A very convenient way to run a macro is by placing a command button on the
+				worksheet.</p>
+		</context>
+		<steps>
+			<step>
+				<cmd>Choose <menucascade>
+						<uicontrol>Developer tab</uicontrol>
+						<uicontrol>Insert (group Controls)</uicontrol>
+					</menucascade>.</cmd>
+				<stepresult>
+					<fig>
+						<title>Form Controls</title>
+						<image keyref="form_controls">
+							<alt>Form controls</alt>
+						</image>
+					</fig>
+				</stepresult>
+			</step>
+			<step>
+				<cmd>Click on <uicontrol>Button (Form Control)</uicontrol></cmd>
+				<stepresult>The cursor will change to a <systemoutput>+</systemoutput>. With this cursor you can
+					draw a rectangle in the worksheet for the button.</stepresult>
+			</step>
+			<step>
+				<cmd>Click the left mouse button and draw a rectangle with the desired dimensions for the button
+					somewhere in the worksheet. Then release the left mouse button.</cmd>
+				<stepresult> The drawn rectangle will turn into a button with a text like <wintitle>Button
+                        1</wintitle>.<fig>
+                        <title>Design button</title>
+                        <image keyref="command_button1">
+                            <alt>Design button.</alt>
+                        </image>
+                    </fig>Furthermore you will see the dialog box <wintitle>Assign Macro</wintitle>.<fig>
+                        <title>Assign macro CellFormat</title>
+                        <image keyref="macro_cellformat_assign">
+                            <alt>Assign macro CellFormat</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+			</step>
+			<step>
+				<cmd>Select the macro <uicontrol>CellFormat</uicontrol> and click
+					<uicontrol>OK</uicontrol>.</cmd>
+			</step>
+			<step>
+				<cmd>Select the text on the button and change it to a more appropriate text, for example
+						<userinput>Cell format</userinput>.</cmd>
+			</step>
+			<step>
+				<cmd>Deselect the button by clicking anywhere in the worksheet.</cmd>
+				<stepresult>
+					<fig>
+                        <title>Button <uicontrol>Cell format</uicontrol></title>
+                        <image keyref="macro_cellformat_button">
+                            <alt>Button cell format</alt>
+                        </image>
+                    </fig>
+				</stepresult>
+			</step>
+			<step>
+				<cmd>Test the macro on a cell with text via the command button.</cmd>
+			</step>
+		</steps>
+	</taskbody>
+</task>

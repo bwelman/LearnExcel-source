@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="pivots_grouping_data" xml:lang="en-US">
+    <title>Grouping data</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Grouping</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Grouping data in a PivotTable can help you to show a subset of your data to analyze. This
+            is especially important when you want to group a list of dates into years, quarters or
+            months. Grouping is used frequently in many business scenarios.</p>
+        <fig>
+            <title>Example list of dates without grouping</title>
+            <image keyref="dates_ungrouped">
+                <alt>Example list of dates without grouping</alt>
+            </image>
+        </fig>
+        <fig>
+            <title>Example list of dates grouped by quarter and month</title>
+            <image keyref="dates_grouped">
+                <alt>Example list of dates grouped by quarter and month</alt>
+            </image>
+        </fig>
+        <p><term>Automatic time grouping</term> is a new feature Excel 2016. Time-related fields are
+            automatically detected and grouped. This automatic grouping creates new relevant
+            Date/Time columns such as Years, Quarters and Months and automatically populates the
+            PivotTable. In the example above, the quarter and month are no fields in the original
+            source data.</p>
+        <p>Which date/time columns are added  depends on the granularity of the dates/times in the
+            data table. For example, if the dates are in days and is for more than a year’s
+            duration, then the added grouping columns would be for months, quarters and years.</p>
+        <p>Once the Date/Time columns are added to the model you can quickly start analyzing the
+            data across the different levels of time with drill-down capabilities. This way you may
+            find additional insights. For example, to get a monthly year-over-year comparison of
+            your data, you can move the <varname>Years</varname> field to the
+                <uicontrol>COLUMNS</uicontrol> area while keeping only the <varname>Months</varname>
+            field in the <uicontrol>ROWS</uicontrol> area.</p>
+        <p>The <uicontrol>+</uicontrol> (plus) button in the PivotTable indicates a collapsed level.
+            Clicking on it expand all elements in the PivotTable to the next level. This feature is
+            called drill-down.</p>
+        <p>Changing the Group columns is always possible through the usual user interface. In the
+            PivotTable, right-click the Date column and select <uicontrol>Group</uicontrol>. In the
+            Group dialog box that appears, you can add or delete other time levels.</p>
+        <p>When you don’t like the automatic grouping, you can always undo this like other changes.
+            The first undo (Ctrl+Z) removes the auto-added columns from the ROWS area. The second
+            undo removes the newly added columns from the model. In case these fields are already
+            used in another PivotTable, then they will not be deleted from the model. Right-click
+                <uicontrol>Ungroup</uicontrol>… is also supported and will act as if you have done
+            the two undo operations, removing the group fields from the areas and the model.</p>
+    </conbody>
+</concept>

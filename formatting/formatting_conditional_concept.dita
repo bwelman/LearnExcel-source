@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="formatting_conditional_concept" xml:lang="en-US">
+    <title>What is conditional formatting?</title>
+    <shortdesc>How the format of a cell can depend on certain conditions like the content of the
+        cell.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Conditional format</indexterm>
+                <indexterm>Format<indexterm>conditional</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>It is possible for the format of a cell to allow depend on certain conditions. For
+            example, the background of the cell can be made red when the value in the cell is less
+            then 6. This is called a <term>conditional format</term>. The formatting is applied if
+            the condition(s) are met. If not, the <q>ordinary</q> format will be applied.</p>
+        <p>To apply conditional formatting, you can use any combination of the following formatting
+            options: number format, font, border and background.</p>
+        <p>In the condition test the numerical value in the cell(s) will be compared with a
+            different value. It is also possible to compare the numerical value with a range of
+            other values ​​in order to determine whether there is deviation from the average or, for
+            example, belongs to the top three. There is no limit to the number of conditions.</p>
+    </conbody>
+</concept>

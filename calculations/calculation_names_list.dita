@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="calculation_names_list" xml:lang="en-US">
+    <title>Task: Documenting Names</title>
+    <shortdesc>How to create a list of all existing names and corresponding addresses.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Names<indexterm>list</indexterm><indexterm>documenting</indexterm></indexterm>
+                <indexterm>Cell
+                    names<indexterm>list</indexterm><indexterm>documenting</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>Documenting a spreadsheet also includes a list of all names in use and the
+            corresponding cells. Excel can make such a list for you and put it on a worksheet, but
+            the way to do that is not so obvious. It is recommended to create such a list of names
+            in a new worksheet.<note type="other" othertype="File"
+                    ><filepath>Expenses.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Create a new sheet and select cell A1.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>Formulas</uicontrol>
+                        <uicontrol>Use in formula (group Defined Names)</uicontrol>
+                        <uicontrol>Paste Names</uicontrol>
+                        <uicontrol>Paste List</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>List with cell names and addresses</title>
+                        <image keyref="Name_List">
+                            <alt>List with cell names and addresses</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

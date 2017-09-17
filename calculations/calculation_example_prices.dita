@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="calculation_example_prices" xml:lang="en-US">
+    <title>Case: Price calculation articles</title>
+    <shortdesc>Creating a model, using formulas and copying formulas.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Calculation</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>A shop at the international airport sells articles both tax-free and with 21% VAT.
+                The currency for tax-free prices is U.S. dollar, but customers can also pay in
+                euros. For the VAT and the prices with VAT only the euro will be used. In the
+                following figure you can see a part of the price table. Article numbers and dollar
+                prices are somewhat artificial in order to practice several Excel skills. The
+                intention is to create this table as convenient as possible. Only some indications
+                are given, no detailed steps.</p>
+            <fig>
+                <title>Price table</title>
+                <image keyref="Example_Prices">
+                    <alt>Price table</alt>
+                </image>
+            </fig>
+        </context>
+        <section>
+            <title>Indications</title>
+            <ol>
+                <li>The dollar exchange rate and the VAT percentage are input variables for the
+                    calculation and should be placed at the top of the worksheet, separated from the
+                    price table. An explanatory text is in the cells before.</li>
+                <li>A pattern is in the article numbers. You only need to type in the first two
+                    numbers, select these numbers and then drag down.</li>
+                <li>The dollar prices have also a pattern (increments of 2.50). Enter only the first
+                    two prices, select them and drag down. The prices themselves must be formatted
+                    as currency with 2 decimals and the $ as currency symbol.</li>
+                <li>The price in euro can be calculated from the dollar price by multiplying this
+                    price with the dollar exchange rate. You only need to enter the correct formula
+                    in the first cell (C6) then you can copy it down. Use an absolute address for
+                    the dollar exchange rate, this address should not updated during the copy
+                    action.</li>
+                <li>To calculate the amount of VAT the euro price should be multiplied by the VAT
+                    rate. And for the price incl. VAT the amount of VAT must be added to the
+                    exclusive price. Again, you just have to enter the correct formulas in the first
+                    cells (D6 and E6) and then copy it down. Use an absolute address for the VAT
+                    rate.</li>
+                <li>Finally, all euro amounts should be formatted as currencies.</li>
+            </ol>
+        </section>
+    </taskbody>
+</task>

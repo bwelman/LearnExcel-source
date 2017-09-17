@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="chart_dimensions" xml:lang="en-US">
+    <title>Task: Resizing charts</title>
+    <shortdesc>The size of an embedded chart can be changed easily.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Chart<indexterm>dimensions</indexterm><indexterm>size</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>The size of a chart can be changed by dragging the <term>sizing handles</term> to the
+                size you want. Depending on the object, the sizing handles may be different shapes.
+                They may appear as small circles, squares, or, as is the case with an chart, as a
+                group of small dots. Once an object is selected it is outlined by a rectangular
+                frame and you find the sizing handles in every corner and in the middle of each
+                side. By using the sizing handles on the corner you can drag in any direction. With
+                the sizing handles in the middle you can only drag horizontally or vertically. You
+                can drag the chart larger or smaller. It is also possible to specify the exact
+                dimensions of a chart.</p>
+            <note conref="../common/reuse_task_parts.dita#reuse_task_parts/Chart_File"/>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/Chart_Select">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Hover the mouse pointer over one of the corner points until it changes into a
+                    double-headed arrow <image keyref="sizing_handle_diagonal"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Click the left mouse button and drag into the desired direction.</cmd>
+                <info>
+                    <note type="tip">If you hold down the <uicontrol>Alt</uicontrol> key while
+                        dragging the chart, it will snap to the gridlines of the worksheet.</note>
+                </info>
+            </step>
+            <stepsection>Part: Exact dimensions of a chart</stepsection>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>Format</uicontrol>
+                        <uicontrol>Height / Width (group Size)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Height en Width of a chart</title>
+                        <image keyref="chart_dimensions">
+                            <alt>Height and width of a chart</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Set the desired dimension through the arrows or type it.</cmd>
+            </step>
+            <step>
+                <cmd>Click outside the chart in the worksheet to deselect.</cmd>
+            </step>       
+        </steps>
+    </taskbody>
+</task>

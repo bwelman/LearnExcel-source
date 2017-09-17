@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="worksheet_delete" xml:lang="en-US">
+    <title>Task: Deleting worksheet</title>
+    <shortdesc>Instructions on how to delete a worksheet.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Worksheet<indexterm>delete</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context><p>It is a good practice to keep worksheets with content only and remove empty
+                ones. Each worksheet can be removed except the last one, because each workbook must
+                have at least one worksheet. If a worksheet contains data or is empty by removing
+                all content, then Excel will ask for a confirmation for deleting it. In the other
+                case, the worksheet will be removed immediately.</p></context>
+        <steps>
+            <step>
+                <cmd>Right click on the tab name of the worksheet and then choose
+                        <uicontrol>Delete</uicontrol>.</cmd>
+                <stepresult>There are now two possibilities:<ul>
+                        <li>The worksheet will be removed immediately. In that case, there is no
+                            next step.</li>
+                        <li>A dialog box appears, asking for a conformation of the delete
+                            action.</li>
+                    </ul></stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Delete</uicontrol>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

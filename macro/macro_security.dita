@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="macro_security" xml:lang="en-US">
+  <title>Macro Security</title>
+  <shortdesc>An overview of the security settings and how to change it.</shortdesc>
+  <prolog>
+    <critdates>
+        <created date="2017-08-31"/>
+        <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <indexterm>Macro<indexterm>security</indexterm>Trust Center</indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section>
+      <title>Change settings</title>
+      <p>If you want to view or change the security settings for macros, then you need to click on <menucascade>
+          <uicontrol>Developer tab</uicontrol>
+          <uicontrol>Macro Security (group Code)</uicontrol>
+        </menucascade>.</p>
+      <fig>
+                <title>Macro Security button</title>
+                <image keyref="macro_security_button">
+                    <alt>Macro security button</alt>
+                </image>
+            </fig>
+      <p>The dialog box <wintitle>Trust Center</wintitle> appears.</p>
+      <fig>
+                <title>Macro Settings in Trust Center</title>
+                <image keyref="trust_center_macro_settings">
+                    <alt>Macro settings in trust center</alt>
+                </image>
+            </fig>
+    </section>
+    <section>
+      <title>Overview Macro Settings</title>
+      <table frame="all">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+          <colspec colname="c2" colnum="2" colwidth="2.28*"/>
+          <thead>
+            <row>
+              <entry>Setting</entry>
+              <entry>Explanation</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>Disable all macros without notification</entry>
+              <entry>Choose this option if you don't trust macros. All macros in documents are
+                disabled, as well as the security alerts about macros. Documents that contain
+                unsigned macros that you do trust can be saved in a trusted location. Documents in
+                trusted locations are executed without control by the security system.</entry>
+            </row>
+            <row>
+              <entry>Disable all macros with notification</entry>
+              <entry>This is the default setting. Choose this option when you want to disable
+                macros, but want to receive security alerts if macros are present. This way you can
+                choose if you want to enable each macro.</entry>
+            </row>
+            <row>
+              <entry>Disable all macros except digitally signed macros</entry>
+              <entry>The creator of a macro can digitally sign it. When you consider this as a
+                trusted authority then the macro will be executed without warnings. All unsigned
+                macros will be disabled without notification.</entry>
+            </row>
+            <row>
+              <entry>Enable all macros</entry>
+              <entry>Choose this option when you want to run all macros. This option is not
+                recommended because the computer is then vulnerable  for malicious macros.</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </refbody>
+</reference>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="worksheet_copy" xml:lang="en-US">
+    <title>Task: Copying worksheet</title>
+    <shortdesc>Instructions on how to move or copy a worksheet in the same workbook or another
+        workbook.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Worksheet<indexterm>copy</indexterm><indexterm>move</indexterm></indexterm>
+                <indexterm>Copy<indexterm>worksheet</indexterm></indexterm>
+                <indexterm>Moving<indexterm>worksheet</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context/>
+        <steps>
+            <step>
+                <cmd>Right click on the tab name of the worksheet and then choose <uicontrol>Move or
+                        Copy ...</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box <wintitle>Move or Copy</wintitle> worksheet</title>
+                        <image keyref="Worksheet_Move_Dialogbox">
+                            <alt>Dialog box move or copy worksheet</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>You can perform one or more of the following possibilities:</cmd>
+                <choicetable>
+                    <chhead>
+                        <choptionhd>Choice</choptionhd>
+                        <chdeschd>Explanation</chdeschd>
+                    </chhead>
+                    <chrow>
+                        <choption>To book:</choption>
+                        <chdesc>Default, this is the same workbook. By clicking on the drop down
+                            arrow at the end, you can choose another open workbook or a new
+                            workbook. In the latter case, a new workbook is created.</chdesc>
+                    </chrow>
+                    <chrow>
+                        <choption>Before sheet:</choption>
+                        <chdesc>Choose the location in the destination workbook.</chdesc>
+                    </chrow>
+                    <chrow>
+                        <choption>Create a copy</choption>
+                        <chdesc>When this choice is selected, then a copy of the worksheet is
+                            created. If not checked the worksheet is moved to the new
+                            location.</chdesc>
+                    </chrow>
+                </choicetable>
+            </step>
+        </steps>
+    </taskbody>
+</task>

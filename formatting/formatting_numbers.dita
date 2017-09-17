@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="formatting_numbers" xml:lang="en-US">
+    <title>Formatting Numbers</title>
+    <shortdesc>How to quickly format numbers with predefined styles.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Number<indexterm>format</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Numbers can be displayed in different ways, with or without decimal places, with a
+            currency symbol, with various separators in a date or time format , etc. And if the
+            predefined formatting options are not enough, you define your own format.</p>
+        <p>When entering some numbers, Excel puts them in the correct format automatically.</p>
+        <ul>
+            <li>If you enter in a cell <userinput>19%</userinput> then Excel will recognize the
+                percent symbol and displayed the number right aligned as
+                    <systemoutput>19%</systemoutput>. The content of the cell will be 0.19 and not
+                19.</li>
+            <li>If you enter in a cell <userinput>€123,45</userinput> then Excel recognizes it as a
+                currency. The content of the cell will be 123,45 and this content will be displayed
+                right aligned as <systemoutput>€ 123,45</systemoutput>.</li>
+            <li>If you enter in a cell <userinput>1/2</userinput> Then Excel thinks that it is a
+                date and displayed it as <systemoutput>2-Jan</systemoutput>.<note type="attention"
+                    >Excel stores dates and times as serial numbers starting with 1 January 1900 as
+                    number 1. Number 2 is then 2 January 1900, etc. And if you enter 1/2 in a cell,
+                    then the current year will automatically added, for example 1/2/2013 and then
+                    the real content of the cell will be 41276.</note></li>
+        </ul>
+        <p>To quickly assign a format to a number, use of the command buttons in the
+                <uicontrol>Number group (tab Home)</uicontrol>.<fig>
+                <title>Group Number on the ribbon</title>
+                <image keyref="Ribbon_Group_Number">
+                    <alt>Group Number on the ribbont</alt>
+                </image>
+            </fig></p>
+        <p>In the middle you find command buttons for some frequently used formatting styles:</p>
+        <dl>
+            <dlentry>
+                <dt><image keyref="Number_Format_Accounting"/></dt>
+                <dd>Accounting style. The down arrow gives some currency symbols.</dd>
+            </dlentry>
+            <dlentry>
+                <dt><image keyref="Number_Format_Percent"/></dt>
+                <dd>Percent style.</dd>
+            </dlentry>
+            <dlentry>
+                <dt><image keyref="Number_Format_Thousands"/></dt>
+                <dd>Comma style (thousands separator)</dd>
+            </dlentry>
+            <dlentry>
+                <dt><image keyref="Number_Format_Decimal_Increase"/></dt>
+                <dd>Increase decimals.</dd>
+            </dlentry>
+            <dlentry>
+                <dt><image keyref="Number_Format_Decimal_Decrease"/></dt>
+                <dd>Decrease decimals.</dd>
+            </dlentry>
+        </dl>
+        <p>At the top you can see the actual formatting of the selected cell. For example
+                <term>General</term> and beside a down arrow for a choice list with predefined
+            styles. In the figure you can see this list for a cell with content 0.19. And in this
+            list you can choose another format.<fig>
+                <title>List with styles for formatting numbers</title>
+                <image keyref="Number_Format_List">
+                    <alt>List with styles for formatting numbers</alt>
+                </image>
+            </fig></p>
+        <p>When the desired formatting is not in the list then you can click on <uicontrol>More
+                Number Formats...</uicontrol>. The dialog box <wintitle>Format Cells</wintitle>
+            appears with the <uicontrol>tab Number</uicontrol> selected. Here you can define your
+            own format.</p>
+    </conbody>
+</concept>

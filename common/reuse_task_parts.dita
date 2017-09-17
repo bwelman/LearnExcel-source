@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="reuse_task_parts" xml:lang="en-US">
+    <title>Reusable Objects - task</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>Reusable parts for a task.</p>
+            <!--  Practice file for charts  -->
+            <note type="other" othertype="File" id="Chart_File"
+                    ><filepath>Bakery_Chart.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step id="File_Open">
+                <cmd>Open the practice file.</cmd>
+            </step>
+            <step id="Select_Cell">
+                <cmd>Select any cell in the data area.</cmd>
+            </step>
+            <step id="Chart_Select">
+                <cmd>Select the chart by clicking within the chart area.</cmd>
+                <stepresult>A double border around the chart appears and the mouse cursor has been
+                    changed to a cross with arrows <image keyref="mouse_pointer_drag"
+                    />.</stepresult>
+            </step>
+            <step id="Trendline_Start">
+                <cmd>Select a cell in the data area.</cmd>
+            </step>
+            <step>
+                <cmd>Insert a <uicontrol>XY (Scatter) Chart</uicontrol>.</cmd>
+            </step>
+            <step id="Trendline_End">
+                <cmd>Select the data serie in the chart by clicking on a point. Right mouse click
+                    and choose <uicontrol>Add Trend line</uicontrol>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

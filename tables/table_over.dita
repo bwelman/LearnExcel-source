@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="table_over" xml:lang="en-US">
+    <title>Characteristics of tables</title>
+    <shortdesc>A short description of tables (lists, databases).</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>List</indexterm>
+                <indexterm>Table</indexterm>
+                <indexterm>Database</indexterm>
+                <indexterm>Record</indexterm>
+                <indexterm>Field</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>A table is an organized set of data.</p>
+        <table frame="all">
+            <title>Database with 3 records, each with 5 fields</title>
+            <tgroup cols="5">
+                <thead>
+                    <row>
+                        <entry>custom nr.</entry>
+                        <entry>name</entry>
+                        <entry>date</entry>
+                        <entry>price</entry>
+                        <entry>discount</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>A104</entry>
+                        <entry>Anderson</entry>
+                        <entry>2010-10-02</entry>
+                        <entry>400</entry>
+                        <entry>0 %</entry>
+                    </row>
+                    <row>
+                        <entry>K102</entry>
+                        <entry>King</entry>
+                        <entry>2010-11-03</entry>
+                        <entry>395</entry>
+                        <entry>5 %</entry>
+                    </row>
+                    <row>
+                        <entry>S501</entry>
+                        <entry>Smith</entry>
+                        <entry>2010-12-04</entry>
+                        <entry>375</entry>
+                        <entry>8%</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p>A table or database in Excel  is a table consisting of rows and columns. These rows are
+            often called <term>records</term> and the columns are called <term>fields</term>. The
+            type of the collected data are in the columns. In the first row of a table you find
+            column headers that indicate the kind of information in the column. The column headers
+            are also called <term>field names</term>. The field names in the example are: custom
+            nr., name, date, price and discount.</p>
+        <p>To analyse data, it is important that the data is well-structured in the worksheet. A
+            structured table has the following characteristics:</p>
+        <ul>
+            <li>The cells in each column contains the same type of data.</li>
+            <li>The cells in each row contain the individual data of the object.</li>
+            <li>The first row of the table contains the unique names of the fields. These names are
+                usually formatted differently (larger font size, bold, italic, ... ) than the rest
+                of the table.</li>
+            <li>A table can start everywhere in the worksheet. It's not necessary that the first row
+                of the table must be the first row of the worksheet.</li>
+            <li>There should be no blank rows in the table. A row can contain empty cells, but not
+                all cells can be empty.</li>
+            <li>There should be no blank columns in the table. A column can contain empty cells, but
+                not all cells can be empty.</li>
+        </ul>
+        <p>In Excel, a table is a rectangular range of cells where data is stored. Although a table
+            looks much like a regular Excel range, it offers a number of features that differentiate
+            it from a range.</p>
+        <p>A table can be created and maintained by just typing the data in the cells. In order to
+            ensure a good structure, it is recommended to use a form for data entry. It’s not
+            necessary that you first enter all your data before converting the range to a table.
+            Once you have the table, you can always add new rows and columns. Large lists of data
+            usually come from data from external files (text/csv files, webqueries, databases).</p>
+        <p>In Excel 2016, you cannot create a table from scratch and then fill that table with data.
+            Instead, you must first create a range that includes at least some of the data you want
+            in your table and then convert that range to a table. When a range of data is
+            transferred to a table, the appearance changes, but also built-in features are available
+            for filtering, sorting and the ability to add a total row with several functions for
+            totalization.</p>
+    </conbody>
+</concept>

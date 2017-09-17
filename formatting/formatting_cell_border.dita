@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="formatting_cell_border" xml:lang="en-US">
+    <title>Cell Borders</title>
+    <shortdesc>How to create borders around cells.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Cell<indexterm>borders</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Borders are often used to hold a group of cells visual together. Under an addition there
+            is often a line and below the line - the total. Borders are used especially for layout
+            purposes.</p>
+        <p>To create borders around a cell or group of cells, proceed as follows:</p>
+        <ol>
+            <li>Select the cell or the group of cells.</li>
+            <li>Choose <menucascade>
+                    <uicontrol>Home</uicontrol>
+                    <uicontrol>Border down arrow (group Font)</uicontrol>
+                </menucascade>.<image keyref="Cell_Border_Button">
+                    <alt>Button cell borders</alt>
+                </image>
+            </li>
+            <li>Choose the desired style from the list <wintitle>Borders</wintitle>. <fig>
+                    <title>List with border styles</title>
+                    <image keyref="Cell_Border_List">
+                        <alt>List with border styles</alt>
+                    </image>
+                </fig>
+            </li>
+        </ol>
+        <note type="tip">If the desired border style is not displayed in the list, then click on
+                <uicontrol>More Borders...</uicontrol>. Excel displays the dialog box
+                <wintitle>Format Cells</wintitle> with the <uicontrol>tab Border</uicontrol>
+            selected.</note>
+    </conbody>
+</concept>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="solver_example_weatherleather" xml:lang="en-US">
+    <title>Task: Solver example</title>
+    <shortdesc>Step-by-step description on how to use the Solver for the case
+        WeatherLeather.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>As an example the case study WeatherLeather is used. In this case the profit must be
+                maximized.</p>
+            <note type="other" othertype="File"><filepath>WeatherLeather.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select the object cell <uicontrol>D5</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Data</uicontrol>
+                        <uicontrol>Solver (group Analyze)</uicontrol>
+                    </menucascade>.</cmd>
+            </step>
+            <step>
+                <cmd>Verify that the address <uicontrol>$D$5</uicontrol> is filled in the box
+                        <uicontrol>Set Objective</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Verify that the choice <option>Max</option> is selected for
+                        <uicontrol>To</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Click in the box <uicontrol>By Changing Variable Cells</uicontrol> and select
+                    in the worksheet the cell range <userinput>B4:C4</userinput>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box <wintitle>Solver Parameters</wintitle></title>
+                        <image keyref="weatherleather_solver_parameters1">
+                            <alt>Dialog box solver parameters</alt>
+                        </image>
+                    </fig>
+                    <note type="notice">Excel converts <systemoutput>B4:C4</systemoutput> to
+                            <systemoutput>$B$4:$C$4</systemoutput>.</note>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click on <uicontrol>Add</uicontrol>.</cmd>
+                <stepresult><fig>
+                        <title>Dialog box Add Constraint</title>
+                        <image keyref="solver_constraint_add">
+                            <alt>Dialog box add constraint</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Enter a restriction <userinput>D8 &lt;= E8</userinput> and click on
+                        <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>The dialog box <wintitle>Solver Parameters</wintitle> appears again and
+                    Excel has the first restriction converted to: <systemoutput>$D$8 &lt;=
+                        $E$8</systemoutput>.</stepresult>
+            </step>
+            <step>
+                <cmd>Click on <uicontrol>Add</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the restriction <userinput>D9 &lt;= E9</userinput> and now click on
+                        <uicontrol>Add</uicontrol>.</cmd>
+                <stepresult>Now the empty dialog box <wintitle>Add Constraint</wintitle> is
+                    displayed. You don't see now that Excel has added the second restriction.<note
+                        type="tip"> By clicking on <uicontrol>Add</uicontrol> in stead of
+                            <uicontrol>OK</uicontrol> you can add the restrictions easily without
+                        having to return to the <wintitle>Solver Parameters</wintitle>
+                    again.</note></stepresult>
+            </step>
+            <step>
+                <cmd>Enter the restriction <userinput>D10 &lt;= E10</userinput> and click on
+                        <uicontrol>Add</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the restriction <userinput>B4:C4 >= 0</userinput> and click on
+                        <uicontrol>Add</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the next restriction <userinput>B4:C4 int</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>All restrictions have been added. Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Solver Parameters for WeatherLeather</title>
+                        <image keyref="weatherleather_solver_parameters2">
+                            <alt>Solver parameters for WeatherLeather</alt>
+                        </image>
+                    </fig>
+                    <note type="notice">Excel has converted <systemoutput>int</systemoutput> to
+                            <systemoutput>integer</systemoutput> in the box
+                            <uicontrol>Constraint</uicontrol>.</note>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click on <uicontrol>Solve</uicontrol>.</cmd>
+                <stepresult>
+                    <p>After short time the results pane of the Solver appears.</p>
+                    <fig>
+                        <title>Solver Results</title>
+                        <image keyref="solver_results_solution_dialogbox">
+                            <alt>Solver results</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Select <uicontrol>Keep Solver Solution</uicontrol> (default). Select
+                        <uicontrol>Answer (section Reports)</uicontrol> and then click
+                        <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>
+                    <p>The solution found by the Solver is now displayed in the worksheet.</p>
+                    <fig>
+                        <title>Worksheet with solution</title>
+                        <image keyref="weatherleather_solution">
+                            <alt>Worksheet with solution</alt>
+                        </image>
+                    </fig>
+                    <p>And there has also been created a new worksheet with the name
+                            <wintitle>Answer Report ...</wintitle>.</p>
+                    <fig>
+                        <title>Answer Report for WeatherLeather</title>
+                        <image keyref="weatherleather_solver_report">
+                            <alt>Answer report for WeatherLeather</alt>
+                        </image>
+                    </fig>
+                    <note type="tip">The names that are used in the report are not always accurate
+                        or clear. This is because Excel takes these names out of the the text cells
+                        in the surrounding area. To ensure there are good names in the report, you
+                        first have to supply meaningful names to the relevant cells in the
+                        worksheet. This is highly recommended.</note>
+                    <note type="attention">At the section Constraints in the Answer Report you can
+                        see in the column Status which restrictions are <term>Binding</term>. If so,
+                        this indicates that the limit of the constraint is reached and there is no
+                        slack. In this example you can see that all capacity for the cutting time
+                        and sewing time is used. For the long jackets, the limit for the market is
+                        not reached, there could be 6 more pieces sold.</note>
+                </stepresult>
+            </step>
+        </steps>
+        <result>The problem of WeatherLeather is now solved. A maximum profit of $ 2664 per week can
+            be achieved by producing 20 short jackets and 6 long jackets.</result>
+    </taskbody>
+</task>

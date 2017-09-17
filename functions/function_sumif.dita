@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="function_sumif" xml:lang="en-US">
+    <title>Task: SUMIF</title>
+    <shortdesc>A task in which you learn how you can add numbers that meet certain
+        conditions.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Functions<indexterm>SUMIF</indexterm></indexterm>
+                <indexterm>Adding<indexterm>conditional</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>The SUMIF function can be used to add numbers under certain conditions. In a
+                spreadsheet is a list of the yields of different coffee types per month and per
+                region. You need to determine the total yields per region.</p>
+            <note type="other" othertype="File"><filepath>Coffee.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select cell <uicontrol>H2</uicontrol> and press the button <uicontrol>Insert
+                        Function</uicontrol> on the formula bar.</cmd>
+            </step>
+            <step>
+                <cmd>Select in the <option>All</option> category the function <option>SUMIF</option>
+                    and click on <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>The <wintitle>Function Arguments</wintitle> dialog box
+                    appears.</stepresult>
+            </step>
+            <step>
+                <cmd>Put the cursor in the <varname>Range</varname> box and select <userinput>column
+                        C</userinput>. Then put the cursor in the <varname>Criteria</varname> box
+                    and select <userinput>cell G2</userinput>. Finally put the cursor in the
+                        <varname>Sum_range</varname> box and select <userinput>column
+                    D</userinput>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Arguments for the function SUMIF</title>
+                        <image keyref="Example_Sumif_Arguments">
+                            <alt>Arguments for the function SUMIF</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>The total yield for region North <systemoutput>743140</systemoutput> now
+                    appears in cell H2.</stepresult>
+            </step>
+            <step>
+                <cmd>Select cell <uicontrol>H2</uicontrol> and drag down the fill handle to
+                        <uicontrol>H5</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Format the numbers in H2:H5 as currencies.</cmd>
+            </step>
+        </steps>
+        <result>
+            <fig>
+                <title>End result of exercise with function SUMIF</title>
+                <image keyref="Example_Sumif_Result">
+                    <alt>End result of exercise with function SUMIF</alt>
+                </image>
+            </fig>
+            <note type="tip">An addition in this example is easier to create with pivots.</note>
+        </result>
+    </taskbody>
+</task>

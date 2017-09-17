@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="macro_tips" xml:lang="en-US">
+  <title>Macro Tips</title>
+  <shortdesc>Some tips in working with macros.</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <indexterm>Macro<indexterm>relative
+            references</indexterm><indexterm>run</indexterm><indexterm>delete</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section>
+      <title>Relative References</title>
+      <p>Recorded macros will  use absolute cell references by default. This means that the exact
+        locations of cells, rows and columns in the program code of the macro will be used. The
+        macro works then always at the same addresses.</p>
+      <p>When you want to use relative references in the macro you need to click on the button
+          <wintitle>Use Relative References</wintitle>.</p>
+      <fig>
+                <title>Relative References in macros</title>
+                <image keyref="record_macro_relative_references">
+                    <alt>Relative references in macros</alt>
+                </image>
+            </fig>
+      <note type="attention">
+        <p>This setting remains active until you undo the setting by clicking on this button
+          again.</p>
+      </note>
+    </section>
+    <section>
+      <title>Running macros</title>
+      <p>Macros can be started in the following ways:</p>
+      <ul>
+        <li>Via <menucascade>
+            <uicontrol>Developer tab</uicontrol>
+            <uicontrol>Macros (group Code)</uicontrol>
+            <uicontrol>Select macro</uicontrol>
+            <uicontrol>Run</uicontrol>
+          </menucascade>.</li>
+        <li>Using a keyboard shortcut if it is assigned to the macro.</li>
+        <li>Using a command button if such a button is created for the macro.</li>
+      </ul>
+    </section>
+    <section>
+      <title>Deleting macros</title>
+      <p>Macros can be deleted by <menucascade>
+          <uicontrol>Developer tab</uicontrol>
+          <uicontrol>Macros (group Code)</uicontrol>
+          <uicontrol>Select macro</uicontrol>
+          <uicontrol>Delete</uicontrol>
+        </menucascade>.</p>
+    </section>
+  </refbody>
+</reference>

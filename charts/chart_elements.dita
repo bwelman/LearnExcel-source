@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="chart_elements" xml:lang="en-US">
+    <title>Chart elements</title>
+    <shortdesc>A brief description of the elements of a chart.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Chart<indexterm>chart area</indexterm><indexterm>plot
+                        area</indexterm><indexterm>data serie</indexterm><indexterm>data
+                        point</indexterm><indexterm>horizontal axis</indexterm><indexterm>category
+                        axis</indexterm><indexterm>vertical axis</indexterm><indexterm>value
+                        axis</indexterm><indexterm>chart title</indexterm><indexterm>axis
+                        titles</indexterm><indexterm>legend</indexterm><indexterm>data
+                        label</indexterm><indexterm>gridlines</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>A graph consists of many elements. These are not always created by default in Excel. They
+            can always be added afterwards. Also moving and deleting most of the elements is
+            possible.</p>
+        <fig>
+            <title>Elements of a chart</title>
+            <image keyref="chart_elements">
+                <alt>Elements of a chart</alt>
+            </image>
+        </fig>
+        <p>The most important parts of a chart are:</p>
+        <dl>
+            <dlentry>
+                <dt>Chart area (1)</dt>
+                <dd>This is the entire chart including all elements.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>Plot area (2)</dt>
+                <dd>The rectangular area bounded by the axes, including all data series. In the
+                    figure, the area with the light-coloured background.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>Data series (3)</dt>
+                <dd>A data serie is a row or column in your worksheet with numbers. These are
+                    plotted in the chart. In the example chart  are two data series: the
+                    blue-coloured and the brown coloured. The data series have names, here 2009 and
+                    2010, and these names form the legend.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>Data point (4)</dt>
+                <dd>A separate value (bar, column, point, ...) in the chart. Each column in the
+                    chart shown is a data point and there are in total 8 data points.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>Category axis (5)</dt>
+                <dd>This is the horizontal axis or X-axis. The text (labels) along this axis come
+                    from cells in the worksheet. In the example chart you see four categories Q1,
+                    Q2, Q3 and Q4.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>Horizontal axis title (6)</dt>
+                <dd>This title identifies the type of data along the horizontal axis. In case it is
+                    not clear that <q>Q1, Q2, Q3, Q4</q> represents quarters, you can add a title
+                    that explains this.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>Value axis (7)</dt>
+                <dd>This is the vertical axis or Y-axis and this axis usually contains numbers.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>Vertical axis title (8)</dt>
+                <dd>This title is important for identifying the units along the axis.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>Chart title (9)</dt>
+                <dd>A short text that indicates what the chart is about. This title mostly appears
+                    in a larger font and near the top of the chart.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>Legend (10)</dt>
+                <dd>A box that identifies the patterns or colors that are assigned to the data
+                    series or categories.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>Gridlines (11)</dt>
+                <dd>Horizontal or vertical lines in the drawing area.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>Data labels (12)</dt>
+                <dd>A number of a data point which provides the actual value for the data
+                    point.</dd>
+            </dlentry>
+        </dl>
+    </conbody>
+</concept>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept id="forecasts_timeserie_example" xml:lang="en-US">
+ <title>Time serie examples</title>
+ <shortdesc/>
+ <prolog>
+  <critdates>
+   <created date="2017-08-31"/>
+   <revised modified="2017-08-31"/>
+  </critdates>
+  <metadata>
+   <keywords>
+    <indexterm/>
+   </keywords>
+  </metadata>
+ </prolog>
+ <conbody>
+  <p>In the next chart you see the Australian beer production per quarter for the years
+            1956-1973.</p>
+  <fig>
+            <title>Australian beer production per year/quarter</title>
+            <image keyref="timeserie_beer1">
+                <alt>Voorbeeld</alt>
+            </image>
+        </fig>
+  <!--  Bron: tekst https://onlinecourses.science.psu.edu/stat510/node/47  data https://datamarket.com/data/set/22ry/quarterly-beer-production-in-australia-megalitres-march-1956-june-1994#!ds=22ry&display=line-->
+  <p>In the chart you can see the following characteristics:<ul>
+                <li>There is an upward trend, may not be a straight line but slightly bent.</li>
+                <li>There is a strong seasonality through the regular peaks and troughs related to
+                    the different quarters. The peaks are always in quarter 4, the valleys at the
+                    quarters 2 and 3 and the values for quarter 1 are between peak and valley.</li>
+                <li>There are no outliers.</li>
+                <li>There is no long term cycle.</li>
+                <li>The variance in the values seems to increasing a little over time.</li>
+            </ul></p>
+  <p>The seasonality is also evident when the data  are plotted against the individual quarters as
+            you can see in the next  chart.<fig>
+                <title>Yearly beer production per quarter</title>
+                <image keyref="timeserie_beer2">
+                    <alt>Yearly beer production per quarter</alt>
+                </image>
+            </fig></p>
+  <p>In the following figure, the data for each quarter is separately plotted against the years.
+            Here you can see that the increasing trend is evident for each quarter.<fig>
+                <title>Quarterly beer production per year</title>
+                <image keyref="timeserie_beer3">
+                    <alt>Quarterly beer production per year</alt>
+                </image>
+            </fig></p>
+ </conbody>
+</concept>

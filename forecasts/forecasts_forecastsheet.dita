@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="forecasts_forecastsheet" xml:lang="en-US">
+    <title>Task: Forecast Sheet in Excel</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2016-11-07"/>
+            <revised modified="2016-11-07"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm/>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>When you create a forecast in Excel, then a new worksheet will be created that
+                contains a table with the original data and the predicted values and a chart in
+                which these values are displayed. This new worksheet is called <term>Forecast
+                    Sheet</term>.</p>
+            <note type="other" othertype="File"><filepath>Revenues.csv</filepath></note>
+        </context>
+        <steps>
+            <step>
+                <cmd>Import the practice file through <uicontrol>Get &amp; Transform
+                        Data</uicontrol>.</cmd>
+                <info>If you need help for this, see chapter <wintitle>Data
+                    Import</wintitle>.</info>
+            </step>
+            <step>
+                <cmd>Select a cell in the data area.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Data</uicontrol>
+                        <uicontrol>Forecast Sheet (group Forecast)</uicontrol>
+                    </menucascade></cmd>
+                <stepresult>
+                    <p>The window <wintitle>Create Forecast Worksheet</wintitle> is displayed.</p>
+                    <fig>
+                        <title>Window <wintitle>Create Forecast Worksheet</wintitle></title>
+                        <image keyref="sales_fcast_sheet">
+                            <alt>Window Create Forecast Worksheet</alt>
+                        </image>
+                    </fig>
+                    <p>In this window you can make a number of choices.<ul>
+                            <li>Chart type (top right): line chart, column chart</li>
+                            <li>Forecast End (bottom left): the end date for the forecast, so the
+                                number of forecasts.</li>
+                            <li>Options (bottom left): a number of advanced settings</li>
+                        </ul></p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Set<option>Forecast End</option> on 1 december 2013. Then click
+                        <uicontrol>Create</uicontrol>.</cmd>
+                <stepresult>
+                    <p>A new worksheet is created with the historical data, the predicted values,
+                        confidence bounds (95%) and a default chart.</p>
+                    <simpletable frame="all" relcolwidth="1.0* 1.04* 2.54* 2.57*">
+                        <sthead>
+                            <stentry>Date</stentry>
+                            <stentry>Forecast</stentry>
+                            <stentry>Lower Confidence Bound</stentry>
+                            <stentry>Upper Confidence Bound</stentry>
+                        </sthead>
+                        <strow>
+                            <stentry>10/1/2013</stentry>
+                            <stentry>4264177</stentry>
+                            <stentry>3869915</stentry>
+                            <stentry>4658439</stentry>
+                        </strow>
+                        <strow>
+                            <stentry>11/1/2013</stentry>
+                            <stentry>4033806</stentry>
+                            <stentry>3639542</stentry>
+                            <stentry>4428070</stentry>
+                        </strow>
+                        <strow>
+                            <stentry>12/1/2013</stentry>
+                            <stentry>4033625</stentry>
+                            <stentry>3639358</stentry>
+                            <stentry>4427892</stentry>
+                        </strow>
+                    </simpletable>
+                    <note>
+                        <ul>
+                            <li>The forecasted values are calculated with the function
+                                    <codeph>FORECAST.ETS</codeph></li>
+                            <li>The confidence bounds are calculated with the function
+                                    <codeph>FORECAST.ETS.CONFINT</codeph></li>
+                        </ul>
+                    </note>
+                </stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

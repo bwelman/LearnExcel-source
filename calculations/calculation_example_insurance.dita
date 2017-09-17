@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="calculation_example_insurance" xml:lang="en-US">
+    <title>Task: Premium Table</title>
+    <shortdesc>A task in copying formulas.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Formulas<indexterm>copying</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>In the following figure you see a list of insurance premiums for cars. The list
+                starts at a value of $ 10.000 and a premium of $ 675. The next values grow with
+                increments of $ 1000 and the premium with increments of $ 45. Make this list using
+                formulas for value and premium in the rows 6 until 20.</p>
+            <fig>
+                <title>Premium table</title>
+                <image keyref="Example_Insurance">
+                    <alt>Premium table</alt>
+                </image>
+            </fig>
+            <note type="other" othertype="File"><filepath>Premium_Table.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Format the values as currencies with the button on the ribbon (<menucascade>
+                        <uicontrol>Home</uicontrol>
+                        <uicontrol>button Accounting Number Format (group Number)</uicontrol>
+                    </menucascade>. Adjust also the column widths so that all contents fits.</cmd>
+            </step>
+            <step>
+                <cmd>Enter in cell <uicontrol>A6</uicontrol> the formula
+                        <userinput>=A5+$B$1</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter in cell <uicontrol>B6</uicontrol> the formula
+                        <userinput>=B5+$D$1</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Select the area <uicontrol>A6:B6</uicontrol> and drag the fill handle until
+                        <uicontrol>B20</uicontrol>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

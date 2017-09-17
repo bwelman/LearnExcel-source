@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="calculation_model" xml:lang="en-US">
+    <title>A calculation model</title>
+    <shortdesc>Guidelines for setting up a calculation model.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Calculation<indexterm>model</indexterm><indexterm>setup</indexterm></indexterm>
+                <indexterm>Input</indexterm>
+                <indexterm>Output</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Using Excel you can make all kinds of calculations. For a larger and more complex
+            calculation careful thinking about how setting up the calculation in a worksheet is
+            needed.</p>
+        <p>In a calculation model you always have to deal with three types of cells.</p>
+        <dl>
+            <dlentry>
+                <dt>Input</dt>
+                <dd>In these cells the user continuously enters different values. In fact these are
+                    the cells for the <term>variables</term>.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>Calculations</dt>
+                <dd>In these cells all kind of calculations with the values from the input cells are
+                    carried out.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>Output</dt>
+                <dd>In these cells the formatted results are displayed.</dd>
+            </dlentry>
+        </dl>
+        <p>The data flow in the model is from the <term>input</term> through the
+                <term>calculation</term> to the <term>output</term>. When setting up a model you
+            should think in the opposite direction. After all, the desired result is the point. From
+            the desired results the necessary calculations are derived. And these calculations
+            determine what input is necessary.</p>
+        <p>There are some guidelines for entering a model in Excel:</p>
+        <ol>
+            <li>Make a separation between input, calculation and output. For smaller models this can
+                be in separate places in the worksheet. For example, input in the top of the
+                worksheet. For large models it is better to use separate sheets. <fig>
+                    <title>Grouping cells in a calculation model</title>
+                    <image keyref="Calculation_Model">
+                        <alt>Grouping cells in a calculation model</alt>
+                    </image>
+                </fig>
+            </li>
+            <li>Ensure that a worksheet can be read like a book, from top to bottom and from left to
+                right.</li>
+            <li>Find out what numbers can change, for example the price of an item. Put these
+                numbers in individual cells. These numbers, in fact, are
+                <term>variables</term>.</li>
+            <li>Use as little numbers as possible in the formula itself, but use references to cells
+                where the numbers are. Do the same for numbers that hardly change over time, such as
+                the VAT rate.</li>
+            <li>Always make the purpose of the cell content visible by putting an explanatory text
+                in a neighboring cell (before, above, ...).</li>
+            <li>Put headers above columns with numbers and before rows with numbers.</li>
+            <li>If possible, make one kind of a formula per row or per column. The advantage of this
+                is that the formulas can be copied easily across rows or columns.</li>
+            <li>Divide a complicated formula into multiple pieces so that intermediate results (e.g.
+                subtotals ) can be checked. This prevents errors in formulas.</li>
+            <li>When using multiple worksheets for the model give these sheets obvious names.</li>
+            <li>Take care of some documentation, especially for larger models and put this in
+                separate worksheets.</li>
+        </ol>
+    </conbody>
+</concept>

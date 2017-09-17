@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="data_copypaste" xml:lang="en-US">
+    <title>Task: Copy and paste</title>
+    <shortdesc>A simple exercise of copying data to another place.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Kopieren</indexterm>
+                <indexterm>Plakken</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context><p>Copying the content of cells is a common action in Excel. You can copy one cell
+                or a whole area. By default, both the content and the format of the cell will be
+                copied. However, it is also possible to copy only the content or only the
+                formatting. If the cell contains a formula with cell references then the cell
+                references in the copied formula will be adapted to the new situation.</p><note
+                type="other" othertype="File"><filepath>Cellformat.xlsx</filepath></note></context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select the area <userinput>A1:B13</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>Home</uicontrol>
+                        <uicontrol>Copy (group Clipboard)</uicontrol>
+                    </menucascade>.</cmd>
+            </step>
+            <step>
+                <cmd>Select the starting cell of the destination, e.g.
+                    <userinput>D20</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>Home</uicontrol>
+                        <uicontrol>Past (group Clipboard)</uicontrol>
+                    </menucascade>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

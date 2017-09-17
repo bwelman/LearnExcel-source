@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="datatable_over" xml:lang="en-US" >
+	<title>What are Data Tables?</title>
+	<shortdesc>A short description of data tables, what they are and what you can do with
+		them.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords/>
+		</metadata>
+	</prolog>
+	<conbody>
+		<p>Excel has two varieties of data tables:<ul>
+                <li>One-variable data table, working with one input variable and one or more
+                    formulas.</li>
+                <li>Two-variable data table, working with two input variables and one formula.</li>
+            </ul></p>
+		<p>Both types of data tables work the same way:<ul>
+				<li>Define a set of input values for the variables.</li>
+				<li>Identify the formulas dependent of these variables.</li>
+				<li>Execute the <uicontrol>Data Table</uicontrol> command.</li>
+			</ul></p>
+		<p>Then Excel substitutes each one of the input values in the formulas, calculate the
+			results and shows these in a table form.</p>
+	</conbody>
+</concept>

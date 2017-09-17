@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="function_vlookup" xml:lang="en-US">
+	<title>Task: Vertical Lookup</title>
+	<shortdesc>How the <term>VLOOKUP</term> function can be used to search for article details in a
+		table.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Functions<indexterm>VLOOKUP</indexterm></indexterm>
+				<indexterm>Lookup<indexterm>vertical</indexterm></indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<taskbody>
+		<context>
+			<p>The <term>VLOOKUP</term> function looks up for a supplied value in the first column of a list
+				(table), and returns the corresponding value from another column.</p>
+			<p>Syntax: <codeph>VLOOKUP(lookup_value, table_array, col_index_num,
+					[range_lookup])</codeph></p>
+			<p>The last argument is optional and can be set to TRUE or FALSE.<ul>
+					<li>FALSE : Search for an exact match with the supplied lookup_value.</li>
+					<li>TRUE : Give the closest match below the supplied value if an exact match can
+						not be found.</li>
+				</ul><note type="attention">Most of the times it is best to search for an exact
+					match, otherwise incorrect results are possible. If an approximation is allowed
+					then the left column of the table_array must be in ascending order.</note></p>
+			<p>In the next figure is an overview of hard drives, with the article number in the first column.
+                With the VLOOKUP function you can find the capacity, type and price of an article if
+                you specify the article number.<fig>
+                    <title>Overview hard drives</title>
+                    <image keyref="Example_Vlookup">
+                        <alt>Overview hard drives</alt>
+                    </image>
+                </fig> Cell D2 is the input cell for the article number to be searched. The cells
+                D4:D7 are for the lookup formulas.</p>
+			<note type="other" othertype="File"><filepath>Harddisks.xlsx</filepath></note>
+		</context>
+		<steps>
+			<step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+				<cmd/>
+			</step>
+			<step>
+				<cmd>Select cell <uicontrol>D4</uicontrol> and enter the formula:
+						<userinput>=VLOOKUP($D$2,$B$11:$E$22,1,FALSE)</userinput>.</cmd>
+				<stepresult>As result the error <systemoutput>#N/A</systemoutput> appears in the cell. This is
+					because there is no search value in cell D2.</stepresult>
+			</step>
+			<step>
+				<cmd>Enter in cell <uicontrol>D2</uicontrol> the value <userinput>208</userinput>.</cmd>
+				<stepresult>In cell D4 now appears <systemoutput>208</systemoutput>, the article
+					number.</stepresult>
+			</step>
+			<step>
+				<cmd>Now enter the correct lookup formulas in the other three cells.</cmd>
+				<substeps>
+					<substep>
+						<cmd>in D5 the formula: <userinput>=VLOOKUP($D$2,$B$11:$E$22,2,FALSE)</userinput></cmd>
+					</substep>
+					<substep>
+						<cmd>in D6 the formula: <userinput>=VLOOKUP($D$2,$B$11:$E$22,3,FALSE)</userinput></cmd>
+					</substep>
+					<substep>
+						<cmd>in D7 the formula: <userinput>=VLOOKUP($D$2,$B$11:$E$22,4,FALSE)</userinput></cmd>
+					</substep>
+				</substeps>
+			</step>
+		</steps>
+		<result>
+			<fig>
+                <title>Results VLOOKUP</title>
+                <image keyref="Example_Vlookup_Result">
+                    <alt>Results VLOOKUP</alt>
+                </image>
+            </fig>
+		</result>
+	</taskbody>
+</task>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="worksheet_cell_movements" xml:lang="en-US">
+    <title>Shortcuts cell movements</title>
+    <shortdesc>Shortcuts for movement of the mouse cursor.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Shortcuts</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <refbody>
+        <simpletable>
+            <sthead>
+                <stentry>Shortcut</stentry>
+                <stentry>Active cell becomes</stentry>
+            </sthead>
+            <strow>
+                <stentry>Arrow Up</stentry>
+                <stentry>one cell up</stentry>
+            </strow>
+            <strow>
+                <stentry>Arrow Right</stentry>
+                <stentry>one cell right</stentry>
+            </strow>
+            <strow>
+                <stentry>Arrow Down</stentry>
+                <stentry>one cell down</stentry>
+            </strow>
+            <strow>
+                <stentry>Arrow Left</stentry>
+                <stentry>one cell left</stentry>
+            </strow>
+            <strow>
+                <stentry>CTRL arrow right</stentry>
+                <stentry>right-most cell of the current data region, otherwise the last cell in the
+                    row</stentry>
+            </strow>
+            <strow>
+                <stentry>CTRL arrow left</stentry>
+                <stentry>left-most cell of the current data region, otherwise the first cell in the
+                    row</stentry>
+            </strow>
+            <strow>
+                <stentry>CTRL arrow up</stentry>
+                <stentry>top-most cell of the current data region, otherwise the first cell in the
+                    column</stentry>
+            </strow>
+            <strow>
+                <stentry>CTRL arrow down</stentry>
+                <stentry>bottom-most cell of the current data region, otherwise the last cell in the
+                    column</stentry>
+            </strow>
+            <strow>
+                <stentry>Home</stentry>
+                <stentry>first cell in the row</stentry>
+            </strow>
+            <strow>
+                <stentry>CTRL Home</stentry>
+                <stentry>first cell in sheet, A1</stentry>
+            </strow>
+        </simpletable>
+    </refbody>
+</reference>

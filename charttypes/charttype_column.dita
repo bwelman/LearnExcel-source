@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="charttype_column" xml:lang="en-US">
+    <title>Task: Column Chart</title>
+    <shortdesc>A chart type that is very suitable for displaying time series.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Column chart</indexterm>
+                <indexterm>Chart<indexterm>column</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>If time units like years, quarters, months, weeks and days are part of the data, then
+                column charts are the most suitable type. Don't use too many data points. Five to
+                six values are maximum. When you have more than 6 values on the horizontal axis then
+                it is better to choose a line chart.</p>
+        </context>
+        <section><title>Problem</title><p>The following figure shows the market shares for some
+                supermarket chains for the years 2012-2016 in the Netherlands (source:
+                Distrifood)</p>
+            <fig>
+                <title>Market shares for some supermarket chains in 2012-2016</title>
+                <image keyref="column_data">
+                    <alt>Market shares for some supermarket chains in 2012-2016</alt>
+                </image>
+            </fig><p>This data should be displayed in a column chart as shown in the following
+                figure.</p><fig>
+                <title>Column chart of market shares for some supermarket chains</title>
+                <image keyref="column_result">
+                    <alt>Column chart of market shares for some supermarket chains</alt>
+                </image>
+            </fig><note type="other" othertype="File"
+            ><filepath>Chart_Column.xlsx</filepath></note></section>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open"
+                conrefend="../common/reuse_task_parts.dita#reuse_task_parts/Select_Cell">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>Insert</uicontrol>
+                        <uicontrol>Insert Column or Bar Chart (group Charts)</uicontrol>
+                        <uicontrol>Clustered Column</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>The column chart appears in the worksheet. There are still some
+                    adjustments to be made.</stepresult>
+            </step>
+            <step>
+                <cmd>Modify the text of the title: <userinput>Market shares supermarket
+                        chains</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Add vertical axis title with the tex <userinput>Market share (%)</userinput>
+                    .</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>Insert</uicontrol>
+                        <uicontrol>Text Box (group Text)</uicontrol>
+                    </menucascade>.</cmd>
+            </step>
+            <step>
+                <cmd>Draw a rectangle with the mouse in the bottom right corner and then type the text <userinput>Source: Distrifood</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd><menucascade>
+                        <uicontrol>Select text</uicontrol>
+                        <uicontrol>right mouse click</uicontrol>
+                        <uicontrol>Font</uicontrol>
+                        <uicontrol>tab Font</uicontrol>
+                        <uicontrol>Size 9</uicontrol>
+                        <uicontrol>OK</uicontrol>
+                    </menucascade>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

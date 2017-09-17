@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="function_overview_datetime" xml:lang="en-US">
+  <title>Overview Date and Time Functions</title>
+  <shortdesc>An overview of some functions for day and time.</shortdesc>
+  <prolog>
+    <critdates>
+        <created date="2017-08-31"/>
+        <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <indexterm>Functions<indexterm>date and
+            time</indexterm><indexterm>DAYS360</indexterm><indexterm>DATE</indexterm><indexterm>NOW</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section>
+      <title>DAYS360</title>
+      <p>This function returns the number of days between 2 dates, based on a 360-day year (12
+        months of 30 days). </p>
+      <codeblock>DAYS360(start_date,end_date,[method])</codeblock>
+      <parml>
+        <plentry>
+          <pt>start_date</pt>
+          <pd>Required. The start of the period. Preferably use the DATE function to specify the
+            date.</pd>
+        </plentry>
+        <plentry>
+          <pt>end_date</pt>
+          <pd>Required. The end of the period. Preferably use the DATE function to specify the
+            date.</pd>
+        </plentry>
+        <plentry>
+          <pt>method</pt>
+          <pd>Optional. TRUE for European method, FALSE (default) for US method.</pd>
+        </plentry>        
+      </parml>
+    </section> 
+    <section>
+      <title>DATE</title>
+      <p>This function converts the supplied year, month and date to a serial number that represents
+        a particular date. If the cell format is general then the result will be displayed as a
+        date.</p>
+      <codeblock>DATE(year, month, day)</codeblock>
+      <parml>
+        <plentry>
+          <pt>year</pt>
+          <pd>Required. The year. Preferably use 4 digits for the year.</pd>
+        </plentry>
+        <plentry>
+          <pt>month</pt>
+          <pd>Required. The month number.</pd>
+        </plentry>
+        <plentry>
+          <pt>day</pt>
+          <pd>Required. The day number.</pd>
+        </plentry>        
+      </parml>
+    </section>
+    <section>
+      <title>NOW</title>
+      <p>This function returns the current date and time. The function has no arguments. The result
+        is a serial number and if the cell format is general then it will be displayed as day and
+        time. The function updates every time your Excel worksheet is refreshed. Manual refreshing
+        is possible via key F9.</p>
+      <codeblock>NOW()</codeblock>
+    </section>
+  </refbody>
+</reference>

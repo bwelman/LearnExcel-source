@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="data_edit" xml:lang="en-US">
+    <title>Changing cell content</title>
+    <shortdesc>The contents of a cell can be modified when the cell is in <term>editing</term>
+        mode.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Editing<indexterm>content cell</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>The data in a cell can be edited in one of the following ways:</p>
+        <ul>
+            <li>Double click the cell. The cursor will be placed in the middle of the cell and the
+                content can be edited directly within the cell.</li>
+            <li>Select the cell and press F2. The cursor will be placed at the end of the cell
+                content and the content can be edited.</li>
+            <li>Select the cell and click in the formula bar on the place where you want to start
+                editing.</li>
+        </ul>
+        <p>When the cell is in editing mode, the mode on the status bar (bottom left) has been
+            changed from <systemoutput>Ready</systemoutput> to <systemoutput>Edit</systemoutput>. To
+            the left of the formula bar two new icons appear: <image keyref="Formulabar_Icons"/>.
+            The left one for <uicontrol>Cancel</uicontrol> and the next for
+                <uicontrol>Enter</uicontrol>.</p>
+        <note type="attention">The operation must be terminated with the
+                <uicontrol>Enter</uicontrol> button to change the mode in
+                <systemoutput>Ready</systemoutput>.</note>
+    </conbody>
+</concept>

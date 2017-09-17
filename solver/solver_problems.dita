@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="solver_problems" xml:lang="en-US" >
+	<title>Not a feasible solution. What now?</title>
+	<shortdesc>Possibilities for next steps if the Solver can not find an answer.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Solver<indexterm>no solution</indexterm></indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<conbody>
+		<p>Regularly the Solver reports that no solution could be found:</p>
+		<fig>
+            <title>Dialog box <q>No solution</q></title>
+            <image keyref="solver_results_nosolution_dialogbox">
+                <alt>Dialog box when the solver could not find a feasible solution</alt>
+            </image>
+        </fig>
+		<p>There are two possibilities now:</p>
+		<ol>
+			<li>There is no solution for the formulated problem.</li>
+			<li>There is a solution for the formulated problem, but the Solver could not find it.</li>
+		</ol>
+		<p>In most cases you don't know with certainty which situation is present. There are a few
+			guidelines to investigate whether the solution can be found by the Solver.</p>
+		<section>
+			<title>Changing start values <term>variable cells</term></title>
+			<p>Whether it is possible for the Solver to find a solution or not depends on the starting values
+				of the variable cells, among other things. Experimenting with different starting
+				values can sometimes help finding a solution.</p>
+		</section>
+		<section>
+			<title>Changing Solver options</title>
+			<p>Finding a solution also depends on the way in which the Solver works. The search for a
+				solution follows a so-called <term>iterative</term> process. An
+					<term>iteration</term> is the repeated recalculation of a worksheet until a
+				specific condition is met. The Solver has a number of settings for this iteration
+				process. Clicking the button <uicontrol>Options</uicontrol> in the dialog box
+					<wintitle>Solver Parameters</wintitle> displays a window for changing several
+				options of the Solver.</p>
+			<fig>
+                <title>Solver Options</title>
+                <image keyref="solver_options">
+                    <alt>Options solver</alt>
+                </image>
+            </fig>
+			<p>The dialog box offers extensive possibilities to the solution process. Specifications for
+				certain problems can be saved as a model and reloaded. A few of these settings are
+				listed below and discussed shortly.</p>
+			<simpletable product="OF2007">
+				<sthead>
+					<stentry>Option</stentry><stentry>Explanation</stentry>
+				</sthead>
+				<strow>
+					<stentry>Max Time</stentry>
+					<stentry>The maximum seconds the solver may spend at the iteration process.</stentry>
+				</strow>
+				<strow>
+					<stentry>Iterations</stentry>
+					<stentry>The maximum number of iterations (recalculations).</stentry>
+				</strow>
+				<strow>
+					<stentry>Precision</stentry>
+					<stentry>The degree of precision for a constraint to be considered satisfied. The smaller the
+						number, the higher the precision.</stentry>
+				</strow>
+				<strow>
+					<stentry>Tolerance</stentry>
+					<stentry>The maximal error percentage allowed by <term>integer</term> solutions. The value is
+						only relevant when a restriction with <term>integer</term> is present. The
+						smaller the error rate, the longer the search process takes.</stentry>
+				</strow>
+				<strow>
+					<stentry>Assume Linear Model</stentry>
+					<stentry>Only use it when all relationships in the calculation model are <term>linear</term>.
+						The choice may then speed up the search process. Use at
+							<term>non-linear</term> models can ensure that no solution is
+						found.</stentry>
+				</strow>
+				<strow>
+					<stentry>Show Iteration Results</stentry>
+					<stentry>To see the values of each trial solution. Not normally use.</stentry>
+				</strow>
+			</simpletable>
+			<simpletable product="OF2010">
+				<sthead>
+					<stentry>Option</stentry><stentry>Explanation</stentry>
+				</sthead>
+				<strow>
+					<stentry>Constraint Precision</stentry>
+					<stentry>
+						<p>The degree of precision for a constraint. The smaller the number, the higher the
+							precision.</p>
+					</stentry>
+				</strow>
+				<strow>
+					<stentry>Max Time</stentry>
+					<stentry>The maximum seconds the solver may spend at the iteration process.</stentry>
+				</strow>
+				<strow>
+					<stentry>Iterations</stentry>
+					<stentry>The maximum number of iterations (recalculations).</stentry>
+				</strow>
+				<strow>
+					<stentry>Show iteration results</stentry>
+					<stentry>To see the values of each trial solution. Usually not used.</stentry>
+				</strow>
+			</simpletable>
+		</section>
+	</conbody>
+</concept>

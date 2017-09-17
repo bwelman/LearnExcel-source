@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="intro_excel_fileformats" xml:lang="en-US">
+    <title>File formats of Excel</title>
+    <shortdesc>An overview of the new and old file formats of Excel.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>File formats</indexterm>
+                <indexterm>Compatibility mode</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <refbody>
+        <section>
+            <title>File formats for  Excel 2007, Excel 2010, Excel 2013 and Excel 2016</title>
+            <dl>
+                <dlentry>
+                    <dt>XLSX</dt>
+                    <dd>This is the default format for workbooks without macros, created with Excel
+                        2007, Excel 2010, Excel 2013 and Excel 2016. In this file format macros are
+                        not allowed.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>XLSM</dt>
+                    <dd>This is the file format for workbooks with macros.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>XLSB</dt>
+                    <dd>This is a special binary file format for very large workbooks with tons of
+                        data.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>XLTX</dt>
+                    <dd>This is the file format for an Excel template file without macros.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>XLTM</dt>
+                    <dd>This is the file format for an Excel template file with macros.</dd>
+                </dlentry>
+            </dl>
+            <note type="attention">Template files can be used to generate new workbooks containing
+                the same layout and content as the template.</note>
+        </section>
+        <section>
+            <title>Old file formats</title>
+            <dl>
+                <dlentry>
+                    <dt>XLS</dt>
+                    <dd>This is the file format for workbooks created with Excel 2003 and older
+                        programs. When you open this file format in a newer Excel version, it will
+                        be opened in the <term>Compatibility mode</term>. In this mode you can make
+                        changes, but if you want to save the file, Excel checks whether the changes
+                        are supported in the old file format and displays a list of components that
+                        are not supported.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>XLT</dt>
+                    <dd>The file format for templates created with Excel 2003 and before.</dd>
+                </dlentry>
+            </dl>
+        </section>
+    </refbody>
+</reference>

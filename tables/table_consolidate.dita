@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="table_consolidate" xml:lang="en-US">
+	<title>Task: Consolidating ranges</title>
+	<shortdesc>The summarizing (consolidating) of data in separate ranges to a new range.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Summarize</indexterm>
+				<indexterm>Consolidate</indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<taskbody>
+		<context>
+			<p>Similar data in different ranges can be summarized (consolidated) into a new range. In
+                practice, the separate ranges are often in separate worksheets and the merged range
+                is placed in a new worksheet. When you consolidate the source data, you apply a
+                summary function (sum, average, count, ...) to create the summary data. To
+                consolidate ranges, the columns must have a heading, a <term>label</term>.</p>
+			<note type="other" othertype="File"><filepath>Consolidation.xlsx</filepath></note>
+		</context>
+		<steps>
+			<step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+				<cmd/>
+			</step>
+			<step>
+				<cmd>Select cell <uicontrol>A1</uicontrol> in the worksheet <uicontrol>Total</uicontrol>.</cmd>
+				<info>The lists to summarize are in the worksheets <wintitle>PRA</wintitle> and
+						<wintitle>PRB</wintitle>. The consolidated data will be put in worksheet
+						<wintitle>Total</wintitle>.</info>
+			</step>
+			<step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>Data</uicontrol>
+                        <uicontrol>Consolidate (group Data Tools)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box <wintitle>Consolidate</wintitle></title>
+                        <image keyref="consolidate_dialogbox">
+                            <alt>Dialog box consolidate</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+			<step>
+				<cmd>Check that the function <option>Sum</option> is selected. If not, select this
+					function.</cmd>
+			</step>
+			<step>
+				<cmd>Put the cursor in the box <varname>Reference</varname>.</cmd>
+			</step>
+			<step>
+				<cmd>Select <menucascade>
+						<uicontrol>worksheet PRA</uicontrol>
+						<uicontrol>range A1:B7</uicontrol>
+						<uicontrol>Add</uicontrol>
+					</menucascade>.</cmd>
+			</step>
+			<step>
+				<cmd>Select <menucascade>
+						<uicontrol>worksheet PRB</uicontrol>
+						<uicontrol>range A1:B7</uicontrol>
+						<uicontrol>Add</uicontrol>
+					</menucascade>.</cmd>
+			</step>
+			<step>
+				<cmd>Check Use labels in <option>Top row</option> and <option>Left column</option></cmd>
+				<stepresult>
+					<fig>
+                        <title>Dialog box <wintitle>Consolidate</wintitle></title>
+                        <image keyref="consolidate_references">
+                            <alt>Dialog box consolidate</alt>
+                        </image>
+                    </fig>
+				</stepresult>
+			</step>
+			<step>
+				<cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+				<stepresult>
+					<fig>
+                        <title>Result after consolidation</title>
+                        <image keyref="consolidate_result">
+                            <alt>Result after consolidation</alt>
+                        </image>
+                    </fig>
+					<note type="attention">The aggregation is static. When the source data change, the
+						consolidation results will not, then you should perform a new consolidation.
+						Using pivot tables is often a better choice to summarize data.</note>
+				</stepresult>
+			</step>
+		</steps>
+	</taskbody>
+</task>

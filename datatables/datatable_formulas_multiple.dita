@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="datatable_formulas_multiple" xml:lang="en-US">
+    <title>Task: Calculating multiple values of formulas</title>
+    <shortdesc>An example using a data table with 1 <term>input cell</term> to calculate the values
+        for multiple formulas.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>The task is to calculate the y-values of four functions for different x-values.</p>
+            <fig>
+                <title>Calculation model for 4 formulas</title>
+                <image keyref="datatable_formulas4">
+                    <alt>Calculation model for 4 formulas</alt>
+                </image>
+            </fig>
+            <p>The <term>input cell</term> will be <userinput>B1</userinput>. This is the cell where
+                the different x-values are added. What formulas are used can be seen in the cells
+                    <userinput>C2:F2</userinput>. The formulas themselves are in the cells
+                    <userinput>C3:F3</userinput>. The x-values are in the cells
+                    <userinput>B4:B9</userinput>.</p>
+            <note type="other" othertype="File"><filepath>Function_values.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Add the correct formulas in cells <uicontrol>C3:F3</uicontrol>:</cmd>
+                <substeps>
+                    <substep>
+                        <cmd>In <uicontrol>C3</uicontrol> formula
+                            <userinput>=2*B1-1</userinput></cmd>
+                    </substep>
+                    <substep>
+                        <cmd>In <uicontrol>D3</uicontrol> formula
+                            <userinput>=-3*B1+2</userinput></cmd>
+                    </substep>
+                    <substep>
+                        <cmd>In <uicontrol>E3</uicontrol> formula <userinput>=B1^2</userinput></cmd>
+                    </substep>
+                    <substep>
+                        <cmd>In <uicontrol>F3</uicontrol> formula
+                                <userinput>=B1^2-2*B1+1</userinput></cmd>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>Select the range for the data table <uicontrol>B3:F9</uicontrol>.</cmd>
+            </step>
+            <step conref="datatable_rental_fixed.dita#datatable_rental_fixed/datatable_insert">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Put the cursor in box <option>Column input cell</option> and click on cell
+                        <userinput>B1</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Results of the formulas in a data table</title>
+                        <image keyref="datatable_formulas4_results">
+                            <alt>Results of the formulas in a data table</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+        </steps>
+        <result>The formula in the result cells is an <term>array formula</term>:
+                <systemoutput>{=TABLE(,B1)}</systemoutput>. Check this.</result>
+    </taskbody>
+</task>

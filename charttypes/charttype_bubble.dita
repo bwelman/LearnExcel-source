@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="charttype_bubble" xml:lang="en-US">
+    <title>Task: Bubble Chart</title>
+    <shortdesc>A bubble chart can be used if you want to display the relationship between three
+        numeric variables.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Bubble chart</indexterm>
+                <indexterm>XYZ chart</indexterm>
+                <indexterm>Charts<indexterm>bubble</indexterm><indexterm>XYZ</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>A bubble chart is an extension to an scatter chart. In a scatter chart two numeric
+                variables (X and Y) are plotted against each other. At a bubble chart, a third
+                variable (Z) is used. The point in the scatter chart is now replaced by a bubble (or
+                circle). The center of the bubble is determined by the variable X and Y and the size
+                (radius) of the bubble by the variable Z. In addition, other characteristics of the
+                bubble, like the color, can be used to make additional differences. These
+                differences are based on qualitative, non-numeric values.</p>
+        </context>
+        <section>
+            <title>Problem</title>
+            <p>The following figure shows how the market share is related to turnover and the number
+                of products.</p>
+            <fig>
+                <title>Market shares</title>
+                <image keyref="bubble_data">
+                    <alt>Market shares</alt>
+                </image>
+            </fig>
+            <p>The data is to be displayed in a bubble area chart, as shown in the following
+                figure.</p>
+            <fig>
+                <title>Bubble chart for market shares</title>
+                <image keyref="bubble_result">
+                    <alt>Bubble chart for market shares</alt>
+                </image>
+            </fig>
+            <note type="other" othertype="File"><filepath>Chart_Bubble.xlsx</filepath></note>
+        </section>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Give the values for turnover and market share a proper format (see first
+                    picture).</cmd>
+                <info>
+                    <note type="attention">A good layout of the source data ensures that you also
+                        get a good format in the chart.</note>
+                </info>
+            </step>
+            <step>
+                <cmd>Select any cell in the data area.</cmd>
+            </step>
+            <step>
+                <cmd>Choose<menucascade>
+                        <uicontrol>Insert</uicontrol>
+                        <uicontrol>Insert Scatter (XY) or Bubble Chart (group Charts)</uicontrol>
+                        <uicontrol>3-D Bubble</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Default bubble chart</title>
+                        <image keyref="bubble_default">
+                            <alt>Default bubble chart</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Change the chart title in <userinput>Market shares</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Add a horizontal axis title with the text <userinput>Number of
+                        products</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Add a vertical axis title with the text <userinput>Turnover</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Change the scale of the vertical axis so that it runs from
+                        <userinput>0</userinput> to <userinput>70000</userinput>.</cmd>
+                <info>
+                    <note type="tip">At axis options, set the minimum on fixed 0 and the maximum on
+                        fixed 70000.</note>
+                </info>
+            </step>
+            <step>
+                <cmd>Add data labels with their position in the center of the bubble.</cmd>
+                <stepresult>There are data labels added, however not the desired ones. Instead of
+                    the percentages of market share these are the turnover amounts. This will be
+                    modified in the next step.</stepresult>
+            </step>
+            <step>
+                <cmd>Select the data labels, then <menucascade>
+                        <uicontrol>Right Click</uicontrol>
+                        <uicontrol>Format Data labels</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>The task panel Format Data Labels is displayed.</stepresult>
+            </step>
+            <step>
+                <cmd>Select at <q>Label Contains</q> only <option>Bubble Size</option>.</cmd>
+            </step>
+            <step>
+                <cmd>Select the bubbles and change the fill color in gold.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

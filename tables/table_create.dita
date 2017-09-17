@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="table_create" xml:lang="en-US">
+    <title>Task: Convert Range to Table</title>
+    <shortdesc>How to convert a range to an Excel table.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Table<indexterm>create</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <note type="other" othertype="File"><filepath>Candyboxes.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select a cell within the data range.</cmd>
+            </step>
+            <step>
+                <cmd><menucascade>
+                        <uicontrol>tab Insert</uicontrol>
+                        <uicontrol>Table</uicontrol>
+                    </menucascade></cmd>
+                <stepresult>
+                    <p>The dialogbox <wintitle>Create Table</wintitle> appears. The address of the
+                        range to convert is already present.</p>
+                    <fig>
+                        <title>Dialogbox Create Table</title>
+                        <image keyref="candybox_table_create">
+                            <alt>Dialogbox Create Table</alt>
+                        </image>
+                    </fig><note type="important">If your range has labels that you want to use as
+                        column headers, check the option <option>My table has headers</option>. When
+                        there no labels, then uncheck this option. Excel adds automatically headers
+                        to each column with generic names: Column1, Column2, …</note>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+            </step>
+        </steps>
+        <result>
+            <fig>
+                <title>Table Candyboxes</title>
+                <image keyref="candybox_table">
+                    <alt>Table Candyboxes</alt>
+                </image>
+            </fig>
+            <p>The range is converted to a table:<ul>
+                    <li>A table format (style) is applied.</li>
+                    <li>Filter/Sorting buttons appear in each column heading.</li>
+                    <li>The tab <uicontrol>Design (Table Tools)</uicontrol> appears.</li>
+                </ul></p>
+            <fig>
+                <title>Design ribbon</title>
+                <image keyref="ribbon_table_design">
+                    <alt>Design ribbon</alt>
+                </image>
+                <note type="notice">Depending on your screen width it s possible that you see some
+                    styles instead of the button Quick Styles (group Table Styles).</note>
+            </fig>
+        </result>
+        
+    </taskbody>
+</task>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="meas_trendlijn_functies" xml:lang="en-US">
+    <title>Task: Functions for a linear trend line</title>
+    <shortdesc>How to use the functions <synph>SLOPE</synph> en <synph>INTERCEPT</synph> for a
+        linear trend line.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Trend line</indexterm>
+                <indexterm>Lineare trend line</indexterm>
+                <indexterm>SLOPE</indexterm>
+                <indexterm>INTERCEPT</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>The <term>slope</term> of the trendline and the interception with the y-axis can be
+                determined with the functions <option>SLOPE</option> and
+                <option>INTERCEPT</option>.</p>
+            <note type="other" othertype="File"><filepath>Prodtime_Weight.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select an empty cell on the worksheet and call the wizard <wintitle>Insert
+                        function</wintitle>.</cmd>
+            </step>
+            <step>
+                <cmd>Select in <varname>category</varname>
+                    <varname>Statistical</varname> the function <option>SLOPE</option>. Click
+                        <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>
+                    <p>The dialogbox <wintitle>Function Arguments</wintitle> is displayed.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Specify for <varname>Known_ys</varname> range <userinput>B2:B11</userinput> and
+                    for <varname>Known_xs</varname> range <userinput>A2:A11</userinput>. Click then
+                        <uicontrol>OK</uicontrol></cmd>
+                <stepresult>The cell displays the value of the slope:
+                        <systemoutput>2,95503212</systemoutput></stepresult>
+            </step>
+            <step>
+                <cmd>Determine the same way in another cell the value of
+                    <option>INTERCEPT</option>.</cmd>
+                <stepresult>The value of the intercept is: 41,99036403</stepresult>
+            </step>
+        </steps>
+        <result>From the values for <option>SLOPE</option> and <option>INTERCEPT</option> you can
+            determine the equation of the trend
+            line:<codeblock>Productiontime = 2,95503212*Weight + 41,99036403</codeblock></result>
+    </taskbody>
+</task>

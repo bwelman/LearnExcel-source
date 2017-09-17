@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="forecasts_trendline_linear" xml:lang="en-US">
+    <title>Task: Linear trend line</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm/>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>A linear trend line is the best fit straight line that is used for simple linear data
+                sets. This trend line is mostly used to display a regular increase or decrease.</p>
+            <p>The comparison of the trend line is: <codeph>y = a*x + b</codeph><ul>
+                    <li>a = slope (gradient)</li>
+                    <li>b = y-intercept ( the point at which the line crosses the y-axis)</li>
+                </ul></p>
+            <p>The following example you explore the sales of the number of washing machines by a
+                certain company for eight consecutive years.</p>
+            <note type="other" othertype="File"><filepath>Trendlines.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open the practice file and select worksheet <wintitle>Linear</wintitle>.</cmd>
+            </step>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/Trendline_Start"
+                conrefend="../common/reuse_task_parts.dita#reuse_task_parts/Trendline_End">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select at Trendline Options: <option>Linear</option>. Let equation and R-squared value be displayed in the chart.</cmd>
+            </step>
+            <step>
+                <cmd>Change the chart title in <userinput>Sales washing machines</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Add Axis titles and change title Y-axis in <userinput>Number</userinput> and
+                    title X-axis in <userinput>Year</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Drag in the chart the equation to an empty place.</cmd>
+            </step>
+        </steps>
+        <result>
+            <fig>
+                <title>Example linear trend line</title>
+                <image keyref="example_lin">
+                    <alt>Example linear trend line</alt>
+                </image>
+            </fig>
+            <p>R<sup>2</sup> = 0.9736 which means that the trend line fits the data very well.</p>
+        </result>
+        <example>
+            <title>Worksheet functions</title>
+            <p>Equation: y = a*x + b</p>
+            <p>Slope (a)<ul>
+                    <li>=SLOPE(known_ys , known_xs)</li>
+                    <li>=INDEX(LINEST(known_ys , known_xs) ; 1; 1)</li>
+                </ul></p>
+            <p>Intercept (b)<ul>
+                    <li>=INTERCEPT(known_ys , known_xs)</li>
+                    <li>=INDEX(LINEST(known_ys , known_xs) ; 1; 2))</li>
+                </ul></p>
+            <p>Correlation coefficient (R) = CORREL(known_ys , known_xs)<note>R-square can be
+                    calculated by squaring R.</note></p>
+        </example>
+    </taskbody>
+</task>

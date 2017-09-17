@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="formatting_table_style" xml:lang="en-US">
+    <title>Task: Table Styles</title>
+    <shortdesc>To practice the formatting of a list with one of the predefined styles.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Table<indexterm>style</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>Excel has a number of predefined styles for formatting a list (table) quickly and
+                easily.<note type="other" othertype="File"
+                ><filepath>Personnel.xlsx</filepath></note></context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open"
+                conrefend="../common/reuse_task_parts.dita#reuse_task_parts/Select_Cell">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>Home</uicontrol>
+                        <uicontrol>Format as Table (group Styles)</uicontrol>
+                    </menucascade>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose a style from the examples shown, for example <uicontrol>Table Style Medium
+                    4</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box <wintitle>Format As Table</wintitle></title>
+                        <image keyref="Tablestyle_Dialogbox">
+                            <alt>Dialog box format as table</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+            </step>
+        </steps>
+        <result>
+            <fig>
+                <title>Result table formatting</title>
+                <image keyref="Tablestyle_Result">
+                    <alt>Result table formatting</alt>
+                </image>
+            </fig></result>
+    </taskbody>
+</task>

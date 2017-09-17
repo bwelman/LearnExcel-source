@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="table_search_form" xml:lang="en-US">
+    <title>Task: Searching data with a form</title>
+    <shortdesc>Searching records that meet certain conditions with a form.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Form</indexterm>
+                <indexterm>Searching<index-see-also>Finding</index-see-also></indexterm>
+                <indexterm>Finding<indexterm>records in lists</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <prereq conref="table_data_entry_form.dita#table_data_entry_form/qat_form"/>
+        <context>A data form is very useful to search a range/table for records that meet specific
+            conditions. You will learn this in the following task. At the end of this task you will
+            find examples on how criteria can be applied.<note type="other" othertype="File"
+                    ><filepath>Personnel.xlsx</filepath></note></context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open"
+                conrefend="../common/reuse_task_parts.dita#reuse_task_parts/Select_Cell">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Click on the button <uicontrol>Form</uicontrol>.</cmd>
+                <stepresult>
+                    <p>The data form appears.</p>
+                    <fig>
+                        <title>Form Personnel</title>
+                        <image keyref="personnel_form">
+                            <alt>Form personnel</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Criteria</uicontrol>.</cmd>
+                <stepresult>
+                    <p>The form is cleared and can be used to fill in the search criteria.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Type in the boxes besides Department and Division respectively the search texts
+                        <userinput>Accounting</userinput> and <userinput>Printers</userinput>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Form Personnel with search criteria</title>
+                        <image keyref="personnel_form_search">
+                            <alt>Form personnel with search criteria</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Find Next</uicontrol>.</cmd>
+                <stepresult>The data of the first person who meets the criteria is
+                    shown.</stepresult>
+            </step>
+            <step>
+                <cmd>Browse using the buttons <uicontrol>Find Next</uicontrol> and <uicontrol>Find
+                        Prev</uicontrol> through the list. There are a total of 5 people matching
+                    your criteria.</cmd>
+            </step>
+        </steps>
+        <example>
+            <title>Examples search criteria</title>
+            <p>In the table below are some examples of search criteria. Try this out and verify that
+                the found records match the criteria. It is also possible to combine multiple
+                criteria. Always first make the criteria list empty before you start with a new
+                exercise.</p>
+            <table frame="all">
+                <tgroup cols="3">
+                    <thead>
+                        <row>
+                            <entry>Field</entry>
+                            <entry>Value</entry>
+                            <entry>Explanation</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Last name</entry>
+                            <entry>Ja</entry>
+                            <entry>Searches for people whose last name begins with
+                                <q>Ja</q>.</entry>
+                        </row>
+                        <row>
+                            <entry>Last name</entry>
+                            <entry>*os</entry>
+                            <entry>Searches for people with "os" in the last name.</entry>
+                        </row>
+                        <row>
+                            <entry>Salary</entry>
+                            <entry>>70000</entry>
+                            <entry>Searches for people with a salary greater than 70000</entry>
+                        </row>
+                        <row>
+                            <entry>Start date</entry>
+                            <entry>&lt;1/1/1990</entry>
+                            <entry>Searches for people with a start date before 1/1/1990</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </example>
+    </taskbody>
+</task>

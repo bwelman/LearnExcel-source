@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="calculation_names_cells" xml:lang="en-US">
+    <title>Cell Names</title>
+    <shortdesc>The use of meaningful names for cells and the rules for naming.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Cell names</indexterm>
+                <indexterm>Naming cells</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Working with cell addresses in formulas can be confusing, formulas are hard to read and
+            it is difficult to see what the intention of the formula is. Fortunately, you can give
+            meaningful names to cells and areas. A formula for example can then be
+                <codeph>=Sales-Purchases</codeph>.</p>
+        <p>Rules for naming:</p>
+        <ul>
+            <li>Names should begin with a letter or with the underscore symbol (_), digits are
+                allowed after that. It is not allowed to start a name with a digit.</li>
+            <li>Names cannot contain spaces. To simulate a space you can use the underscore symbol,
+                for example Sales_2010.</li>
+            <li>Most symbols (comma, colon, exclamation point, etc.) can not be used.</li>
+        </ul>
+    </conbody>
+</concept>

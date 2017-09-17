@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="datatable_rental_fixed" xml:lang="en-US">
+    <title>Task: Rental cottage</title>
+    <shortdesc>A simple example of a data table with 1 <term>input cell</term>.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>A summer cottage can be rented for 450 dollars a week. The expenses per week are 175
+                dollar. Using a data table, calculate the revenues for 5, 10, 15, ..., 50 weken.</p>
+            <fig>
+                <title>Rental cottage with fixed price</title>
+                <image keyref="cottage_rental_fixed">
+                    <alt>Rental cottage with fixed price.</alt>
+                </image>
+            </fig>
+            <p>The data table will be in A7:B17. The formula with a reference to the <term>input
+                    cell B5</term> comes in B7. The values for the variable are in range A8:A17 and
+                the results are going to B8:B17.</p>
+            <note type="other" othertype="File"><filepath>Rental_fixed.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Type in cell <uicontrol>B7</uicontrol> the formula
+                        <userinput>=B5*(B3-B4)</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Select the range for the data table <uicontrol>A7:B17</uicontrol>.</cmd>
+            </step>
+            <step id="datatable_insert">
+                <cmd>Choose tab <menucascade>
+                        <uicontrol>Data</uicontrol>
+                        <uicontrol>What-If Analysis (group Forecast)</uicontrol>
+                        <uicontrol>Data Table</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Input cells for Data Table</title>
+                        <image keyref="datatable_dialogbox">
+                            <alt>Input cells for Data Table</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Put the cursor in box <option>Column input cell</option> and click on cell
+                        <userinput>B5</userinput>.</cmd>
+                <stepresult>Excel transforms it to <systemoutput>$B$5</systemoutput>.</stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>The data table will be filled with the calculated values.</stepresult>
+            </step>
+        </steps>
+        <result>The formula in the result cells is an <term>array formula</term>:
+                <systemoutput>{=TABLE(,B5)}</systemoutput>. Check this.</result>
+    </taskbody>
+</task>

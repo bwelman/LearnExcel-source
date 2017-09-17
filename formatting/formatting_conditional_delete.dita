@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="formatting_conditional_delete" xml:lang="en-US">
+    <title>Removing conditional formats</title>
+    <shortdesc>How to remove conditional formats.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Conditional format<indexterm>remove</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>A conditional format can be removed as follows:</p>
+        <ol>
+            <li>Select the cell(s) with the conditional format.</li>
+            <li>Choose <menucascade>
+                    <uicontrol>tab Home</uicontrol>
+                    <uicontrol>Conditional Formatting (group Styles)</uicontrol>
+                    <uicontrol>Clear Rules</uicontrol>
+                    <uicontrol>Clear Rules from Selected Cells</uicontrol>
+                </menucascade>.</li>
+        </ol>
+    </conbody>
+</concept>

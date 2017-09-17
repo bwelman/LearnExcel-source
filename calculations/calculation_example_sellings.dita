@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="calculation_example_sellings" xml:lang="en-US">
+    <title>Task: Calculate sellings</title>
+    <shortdesc>A step by step explanation of a simple example with formulas.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Calculations<indexterm>example</indexterm></indexterm>
+                <indexterm>Formulas</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>This is an exercise for a very simple calculation, see the figure below. Three cells
+                contain numbers:<ul>
+                    <li>C1, the purchase amount.</li>
+                    <li>B2, the profit rate.</li>
+                    <li>B5, the VAT rate.</li>
+                </ul>Four cells (C2, C3, C5 and C6) contain formulas. The idea is that if you change
+                one or more of the values in C1, B2 or B5 all the depending values are automatically
+                adjusted.</p>
+            <fig>
+                <title>Example calculation purchase-profit-selling</title>
+                <image keyref="Example_Sellings">
+                    <alt>Example calculation purchase-profit-selling</alt>
+                </image>
+            </fig>
+        </context>
+        <steps>
+            <step>
+                <cmd>Start with a new worksheet in a new workbook.</cmd>
+            </step>
+            <step>
+                <cmd>Type the texts you see in column A.</cmd>
+                <stepresult>Some texts don't fit within the column width. That is not important at
+                    the moment. If desired, you can make the column wider.</stepresult>
+            </step>
+            <step>
+                <cmd>In cell <uicontrol>B2</uicontrol> enter the value <userinput>25%</userinput>,
+                    in cell <uicontrol>B5</uicontrol> the value <userinput>21%</userinput> and in
+                    cell <uicontrol>C1</uicontrol> the value <userinput>4000</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter in cell <uicontrol>C2</uicontrol> the formula
+                        <userinput>=B2*C1</userinput>.</cmd>
+                <stepresult>After pressing the <uicontrol>Enter</uicontrol> key, in cell
+                        <uicontrol>C2</uicontrol> the result of the formula appears:
+                        <systemoutput>1000</systemoutput>. This is the calculated
+                    profit.</stepresult>
+            </step>
+            <step>
+                <cmd>Enter in cell <uicontrol>C3</uicontrol> the formula
+                        <userinput>=C1+C2</userinput>.</cmd>
+                <stepresult>Upon completion of the input in cell C3 the result appears:
+                        <systemoutput>5000</systemoutput>.</stepresult>
+            </step>
+            <step>
+                <cmd>Enter in cell <uicontrol>C5</uicontrol> the formula
+                        <userinput>=B5*C3</userinput>.</cmd>
+                <stepresult>After completion in cell <uicontrol>C5</uicontrol> the result appears:
+                        <systemoutput>1050</systemoutput>.</stepresult>
+            </step>
+            <step>
+                <cmd>Enter in cell <uicontrol>C6</uicontrol> the formula
+                        <userinput>=C3+C5</userinput>.</cmd>
+                <stepresult>After completion in cell <uicontrol>C6</uicontrol> the result appears:
+                        <systemoutput>6050</systemoutput>.</stepresult>
+            </step>
+            <step>
+                <cmd>Experiment with other values for purchase, profit rate and VAT rate.</cmd>
+                <stepresult>Note that by changing the values, all formulas will be automatically
+                    recalculated.</stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

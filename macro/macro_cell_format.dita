@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="macro_cell_format" xml:lang="en-US" >
+	<title>Task: Macro Cell Format</title>
+	<shortdesc>A task in recording a macro.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Macro<indexterm>recording</indexterm><indexterm>stop
+						recording</indexterm><indexterm>running</indexterm></indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<taskbody>
+		<context>In this task you will create a macro that should format the text in the selected cell
+			with the font Comic Sans MS, bold, italic, 16 pt and red. The column width must be
+			adjusted to the width of the text in the cell. The name of the macro should be
+				<q>CellFormat</q>.</context>
+		<steps>
+			<step>
+				<cmd>Start with an empty worksheet and enter a text in any cell.</cmd>
+			</step>
+			<step>
+				<cmd>Select the cell that contains the text.</cmd>
+			</step>
+			<step>
+				<cmd>Choose <menucascade>
+						<uicontrol>Developer tab</uicontrol>
+						<uicontrol>Record Macro (group Code)</uicontrol>
+					</menucascade>.</cmd>
+			</step>
+			<step>
+				<cmd>Enter in the dialog box <wintitle>Record Macro</wintitle> the name and a description.</cmd>
+				<stepresult>
+					<fig>
+                        <title>Properties macro CellFormat</title>
+                        <image keyref="record_macro_cellformat">
+                            <alt>Properties macro CellFormat</alt>
+                        </image>
+                    </fig>
+				</stepresult>
+			</step>
+			<step>
+				<cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+			</step>
+			<step>
+				<cmd>Perform the following actions on the selected cell <menucascade>
+						<uicontrol>Right mouse click</uicontrol>
+						<uicontrol>Format Cells...</uicontrol>
+						<uicontrol>tab Font</uicontrol>
+					</menucascade> and make the following settings:</cmd>
+				<itemgroup>
+					<simpletable>
+						<strow><stentry>Font</stentry><stentry>Comic Sans MS</stentry></strow>
+						<strow><stentry>Font style</stentry><stentry>Bold Italic</stentry></strow>						
+						<strow><stentry>Size</stentry><stentry>16</stentry></strow>
+						<strow><stentry>Color</stentry><stentry>Red</stentry></strow>
+					</simpletable>				
+				</itemgroup>
+			</step>
+			<step>
+				<cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+			</step>
+			<step>
+				<cmd>Choose tab <menucascade>
+						<uicontrol>tab Home</uicontrol>
+						<uicontrol>Format (group Cells)</uicontrol>
+						<uicontrol>Autofit Column Width</uicontrol>
+					</menucascade>.</cmd>
+			</step>
+			<step>
+				<cmd>Choose <menucascade>
+                        <uicontrol>Developer tab</uicontrol>
+                        <uicontrol>Stop Recording (group Code)</uicontrol>
+                    </menucascade>.<image keyref="record_macro_stop" align="left" placement="break">
+                        <alt>Button stop recording</alt>
+                    </image></cmd>
+			</step>
+			<stepsection>Testing macro</stepsection>
+			<step>
+				<cmd>Test the macro on another cell with text.</cmd>
+				<substeps>
+					<substep>
+						<cmd>Select the cell that contains text.</cmd>
+					</substep>
+					<substep>
+						<cmd>Choose <menucascade>
+								<uicontrol>Developer tab</uicontrol>
+								<uicontrol>Macros (group Code)</uicontrol>
+							</menucascade>.</cmd>
+						<stepresult>
+							<fig>
+                                <title>Dialog box macro CellFormat</title>
+                                <image keyref="macro_cellformat_run">
+                                    <alt>Dialog box macro CellFormat</alt>
+                                </image>
+                            </fig>
+						</stepresult>
+					</substep>
+					<substep>
+						<cmd>Select <uicontrol>CellFormat</uicontrol> and click <uicontrol>Run</uicontrol>.</cmd>
+					</substep>
+				</substeps>
+				<stepresult>The cell will be formatted as specified.</stepresult>
+			</step>
+		</steps>
+	</taskbody>
+</task>

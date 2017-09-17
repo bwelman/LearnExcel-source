@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="worksheet_new" xml:lang="en-US">
+    <title>Task: Add new worksheet</title>
+    <shortdesc>Instructions on how to add a new worksheet.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Worksheet<indexterm>new</indexterm><indexterm>adding</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context/>
+        <steps>
+            <step>
+                <cmd>Start with a new blank workbook.</cmd>
+            </step>
+            <step>
+                <cmd>Click on the button <uicontrol>New sheet</uicontrol>
+                    <image keyref="Worksheet_New_Button">
+                        <alt>Button for a new worksheet.</alt>
+                    </image>.</cmd>
+                <stepresult>A new worksheet is added at the end and active. The new worksheet is
+                    automatically named <term>Sheet</term> followed by a <term>number</term>. Of
+                    course you can change this name.</stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="table_operations" xml:lang="en-US">
+    <title>Table operations</title>
+    <shortdesc>An overview of some table operations.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Table<indexterm>operations</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <section>
+            <title>Selecting rows/columns in a table</title>
+            <p>Right‐click a cell in the row or column you want to select. Then choose
+                    <uicontrol>Select</uicontrol> and then choose one of the possibilities:</p>
+            <ul>
+                <li>Table Column Data</li>
+                <li>Entire Table Column</li>
+                <li>Table Row</li>
+            </ul>
+        </section>
+        <section>
+            <title>Inserting a table row/column</title>
+            <p>Right-click a cell, choose <uicontrol>Insert</uicontrol> and then one of the
+                options:</p>
+            <ul>
+                <li>Table Columns to the Left</li>
+                <li>Table Rows Above</li>
+            </ul>
+            <p>When you select a cell in the last row or last column, you also have the options</p>
+            <ul>
+                <li>Table Column to the Right</li>
+                <li>Table Row Below</li>
+            </ul>
+            <p>At the last cell, at the bottom right, you have both possibilities.</p>
+            <p>Fast way to add a new row: Select the bottom-right cell and press the
+                    <uicontrol>Tab</uicontrol> key.</p>
+        </section>
+        <section>
+            <title>Deleting a table row/column</title>
+            <p>Right-click a cell in the row/column you want to delete, choose
+                    <uicontrol>Delete</uicontrol> and then one of the options:</p>
+            <ul>
+                <li>Table Columns</li>
+                <li>Table Rows</li>
+            </ul>
+        </section>
+        <section>
+            <title>Convert table to a range</title>
+            <p>Select a cell inside the table. Choose <menucascade>
+                    <uicontrol>tab Design (Table Tools) </uicontrol>
+                    <uicontrol>Convert to Range (group Tools)</uicontrol>
+                </menucascade> and confirm the operation.</p>
+        </section>
+        <section>
+            <title>Apply a table style</title>
+            <p>Select a cell inside the table. Choose <uicontrol>tab Design</uicontrol>. Select a
+                style from the Table Styles gallery.</p>
+        </section>
+        <section>
+            <title>Adding Total Row</title>
+            <p>Select a cell inside the table. Choose <menucascade>
+                    <uicontrol>tab Design</uicontrol>
+                    <uicontrol>Check Total Row (group Table Style Options)</uicontrol>
+                </menucascade>. </p>
+            <p>Excel automatically inserts a row named <varname>Total</varname> at the bottom of the
+                table and adds a <varname>SUBTOTAL</varname> function below the last column. Select
+                in the Total row the cell for the column you want to total, then select an option
+                from the drop-down list.</p>
+        </section>
+        <section>
+            <title>Table Name</title>
+            <p>When a table is created, then automatically a name is supplied tot the table. The
+                generated names look like Table1, Table2, … When the table is selected, you see the
+                name at <menucascade>
+                    <uicontrol>tab Design</uicontrol>
+                    <uicontrol>Table Name (group Properties)</uicontrol>
+                </menucascade> . To change the name you can type the new name in the name box.</p>
+            <p>Using appropriate names for tables can be important because when you add formulas to
+                an table, the names of tables columns automatically appears in the formulas. For
+                example: <systemoutput>=SUM(Table1[@Column3])</systemoutput></p>
+        </section>
+    </conbody>
+</concept>

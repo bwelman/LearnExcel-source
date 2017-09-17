@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="macro_over" xml:lang="en-US" >
+	<title>What are macros?</title>
+	<shortdesc>A brief description of the purpose of macros.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Macro<indexterm>description</indexterm><indexterm>VBA</indexterm></indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<conbody>
+		<p>A task you have to perform regularly in Microsoft Excel can be automated with a macro. A macro
+			is a series of commands and functions that can be executed by a single command or click.
+			A serie of commands can be put in a macro. By running the macro, those commands and
+			actions are carried out in succession.</p>
+		<p>The language in which the Excel macros are written is Visual Basic for Applications, or VBA.
+			The commands and actions of the macro are stored in a Visual Basic module. With the
+			Visual Basic editor you can edit macros, copy macros from one module to another, copy
+			macros between different workbooks and rename the modules and macros.</p>
+		<p>The simple macros can be made by recording the actions with the built-in macro recorder. After
+			starting the recorder all actions are recorded and converted to VBA code, until the
+			recorder is stopped. To get a good macro, it is therefore important to first note the
+			actions to be carried out. To record, edit and run macros, the Developer tab must be
+			made visible.</p>
+	</conbody>
+</concept>

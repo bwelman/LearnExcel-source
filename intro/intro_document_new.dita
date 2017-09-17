@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="intro_document_new" xml:lang="en-US">
+    <title>Task: Creating New Workbook</title>
+    <shortdesc>Instructions on how to create a new workbook.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Woorkbook <indexterm>create</indexterm>
+                    <indexterm>new</indexterm>
+                </indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>Any time you can create a new workbook. This can be a blank workbook, but als a new
+                workbook based on a particular template.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Click on <menucascade>
+                        <uicontrol>File</uicontrol>
+                        <uicontrol>New</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>In the right part a list with available templates is
+                    displayed.</stepresult>
+            </step>
+            <step>
+                <cmd>Click on <uicontrol>Blank workbook</uicontrol>.</cmd>
+                <stepresult>A new workbook with one worksheet is created.</stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

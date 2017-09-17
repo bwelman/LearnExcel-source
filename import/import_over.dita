@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="import_over" xml:lang="en-US" >
+	<title>Get &amp; Transform data</title>
+	<shortdesc/>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords/>
+		</metadata>
+	</prolog>
+	<conbody>
+        <p>To use <uicontrol>Get &amp; Transform</uicontrol> in Excel 2016, you actually create a
+            query in your workbook. A query enables you to connect to, preview, and transform data
+            from a wide variety of available data sources.</p>
+        <p>The first step is making a connection to a data source. When the connection is
+            established you get a preview of the data. Then you can add steps to shape and transform
+            the data. To do this, a <term>Query Editor</term> is started to create a set of
+            instructions that carry out your commands. The last step is loading the data as a table
+            in a worksheet.</p>
+        <note>You also have the possibility to load the data into the built-in Data Model.</note>
+        <p>You can also edit the query later and/or refresh the data.</p>
+        <p>To create a query, use the <uicontrol>Data</uicontrol> tab in the ribbon, then select one
+            of the actions in the <uicontrol>Get &amp; Transform</uicontrol> group.</p>
+        <fig>
+            <title>Ribbon Data</title>
+            <image keyref="ribbon_queries">
+                <alt>Ribbon Data</alt>
+            </image>
+        </fig>
+        <p>There are buttons for getting data from text/csv, web and an Excel Table/range. These
+            data sources and a lot more are available through the <uicontrol>Get Data</uicontrol>
+            button.</p>
+        <p>The group <uicontrol>Queries &amp; Connections</uicontrol> has a button for refreshing
+            queries and a button for viewing and managing existing queries and connections.</p>
+	</conbody>
+</concept>

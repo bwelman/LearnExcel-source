@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="chart_switch_dataranges" xml:lang="en-US">
+    <title>Task: Switch Rows-Columns</title>
+    <shortdesc>The source data of a chart can be both a data series per column or per row. The
+        choice of data series can be changed easily.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Chart<indexterm>data series</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>In the figure below are the yearly sales by quarter of a bakery. The annual data are
+                in columns and the quarterly data in rows.</p>
+            <fig>
+                <title>Sales bakery</title>
+                <image keyref="bakery_data">
+                    <alt>Sales bakery</alt>
+                </image>
+            </fig>
+            <p>In a chart, you can compare the years and the quarters. In the first case each year
+                forms a data series. In the second case each quarter forms a data series. When
+                creating the graph Excel tries to guess whether the columns or the rows form the
+                data series. The choice made by Excel is not always the desired one, but can easily
+                be changed.</p>
+            <fig>
+                <title>Years (columns) as data series</title>
+                <image keyref="bakery_column_years">
+                    <alt>Years (columns) as data series</alt>
+                </image>
+            </fig>
+            <note conref="../common/reuse_task_parts.dita#reuse_task_parts/Chart_File"/>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/Chart_Select">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>Design</uicontrol>
+                        <uicontrol>Switch Row/Column (group Data)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Quarters as data series</title>
+                        <image keyref="bakery_column_quarters">
+                            <alt>Quarters as data series</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>     
+        </steps>
+    </taskbody>
+</task>

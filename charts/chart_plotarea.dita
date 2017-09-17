@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="chart_area" xml:lang="en-US">
+    <title>Task: Plot Area</title>
+    <shortdesc>Options to make a chart with a coloured background or border.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Charts<indexterm>plot area</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>The plot area in a chart refers to a rectangular area of the chart that graphically
+                displays the data being charted. The plot area is the area bounded by the axes, It
+                includes the axes but not the titles. You can format the plot area for example with
+                a coloured background and border.</p>
+            <note conref="../common/reuse_task_parts.dita#reuse_task_parts/Chart_File"/>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/Chart_Select">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select the plot area, right click and choose <uicontrol>Format Plot
+                        Area</uicontrol></cmd>
+                <stepresult>Task panel <wintitle>Format Plot Area</wintitle> is
+                    displayed.</stepresult>
+            </step>
+            <step>
+                <cmd>Open option <option>Fill</option> and select <option>Solid fill</option> with a
+                        <option>light grey color</option>.</cmd>
+            </step>
+            <step>
+                <cmd>Open option <option>Border</option> and select <option>Solid line</option> with
+                    a <option>black color</option>.</cmd>
+            </step>
+        </steps>
+        <result>
+            <fig>
+                <title>Plot Area with background color and border</title>
+                <image keyref="bakery_plotarea">
+                    <alt>Plot Area with background color and border</alt>
+                </image>
+            </fig>
+        </result>
+    </taskbody>
+</task>

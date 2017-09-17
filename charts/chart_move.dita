@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="chart_move" xml:lang="en-US">
+    <title>Task: Changing chart location</title>
+    <shortdesc>A chart on a worksheet can easily be moved to another location.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Chart
+                    <indexterm>embedded</indexterm>
+                    <indexterm>location</indexterm>
+                    <indexterm>move</indexterm>
+                    <indexterm>sheet</indexterm>
+                </indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>You can create a chart on the same worksheet as the data. This is a <term>embedded
+                    chart</term>. You can also display add a chart to a separate sheet that only
+                contains a chart, a <term>chart sheet</term>. An embedded chart on a worksheet can
+                be moved by dragging it to another place, but you can also move it to a chart sheet.
+                Both methods are practiced in this task.</p>
+            <note conref="../common/reuse_task_parts.dita#reuse_task_parts/Chart_File"/>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/Chart_Select">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Press the left mouse button and drag the chart to the desired place.</cmd>
+                <info>
+                    <note type="tip">If you hold down the <uicontrol>Alt</uicontrol> key while
+                        dragging the chart will snap to the gridlines of the worksheet.</note>
+                </info>
+            </step>
+            <step>
+                <cmd>Click outside the chart in the worksheet to deselect.</cmd>
+            </step>
+            <step>
+                <cmd>Select the chart again and choose <menucascade>
+                        <uicontrol>Design</uicontrol>
+                        <uicontrol>Move Chart (group Location)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box <wintitle>Move Chart</wintitle></title>
+                        <image keyref="chart_move_window">
+                            <alt/>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Select <uicontrol>New sheet</uicontrol>, give the name for the new sheet, then
+                    click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>The chart sheet is displayed.</stepresult>
+            </step>
+            <stepsection>Now move the chart back to worksheet.</stepsection>
+            <step>
+                <cmd>Select the chart in the chart sheet.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>Design</uicontrol>
+                        <uicontrol>Move Chart (group Location)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>The dialog box <wintitle>Move chart</wintitle> appears.</stepresult>
+            </step>
+            <step>
+                <cmd>Select <uicontrol>Object in</uicontrol>, and choose the worksheet on which the
+                    chart should be embedded, and then click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>The worksheet with the embedded chart is shown and the chart sheet has
+                    been deleted.</stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

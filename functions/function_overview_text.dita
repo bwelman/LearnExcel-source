@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="function_overview_text" xml:lang="en-US">
+  <title>Overview Text Functions</title>
+  <shortdesc>An overview of some functions for texts.</shortdesc>
+  <prolog>
+    <critdates>
+        <created date="2017-08-31"/>
+        <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <indexterm>Functions<indexterm>text</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section>
+      <title>MID</title>
+      <p>This function returns a specified number of characters from the middle of a supplied text
+        string.</p>
+      <codeblock>MID(text, start_num, num_chars)</codeblock>
+      <parml>
+        <plentry>
+          <pt>text</pt>
+          <pd>Required. The original text string.</pd>
+        </plentry>
+        <plentry>
+          <pt>start_num</pt>
+          <pd>Required. An integer that specifies the position of the first character that you want
+            to be returned. The counting starts with 1.</pd>
+        </plentry>
+        <plentry>
+          <pt>num_chars</pt>
+          <pd>Required. An integer that specifies the number of characters to be returned from the
+            supplied text.</pd>
+        </plentry>        
+      </parml>
+    </section>
+    <section>
+      <title>LEN</title>
+      <p>This function returns the length of a supplied text string.</p>
+      <codeblock>LEN(text)</codeblock>
+      <parml>
+        <plentry>
+          <pt>text</pt>
+          <pd>Required. The text string that you want to find the length of.</pd>
+        </plentry>        
+      </parml>
+    </section>
+    <section>
+      <title>LEFT</title>
+      <p>This function returns a specified number of characters from the left of a supplied text
+        string.</p>
+      <codeblock>LEFT(text, [num_chars])</codeblock>
+      <parml>
+        <plentry>
+          <pt>text</pt>
+          <pd>Required. The original text string.</pd>
+        </plentry>
+        <plentry>
+          <pt>num_chars</pt>
+          <pd>Optional. The number of characters to be returned from the left of the supplied text
+            string. If omitted the default value is 1.</pd>
+        </plentry>        
+      </parml>
+    </section>
+    <section>
+      <title>RIGHT</title>
+      <p>This function returns a specified number of characters from the right of a supplied text
+        string.</p>
+      <codeblock>RIGHT(text[num_chars])</codeblock>
+      <parml>
+        <plentry>
+          <pt>text</pt>
+          <pd>Required. The original text string.</pd>
+        </plentry>
+        <plentry>
+          <pt>num_chars</pt>
+          <pd>Optional. The number of characters to be returned from the right of the supplied text
+            string. If omitted the default value is 1.</pd>
+        </plentry>        
+      </parml>
+    </section>
+    <section>
+      <title>SEARCH</title>
+      <p>This function returns the position of a specified text within a supplied text string.</p>
+      <codeblock>SEARCH(search_text, within_text, [start_num])</codeblock>
+      <parml>
+        <plentry>
+          <pt>search_text</pt>
+          <pd>Required. The character or text string that you wish to search for.</pd>
+        </plentry>
+        <plentry>
+          <pt>within_text</pt>
+          <pd>Required. The text string that is to be searched.</pd>
+        </plentry>
+        <plentry>
+          <pt>start_num</pt>
+          <pd>Optional. The position from which the search should begin. If omitted the default
+            value is 1.</pd>
+        </plentry>        
+      </parml>
+    </section>
+  </refbody>
+</reference>

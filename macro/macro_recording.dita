@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="macro_recording" xml:lang="en-US">
+  <title>Recording macros</title>
+  <shortdesc>Description of the dialog box <wintitle>Record Macro</wintitle>.</shortdesc>
+  <prolog>
+    <critdates>
+        <created date="2017-08-31"/>
+        <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <indexterm>Macro<indexterm>recording</indexterm><indexterm>dialog box
+            recording</indexterm><indexterm>shortcut</indexterm><indexterm>naming</indexterm><indexterm>store</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <conbody>
+    <p>The button with which you can start recording macros is on the tab
+        <uicontrol>Developer</uicontrol>. If you do not see this tab you need to make it visible
+      first. See <wintitle>Task: Developer Tab</wintitle>.</p>
+    <p>On the Developer tab, in the <uicontrol>group Code</uicontrol> you can see the button
+        <uicontrol>Record Macro</uicontrol>. When this button is clicked to start the recording of a
+      macro a dialog box appears in which you can enter a number of properties of the macro.</p>
+    <fig>
+      <title>Dialog box <wintitle>Record Macro</wintitle></title>
+      <image keyref="record_macro_dialogbox">
+        <alt>Dialog box record macro</alt>
+      </image>
+    </fig>
+    <dl>
+      <dlentry>
+        <dt>Macro name</dt>
+        <dd>Each macro must have a name. To do this, Excel fills in the default text <q>Macro</q>
+          followed by a digit. You can change this name by typing a different name. The first
+          character of the macro name has to be a letter. After that you can use other characters
+          such as letters, numbers, or underscore. Spaces are not allowed in a macro name. Always
+          give meaningful names showing what the macro is going to do. The underscore can be used as
+          a separator between words.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Shortcut key</dt>
+        <dd>Macros can be executed through the menu, but this can also be done using keyboard
+          shortcuts. These are shortcuts with the <uicontrol>CTRL</uicontrol> key combined with a
+          letter key. If you want to assign a keyboard shortcut to the macro then you can enter the
+          letter in the box. Putting for example the letter A in the box, then the key combination
+            <uicontrol>CTRL A</uicontrol> is the shortcut that allows you to start the macro. It is
+          not required to assign a keyboard shortcut to a macro, but this can be very useful for
+          frequently used macros.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Store macro in</dt>
+        <dd>The places where the macro can be stored are:<ul>
+            <li>This Workbook</li>
+            <li>New Workbook</li>
+            <li>Personal Macro Workbook</li>
+          </ul>It is important to think thoroughly about it. If the macro is to be used only in the
+          active workbook, choose <option>This Workbook</option>. Should the macro be used in other
+          workbooks, so it is always available, then the <option>Personal Macro Workbook</option> is
+          the best choice. You should always specify the storage place. The default value is
+            <option>This Workbook</option>.</dd>
+      </dlentry>
+      <dlentry>
+        <dt>Description</dt>
+        <dd>It is recommended that you give a brief description of what the macro does. When you
+          create the macro you know it, but after a while you may forget. It is not mandatory to
+          specify a description.</dd>
+      </dlentry>
+    </dl>
+    <note type="notice">All made choices can always be changed at a later stage.</note>
+    <note type="attention">When you want to save a worbook with macros, then Excel suggest to save
+      it as an Excel workbook with the extension <filepath>*.xlsx</filepath>. However, in this
+      format, no macros can be stored . You should change this yourself in an Excel workbook with
+      macros with the extension <filepath>*.xlsm</filepath>.</note>
+  </conbody>
+</concept>

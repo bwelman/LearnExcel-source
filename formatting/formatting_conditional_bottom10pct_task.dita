@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="formatting_conditional_bottom10pct_task" xml:lang="en-US">
+    <title>Task: Format for top/bottom 10%</title>
+    <shortdesc>A practice in conditional formatting depending on a set of decreasing
+        values.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Conditional<indexterm>format, top/bottom 10 pct</indexterm></indexterm>
+                <indexterm>Format<indexterm>conditional</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>It is possible to create a condition that depends on all values in a set. For
+                example, you can create a conditional format for the top/bottom three in a set of
+                values, or the worst or best 10% values.</p>
+            <p>In a spreadsheet are all kinds of data from cars. In one of the columns you can find
+                the fuel consumption. The task is to give a green background color to the 10% cars
+                with the lowest fuel consumption.</p>
+            <note type="other" othertype="File"><filepath>Car.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select all consumption values in column F.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Home</uicontrol>
+                        <uicontrol>Conditional Formatting (group Styles)</uicontrol>
+                        <uicontrol>Top/Bottom Rules</uicontrol>
+                        <uicontrol>Bottom 10%...</uicontrol>
+                    </menucascade> and enter the desired values in the dialog box.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box conditional format bottom 10%</title>
+                        <image keyref="Format_Conditional_Bottom_10pct">
+                            <alt>Dialog box conditional format bottom 10%</alt>
+                        </image>
+                    </fig>
+                    <note type="tip">Also a percentage other than 10 can be set.</note>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

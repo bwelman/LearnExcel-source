@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="forecasts_trendline_power" xml:lang="en-US">
+    <title>Task: Power trend line</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm/>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>A power trend line is a curved line that is very suitable for collections of data
+                that increase at a specific rate, for example the acceleration of a formula 1
+                    car.<note type="attention">There should be no null values in the data
+                    set.</note></p>
+            <p>The equation of the trend line is: <codeph>y = a*x<sup>b</sup></codeph> where a and b are
+                constants.</p>
+            <p>The following example is about the distance of an accelerating race car in intervals
+                of 1 second.</p>
+            <note type="other" othertype="File"><filepath>Trendlines.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open the practice file and select worksheet <wintitle>Power</wintitle></cmd>
+            </step>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/Trendline_Start"
+                conrefend="../common/reuse_task_parts.dita#reuse_task_parts/Trendline_End">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select at Trendline Options: <option>Macht</option>. Let equation and R-squared value be displayed in the chart.</cmd>
+            </step>
+            <step>
+                <cmd>Change the chart title in <userinput>Distance</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Add Axis titles and change title Y-axis in <userinput>Distance
+                        (meter)</userinput> and title X-axis in <userinput>Time
+                    (sec)</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Drag in the chart the equation to an empty place.</cmd>
+            </step>
+        </steps>
+        <result>
+            <fig>
+                <title>Example power trend line</title>
+                <image keyref="example_pow">
+                    <alt>Example power trend line</alt>
+                </image>
+            </fig>
+            <p>R<sup>2</sup> = 0,9987 which means that a power trend line fits the data very
+                well.</p>
+        </result>
+        <example>
+            <title>Worksheet functions</title>
+            <p>Equation: y = a*x<sup>b</sup><ul>
+                    <li>a =EXP(INDEX(LINEST(LN(known_ys) ; LN(known_xs)) ; 2))</li>
+                    <li>b =INDEX(LINEST(LN(known_ys) ; LN(known_xs)) ; 1)</li>
+                </ul></p>
+        </example>
+    </taskbody>
+</task>

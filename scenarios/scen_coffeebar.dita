@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="scen_coffeebar" xml:lang="en-US">
+	<title>Task: Coffee bar "The Brown Bean"</title>
+	<shortdesc>A task in working with scenario management.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Scenario</indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<taskbody>
+		<context>
+			<p>In the following figure you see a calculation model of a coffee bar. The gray cells are the
+				variable cells.</p>
+			<fig>
+				<title>Calculation model for coffee bar</title>
+				<image keyref="coffeebar_model">
+					<alt>Calculation model for coffee bar</alt>
+				</image>
+			</fig>
+			<p> In addition to the current situation, the owner of the coffee bar wants to explore two other
+				scenarios to see the effect on the profit.</p>
+			<ul>
+				<li>A scenario with 10% higher prices and less salaries ($ 30000 less) and less advertising ($
+					5000 less)</li>
+				<li>A scenario with 5% higher prices and 5% less order costs and more advertising ($ 2000
+					more)</li>
+			</ul>
+			<note type="other" othertype="File"><filepath>BrownBean.xlsx</filepath></note>
+		</context>
+		<steps>
+			<step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+				<cmd/>
+			</step>
+			<stepsection>Study the model. Identify the changing cells and result cell. Study the used
+				formulas and see that all cells have names. If you give meaningful names to the
+				cells then these names will be used in the summary report instead of the addresses.
+				Then it will be easy to read the report.</stepsection>
+			<step>
+                <cmd>Choose tab <menucascade>
+                        <uicontrol>Data</uicontrol>
+                        <uicontrol>What-If Analysis (group Forecast)</uicontrol>
+                        <uicontrol>Scenario Manager</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box <wintitle>Scenario Manager</wintitle></title>
+                        <image keyref="scenario_manager">
+                            <alt>Dialog box scenario manager</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+			<step>
+				<cmd>Click on <uicontrol>Add</uicontrol>.</cmd>
+				<stepresult>The dialog box <wintitle>Edit Scenario</wintitle> appears.</stepresult>
+			</step>
+			<step>
+				<cmd>Type in the box <varname>Scenario name</varname> the text <userinput>Current</userinput>.
+					Put the cursor in the box <varname>Changing cells</varname> and  then select in
+					the worksheet the ranges <userinput>B4:B6</userinput> and
+						<userinput>B11:B14</userinput>. Finally, put the cursor in the text box
+						<varname>Comment</varname> and type a brief explanation of the scenario, for
+					example <userinput>Current situation</userinput>.</cmd>
+				<info>
+					<note type="tip">Use the <uicontrol>CTRL</uicontrol> key to select multiple
+						ranges.</note>
+				</info>
+				<stepresult>
+					<fig>
+						<title>Dialog box <wintitle>Edit Scenario</wintitle> for the coffee bar</title>
+						<image keyref="coffeebar_scen_current">
+							<alt>Dialog box edit scenario for the coffee bar</alt>
+						</image>
+					</fig>
+				</stepresult>
+			</step>
+			<step>
+				<cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+				<stepresult>
+					<fig>
+						<title>Dialog box <wintitle>Scenario Values</wintitle> for the coffee bar</title>
+						<image keyref="coffeebar_scen_current_values">
+							<alt>Dialog box scenario values for the coffee bar</alt>
+						</image>
+						<p>The values for the changing cells are already filled in.</p>						
+					</fig>
+				</stepresult>
+			</step>
+			<step>
+				<cmd>Click on <uicontrol>Add</uicontrol> for entering a new scenario.</cmd>
+			</step>
+			<step>
+				<cmd>Give the scenario the name <userinput>Higher prices, less salary and
+						advertising</userinput> and give it a brief description and click
+						<uicontrol>OK</uicontrol>.</cmd>
+				<stepresult>
+					<p>The dialog box <wintitle>Scenario Values</wintitle> appears displaying the current values of
+						the changing cells.</p>
+				</stepresult>
+			</step>
+			<step>
+				<cmd>Now type the new values in the cells that change for this scenario.</cmd>
+				<info>Instead of calculating these values yourself you can enter a formula. Excel automatically
+					calculates the new value.</info>
+				<itemgroup>
+					<simpletable>
+						<strow><stentry>Yield_per_Order</stentry><stentry>=1.1*2.5</stentry></strow>
+						<strow><stentry>Salaries</stentry><stentry>=300000-30000</stentry></strow>						
+						<strow><stentry>Advertisement</stentry><stentry>=20000-5000</stentry></strow>
+					</simpletable>				
+				</itemgroup>
+			</step>
+			<step>
+				<cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+				<stepresult><p>A warning is displayed:</p><fig>
+						<title>Warning</title>
+						<image keyref="coffeebar_warning">
+							<alt>Warning</alt>
+						</image>
+					</fig>The entered formulas are replaced by the results of the
+					formulas.</stepresult>
+			</step>
+			<step>
+				<cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+			</step>
+			<step>
+				<cmd>The same way create another scenario with the name <userinput>Higher prices, less order
+						costs and more advertising</userinput> and adjust the values for this
+					scenario.</cmd>
+				<stepresult>
+					<fig>
+						<title>Dialog box <wintitle>Scenario Manager</wintitle> with the three scenarios</title>
+						<image keyref="coffeebar_scenarios">
+							<alt>Dialog box with the three scenarios</alt>
+						</image>
+					</fig>
+				</stepresult>
+			</step>
+			<step>
+				<cmd>Select a scenario and click <uicontrol>Show</uicontrol>.</cmd>
+				<stepresult>In the worksheet, the values of the changing cells and the dependent cells will be
+					adapted for the selected scenario.</stepresult>
+			</step>
+			<step>
+				<cmd>Click on <uicontrol>Summary</uicontrol> to create a report.</cmd>
+				<stepresult>
+					<fig>
+						<title>Dialog box <wintitle>Scenario Summary</wintitle></title>
+						<image keyref="coffeebar_scen_reporttype">
+							<alt>Dialog box scenario summary</alt>
+						</image>
+						<p>The result cell (the cell with the profit) is already filled in by Excel.</p>
+					</fig>
+				</stepresult>
+			</step>
+			<step>
+				<cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+				<stepresult>
+					<p>A new worksheet with a summary report is created.</p>
+					<fig>
+						<title>Summary report for the coffee bar scenarios</title>
+						<image keyref="coffeebar_scen_summary">
+							<alt>Summary report for the coffee bar scenarios.</alt>
+						</image>
+					</fig>
+				</stepresult>
+			</step>
+		</steps>
+	</taskbody>
+</task>

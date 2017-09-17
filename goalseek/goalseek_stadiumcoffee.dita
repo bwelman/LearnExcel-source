@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="goalseek_stadiumcoffee" xml:lang="en-US" >
+	<title>Task: Break-even coffee stand</title>
+	<shortdesc>A simple exercise for the use of the method <term>Goal Seek</term>.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Goal Seek</indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<taskbody>
+		<context>
+			<p>Suppose you want to run a coffee stand in a soccer stadium. The monthly costs for rent, staff
+				and miscellaneous are known. You also know the costs and sales price for a cup of
+				coffee. In the next figure you see a model for calculating the monthly results,
+				depending on the number of cups of coffee sold.</p>
+			<fig>
+				<title>Calculation model for coffee stand Stadium</title>
+				<image keyref="stadiumcoffee_model">
+					<alt>Calculation model for coffee stand stadium</alt>
+				</image>
+			</fig>
+			<p>What you would like to know now is how many cups of coffee you have to be sell per month to be
+				break-even. In this simple example you can easily calculate the answer by hand.
+				However the method Goal Seek as well.</p>
+			<note type="other" othertype="File"><filepath>Stadium_Coffee.xlsx</filepath></note>
+		</context>
+		<steps>
+		    <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+				<cmd/>
+			</step>
+			<step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Data</uicontrol>
+                        <uicontrol>What-If Analysis (group Forecast)</uicontrol>
+                        <uicontrol>Goal Seek</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>The dialog box <wintitle>Goal Seek</wintitle> appears</stepresult>
+            </step>
+			<step>
+				<cmd>Specify the values for Goal Seek.</cmd>
+				<info><dl>
+					<dlentry>
+						<dt>Set cell</dt>
+						<dd>The address of the cell that contains the formula for which you want a specific result. In
+								this example it is the cell with the monthly result.</dd>
+					</dlentry>
+						<dlentry>
+							<dt>To value</dt>
+							<dd>This is the desired result for the formula, hence the target. For break-even the value is
+								0.</dd>
+						</dlentry>
+						<dlentry>
+							<dt>By changing cell</dt>
+							<dd>The address of the changing cell to achieve the target. This is the number of cups of
+								coffee to sell.</dd>
+						</dlentry>
+				</dl>
+				</info>
+				<stepresult>
+					<fig>
+						<title>Dialog box <wintitle>Goal Seek</wintitle> for the coffee stand</title>
+						<image keyref="stadiumcoffee_goalseek">
+							<alt>Dialog box goal seek for the coffee stand</alt>
+						</image>
+					</fig>
+				</stepresult>
+			</step>
+			<step>
+				<cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+				<stepresult>
+					<p>Excel starts calculating and finds the value 562.5. Because you don't sell half cups of
+						coffee you will need to round the answer to 563.</p>
+				</stepresult>
+			</step>
+		</steps>
+	</taskbody>
+</task>

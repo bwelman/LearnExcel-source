@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="table_data_entry_form" xml:lang="en-US">
+	<title>Task: Data Entry Form</title>
+	<shortdesc>Creating a data entry form.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Data entry<indexterm>form</indexterm></indexterm>
+				<indexterm>Form</indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<taskbody>
+		<prereq id="qat_form">
+			<p>To perform this task it is necessary that the button <uicontrol>Form</uicontrol> on the
+					<uicontrol>Quick Access Toolbar</uicontrol> is available. When this button is
+				not visible you must enable it first.</p>
+			<fig>
+                <title>Button Form on Quick Access Toolbar</title>
+                <image keyref="qat_formbutton">
+                    <alt>Button Form on Quick Access Toolbar</alt>
+                </image>
+            </fig>
+		</prereq>
+		<context>
+			<p>The easiest and best way to add <term>records</term> to a table is by using a data entry form.
+                Excel automatically create such form for you if you provide the field names of the
+                columns and type in the first record. In the following figure you see an example of
+                a purchase list. The data of the first article have already been entered, including
+                the necessary formulas in F2 , G2 and H2.</p>
+			<fig>
+                <title>Purchase list with first record</title>
+                <image keyref="purchase_record1">
+                    <alt>Purchase list with first record.</alt>
+                </image>
+            </fig>
+			<note type="other" othertype="File"><filepath>Purchases.xlsx</filepath></note>
+		</context>
+		<steps>
+			<step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+				<cmd/>
+			</step>
+			<step>
+				<cmd>Enter the following formulas:</cmd>
+				<info>
+					<ul>
+						<li>in <uicontrol>F2</uicontrol> the formula <userinput>=D2*E2</userinput></li>
+						<li>in <uicontrol>G2</uicontrol> the formula <userinput> =21%*F2</userinput></li>
+						<li>in <uicontrol>H2</uicontrol> the formula <userinput>=F2+G2</userinput></li>
+					</ul>
+				</info>
+			</step>
+			<step>
+				<cmd>Select any cell in the list.</cmd>
+			</step>
+			<step>
+				<cmd>Click on the button <uicontrol>Form</uicontrol> in <wintitle>Quick Access
+						Toolbar</wintitle>.</cmd>
+				<stepresult>
+					<p>The data form appears. On the left side are the 8 <term>field names</term>. Besides 5
+							<term>field names</term> are entry boxes. Here you can enter or change
+						the data. The <term>field names</term>
+						<varname>total excl.</varname>, <varname>vat</varname> and <varname>total
+							incl.</varname> don't have boxes but values. This is because those
+						values are calculated through formulas.</p>
+					<fig>
+                        <title>Form purchases</title>
+                        <image keyref="purchase_form">
+                            <alt>Form purchases</alt>
+                        </image>
+                    </fig>
+				</stepresult>
+			</step>
+			<step>
+				<cmd>Click the button <uicontrol>New</uicontrol> and add two new <term>records</term> (see the
+					following example). End your last record entry with
+					<uicontrol>Close</uicontrol>.</cmd>
+				<stepxmp>
+					<fig>
+                        <title>Purchase list with 3 records</title>
+                        <image keyref="purchase_result">
+                            <alt>Purchase list with 3 records</alt>
+                        </image>
+                    </fig>
+					<note type="attention"> Use the <uicontrol>Tab key</uicontrol> or the mouse to navigate to the
+						next field. When using the <uicontrol>Enter key</uicontrol> you go to the
+						next record and when there is no record you get an empty form for adding a
+						new record. </note>
+				</stepxmp>
+			</step>
+		</steps>
+	</taskbody>
+</task>

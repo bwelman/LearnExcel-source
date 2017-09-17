@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="function_math" xml:lang="en-US">
+    <title>Task: Mathematical Functions</title>
+    <shortdesc>A brief description of the <term>mathematical functions</term> category with an task
+        of rounding numbers.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Function<indexterm>mathematical</indexterm><indexterm>ROUND</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>The mathematical functions category is quite extensive. Besides the well known SUM
+                function for adding numbers, this category contains functions for various computing
+                activities, such as exponentiation, root calculations, PI, logarithms, etc.
+                Furthermore you will find a lot of trigonometric functions. So all kind of functions
+                for specific use.</p>
+            <p>More common functions are those for rounding numbers. Excel has thirteen functions
+                for rounding and that is why it can be quite confusing to determine which function
+                to use in a given situation. For example there is a function ROUND for rounding a
+                number up or down to a specified number of decimal places. There are also functions
+                for rounding to the nearest multiples of a given number, or rounding to an integer
+                value.</p>
+            <p>The following figure shows the results of some rounding functions.</p>
+            <fig>
+                <title>Examples of rounding</title>
+                <image keyref="Example_Rounding">
+                    <alt>Examples of rounding</alt>
+                </image>
+            </fig>
+            <note type="other" othertype="File"><filepath>Rounding.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Enter in the cells B3:B9 with the formula wizard the formulas as displayed in
+                    the next table.</cmd>
+                <info>
+                    <simpletable frame="all">
+                        <sthead>
+                            <stentry>Cell</stentry>
+                            <stentry>Formula</stentry>
+                        </sthead>
+                        <strow>
+                            <stentry>B3</stentry>
+                            <stentry><codeph>=ROUND(B1,0)</codeph></stentry>
+                        </strow>
+                        <strow>
+                            <stentry>B4</stentry>
+                            <stentry><codeph>=ROUND(B1,1)</codeph></stentry>
+                        </strow>
+                        <strow>
+                            <stentry>B5</stentry>
+                            <stentry><codeph>=ROUND(B1,2)</codeph></stentry>
+                        </strow>
+                        <strow>
+                            <stentry>B6</stentry>
+                            <stentry><codeph>=ROUNDDOWN(B1,1)</codeph></stentry>
+                        </strow>
+                        <strow>
+                            <stentry>B7</stentry>
+                            <stentry><codeph>=ROUNDUP(B1,2)</codeph></stentry>
+                        </strow>
+                        <strow>
+                            <stentry>B8</stentry>
+                            <stentry><codeph>=MROUND(B1,5)</codeph></stentry>
+                        </strow>
+                        <strow>
+                            <stentry>B9</stentry>
+                            <stentry><codeph>=MROUND(B1,10)</codeph></stentry>
+                        </strow>
+                    </simpletable>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

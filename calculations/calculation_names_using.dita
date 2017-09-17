@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="calculation_names_using" xml:lang="en-US">
+    <title>Task: Using names in existing formulas</title>
+    <shortdesc>How to replace cell addresses with their names in formulas.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Names<indexterm>using</indexterm></indexterm>
+                <indexterm>Cell names<indexterm>using</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>When you assign a name to a cell or cell range, Excel automatically use them in new
+                formulas, but not in already existing formulas. In the next example cell B5 contains
+                the formula <codeph>=B2+B3+B4</codeph>. When you assign now names to the cells B2,
+                B3 and B4, the formula remain unchanged.</p>
+            <fig>
+                <title>Formula with addresses instead of names</title>
+                <image keyref="Example_Expenses">
+                    <alt>Formula with addresses instead of names</alt>
+                </image>
+            </fig>
+            <p>However, you can quite easily use new names in existing formulas. In the practice
+                file of this example the cells in the formula already have names. Through the
+                following steps, the addresses in the formula will be replaced by their names.</p>
+            <note type="other" othertype="File"><filepath>Office_Expenses.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select cell <uicontrol>B5</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <uicontrol>Formulas</uicontrol> and click on the <uicontrol>arrow from
+                        the button Define Name (group Defined Names)</uicontrol> and choose
+                        <uicontrol>Apply Names</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box <wintitle>Apply Names</wintitle></title>
+                        <image keyref="Name_Apply">
+                            <alt>Dialog box apply names</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Select all names and click <uicontrol>OK</uicontrol>.</cmd>
+                <info>
+                    <note type="tip">To select multiple names, hold down the
+                            <uicontrol>Ctrl</uicontrol> key.</note>
+                </info>
+                <stepresult>The formula in cell B5 now is
+                        <systemoutput>=Inventory+Advertising+Officecosts</systemoutput>.</stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="chart_title" xml:lang="en-US">
+    <title>Task: Chart Title</title>
+    <shortdesc>How to add a title to the top of the chart area.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Chart<indexterm>title</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>When you create a chart, the title appears by default above the chart. You can simply
+                select the text and type the title wou want. You can also hide the title or change
+                its location.</p>
+            <note conref="../common/reuse_task_parts.dita#reuse_task_parts/Chart_File"/>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/Chart_Select">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>Design</uicontrol>
+                        <uicontrol>Add Chart Element (group Chart Layouts)</uicontrol>
+                        <uicontrol>Chart Title</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Chart title options</title>
+                        <image keyref="chart_title_options">
+                            <alt>Chart title options</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Choose <option>Above Chart</option>.</cmd>
+                <info>Selecting <option>None</option> removes the chart title.</info>
+            </step>
+            <step>
+                <cmd>Double-click the text <uicontrol>Chart Title</uicontrol> and replace it with
+                    your own text for example <userinput>Sales Bakery</userinput>.</cmd>
+                <tutorialinfo>
+                    <ul>
+                        <li>Select the chart title to drag it to another place in the chart
+                            area.</li>
+                        <li>To format the title, richt-click it and choose <uicontrol>Format Chart
+                                Title</uicontrol>.</li>
+                    </ul>
+                </tutorialinfo>
+            </step>
+        </steps>
+        <example>
+            <title>Faster way</title>
+            <p>A little faster way to add or change a chart title:</p>
+            <ol>
+                <li>Select the chart.</li>
+                <li>Click the Charts Element button <image keyref="button_chart_elements"/> next to
+                    the chart and you'll see a list of chart elements.</li>
+                <li>Check <option>Chart Title</option> and the title is immediately added to the
+                    chart. Besides is an arrow and by clicking on it you get the continuation
+                    menu.</li>
+            </ol>
+            <fig>
+                <image keyref="chart_elements_title"/>
+            </fig>
+            <note type="tip">
+                <p>The elements with checkmarks are in the chart. You can uncheck them to remove the
+                    elements.</p>
+            </note>
+        </example>
+    </taskbody>
+</task>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="formatting_cell_copy" xml:lang="en-US">
+    <title>Copying and clearing format</title>
+    <shortdesc>How to copy the format of a cell to other cells and how to delete a
+        format.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Format<indexterm>copy</indexterm><indexterm>past</indexterm><indexterm>clear</indexterm><indexterm>delete</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>The format and content of a cell are stored separately. Therefore, you can copy or delete
+            the content and format separately.</p>
+        <section>
+            <title>Copying format</title>
+            <p>The fastest way to copy the format of a cell to another cell is to use the button
+                    <uicontrol>Format painter</uicontrol>.</p>
+            <p>The method is as follows:</p>
+            <ol>
+                <li>Select the cell with the format you want to copy.</li>
+                <li>Choose <menucascade>
+                        <uicontrol>Home</uicontrol>
+                        <uicontrol><image keyref="Format_Painter"/> (group Clipboard)</uicontrol>
+                    </menucascade>. The mouse shape changes in a brush (<image
+                        keyref="Mouse_Pointer_Formatpainter"/>).</li>
+                <li>Select the cell(s) you want to transfer the format to.</li>
+                <li>Release the mouse button.</li>
+            </ol>
+            <note type="tip">When you <term>double click</term> on the button <uicontrol>Format
+                    painter</uicontrol> then you can perform multiple format transfers. To cancel
+                format copying you can click again on the button <uicontrol>Format
+                    painter</uicontrol> or press the <uicontrol>Esc</uicontrol> key</note>
+        </section>
+        <section>
+            <title>Removing format</title>
+            <p>The format of cells can be removed as follows:</p>
+            <ol>
+                <li>Select the cell(s) which format you want to remove.</li>
+                <li>Choose <menucascade>
+                        <uicontrol>Home</uicontrol>
+                        <uicontrol>Clear (group Editing)</uicontrol>
+                        <uicontrol>Clear Formats</uicontrol>
+                    </menucascade>. <fig>
+                        <title>Clear formats on the ribbon</title>
+                        <image keyref="Format_Clear" placement="break">
+                            <alt>Clear formats on the ribbon</alt>
+                        </image>
+                    </fig></li>
+            </ol>
+            <note type="tip">This way you can clear the format, the content or both.</note>
+            <note type="attention">With the <uicontrol>DELETE</uicontrol> key you only clear the
+                content of the cell. The format of the cell (font type, colors, alignment, number
+                format, etc.) will not changed and is still present in the empty cell.</note>
+        </section>
+    </conbody>
+</concept>

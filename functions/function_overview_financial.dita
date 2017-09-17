@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="function_overview_financial" xml:lang="en-US">
+  <title>Overview Financial Functions</title>
+  <shortdesc>An overview of some functions for loan and depreciation.</shortdesc>
+  <prolog>
+    <critdates>
+        <created date="2017-08-31"/>
+        <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <indexterm>Functions<indexterm>financial</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section>
+      <title>Depreciation functions</title>
+      <table frame="all">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+          <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+          <thead>
+            <row>
+              <entry>Method</entry>
+              <entry>Function</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>Linear, straight line depreciation method</entry>
+              <entry>SLN(cost, salvage, life)</entry>
+            </row>
+            <row>
+              <entry>Fixed declining balance method.</entry>
+              <entry>DB(cost, salvage, life, period, [month])</entry>
+            </row>
+            <row>
+              <entry>Double Declining Balance method.</entry>
+              <entry>DDB(cost, salvage, life, period, [factor])</entry>
+            </row>
+            <row>
+              <entry>Sum-Of-Years-Digits method.</entry>
+              <entry>SYD(cost, salvage, life, per)</entry>
+            </row>
+            <row>
+              <entry>Variable declining balance method.</entry>
+              <entry>VDB(cost, salvage, life, start_period, end_period, [factor],
+                [no_switch])</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>      
+    </section>
+    <section>
+      <title>Payments</title>
+      <table frame="all">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+          <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+          <thead>
+            <row>
+              <entry>Method</entry>
+              <entry>Function</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>Constant periodic payment to pay off a loan</entry>
+              <entry>PMT(rate, nper, pv, [fv], [type])</entry>
+            </row>
+            <row>
+              <entry>Interest paid during a specific period of a loan</entry>
+              <entry>ISPMT(rate, per, nper, pv)</entry>
+            </row>
+            <row>
+              <entry>Number of periods to pay off a loan or investment.</entry>
+              <entry>NPER(rate, pmt, pv, [fv], [type])</entry>
+            </row>
+            <row>
+              <entry>Payment on the principal</entry>
+              <entry>PPMT(rate, per, nper, pv, [fv], [type])</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section>
+      <title>Investments</title>
+      <table frame="all">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+          <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+          <thead>
+            <row>
+              <entry>Method</entry>
+              <entry>Function</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>Present value of an investment.</entry>
+              <entry>PV(rate, nper, pmt, [fv], [type])</entry>
+            </row>
+            <row>
+              <entry>Future value of an investment.</entry>
+              <entry>FV(rate, nper, [pmt], [pv], [type])</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section>
+      <title>Interest Rate</title>
+      <table frame="all">
+        <tgroup cols="2">
+          <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+          <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+          <thead>
+            <row>
+              <entry>Method</entry>
+              <entry>Function</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>Interest rate required to pay off a loan.</entry>
+              <entry>RATE(nper, pmt, pv, [fv], [type], [guess])</entry>
+            </row>
+            <row>
+              <entry>Internal rate of return of a series of periodic cash flows.</entry>
+              <entry>IRR(values,[guess])</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+  </refbody>
+</reference>

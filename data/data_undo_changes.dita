@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="data_undo_changes" xml:lang="en-US">
+    <title>Undo changes</title>
+    <shortdesc>About how to undo changes.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Undo</indexterm>
+                <indexterm>Redo</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>From almost every action you perform in Excel it is possible to undo it. This is done
+            using the buttons <uicontrol>Undo</uicontrol> (<image keyref="Button_Undo"/>) or
+                <uicontrol>Redo</uicontrol> (<image keyref="Button_Redo"/>). These buttons are
+            located on the <wintitle>Quick Access Toolbar</wintitle>.</p>
+        <p>The button <uicontrol>Undo</uicontrol> reverses the last action. By clicking this button
+            again you will undo the previously performed task. Besides this button there can be an
+            arrowhead, clicking on it shows a list of the most recent actions. By clicking on an
+            action in this list, all changes up to and including this action will be undone.</p>
+        <p>Using the button <uicontrol>Redo</uicontrol> can redo the actions you undid. Besides this
+            button there can be an arrowhead with a list of the most recent actions.</p>
+    </conbody>
+</concept>

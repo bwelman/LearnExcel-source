@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="data_autofill" xml:lang="en-US">
+    <title>Task: Auto fill</title>
+    <shortdesc>How to enter data that has a pattern quickly in your worksheet.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Fill handle</indexterm>
+                <indexterm>Auto fill</indexterm>
+                <indexterm>Lists</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>Excel has a number of options to quickly fill a row or column with data that follows
+                a pattern or is based on lists. For example, Excel has built-in lists for the days
+                of the weeks and the months of the year. But you can also make your own lists
+                through the options of Excel. Another possibility is to create a pattern that Excel
+                recognizes. When filling the cells with new values ​​Excel makes use of this
+                pattern. Often two values for pattern recognition​​ are sufficient.</p>
+            <p>To quickly fill in data series, you can use the <term>fill handle</term>. This is the
+                black square in the lower right corner of the selection. When you move the mouse
+                pointer over the fill handle, the shape of the pointer changes from <image
+                    keyref="mouse_shape_select"/> in <image keyref="mouse_shape_fill"/> and then you
+                can drag.<fig>
+                    <title>Fill handle</title>
+                    <image keyref="mouse_fill_handle">
+                        <alt>Fill handle</alt>
+                    </image>
+                </fig>
+            </p>
+            <p>In the next exercise a built-in list is used first and then a pattern recognition. At
+                the end are examples with which you can experiment.</p>
+        </context>
+        <steps>
+            <stepsection>Built-in list</stepsection>
+            <step>
+                <cmd>Start with a new worksheet..</cmd>
+            </step>
+            <step>
+                <cmd>Select cell A1 and type the word <userinput>January</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Select cell A1 again. Position the mouse over the fill handle of cell A1. Press
+                    the left mouse button and drag to cell A12 and then release the left mouse
+                    button.</cmd>
+                <stepresult>The result is that the area A1: A12 contains the months of the year. In
+                    fact you can start with every month. If you keep on dragging, the sequence will
+                    repeat itself. <fig>
+                        <title>Months of the year</title>
+                        <image keyref="Months_Names_Long">
+                            <alt>Months of the year</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <stepsection>Pattern recognition</stepsection>
+            <step>
+                <cmd>Select cell B1 and type the number <userinput>1</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Select cell B2 and type the number <userinput>2</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Select the area B1:B2 and drag the fill handle a number of cells downwards.
+                        <image keyref="Numbers_Autofill"/>.</cmd>
+                <stepresult>The result is that the area is filled with the numbers 1, 2, 3, 4, 5,
+                    ...</stepresult>
+            </step>
+        </steps>
+        <example>
+            <title>Examples of pattern recognition</title>
+            <p>Below you see some examples to experiment.</p>
+            <table frame="all">
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+                    <thead>
+                        <row>
+                            <entry>Starting values</entry>
+                            <entry>Auto fill series</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>1, 3</entry>
+                            <entry>5, 7, 9, 11, ...</entry>
+                        </row>
+                        <row>
+                            <entry>2, 4</entry>
+                            <entry>6, 8, 10, 12, ...</entry>
+                        </row>
+                        <row>
+                            <entry>3, 6</entry>
+                            <entry>9, 12, 15, 18, ...</entry>
+                        </row>
+                        <row>
+                            <entry>2010, 2011</entry>
+                            <entry>2012, 2013, 2014, ...</entry>
+                        </row>
+                        <row>
+                            <entry>09:00</entry>
+                            <entry>10:00, 11:00, 12:00, 13:00, ...</entry>
+                        </row>
+                        <row>
+                            <entry>Jan</entry>
+                            <entry>Feb, Mar, ...</entry>
+                        </row>
+                        <row>
+                            <entry>Jan, Apr</entry>
+                            <entry>Jul, Oct, Jan, Apr, ...</entry>
+                        </row>
+                        <row>
+                            <entry>Monday</entry>
+                            <entry>Tuesday, Wednesday, ...</entry>
+                        </row>
+                        <row>
+                            <entry>Mon</entry>
+                            <entry>Tue, Wed, ...</entry>
+                        </row>
+                        <row>
+                            <entry>Q 1</entry>
+                            <entry>Q 2, Q 3, Q 4, Q 5, ...</entry>
+                        </row>
+                        <row>
+                            <entry>1e period</entry>
+                            <entry>2e period, 3e period, ...</entry>
+                        </row>
+                        <row>
+                            <entry>article 1</entry>
+                            <entry>article 2, article 3, article 4, ...</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </example>
+    </taskbody>
+</task>

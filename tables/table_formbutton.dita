@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="table_formbutton" xml:lang="en-US" >
+	<title>Task: Form Button</title>
+	<shortdesc>Instructions how to add the <uicontrol>Form</uicontrol> button to the <uicontrol>Quick
+			Access Toolbar</uicontrol>.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Form Button</indexterm>
+				<indexterm>Form</indexterm>
+				<indexterm>Quick Access Toolbar</indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<taskbody>
+		<context>An important task in working with tables is the correct entry of the data. Excel has a
+            built in form for this task. The command button for creating such a form is however not
+            standard on the ribbon. In the following steps you see instructions how to add the
+            button <uicontrol>Form</uicontrol> to the <uicontrol>Quick Access Toolbar</uicontrol>.
+            This is a one-time action.</context>
+		<steps>
+			<step>
+                <cmd>Click on the <uicontrol>Customize Quick Access Toolbar arrow</uicontrol> at the
+                    end of the <wintitle>Quick Access Toolbar</wintitle>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Customize <uicontrol>Quick Access Toolbar</uicontrol></title>
+                        <image keyref="qat_customize">
+                            <alt>Customize Quick Access Toolbar</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+			<step>
+				<cmd>Choose <uicontrol>More Commands ...</uicontrol>.</cmd>
+			</step>
+			<step>
+				<cmd>Click on the arrow for <uicontrol>Choose commands from</uicontrol> and choose
+						<uicontrol>Commands Not in the Ribbon</uicontrol>.</cmd>
+				<stepresult>
+					<fig>
+                        <title>Dialog box Customize Quick Access Toolbar Commands</title>
+                        <image keyref="qat_customize_commands">
+                            <alt>Dialog box Quick Access Toolbar Commands</alt>
+                        </image>
+                    </fig>
+				</stepresult>
+			</step>
+			<step>
+				<cmd>Browse the alphabetic list with commands and select <uicontrol>Form...</uicontrol></cmd>
+				<stepresult>
+					<fig>
+                        <title>Dialog box Command Form</title>
+                        <image keyref="qat_customize_form">
+                            <alt>Dialog box command form</alt>
+                        </image>
+                    </fig>
+				</stepresult>
+			</step>
+			<step>
+				<cmd>Click on the button <uicontrol>Add</uicontrol> and then <uicontrol>OK</uicontrol>.</cmd>
+				<stepresult>
+					<p>In the <uicontrol>Quick Access Toolbar</uicontrol> you can see the button
+							<uicontrol>Form</uicontrol> now.</p>
+					<fig>
+						<title>Button Form on Quick Access Toolbar</title>
+						<image keyref="qat_formbutton">
+							<alt>Button Form on Quick Access Toolbar</alt>
+						</image>
+					</fig>
+				</stepresult>
+			</step>
+		</steps>
+	</taskbody>
+</task>

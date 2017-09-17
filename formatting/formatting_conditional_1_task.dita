@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="formatting_conditional_1_task" xml:lang="en-US">
+    <title>Task: Format with 1 condition</title>
+    <shortdesc>Conditional formatting with 1 condition.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Conditional format</indexterm>
+                <indexterm>Format<indexterm>conditional (1 condition)</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>A teacher has the marks of his students in a spreadsheet and wants to provide all
+                failures (marks less than 6) of a light red background.<note type="other"
+                    othertype="File"><filepath>Marks.xlsx</filepath></note></p>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select all marks.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>Home</uicontrol>
+                        <uicontrol>Conditional Formatting (group Styles)</uicontrol>
+                        <uicontrol>Highlight Cells Rules</uicontrol>
+                        <uicontrol>Less Than...</uicontrol>
+                    </menucascade> and enter in the dialog box the desired condition and
+                    format.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box conditional format for cells that are less than</title>
+                        <image keyref="Format_Conditional_Less">
+                            <alt>Dialog box conditional format for cells that are less than</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>All failures have a light red background color now.</stepresult>
+            </step>
+        </steps>
+        <postreq>
+            <p>Check the conditional format by changing the values in some cells from insufficient
+                to sufficient and vice versa. The background color has to change now.</p>
+        </postreq>
+    </taskbody>
+</task>

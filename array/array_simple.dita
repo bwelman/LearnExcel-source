@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="array_simple" xml:lang="en-US" >
+	<title>Task: Simple Array Formulas</title>
+	<shortdesc>Learn how to create simple array formulas.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords/>
+		</metadata>
+	</prolog>
+	<taskbody>
+		<context>
+			<p>In the next figure you can see that the sum and product of two numbers are calculated a few
+				times. This can be done with simple formulas. For example, the formula in D2 could
+				be <userinput>=A2+B2</userinput>. And the formula in E2 could be
+					<userinput>=A2*B2</userinput>. When copying these formulas down the correct
+				formulas are also in D3:E4.</p>
+			<fig>
+                <title>Sum and product of two numbers</title>
+                <image keyref="Example_Numbers">
+                    <alt>Sum and product of two numbers</alt>
+                </image>
+            </fig>
+			<p>This calculation can also be done with array formulas. This provides no benefits here, but it
+				is a good task to learn working with array formulas.</p>
+			<note type="other" othertype="File"><filepath>Array1.xlsx</filepath></note>
+		</context>
+		<steps>
+			<step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+				<cmd/>
+			</step>
+			<step>
+				<cmd>Select area <uicontrol>D2:D4</uicontrol> and type <userinput>=A2:A4+B2:B4</userinput> and
+					then press <uicontrol>CTRL SHIFT ENTER</uicontrol>.</cmd>
+				<info>Because the result of the addition is a column of three numbers, you should first select
+					an area of three cells for the results.</info>
+				<stepresult>
+					<fig>
+                        <title>Sum of two columns with array formula</title>
+                        <image keyref="Example_Column_Sum">
+                            <alt>Sum of two columns with array formula</alt>
+                        </image>
+                    </fig>
+					<p>The results you see in the cells D2:D4. On the formula bar you see Excel surrounded the
+						formula with braces.</p>
+				</stepresult>
+			</step>
+			<step>
+				<cmd>Select area <uicontrol>E2:E4</uicontrol> and type <userinput>=A2:A4*B2:B4</userinput> and
+					then press <uicontrol>CTRL SHIFT ENTER</uicontrol>.</cmd>
+				<stepresult>
+					<fig>
+                        <title>Product of two columns with array formula</title>
+                        <image keyref="Example_Column_Product">
+                            <alt>Product of two columns with array formula</alt>
+                        </image>
+                    </fig>
+					<p>The results you see in the cells E2:E4. On the formula bar you see Excel surrounded the
+						formula with braces.</p>
+				</stepresult>				
+			</step>
+		</steps>
+		<example>
+			<title>Example: 1-dimensional horizontal array</title>
+			<p>In this example, a row of three numbers is multiplied by the number 4. The result is a row of
+				three numbers. Create this example.</p>
+			<fig>
+                <title>Multiplication of a row with a constant</title>
+                <image keyref="Example_Dim1">
+                    <alt>Multiplication of a row with a constant</alt>
+                </image>
+            </fig>
+		</example>
+		<example>
+			<title>Example: 2-dimensional array</title>
+			<p>In this example, an array of 4 rows and 3 columns is multiplied with a column of four numbers.
+				The result is an array of 4 rows and 3 columns. Create this example.</p>		
+			<fig>
+                <title>Multiplication 2-dimensional array with column</title>
+                <image keyref="Example_Dim2">
+                    <alt>Multiplication 2-dimensional array with column</alt>
+                </image>
+            </fig>
+			<note type="other" othertype="File"><filepath>Array2.xlsx</filepath></note>
+		</example>		
+	</taskbody>
+</task>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="charttype_area" xml:lang="en-US">
+    <title>Task: Area Chart (stacked)</title>
+    <shortdesc>You use an area chart to plot multiple data series over a period of time. If the sum
+        of the values is also important then use a stacked area chart.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Area chart</indexterm>
+                <indexterm>Charts<indexterm>area</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>Area charts are based on line charts. The area between axis and line are commonly
+                emphasized with colors or hatchings. As with a line chart, the size of a variable is
+                plotted over a period of time. In a stacked area chart multiple data series are
+                placed one above the other, so the sum of the data can be seen. With an area chart
+                can you make trends visible.</p>
+        </context>
+        <section>
+            <title>Problem</title>
+            <p>A company sells three products: A, B and C. In the following figure the sales
+                quantity during the first half year is shown.</p>
+            <fig>
+                <title>Sales quantities</title>
+                <image keyref="area_data">
+                    <alt>Sales quantities</alt>
+                </image>
+            </fig>
+            <p>The data is to be displayed in a stacked area chart, as shown in the following
+                figure.</p>
+            <fig>
+                <title>Stacked area chart for numbers of sold products.</title>
+                <image keyref="area_result">
+                    <alt>Stacked area chart for numbers of sold products</alt>
+                </image>
+            </fig>
+            <note type="other" othertype="File"><filepath>Chart_Area.xlsx</filepath></note>
+        </section>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open"
+                conrefend="../common/reuse_task_parts.dita#reuse_task_parts/Select_Cell">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>Insert</uicontrol>
+                        <uicontrol>Recommended Charts (group Charts)</uicontrol>
+                        <uicontrol>Stacked Area</uicontrol>
+                        <uicontrol>OK</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Default stacked area chart</title>
+                        <image keyref="area_default">
+                            <alt>Default stacked area chart</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Change the chart title in <userinput>Number of sold products</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Select legend, then right click and <uicontrol>Format legend</uicontrol>.
+                    Change the position of the legend from <option>Bottom</option> to
+                        <option>Right</option>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

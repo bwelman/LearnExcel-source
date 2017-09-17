@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="function_nper" xml:lang="en-US">
+    <title>Task: Calculating Number of Periods</title>
+    <shortdesc>Example of a calculation of the number of months for the repayment of a
+        loan.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Functions<indexterm>NPER</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>When taking a personal loan of € 4000 you agreed to pay a monthly amount of € 125.
+                Calculate the number of months you have to repay at a 6% fixed annual interest rate.
+                For this calculation the Excel function <varname>NPER</varname> will be used. This
+                function calculates the number of periods for an investment based on periodic,
+                constant payments and a constant interest rate.</p>
+            <note type="attention">Payments are entered as negative numbers.</note>
+            <fig>
+                <title>Calculation number of periods</title>
+                <image keyref="Example_Nper">
+                    <alt>Calculation number of periods</alt>
+                </image>
+            </fig>
+            <note type="other" othertype="File"><filepath>Payment_Periods.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select cell <uicontrol>B4</uicontrol> and press the button <uicontrol>Insert
+                    Function</uicontrol> on the formula bar.</cmd>
+            </step>
+            <step>
+                <cmd>Select in the <option>Financial</option> category the function
+                        <option>NPER</option> and click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>The <wintitle>Function Arguments</wintitle> dialog box
+                    appears.</stepresult>
+            </step>
+            <step>
+                <cmd>Put the cursor in the <varname>Rate</varname> box and enter
+                        <userinput>B2/12</userinput>. Then put the cursor in the
+                        <varname>Pmt</varname> box and enter <userinput>B3</userinput>. Finally put
+                    the cursor in the <varname>Pv</varname> box and enter
+                    <userinput>B1</userinput>.</cmd>
+                <info>
+                    <note type="important">Because the period is in months and not in years, the
+                        annual rate has been divided by 12.</note>
+                </info>
+                <stepresult>
+                    <fig>
+                        <title>Arguments for the function NPER</title>
+                        <image keyref="Example_Nper_Arguments">
+                            <alt>Arguments for the function NPER</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>
+                    <p>The answer <systemoutput>34,95778166</systemoutput> appears, so almost 35
+                        months.</p>
+                </stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

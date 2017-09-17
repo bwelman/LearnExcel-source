@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="chart" xml:lang="en-US">
+    <title>Charts</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Charts are an important tool in analyzing data. Charts can display the information bright
+            and clear and their power should not be underestimated. Trends and patterns can be
+            displayed in graphs and abnormalities or fluctuations can be seen easily.</p>
+    </conbody>
+</concept>

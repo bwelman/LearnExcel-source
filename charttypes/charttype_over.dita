@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="charttype_over" xml:lang="en-US">
+    <title>About Chart Types</title>
+    <shortdesc>The basic types of charts.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Chart<indexterm>types</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Despite the large amount of chart types there are essentially only a limited number of
+            basic types.</p>
+        <fig>
+            <title>Basic chart types</title>
+            <image keyref="charttype_basic">
+                <alt>Basic chart types</alt>
+            </image>
+        </fig>
+        <p>All these basic types have many variants so you can get confused quickly at first. It is
+            important to choose a good chart type for visualizing the data. Ask yourself questions
+            like: What should the chart tell? What facts are being compared?</p>
+    </conbody>
+</concept>

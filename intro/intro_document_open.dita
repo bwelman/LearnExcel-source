@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="intro_document_open" xml:lang="en-US">
+    <title>Task: Opening workbook</title>
+    <shortdesc>Instructions on how to open an existing workbook, an Excel file.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Workbook<indexterm>open</indexterm></indexterm>
+                <indexterm>Open<indexterm>workbook</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <prereq>To perform this task, the practice files should be available on your computer, or
+            USB stick.</prereq>
+        <context><p>Commonly used methods to open an existing workbook are:<ul>
+                    <li>Double-clicking with Windows Explorer on an Excel file.</li>
+                    <li>Choose <uicontrol>Open</uicontrol> in the Excel start screen.</li>
+                    <li>Choose <menucascade>
+                            <uicontrol>File</uicontrol>
+                            <uicontrol>Open</uicontrol>
+                        </menucascade> in Excel.</li>
+                </ul></p><p>The first method opens the file directly in Excel.</p>
+            <p>The other two methods gives you first the dialog window <wintitle>Open</wintitle><fig>
+                    <title>Dialog window Open</title>
+                    <image keyref="Workbook_Open">
+                        <alt>Dialog window Open</alt>
+                    </image>
+                </fig></p>
+            <p>With the choice <uicontrol>This PC</uicontrol> or <uicontrol>Browse</uicontrol> you
+                can browse to the file. You also have the possibility to open files with other
+                formats. To do this, click on the arrow in the bottom right corner at the file type
+                list: <fig>
+                    <title>Choosing file format</title>
+                    <image keyref="Fileformat_Choice">
+                        <alt>Choosing file format</alt>
+                    </image>
+                </fig></p></context>
+        <steps>
+            <step>
+                <cmd>If necessary start first Excel</cmd>
+            </step>
+            <step>
+                <cmd>Open the practice file <filepath>Weatherleather.xlsx</filepath>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

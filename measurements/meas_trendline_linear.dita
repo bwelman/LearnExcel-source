@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="meas_trendlijn_lineair" xml:lang="en-US" >
+	<title>Task: Linear trend line</title>
+	<shortdesc>Explanation of how to add a linear trend line.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Trendlijn</indexterm>
+				<indexterm>Lineaire trendlijn</indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<taskbody>
+		<context>
+			<p>In a timber factory, a large number of similar items are manufactured, which mainly show
+                differences in their dimensions and weight. To investigate whether the production
+                time of these items depends on their weight, a number of measurements are
+                performed.A linear relationship is assumed.</p>
+			<note type="other" othertype="File"><filepath>Prodtime_Weight.xlsx</filepath></note>
+		</context>
+		<steps>
+			<step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+			<step>
+                <cmd>Select the area with the measurements, <userinput>A2:B11</userinput>.</cmd>
+            </step>
+			<step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Insert</uicontrol>
+                        <uicontrol>Recommended Charts (group Charts)</uicontrol>
+                        <uicontrol>Scatter</uicontrol>
+                        <uicontrol>OK</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Scatter chart of the measurement results</title>
+                        <image keyref="prodtime_chart_xy">
+                            <alt>Scatter chart of the measurement results</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+		    <step>
+                <cmd>Select <menucascade>
+                        <uicontrol>+ (Chart Elements)</uicontrol>
+                        <uicontrol>Trendline</uicontrol>
+                        <uicontrol>lineair</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>A dashed straight line is added.</stepresult>
+            </step>
+			<step>
+                <cmd>Select trend line.</cmd>
+                <stepresult>
+                    <p>The task panel <wintitle>Format Trendline</wintitle> is displayed.</p>
+                    <fig>
+                        <title>Trendlijn opties</title>
+                        <image keyref="trendline_options">
+                            <alt>Trendlijn opties</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+			<step>
+                <cmd>Select <uicontrol>Display Equation on chart</uicontrol>.</cmd>
+			    <stepresult>
+			        <fig>
+			            <title>Trendlijn met vergelijking</title>
+			            <image keyref="prodtime_chart_trendline">
+			                <alt>Trendlijn met vergelijking</alt>
+			            </image>
+			        </fig>
+			    </stepresult>
+            </step>
+		</steps>
+		<result>From the equation of the trend line you can now determine the relationship between the two
+            variables:<codeblock>Productiontime = 2,955*Weight + 41,99</codeblock></result>
+		<example>
+			<title>Enhancement of the chart</title>
+			<p>Because the creation of the trend line has been emphasized, no attention was paid to the
+                layout of the chart. The figure below shows a better presentable chart.</p>
+			<fig>
+                <title>Enhanced scatterchart</title>
+                <image keyref="prodtime_chart_xy_complete">
+                    <alt>Enhanced scatterchart</alt>
+                </image>
+            </fig>
+			<p>Changes made:<ul>
+                    <li>Scaling both axis</li>
+                    <li>No decimals along the horizontal axis</li>
+                    <li>Trenline thicker red line</li>
+                    <li>Titles for axis and chart</li>
+                    <li>Equation moved</li>
+                </ul></p>
+		</example>
+	</taskbody>
+</task>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="intro_document_save" xml:lang="en-US">
+    <title>Task: Saving Workbook</title>
+    <shortdesc>Instructions on how to save a workbook.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Workbook<indexterm>save</indexterm><indexterm>save
+                    as</indexterm></indexterm>
+                <indexterm>Save<indexterm>workbook</indexterm></indexterm>
+                <indexterm>Save as<indexterm>workbook</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context><p>The most frequently used methods to save a workbook are through <uicontrol>File</uicontrol> and
+                through the <uicontrol>Quick Access Toolbar</uicontrol>. When you re- save an
+                existing workbook, the previous version of the workbook is overwritten. When you
+                save a workbook for the first time, then Excel shows the dialog box <wintitle>Save
+                    as</wintitle>.</p></context>
+        <steps>
+            <step>
+                <cmd>Save the workbook with one of the following methods:</cmd>
+                <choices>
+                    <choice>Click on <menucascade>
+                            <uicontrol>File</uicontrol>
+                            <uicontrol>Save</uicontrol>
+                        </menucascade>.</choice>
+                    <choice>Click the button <uicontrol>Save</uicontrol> in the <wintitle>Quick
+                            Access Toolbar</wintitle>.</choice>
+                </choices>
+                <stepresult>There are now two possible situations, depending on whether the workbook
+                    has been saved before and therefore already exists.<ul>
+                        <li>In the case of an existing workbook, the previous version of the
+                            workbook is overwritten. The following steps can be skipped.</li>
+                        <li>In the case of a new workbook the dialog box <wintitle>Save
+                                as</wintitle> appears. Then you must perform an additional
+                            step.</li>
+                    </ul></stepresult>
+            </step>
+            <step>
+                <cmd>Select the desired storage location</cmd>
+            </step>
+            <step>
+                <cmd>Enter your file name in the box <varname>Bestandsnaam</varname> and click
+                        <uicontrol>Save</uicontrol>.</cmd>
+                <info>
+                    <note type="tip">
+                        <p>You also have the possibility here to save the file in an other format.
+                            Choose the desired file format. <fig>
+                                <title>Choice file format</title>
+                                <image keyref="Saveas_Format_Choice">
+                                    <alt>Choice file format</alt>
+                                </image>
+                            </fig></p>
+                        <p>The possibilities are:<fig>
+                                <title>Possible file formats</title>
+                                <image keyref="Saveas_Formats">
+                                    <alt>Possible file formats</alt>
+                                </image>
+                            </fig></p>
+                    </note>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

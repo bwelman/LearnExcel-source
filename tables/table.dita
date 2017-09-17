@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="table" xml:lang="en-US">
+    <title>Tables</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Much information in Excel is kept in tables with data, a kind of database in a worksheet.
+            Although Excel is not a real database program such as MS Access, Excel can be used for
+            simple databases. These simple databases consist of one table such as address lists,
+            phone lists, etc. The name database is usually reserved for external files from specific
+            database programs. A table with data in Excel was formerly called a list. Working with
+            good structured tables is a common activity, especially at data analysis. Structured
+            tables are a necessity for working with pivot tables.</p>
+    </conbody>
+</concept>

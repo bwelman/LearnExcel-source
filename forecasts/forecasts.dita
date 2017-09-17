@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="forecasts" xml:lang="en-US">
+    <title>Forecasting and Time series</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm/>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Many business-critical decisions depend on good forecasts for the future.Making a
+            forecast is based on historical data.</p>
+        <p>The historical data often includes trends, season patterns, and external factors. There
+            are two common scenarios:</p>
+        <ul>
+            <li>Financial forecasts of revenue, costs and profits as well as indicators such as
+                number of new customers or sales price.</li>
+            <li>Product demand forecasts are a critical step in the supply chain management of an
+                organization. Based on this is the purchase of raw materials and deployments of
+                people and machines. Forecasting is often unique for a line of business. For
+                example, an electricity company will estimate the energy to be delivered in the
+                future. And a hospital will plan the number of beds needed.</li>
+        </ul>
+        <p>For a thorough understanding of time series and the various forecasting techniques,
+            proper statistical knowledge is required. In this study book, the statistical
+            backgrounds are not treated. The amount of formulas is also reduced as much as possible.
+            The objectives of this chapter are:</p>
+        <ol>
+            <li>Introduction in the analysis of time series.</li>
+            <li>Introduction of forecasting techniques in general and the possibilities with
+                Excel.</li>
+            <li>Gaining practical skills through tasks and exercises.</li>
+        </ol>
+    </conbody>
+</concept>

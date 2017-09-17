@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="calculation_names_create" xml:lang="en-US">
+    <title>Task: Creating names</title>
+    <shortdesc>In this task you will learn a few ways to assign names to cells and use them in
+        formulas.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Names<indexterm>creating</indexterm></indexterm>
+                <indexterm>Cell names<indexterm>creating</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>There are several ways to assign a name to a cell. The method used in practice
+                usually depends on the preferences of the user and their entering speed. In this
+                task there are two ways proposed to assign a name to a cell and three methods to use
+                the name in a formula.</p>
+            <note type="tip">The same methods can be used to assign a name to an area of
+                cells.</note>
+        </context>
+        <steps>
+            <step>
+                <cmd>Start with a new worksheet.</cmd>
+            </step>
+            <step>
+                <cmd>Enter in <uicontrol>A1</uicontrol> the number <userinput>100</userinput> and in
+                        <uicontrol>A2</uicontrol> the number <userinput>275</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Select A1 and choose <menucascade>
+                        <uicontrol>Formulas</uicontrol>
+                        <uicontrol>Define Name (group Defined Names)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult><fig>
+                        <title>Dialog box <wintitle>New Name</wintitle></title>
+                        <image keyref="Name_New">
+                            <alt>Dialog box new name</alt>
+                        </image>
+                    </fig>In the <uicontrol>Name</uicontrol> text boxy you can enter the name.
+                    Sometimes Excel gives a suggestion for the name. In the
+                        <uicontrol>Comment</uicontrol> box you can optionally give an explanation,
+                    which can be useful later (audits) for checking and creating documentation for
+                    the model.</stepresult>
+            </step>
+            <step>
+                <cmd>Enter the name <userinput>Purchases</userinput> and click on
+                        <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>The name box now displays this name instead of the address. <fig>
+                        <title>Cell A1 with the name <varname>Purchases</varname> in the name
+                            box</title>
+                        <image keyref="Name_Box">
+                            <alt>Name box with name for cell A1</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>An alternative and quick way to assign a name is by selecting a cell and then
+                    directly enter the name in the name box.</cmd>
+                <substeps>
+                    <substep>
+                        <cmd>Select cell A2.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Click in the name box and change <systemoutput>A2</systemoutput> in
+                                <userinput>Sales</userinput>.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Press <uicontrol>Enter</uicontrol>.</cmd>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>Select cell A3 and enter the formula for calculating the profit in one of the
+                    following ways:</cmd>
+                <choices>
+                    <choice>Type <userinput>= Sales-Purchases</userinput> and press the
+                            <uicontrol>Enter</uicontrol> key.</choice>
+                    <choice>Type <userinput>=</userinput> then <uicontrol>select A2</uicontrol>,
+                        type <userinput>-</userinput>, then <uicontrol>select A1</uicontrol> and
+                        press the <uicontrol>Enter</uicontrol> key.</choice>
+                    <choice>Type <userinput>=</userinput> then choose <menucascade>
+                            <uicontrol>Formulas</uicontrol>
+                            <uicontrol>Use in formula (group Defined Names)</uicontrol>
+                            <uicontrol>Sales</uicontrol>
+                        </menucascade>, type <userinput>-</userinput> and then choose <menucascade>
+                            <uicontrol>Formulas</uicontrol>
+                            <uicontrol>Use in formula (group Defined Names)</uicontrol>
+                            <uicontrol>Purchases</uicontrol>
+                        </menucascade> and press the <uicontrol>Enter</uicontrol> key.</choice>
+                </choices>
+                <stepresult>In cell A3 the answer 175 appears. Selecting this cell shows you
+                        <systemoutput>=Sales-Purchases</systemoutput> in the formula bar. By using
+                    names you get a well readable formula.</stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

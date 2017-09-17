@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="goalseek_tips" xml:lang="en-US">
+    <title>Tips Goal Seek</title>
+    <shortdesc>Some tips if Goal Seek does not produce the right answer.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Goal Seek<indexterm>options</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <refbody>
+        <section>
+            <title>Goal Seek does not produce the right answer</title>
+            <p>It is possible that there is no answer or that Excel cannot find one. In that case a
+                dialog box pops up.</p>
+            <p>If the solution exists, but Excel can not find it, then check the following possible
+                solutions:</p>
+            <ol>
+                <li>Check in the model that the result cell depends on the changing cell. The result
+                    cell should always contain a formula or a function. And the changing cell should
+                    only contain a value and no formula or function.</li>
+                <li>Choose another initial value for the changing cell.</li>
+                <li>Increase the maximum number of iterations (default value is 100) with <menucascade>
+                        <uicontrol>File</uicontrol>
+                        <uicontrol>Options</uicontrol>
+                        <uicontrol>Formulas</uicontrol>
+                    </menucascade><fig>
+                        <title>Dialog box <wintitle>Calculation options</wintitle></title>
+                        <image keyref="workbook_calculation_options">
+                            <alt>Dialog box calculation options</alt>
+                        </image>
+                    </fig></li>
+            </ol>
+        </section>
+    </refbody>
+</reference>

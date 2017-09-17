@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="forecasts_trendline_logarithmic" xml:lang="en-US">
+    <title>Task: Logarithmic trend line</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm/>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>A logarithmic trend line is best appropriate curved line that fits well with data
+                that in the beginning soon rise (or fall) and then stabilize.<note type="attention"
+                    >There should be no null values in the data set.</note></p>
+            <p>The equation of the trend line is: <codeph>y = a*ln(x) + b</codeph> with a and b as
+                constants.</p>
+            <p>The following example is about the growth of the number of bacteria in culture.</p>
+            <note type="other" othertype="File"><filepath>Trendlines.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open the practice file and select worksheet
+                    <wintitle>Logarithmic</wintitle></cmd>
+            </step>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/Trendline_Start"
+                conrefend="../common/reuse_task_parts.dita#reuse_task_parts/Trendline_End">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select at Trendline Options: <option>Logaritmisch</option>. Let equation and R-squared value be displayed in the chart.</cmd>
+            </step>
+            <step>
+                <cmd>Change the chart title in <userinput>Growth bacteria</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Add Axis titles and change title Y-axis in <userinput>Number (x
+                        million)</userinput> and title X-axis in <userinput>Day</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Drag in the chart the equation to an empty place.</cmd>
+            </step>
+        </steps>
+        <result>
+            <fig>
+                <title>Example logarithmic trend line</title>
+                <image keyref="example_log">
+                    <alt>Example logarithmic trend line</alt>
+                </image>
+            </fig>
+            <p>R<sup>2</sup> = 0.9622 which means that the logarithmic trend line fits the data very
+                well, a fast increase in the beginning followed by  a gradual flattening.</p>
+        </result>
+        <example>
+            <title>Worksheet functions</title>
+            <p>Equation: y = a*LN(x) + b<ul>
+                    <li>a =INDEX(LINEST(known_ys ; LN(known_xs)) ; 1 ; 1)</li>
+                    <li>b =INDEX(LINEST(known_ys ; LN(known_xs)) ; 1 ; 2)</li>
+                </ul></p>
+        </example>
+    </taskbody>
+</task>

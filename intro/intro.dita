@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="intro" xml:lang="en-US">
+    <title>Starting with Excel</title>
+    <shortdesc>An introduction to Excel.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Excel is a program from the Microsoft Office package and it allows you to make
+            calculations in calculation sheets (spreadsheets). This chapter is an introduction to
+            spreadsheets in general and in Excel specific.</p>
+    </conbody>
+</concept>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="pivots_datasources" xml:lang="en-US">
+    <title>Task: Finding Data Sources</title>
+    <shortdesc>A PivotTable contains summarized data. In this task you learn how to find the source
+        of these data.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>PivotTables<indexterm>source data</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>In a worksheet are some data of employees like sales, expenses and provision per
+                month an per region. A PivotTable with the sales per region per employee has been
+                created in another worksheet.</p>
+            <fig>
+                <title>Sales per region per employee</title>
+                <image keyref="sales_pivot">
+                    <alt>Sales per region per employee</alt>
+                </image>
+            </fig>
+            <p>If you want the individual values a result is provides, Excel can show you this
+                quickly and easily. By double clicking on a result Excel creates a new worksheet
+                containing a table with the source data.</p>
+            <note type="other" othertype="File"><filepath>Sales.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select the worksheet <wintitle>PivotTable</wintitle> an double click on the
+                    results of <uicontrol>Jansen</uicontrol> in the region
+                        <uicontrol>East</uicontrol>.</cmd>
+                <stepresult>
+                    <p>Excel creates a new worksheet with a list of all information of Jansen in the
+                        region East.</p>
+                    <fig>
+                        <title>Data for Jansen in the region East</title>
+                        <image keyref="sales_pivot_datasource">
+                            <alt>Data for Jansen in the region east.</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

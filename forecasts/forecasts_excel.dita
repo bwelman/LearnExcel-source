@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept id="forecasts_excel" xml:lang="en-US">
+ <title>Forecasting in Excel</title>
+ <shortdesc/>
+ <prolog>
+  <critdates>
+   <created date="2017-08-31"/>
+   <revised modified="2017-08-31"/>
+  </critdates>
+  <metadata>
+   <keywords>
+    <indexterm/>
+   </keywords>
+  </metadata>
+ </prolog>
+ <conbody>
+  <p>Forecasting is is extrapolation of time series, to predict future values. This is done by using
+            different statistical techniques. In order to be able to make an accurate prediction, it
+            is important to discover a pattern in the historical data. This is done by analysis of
+            the time series.</p>
+  <p>Excel has several options to make predictions.</p>
+  <ul>
+   <li>Through the equation of the trend line. The coefficients of the equation can be calculated
+                with worksheet functions.</li>
+   <li>Through special worksheet functions<ul>
+                    <li>Linear model: FORECAST.LINEAR and TREND</li>
+                    <li>Exponential model: GROWTH</li>
+                </ul></li>
+   <li>Through new functions in Excel 2016. These functions use advanced features such as
+                Exponential Triple Smoothing (ETS):<ul id="ul_b42_sgf_gv">
+                    <li>FORECAST.ETS)</li>
+                    <li>
+                        <p>FORECAST.ETS.SEASONALITY</p>
+                    </li>
+                    <li>
+                        <p>FORECAST.LINEAR</p>
+                    </li>
+                    <li>
+                        <p>FORECAST.ETS.CONFINT</p>
+                    </li>
+                    <li>FORECAST.ETS.STAT</li>
+                </ul></li>
+   <li>Through the Add-in <term>Data Analysis</term>. This offers Exponential Smoothing and Moving
+                Average. Furthermore you can also make correlation and regression calculations.</li>
+  </ul>
+ </conbody>
+</concept>

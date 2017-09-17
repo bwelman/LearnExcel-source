@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="data_insert_rowcolumn" xml:lang="en-US">
+    <title>Inserting rows and columns</title>
+    <shortdesc>Instructions on how to insert rows and columns in an existing worksheet.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Row<indexterm>insert</indexterm></indexterm>
+                <indexterm>Column<indexterm>insert</indexterm></indexterm>
+                <indexterm>Insert<indexterm>row</indexterm><indexterm>column</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>It often happens that you want to insert a row or a column somewhere in between data in a
+            worksheet. The process is the same for rows and columns.</p>
+        <ol>
+            <li>Right click on the header of the row or column.</li>
+            <li>Choose <uicontrol>Insert</uicontrol>.</li>
+        </ol>
+        <note type="tip">To insert multiple rows or columns, select the desired number of
+            rows/columns, right click and choose <uicontrol>Insert</uicontrol>. Then the number will
+            be inserted before the first row or column of the selection.</note>
+    </conbody>
+</concept>

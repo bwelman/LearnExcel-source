@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="array_single" xml:lang="en-US">
+	<title>Task: Calculating one result</title>
+	<shortdesc>How you can use one array formula to avoid using several formulas.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords/>
+		</metadata>
+	</prolog>
+	<taskbody>
+		<context><p>You can use an array formula if you need to perform various calculations to get one result. This
+				type of array formula can simplify a worksheet because multiple formulas are
+				replaced by only one array formula.</p>
+			<p>The following example shows a stock portfolio with prices. In order to calculate the total
+				value of the shares at a given price you normally calculate the value for each share
+				and then add these values​​. With an array formula this calculation can be done
+				without calculating the intermediate results.</p>
+			<fig>
+                <title>Prices of shares</title>
+                <image keyref="Example_Shares">
+                    <alt>Prices of shares</alt>
+                </image>
+            </fig>
+			<note type="other" othertype="File"><filepath>Array3.xlsx</filepath></note>
+		</context>
+		<steps>
+		    <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+				<cmd/>
+			</step>
+			<step>
+				<cmd>Select cell <uicontrol>C6</uicontrol>.</cmd>
+			</step>
+			<step>
+				<cmd>Type <userinput>=SUM(B2:B5*C2:C5)</userinput> and press <uicontrol>CTRL SHIFT
+						ENTER</uicontrol>.</cmd>
+			</step>
+			<step>
+				<cmd>Repeat this action for cell D6, the entered formula is
+						<userinput>=SUM(B2:B5*D2:D5)</userinput>.</cmd>
+				<stepresult>
+					<note type="tip">By making the first column in the formula in C6 absolute, so
+							<userinput>=SUM($B$2:$B$5*C2:C5)</userinput>, the formula can be copied
+						to D6.</note>
+				</stepresult>
+			</step>
+		</steps>
+		<example>
+			<title>Example: average mark</title>
+			<p>In this example, the weighted average of four tests is calculated with an array formula. The
+				formula can be copied. Create this example.</p>		
+			<fig>
+                <title>Weighted averages</title>
+                <image keyref="Example_Marks">
+                    <alt>Weighted averages</alt>
+                </image>
+            </fig>
+			<note type="other" othertype="File"><filepath>Array4.xlsx</filepath></note>
+		</example>	
+	</taskbody>
+</task>

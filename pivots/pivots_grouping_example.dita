@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="pivots_grouping_example" xml:lang="en-US">
+    <title>Task: Example Grouping</title>
+    <shortdesc>An example of grouping data based on a date field.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>PivotTables<indexterm>grouping</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>The practice file contains a data table named <varname>SalesData</varname> and
+                columns <varname>Region</varname>, <varname>Salesman</varname>,
+                    <varname>InvoiceNr</varname>, <varname>InvoiceDate</varname>,
+                    <varname>ProductCategory</varname> and <varname>InvoiceAmount</varname>.</p>
+            <note type="other" othertype="File"><filepath>Invoices.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <stepsection>First of all, a PivotTable with the sales per salesman per product
+                category is created.</stepsection>
+            <step>
+                <cmd>Select any cell in the table. Choose <menucascade>
+                        <uicontrol>tab Insert</uicontrol>
+                        <uicontrol>PivotTable (group Tables)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <p>The dialog box <wintitle>Create PivotTable</wintitle> appears. The range of
+                        the table has already filled in.</p>
+                    <fig>
+                        <title>Range and location</title>
+                        <image keyref="invoices_pivot_create">
+                            <alt>Range and location</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>In this task the PivotTable should appear in a new worksheet. So accept the
+                    default location and click <uicontrol>OK</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Drag  field <varname>Salesman</varname> to the area
+                    <uicontrol>Rows</uicontrol>,  field <varname>Productcategory</varname> to the
+                    area <uicontrol>Columns</uicontrol> and  field <varname>InvoiceAmount</varname>
+                    to the area <uicontrol>Values</uicontrol>. Give the values a currency
+                    format.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>PivotTable sales per salesman</title>
+                        <image keyref="invoices_sales-salesman">
+                            <alt>Pivot table sales per salesman</alt>
+                        </image>
+                    </fig>
+                    <p>Note that there are big differences in the sales per salesman.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Drag field <option>InvoiceDate</option> to the area <uicontrol>Rows</uicontrol>
+                    and below field <varname>Salesman</varname>.</cmd>
+                <stepresult>
+                    <p>Excel's automatic time grouping feature creates two calculated fields,
+                            <varname>Years</varname> and <varname>Quarters</varname> in the
+                            <uicontrol>Rows</uicontrol> area.<fig>
+                            <title>Automatically added Quarters and Years fields</title>
+                            <image keyref="invoices_pivot_datefields">
+                                <alt>Automatically added Quarters and Years fields</alt>
+                            </image>
+                        </fig></p>
+                    <p>And in the PivotTable the sales are grouped per year.<fig>
+                            <title>PivotTable with grouped data</title>
+                            <image keyref="invoices_sales_grouped">
+                                <alt>PivotTable with grouped data</alt>
+                            </image>
+                        </fig></p>
+                    <p>You now see that Brown started selling in 2011 and not in 2010, which is a
+                        possible explanation for the lower sales.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click on the <uicontrol>+</uicontrol> (plus) button in front of
+                        <option>2010</option> of <option>Anderson</option>. And after that on the
+                        <uicontrol>+</uicontrol> button in front of <option>Qtr1</option>.</cmd>
+                <stepresult>
+                    <p>First the levels of the years <option>2010</option> are expanded tot
+                        quarters. After that the <option>Qtr1</option> levels are expanded to the
+                        months. <fig>
+                            <title>Drill-down Year and Quarter</title>
+                            <image keyref="invoices_pivot_drilldown">
+                                <alt>Drill-down Year and Quarter</alt>
+                            </image>
+                        </fig>
+                    </p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click on the <uicontrol>- </uicontrol>(minus) buttons to collaps all
+                    levels.</cmd>
+            </step>
+            <step>
+                <cmd>Drag field <varname>Productcategory</varname> out of the
+                        <uicontrol>Columns</uicontrol> area. Drag field <varname>Quarters</varname>
+                    from <uicontrol>Rows</uicontrol> to <uicontrol>Columns</uicontrol>. Drag fields
+                        <varname>Years</varname> and <varname>InvoiceDate</varname> out of the
+                        <uicontrol>Rows</uicontrol> area.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Pivot fields in report sales per salesman per quarter</title>
+                        <image keyref="invoices_pivot_quarters">
+                            <alt>?</alt>
+                        </image>
+                    </fig>
+                    <fig>
+                        <title>PivotTable sales per salesman per quarter</title>
+                        <image keyref="invoices_sales-salesman-quarter">
+                            <alt>Sales per salesman per quarter</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <stepsection>To easily compare values you can also choose for displaying percentages (of
+                row total, column total or grand total).</stepsection>
+            <step>
+                <cmd>Select a numeric value in the PivotTable and choose <menucascade>
+                        <uicontrol>tab Analyze</uicontrol>
+                        <uicontrol>Field Settings (group Active Field)</uicontrol>
+                    </menucascade>. In the dialog box <wintitle>Value Field Settings</wintitle>
+                    select tab <option>Show values</option> As and select <option>% of Row
+                        Total</option>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Setting values as percentages of row total</title>
+                        <image keyref="invoices_fieldsettings_pct-rowtotal">
+                            <alt>Setting values as percentages of row total</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Percentage sales per salesman per quarter</title>
+                        <image keyref="invoices_sales-salesman-quarter_pct">
+                            <alt>Percentage sales per salesman per quarter</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+        </steps>
+        <example>
+            <title>Data analyze questions</title>
+            <p>Use the PivotTable possibilities to answer the following questions. There are muliple
+                ways to find the answers.</p>
+            <ol>
+                <li>Which salesman has the greatest total sales in december 2010?<draft-comment
+                        author="benw">Phillips. Columns=InvoiceDate,
+                    Rows=Salesman</draft-comment></li>
+                <li>In which month of which year was the maximum sales of software?<draft-comment
+                        author="benw">January 2011, Columns=Years, Rows=InvoiceDate,
+                        Filters=Productcategory (software)</draft-comment></li>
+                <li>What are the sales percentages for hard- and software per region?</li>
+                <li>In which quarter of which year has Anderson the lowest sales?<draft-comment
+                        author="benw">Qtr3 of 2011, Colums=Quarters, Rows=Salesman-Years,
+                        Filters=Salesman (Anderson)</draft-comment></li>
+                <li>Analyse the sales of Brown in quarter 2 of 2011. Do you notice
+                        something?<draft-comment author="benw">Only sales in 1 month (Juny),
+                        Rows=Salesman-Years-Quarters-InvoiceDate</draft-comment></li>
+            </ol>
+        </example>
+    </taskbody>
+</task>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="charttype_bar" xml:lang="en-US">
+    <title>Task: Bar Chart</title>
+    <shortdesc>Chart type that is very suitable for displaying rankings.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Bar chart</indexterm>
+                <indexterm>Charts<indexterm>bar</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>Bar charts are widely used to make clear differences in ranking. The importance
+                (priority) of certain matters at the same moment can be expressed.</p>
+            <p>The results are usually sorted from highest to lowest, so the highest result is
+                displayed as the first bar.</p>
+        </context>
+        <section>
+            <title>Problem</title>
+            <p>The following figure shows the percentage of smokers by age group in 2009 (source:
+                CBS).</p>
+            <fig>
+                <title>Percentage smokers in 2009</title>
+                <image keyref="bar_data">
+                    <alt>Percentage smokers in 2009</alt>
+                </image>
+            </fig>
+            <p>The data should be displayed in a bar chart as shown in the following figure.</p>
+            <fig>
+                <title>Bar chart percentage smokers in 2009</title>
+                <image keyref="bar_result">
+                    <alt>Bar chart percentage smokers in 2009</alt>
+                </image>
+            </fig>
+            <note type="other" othertype="File"><filepath>Chart_Bar.xlsx</filepath></note>
+        </section>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Sort the table on percentage of smokers from largest to smallest.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Sorted percentage smokers in 2009</title>
+                        <image keyref="bar_data_sorted">
+                            <alt>Sorted percentage smokers in 2009</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Select any cell in the data area.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Insert</uicontrol>
+                        <uicontrol>Insert Column or bar Chart (group Charts)</uicontrol>
+                        <uicontrol>Clustered Bar</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <p>The bar chart appears in the worksheet. The longest bar is at the bottom.
+                        This is the default procedure of Excel. This order must therefore be changed
+                        together with changing the title.</p>
+                    <fig>
+                        <title>Default bar chart (longest bar at the bottom)</title>
+                        <image keyref="bar_default">
+                            <alt>Default bar chart with the longest bar at the bottom.</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd><menucascade>
+                        <uicontrol>Select vertical as</uicontrol>
+                        <uicontrol>right click</uicontrol>
+                        <uicontrol>Format Axis</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>The task panel <wintitle>Format Axis</wintitle> is
+                    displayed.</stepresult>
+            </step>
+            <step>
+                <cmd><menucascade>
+                        <uicontrol>Axis Options</uicontrol>
+                        <uicontrol>select Categories in reverse order</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Format Axis</title>
+                        <image keyref="bar_axis_options">
+                            <alt>Format Axis</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Change the text of the title to: <userinput>Percentage Smokers in
+                        2009</userinput>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

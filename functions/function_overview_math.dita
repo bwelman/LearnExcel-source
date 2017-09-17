@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="function_overview_math" xml:lang="en-US">
+  <title>Overview Mathematical Functions</title>
+  <shortdesc>An overview of some functions for mathematics.</shortdesc>
+  <prolog>
+    <critdates>
+        <created date="2017-08-31"/>
+        <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <indexterm>Functions<indexterm>mathematical</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section>
+      <title>ROUND</title>
+      <p>This function rounds a number up or down to a specified number of decimal places.</p>
+      <codeblock>ROUND(number, num_digits)</codeblock>
+      <parml>
+        <plentry>
+          <pt>number</pt>
+          <pd>Required. The number that is to be rounded.</pd>
+        </plentry>
+        <plentry>
+          <pt>num_digits</pt>
+          <pd>Required. The number of decimals to round to.</pd>
+        </plentry>
+      </parml>
+    </section>
+    <section>
+      <title>FLOOR</title>
+      <p>This function rounds a supplied number down to the nearest multiple of the specified
+        significance.</p>
+      <codeblock>FLOOR(number, significance)</codeblock>
+      <parml>
+        <plentry>
+          <pt>number</pt>
+          <pd>Required. The number that is to be rounded.</pd>
+        </plentry>
+        <plentry>
+          <pt>significance</pt>
+          <pd>Required. The multiple of significance to be rounded to.</pd>
+        </plentry>
+      </parml>
+    </section>
+    <section>
+      <title>CEILING</title>
+      <p>This function rounds a number up to the nearest multiple of significance.</p>
+      <codeblock>CEILING(number, significance)</codeblock>
+      <parml>
+        <plentry>
+          <pt>number</pt>
+          <pd>Required. The number that is to be rounded.</pd>
+        </plentry>
+        <plentry>
+          <pt>significance</pt>
+          <pd>Required. The multiple of significance to be rounded to.</pd>
+        </plentry>
+      </parml>
+    </section>
+    <section>
+      <title>ROUNDDOWN</title>
+      <p>This function rounds a number down to a specified number of decimal places.</p>
+      <codeblock>ROUNDDOWN(number, num_digits)</codeblock>
+      <parml>
+        <plentry>
+          <pt>number</pt>
+          <pd>Required. The number that is to be rounded.</pd>
+        </plentry>
+        <plentry>
+          <pt>num_digits</pt>
+          <pd>Required. The number of decimals to round to.</pd>
+        </plentry>
+      </parml>
+    </section>
+    <section>
+      <title>ROUNDUP</title>
+      <p>This function rounds a number up to a specified number of decimal places.</p>
+      <codeblock>ROUNDUP(number, num_digits)</codeblock>
+      <parml>
+        <plentry>
+          <pt>number</pt>
+          <pd>Required. The number that is to be rounded.</pd>
+        </plentry>
+        <plentry>
+          <pt>num_digits</pt>
+          <pd>Required. The number of decimals to round to.</pd>
+        </plentry>
+      </parml>
+    </section>    
+    <section>
+      <title>SUMIF</title>
+      <p>This function finds values in a supplied array that satisfy a given criteria and returns
+        the sum of the corresponding values in a second supplied array.</p>
+      <codeblock>SUMIF(range, criteria, [sum_range])</codeblock>
+      <parml>
+        <plentry>
+          <pt>range</pt>
+          <pd>Required. An array of values to be tested against the supplied criteria. Empty cells
+            ​​and text values ​​are ignored.</pd>
+        </plentry>
+        <plentry>
+          <pt>criteria</pt>
+          <pd>Required. The condition to be tested against each of the values in range.</pd>
+        </plentry>
+        <plentry>
+          <pt>sum_range</pt>
+          <pd>Optional. An array of numeric values which are to be added together, if the
+            corresponding range entry satisfies the supplied criteria. If the sum_range argument is
+            omitted, the values from the range argument are used instead.</pd>
+        </plentry>
+      </parml>
+    </section>
+  </refbody>
+</reference>

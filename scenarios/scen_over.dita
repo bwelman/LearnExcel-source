@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="scen_over" xml:lang="en-US">
+	<title>What are scenarios?</title>
+	<shortdesc>A brief description about scenarios.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Scenario</indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<conbody>
+		<p>In a scenario you give some variable cells (known as changing cells) different values and
+			calculate the effect of the changes on certain result cells. The result cells contain
+			formulas with references to the changing cells. For example, you might want to compare
+			best-case and worst-case scenarios for the annual profit of a coffee shop, based on
+			different costs. The result cell is the cell with the calculated profit. The changing
+			cells are the cells with the costs. Identifying the changing cells and result cells is
+			key for creating scenarios.</p>
+		<p>With the Excel scenario manager you can easily create new forecasting scenarios, view
+			existing scenarios, run scenario management commands, and produce a summary report that
+			shows both the input values used in each scenario as well as the values of the result
+			cells.</p>
+		<note type="tip">It is recommanded to always save the current situation in a scenario, for
+			example under the name <userinput>Current</userinput>.</note>
+	</conbody>
+</concept>

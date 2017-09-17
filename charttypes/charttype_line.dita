@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="charttype_line" xml:lang="en-US">
+    <title>Task: Line Chart</title>
+    <shortdesc>You use a line chart to visualize a trend in data over intervals of time.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Line chart</indexterm>
+                <indexterm>Charts<indexterm>line</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>For line charts the time unit is plotted along the horizontal axis, the category
+                axis. The measured variable is plotted along the vertical axis. A line can be drawn
+                between the points on the graph to visualize a trend in data over intervals of
+                time.</p>
+        </context>
+        <section>
+            <title>Problem</title>
+            <p>In the following figure you can find annual temperature data (<sup>o</sup>C) for
+                Amsterdam Airport Schiphol (source: <xref
+                    href="https://en.tutiempo.net/climate/ws-62400.html" format="html"
+                    scope="external"/>).<ul>
+                    <li>T = Average annual temperature</li>
+                    <li>Tmax = Annual average maximum temperature</li>
+                    <li>Tmin = Average annual minimum temperature</li>
+                </ul></p>
+            <p>(source: KNMI).</p>
+            <fig>
+                <title>Annual temperature  data Amsterdam Airport Schiphol</title>
+                <image keyref="line_data">
+                    <alt>Average annual temperature in Twente</alt>
+                </image>
+            </fig>
+            <p>The data is to be displayed in a line chart, as shown in the following figure.</p>
+            <fig>
+                <title>Line chart with average annual temperature for Schiphol</title>
+                <image keyref="line_result">
+                    <alt>Line chart with average annual temperature for Schiphol</alt>
+                </image>
+            </fig>
+            <note type="other" othertype="File"><filepath>Chart_Line.xlsx</filepath></note>
+        </section>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open"
+                conrefend="../common/reuse_task_parts.dita#reuse_task_parts/Select_Cell">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>Insert</uicontrol>
+                        <uicontrol>Recommended Chart (group Charts)</uicontrol>
+                        <uicontrol>Line</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Default line chart</title>
+                        <image keyref="line_default">
+                            <alt/>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Change chart title in <userinput>Annual Temperatures Amsterdam Schiphol
+                        Airport</userinput></cmd>
+            </step>
+            <step>
+                <cmd>Add vertical axis with text <userinput>Temperature (C)</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Select the chart and change the Chart Style. Choose a style you like.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

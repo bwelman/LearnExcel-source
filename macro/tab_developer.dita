@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="tab_developer" xml:lang="en-US">
+    <title>Task: Developer tab</title>
+    <shortdesc>Instructions on how you can make the Developer tab visible.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Tab<indexterm>developer</indexterm></indexterm>
+                <indexterm>Developer tab</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>Some features of Excel are under the tab <uicontrol>Developer</uicontrol>. This tab
+            is not shown by default when you install Excel. The following steps show how you can add
+            this tab to the Ribbon. This is a one time action.</context>
+        <steps>
+            <step>
+                <cmd>Click on <menucascade>
+                        <uicontrol>File</uicontrol>
+                        <uicontrol>Options</uicontrol>
+                        <uicontrol>Customize Ribbon</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Excel options: Show Developer tab</title>
+                        <image keyref="Excel_Options_Developertab">
+                            <alt>Excel options to show the developer tab</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Select under Main Tabs <uicontrol>Developer</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>In the Excel window is now the Developer tab visible in the
+                    ribbon.
+                    <fig>
+                        <title>Developer tab</title>
+                        <image keyref="tab_developer">
+                            <alt>Developer tab</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

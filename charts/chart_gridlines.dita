@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="chart_gridlines" xml:lang="en-US">
+    <title>Task: Gridlines</title>
+    <shortdesc>Adding and removing vertical and horizontal gridlines in a chart.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Charts<indexterm>gridlines</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>Gridlines are horizontal and vertical lines extending from the axes across the plot
+                area of the chart. Gridlines make the data in a chart easier to read. You can show
+                gridlines for the major or minor intervals on the axes. By default there are some
+                gridlines added to most charts.</p>
+            <note conref="../common/reuse_task_parts.dita#reuse_task_parts/Chart_File"/>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/Chart_Select">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Click the Charts Element button, the plus sign <image
+                        keyref="button_chart_elements" id="image_slt_wcm_q1b"/> next to the chart
+                    and you'll see a list of chart elements.</cmd>
+            </step>
+            <step>
+                <cmd>Click the continuation arrow of <option>Gridlines</option> and hover the cursor
+                    over the options.</cmd>
+                <stepresult>By each option you will see the result in the chart.</stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

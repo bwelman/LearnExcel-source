@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="forecasts_forecastsheet_options">
+    <title>Options forecast sheet</title>
+    <shortdesc/>
+    <conbody>
+        <p>In the window <wintitle>Create Forecast Sheet</wintitle> you can set some options.</p>
+        <fig>
+            <title>Options Forecast Sheet</title>
+            <image keyref="sales_fcast_options">
+                <alt>Options Forecast Sheet</alt>
+            </image>
+        </fig>
+        <p>The different options are explained below.</p>
+        <section>
+            <title>Forecast Start</title>
+            <p>The starting date for the forecast is automatically set by Excel. You can change it.
+                When you pick a date before the end of the historical data, only data prior to the
+                start date are used in the prediction (this is sometimes referred to as
+                    <q>hindcasting</q>)..</p>
+            <note type="tip">Starting your forecast before the last historical point gives you a
+                sense of the prediction accuracy as you can compare the forecasted series to the
+                actual data. However, if you start the forecast too early, the forecast generated
+                won't necessarily represent the forecast you'll get using all the historical data.
+                Using all of your historical data gives you a more accurate prediction.</note>
+            <note type="tip">If your data is seasonal, then starting a forecast before the last
+                historical point is recommended.</note>
+        </section>
+        <section>
+            <title>Confidence interval</title>
+            <p>Here you can check or uncheck to display a confidence interval. Confidence interval
+                can help you figure out the accuracy of the prediction. A smaller interval implies
+                more confidence in the prediction for the specific point. The default level of 95%
+                confidence can be changed.</p>
+        </section>
+        <section>
+            <title>Seasonality</title>
+            <p>When the data contains a seasonal pattern then you can set here the number of
+                observations for the pattern. Default this number is automatically detected. When
+                Excel fails to automatically discover a seasonal pattern, you get a warning with the
+                advice to switch to Manually.</p>
+            <note>When setting seasonality manually, avoid a value for less than 2 cycles of
+                historical data. With less than 2 cycles, Excel cannot identify the seasonal
+                components. And when the seasonality is not significant enough for the algorithm to
+                detect, the prediction will revert to a linear trend.</note>
+        </section>
+        <section>
+            <title>Timeline Range</title>
+            <p>Here you can set the range for the column of time data. This range should be the same
+                as the Values Range.</p>
+        </section>
+        <section>
+            <title>Values Range</title>
+            <p>Here you can set the range for the value series. This range should be the same as the
+                Timeline Range. </p>
+        </section>
+        <section>
+            <title>Fill Missing Points Using</title>
+            <p>When there are missing values in the data set, Excel fills this itself based on
+                interpolation. This means that a missing point will be completed as the weighted
+                average of its neighboring points as long as fewer than 30% of the points are
+                missing. To treat the missing points as zeros instead, click Zeros in the list.</p>
+        </section>
+        <section>
+            <title>Aggregate Duplicates Using</title>
+            <p>When your data contains multiple values with the same timestamp, Excel will average
+                the values. To use another calculation method, pick the calculation from the list:
+                Average, Count, CountA, max, Median, Min, Sum.</p>
+        </section>
+        <section>
+            <title>Include forecast statistics</title>
+            <p>Check this box if you want additional statistical information on the forecast
+                included in the forecast worksheet. Using the <codeph>FORECAST.ETS.STAT</codeph>
+                function, a table with metrics is generated. See the example below.</p>
+            <simpletable frame="all">
+                <sthead>
+                    <stentry>Statistieken</stentry>
+                    <stentry>Waarde</stentry>
+                    <stentry>Toelichting</stentry>
+                </sthead>
+                <strow>
+                    <stentry>Alpha</stentry>
+                    <stentry>0.00</stentry>
+                    <stentry>smoothing constant α of the ETS algorithm, a higher value gives more
+                        weight to recent data points.</stentry>
+                </strow>
+                <strow>
+                    <stentry>Beta</stentry>
+                    <stentry>0.00</stentry>
+                    <stentry>smoothing constant β of the ETS algorithm, a higher value gives more
+                        weight to the recent trend.</stentry>
+                </strow>
+                <strow>
+                    <stentry>Gamma</stentry>
+                    <stentry>0.25</stentry>
+                    <stentry>smoothing constant γ of the ETS algorithm, a higher value gives more
+                        weight to the recent seasonal period.</stentry>
+                </strow>
+                <strow>
+                    <stentry>MASE</stentry>
+                    <stentry>0.46</stentry>
+                    <stentry>Mean Absolute Scaled Error</stentry>
+                </strow>
+                <strow>
+                    <stentry>SMAPE</stentry>
+                    <stentry>0.03</stentry>
+                    <stentry>Symmetric Mean Absolute Percentage Error</stentry>
+                </strow>
+                <strow>
+                    <stentry>MAE</stentry>
+                    <stentry>128,317.53</stentry>
+                    <stentry>Mean Absolute Percentage Error</stentry>
+                </strow>
+                <strow>
+                    <stentry>RMSE</stentry>
+                    <stentry>187,920.90</stentry>
+                    <stentry>Root Mean Square Error</stentry>
+                </strow>
+            </simpletable>
+        </section>
+    </conbody>
+    <!--Bron: https://support.office.com/en-us/article/Create-a-forecast-in-Excel-2016-for-Windows-22c500da-6da7-45e5-bfdc-60a7062329fd?ui=en-US&rs=en-US&ad=US&fromAR=1 -->
+</concept>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="pivots_options" xml:lang="en-US">
+  <title>PivotTables Options</title>
+  <shortdesc>Overview of the settings for PivotTables.</shortdesc>
+  <prolog>
+    <critdates>
+        <created date="2017-08-31"/>
+        <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <indexterm>PivotTables<indexterm>options</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section>
+      <title>Setting options</title>
+      <p>Select any cell in the PivotTable. Choose then <menucascade>
+                    <uicontrol>tab Analyze</uicontrol>
+                    <uicontrol>Options (group PivotTable)</uicontrol>
+                </menucascade>.</p>
+    </section>
+    <section>
+      <title>Options</title>
+      <fig>
+                <title>PivotTable Options: Layout &amp; Format</title>
+                <image keyref="pivottable_options_layout-format">
+                    <alt>PivotTable Options Layout &amp; Format</alt>
+                </image>
+            </fig>
+      <fig>
+                <title>PivotTable Options: Totals &amp; Filters</title>
+                <image keyref="pivottable_options_totals-filter">
+                    <alt>PivotTable Options Totals &amp; Filters</alt>
+                </image>
+            </fig>
+      <fig>
+                <title>PivotTable Options: Display</title>
+                <image keyref="pivottable_options_display">
+                    <alt>PivotTable Options Display</alt>
+                </image>
+            </fig>
+      <fig>
+                <title>PivotTable Options: Printing</title>
+                <image keyref="pivottable_options_printing">
+                    <alt>PivotTable Options Printing</alt>
+                </image>
+            </fig>
+      <fig>
+                <title>PivotTable Options: Data</title>
+                <image keyref="pivottable_options_data">
+                    <alt>PivotTable Options Data</alt>
+                </image>
+            </fig>
+      <fig product="OF2010">
+                <title>PivotTable Options: Alt Text</title>
+                <image keyref="pivottable_options_alttext">
+                    <alt>PivotTable Options Alt Text</alt>
+                </image>
+            </fig>
+    </section>
+  </refbody>
+</reference>

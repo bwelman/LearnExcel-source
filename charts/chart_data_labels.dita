@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="chart_data_labels" xml:lang="en-US">
+    <title>Task: Data Labels</title>
+    <shortdesc>Add or remove data labels to a chart.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Charts<indexterm>data labels</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>Data labels are numbers at the data points which show the actual values for the data
+                points.</p>
+            <note conref="../common/reuse_task_parts.dita#reuse_task_parts/Chart_File"/>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/Chart_Select">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Click the Charts Element button, the plus sign <image
+                        keyref="button_chart_elements" id="image_mvj_1bm_q1b"/> next to the chart
+                    and you'll see a list of chart elements.</cmd>
+            </step>
+            <step>
+                <cmd>Click the continuation arrow of <option>Data Labels</option> and select
+                        <option>Outside End</option>. </cmd>
+            </step>
+        </steps>
+        <result>
+            <fig>
+                <title>Data labels</title>
+                <image keyref="bakery_datalabels">
+                    <alt>Data labels</alt>
+                </image>
+            </fig>
+        </result>
+    </taskbody>
+</task>

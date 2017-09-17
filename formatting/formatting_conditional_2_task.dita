@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="formatting_conditional_2_task" xml:lang="en-US">
+    <title>Task: Format with 2 conditions</title>
+    <shortdesc>Conditional formatting with 2 conditions.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Conditional<indexterm>format, manage</indexterm></indexterm>
+                <indexterm>Format<indexterm>conditional with 2 conditions</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>In a spreadsheet the realized turnover and the turnover to be achieved of the
+                salesmen are tracked. Some of them have not met their target. The task is to apply
+                the background for the turnover with one of the following colors: <term>green</term>
+                if the target has been met and <term>red</term> if the target has not been met.</p>
+            <note type="other" othertype="File"><filepath>Turnover_Q1.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select all cells with the turnover data.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>Home</uicontrol>
+                        <uicontrol>Conditional Formatting (Group Styles)</uicontrol>
+                        <uicontrol>Manage Rules...</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box <wintitle>Conditional Formatting Rules
+                            Manager</wintitle></title>
+                        <image keyref="Format_Conditional_Rules_Manage">
+                            <alt>Dialog box Conditional Formatting Rules Manager</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click on <uicontrol>New Rule...</uicontrol>.</cmd>
+                <stepresult>The dialog box <wintitle>New Formatting Rule</wintitle>
+                    appears.</stepresult>
+            </step>
+            <step>
+                <cmd>Select <uicontrol>Format only cells that contain</uicontrol>, then specify
+                        <userinput>Cell Value less than =B2</userinput> and choose a <userinput>red
+                        fill color</userinput> as <uicontrol>Format</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box <wintitle>New Formatting Rule</wintitle></title>
+                        <image keyref="Format_Conditional_Rules_New">
+                            <alt>Dialog box new formatting rule</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>The dialog box <uicontrol>Conditional Formatting Rules
+                        Manager</uicontrol> appears again.</stepresult>
+            </step>
+            <step>
+                <cmd>Click on <uicontrol>New Rule</uicontrol> and create a new rule on the same way
+                    with the following settings:</cmd>
+                <stepresult><fig>
+                        <title>The second rule</title>
+                        <image keyref="Format_Conditional_Greater">
+                            <alt>The second rule</alt>
+                        </image>
+                    </fig>The specified fill color is <userinput>green</userinput>.</stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>In the manager screen now there are two rules:<fig>
+                        <title>The two rules for the conditional format</title>
+                        <image keyref="Format_Conditional_Rules_2">
+                            <alt>The two rules for the conditional format</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>The desired format will be applied now.</stepresult>
+            </step>
+        </steps>
+        <postreq>
+            <p>Check the conditional format by changing some values and make sure that the format
+                will change.</p>
+        </postreq>
+    </taskbody>
+</task>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="meas_lineair" xml:lang="en-US">
+    <title>Linear relationship</title>
+    <shortdesc>Explanation of a linear relationship.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Trend line</indexterm>
+                <indexterm>Linear</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>If there is a linear relationship between two variables x and y then the relation between
+            these two variables can be represented by the
+            equation.<codeblock>y = ax + b
+y is the dependent variable
+x is the independent variable
+a is a constant
+b is a constant</codeblock></p>
+        <p>The chart of <codeph>y = ax + b</codeph> is a straight line, linear. The slope of this
+            line is a, and  the intersection with the y-axis is b.</p>
+        <fig>
+            <title>Chart of <codeph>y = 2x + 3</codeph></title>
+            <image keyref="chart_linear">
+                <alt>Chart of  y=2x+3</alt>
+            </image>
+        </fig>
+        <p>If there are measurement results you can use Excel to<ul>
+                <li>draw a chart of the points.</li>
+                <li>draw a trend line (the best fitting line).</li>
+                <li>determine the equation of the trendline.</li>
+                <li>determine the slope and intersection with Excel functions..</li>
+            </ul></p>
+    </conbody>
+</concept>

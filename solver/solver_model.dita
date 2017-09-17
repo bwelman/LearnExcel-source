@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="solver_model"  xml:lang="en-US">
+    <title>Defining an optimization model</title>
+    <shortdesc>Explanation setting up a calculation model with an example.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Solver</indexterm>
+                <indexterm>Calculation model</indexterm>
+                <indexterm>Decision variables</indexterm>
+                <indexterm>Objective function</indexterm>
+                <indexterm>Restrictions</indexterm>
+                <indexterm>Constraints</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <example>
+            <title>Case</title>
+            <p>WeatherLeather, a manufacturer of expensive leather jackets, has two designs created
+                for the new season, a long jacket and a short jacket. The manufacturing of a short
+                jack requires 1 hour on the cutting department and 3 hours on the sewing department.
+                A long jacket requires 2 hours and 4 hours respectively. The availability of labor
+                hours in the cutting department and the sewing department is limited. The available
+                capacity on the cutting department is 32 hours per week and on the sewing department
+                84 hours a week. The market demand for long leather jackets is limited. No more than
+                12 long leather jackets can be sold per week. For the short jackets, all jackets
+                made can be sold. There is no production to stock. The profit for a short jacket is
+                $90 and for a long jacket $144. How many jackets must be made of each type per week
+                in order to get the highest possible profit?</p>
+        </example>
+        <section>
+            <title>Understanding the problem</title>
+            <p>This step seems so obvious that maybe it seems hardly worth mentioning. It is
+                important to pay attention a little bit more before starting with the formulation of
+                the object cell, variable cells, and restrictions. If you do not fully understand
+                the problem, you risk incorrect formulations of the model. The problem in this
+                example is fairly simple:</p>
+            <p>How many short and long jackets do you need to produce weekly to get maximum profits,
+                while no more than 32 hours cutting time and 84 hours sewing time is available?</p>
+        </section>
+        <section>
+            <title>Decision variables (<term>variable cells</term>)</title>
+            <p>Set the decision variables. These are variables you have determine a value that gives
+                the optimal result. In the Excel model these are the <term>variable cells</term>. In
+                this example, there are two decision variables which are conveniently referred with
+                a letter:</p>
+            <ul>
+                <li>S = number of short jackets per week</li>
+                <li>L = number of long jackets per week</li>
+            </ul>
+        </section>
+        <section>
+            <title>Objective function</title>
+            <p>You must establish a formula with the optimal value as an outcome. The decision
+                variables are included in this formula. In this example, the objective function is
+                the profit per week and this depends on the number of produced short jackets (S) and
+                long jackets (L):</p>
+            <p><codeph>Profit = 90*S + 144*L</codeph> (This should be maximized.)</p>
+            <note type="attention">In more complex models, it is sometimes difficult to formulate
+                the problem so that one goal function is obtained. It may happen that the decision
+                variables are not directly in the objective function. In such case the object
+                function contains variables whose values depend on the decision variables.</note>
+        </section>
+        <section>
+            <title>Restrictions</title>
+            <p>Usually there are restrictions for the values of the decision variables. These
+                restrictions should be identified and formulated. In this example, there are three
+                restrictions formulated in the case: the limited capacities for the cutting and
+                sewing department and the market demand for the long jackets.</p>
+            <p>In addition, there are often general restrictions which have to do with the data type
+                of the decision variables. In this example the two decision variables, the number of
+                produced jackets, must always have to be positive integers.</p>
+            <p>This leads to the formulation of the following restrictions:</p>
+            <ul>
+                <li>Restriction cutting time per week: <codeph>1*S + 2*L &lt;= 32</codeph>.</li>
+                <li>Restriction sewing time per week: <codeph>3*S + 4*L &lt;= 84</codeph>.</li>
+                <li>Restriction market demand long jackets: <codeph>L &lt;= 12</codeph>.</li>
+                <li>Restrictions positive values: <codeph>S >= 0</codeph> and <codeph>L >=
+                        0</codeph></li>
+                <li>Restrictions integer values: <codeph>S = integer</codeph> and <codeph>L =
+                        integer</codeph></li>
+            </ul>
+        </section>
+        <section>
+            <title>Model in Excel</title>
+            <p>The model should be built in Excel now so that the problem can be solved with the
+                Solver tool. One possible solution you can see in the following figure.</p>
+            <fig>
+                <title>Calculation model WeatherLeather</title>
+                <image keyref="weatherleather_model">
+                    <alt>Calculation model WeatherLeather</alt>
+                </image>
+            </fig>
+            <p>There is not only one good way to build this model in Excel. There are just a number
+                of guidelines. These guidelines are discussed based on the previous figure. You can,
+                of course, build the model yourself using the guidelines and the figure, but it is
+                also made available in the practice file
+                <filepath>WeatherLeather.xlsx</filepath>.</p>
+            <p>Guidelines for a Solver model in Excel:</p>
+            <ol>
+                <li>Organize the data in a logical and orderly manner and put sufficient explanatory
+                    text near the cells that contain numbers and formulas. A model is often used in
+                    reports later and then it has to be clear what everything is presenting and what
+                    it is all about. Highlight the cells with the decision variables (B4 and C4) and
+                    the object function (D5) so they are easily recognized. Put the restrictions in
+                    a separate part.</li>
+                <li>Put each decision variable in a separate cell and give them a starting value. In
+                    the example the number of produced short and long jackets respectively are in
+                    cell B4 and cell C4. As starting value 1 is used in both cases. So you can at
+                    least verifiy the correctness of the formulas. </li>
+                <li>Create a formula for the object cell. In D5 the formula is
+                        <codeph>=B5*B4+C5*C4</codeph>.</li>
+                <li>Create a formula in a separate cell for each restriction. Put in the cell next
+                    to it the limit of the restriction.<simpletable>
+                        <sthead>
+                            <stentry>cell</stentry>
+                            <stentry>formula</stentry>
+                            <stentry>explanation</stentry>
+                        </sthead>
+                        <strow>
+                            <stentry>D8</stentry>
+                            <stentry><codeph>=B8*B4+C8*C4</codeph></stentry>
+                            <stentry>total cutting time calculation</stentry>
+                        </strow>
+                        <strow>
+                            <stentry>D9</stentry>
+                            <stentry><codeph>=B9*B4+C9*C4</codeph></stentry>
+                            <stentry>total sewing time calculation</stentry>
+                        </strow>
+                        <strow>
+                            <stentry>D10</stentry>
+                            <stentry><codeph>=C4</codeph></stentry>
+                            <stentry>number of long jackets</stentry>
+                        </strow>
+                    </simpletable></li>
+            </ol>
+        </section>
+    </conbody>
+</concept>

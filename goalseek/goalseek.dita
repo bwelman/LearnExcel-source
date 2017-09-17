@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="goalseek" xml:lang="en-US" >
+	<title>Goal Seek</title>
+	<shortdesc/>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords/>
+		</metadata>
+	</prolog>
+	<conbody>
+		<p>Using <term>Goal Seek</term> will help you to find out what value in a formula have to be
+			entered to obtain a particular desired outcome. The Goal Seek method belongs to a group
+			of <term>What-If Analysis</term> tools.</p>
+	</conbody>
+</concept>

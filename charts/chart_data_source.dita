@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="chart_data_source" xml:lang="en-US">
+    <title>Task: Adding and Removing Data Series</title>
+    <shortdesc>Through a number of small tasks you learn various ways to add data series to a chart
+        and how to remove one.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Charts<indexterm>data range add</indexterm><indexterm>data range
+                        remove</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>It often happens that you have to add new data to an existing chart or that you want
+                to remove a data series from a chart. If a chart is selected the corresponding
+                source data in the worksheet will be marked with colored frames.</p>
+            <p>If the new series that should be added to the highlighted area, the data range can be
+                expanded easily by dragging the range. A data series at the beginning or the end of
+                the highlighted area can be removed by dragging.</p>
+            <p>If a series can not be added or removed by dragging, the dialog box <wintitle>Select
+                    Data Source</wintitle> has to be used. Both techniques will be explained.</p>
+            <note conref="../common/reuse_task_parts.dita#reuse_task_parts/Chart_File"/>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open the practice file.</cmd>
+            </step>
+            <stepsection>Part: add new data series</stepsection>
+            <step>
+                <cmd>Add a new data series for the year 2011 in the range E1: E5 as shown in the
+                    following figure.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>New data for the year 2011</title>
+                        <image keyref="bakery_data_2011">
+                            <alt>New data for the year 2011</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <stepsection>Part: add data series 2011 to the chart by dragging</stepsection>
+            <step>
+                <cmd>Select the chart.</cmd>
+                <stepresult><p>The source data is selected on the worksheet showing the sizing
+                    handles.</p><fig>
+                        <title>Marked data source of chart</title>
+                        <image keyref="bakery_data_marked">
+                            <alt>Marked data source of chart</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Drag the lower-right sizing handle to include the new data.</cmd>
+                <stepresult><p>The chart is updated automatically and includes now the data for 2011.</p><fig>
+                        <title>Chart with data series 2008-2011</title>
+                        <image keyref="bakery_chart_2008-2011">
+                            <alt>Chart with data series 2008-2011</alt>
+                        </image>
+                    </fig></stepresult>
+            </step>
+            <stepsection>Part: delete data series 2008 by dragging</stepsection>
+            <step>
+                <cmd>Select the chart.</cmd>
+                <stepresult>
+                    <p>The source data is selected on the worksheet showing the sizing handles.</p>
+                    <fig>
+                        <title>Marked data source 2008-2011</title>
+                        <image keyref="bakery_data2011_marked">
+                            <alt>Marked data source 2008-2011</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Drag the lower-left sizing handle to exclude the data for 2008.</cmd>
+                <stepresult>
+                    <p>The chart is updated automatically and includes now the data for
+                        2009-2011.</p><fig>
+                        <title>Chart with data series 2009-2011</title>
+                        <image keyref="bakery_chart_2009-2011">
+                            <alt>Chart with data series 2009-2011</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <stepsection>Part: adding series 2008 and removing series 2011 through
+                dialog box</stepsection>
+            <step>
+                <cmd>Right click on the chart and choose <uicontrol>Select
+                    Data...</uicontrol>.</cmd>
+                <info>
+                    <note type="tip">An alternative is <menucascade>
+                            <uicontrol>Design</uicontrol>
+                            <uicontrol>Select Data (group Data)</uicontrol>
+                        </menucascade>.</note>
+                </info>
+                <stepresult>
+                    <fig>
+                        <title>Select Data Source</title>
+                        <image keyref="bakery_select_datasource">
+                            <alt>Select Data Source</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click on the button <uicontrol>Add</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Add new series</title>
+                        <image keyref="chart_edit_series">
+                            <alt>Add new series</alt>
+                        </image>
+                    </fig>
+                    <dl>
+                        <dlentry>
+                            <dt>Series name</dt>
+                            <dd>The cell that contains the name of the data series.</dd>
+                        </dlentry>
+                        <dlentry>
+                            <dt>Series values</dt>
+                            <dd>The cell range that contains the data values</dd>
+                        </dlentry>
+                    </dl>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Put the cursor in box <uicontrol>Series name</uicontrol> and then select in the
+                    worksheet cell <uicontrol>B1</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Select the contents of the box <uicontrol>Series values</uicontrol> and then
+                    select in the worksheet range <uicontrol>B2:B5</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>
+                    <p>In the chart and in the dialog box <wintitle>Select Data Source</wintitle>
+                        the data series 2008 is added. However, this data set is added at the end,
+                        making the order not logical.</p>
+                    <fig>
+                        <title>Change order data series</title>
+                        <image keyref="bakery_datasource_moveup">
+                            <alt>Change order data series</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Select in the dialog box series <uicontrol>2008</uicontrol> and then click 3
+                    times on the arrow <uicontrol>Move Up</uicontrol> to ensure that the data series
+                    2008 is the first series.</cmd>
+            </step>
+            <step>
+                <cmd>Select in the dialog box <wintitle>Select Data Source</wintitle> series
+                        <uicontrol>2011</uicontrol> and click on the button
+                        <uicontrol>Remove</uicontrol>.</cmd>
+                <stepresult>The data series 2011 is removed. The initial situation containing the
+                    data series 2008-2010 is restored.</stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

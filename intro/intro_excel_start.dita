@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="intro_excel_start" xml:lang="en-US">
+    <title>Task: Starting Excel</title>
+    <shortdesc>Instructions on how to start Excel.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Excel<indexterm>starting</indexterm></indexterm>
+                <indexterm>Starting</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>The possibilities to start Excel depend on the way the system is installed. This
+                course assumes a default installation of Microsoft Office <ph keyref="officeversion"
+                /> EN on a system with Windows 10. On almost all computers Excel can be started
+                through the start button of Windows and this method is described here..</p>
+            <note type="tip">The most convenient start is through a shortcut on the desktop or
+                through a button on the task bar.</note>
+        </context>
+        <steps>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>Start button</uicontrol>
+                        <uicontrol>Excel 2016</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>The starting screen from Excel appears. In the left part you can see the
+                    recently opened files and in the right part an overview of the available
+                    templates.</stepresult>
+            </step>
+            <step>
+                <cmd>Click on the template <uicontrol>Blank workbook</uicontrol></cmd>
+                <stepresult>A new workbook is displayed with the name <wintitle>Book1</wintitle> and
+                    an empty worksheet with the name <wintitle>Sheet1</wintitle>.</stepresult>
+            </step>
+        </steps>
+        <example>
+            <title>Disabling startscreen</title>
+            <p>Normally the start screen appears at startup. This screen displays the most recent
+                documents and the available templates. startscherm toont een lijst met recente
+                documenten en de beschikbare sjablonen. This can be useful in some cases, but it is
+                also possible to start Excel with an empty sheet.</p>
+            <p>First start Excel an then choose <menucascade>
+                    <uicontrol>File</uicontrol>
+                    <uicontrol>Options</uicontrol>
+                    <uicontrol>tab General</uicontrol>
+                </menucascade> and deselect the option <uicontrol>Show the Start screen when this
+                    application starts</uicontrol>.</p>
+            <p>The first time you start Excel again, you get immediately a new workbook with an
+                empty sheet.</p>
+        </example>
+    </taskbody>
+</task>

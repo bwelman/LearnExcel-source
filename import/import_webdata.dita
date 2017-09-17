@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="import_webdata" xml:lang="en-US">
+    <title>Task: Import web data</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata/>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>Webpages often tables in it. The Power Query in Excel can recognize these tables and
+                import them. In this task you are going to import some data from the UEFA European
+                football championship that is available in a wikipedia page.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open a new blank workbook.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Data</uicontrol>
+                        <uicontrol>From Web (group Get &amp; Transform Data)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <p>A dialogbox is displayed to enter the URL of the web page.</p>
+                    <fig>
+                        <title>From Web dialogbox</title>
+                        <image keyref="web_url_textbox">
+                            <alt>From Web dialogbox</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Enter URL
+                        <userinput>http://en.wikipedia.org/wiki/UEFA_European_Championship</userinput>
+                    and click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>
+                    <p>A connection to the web page will be created.</p>
+                    <p>When the connection is established, the <wintitle>Navigator</wintitle> pane
+                        is displayed where you will see a list of all the tables on the web page.
+                        Clicking on a table displays a preview of the table on the right of the
+                        pane.</p>
+                    <fig>
+                        <title>Navigator pane for UEFA page on Wikipedia</title>
+                        <image keyref="uefa_navigatorpane">
+                            <alt>Navigator pane for UEFA page on Wikipedia</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Select table <option>Results[edit]</option> and then click button
+                        <uicontrol>Edit</uicontrol>.</cmd>
+                <stepresult>
+                    <p conref="import_csv.dita#import_csv/start_que"/>
+                </stepresult>
+            </step>
+            <stepsection>
+                <p>Next you will clean up and shape the data to your needs. In sequence, you will<ul>
+                        <li>remove all columns except <varname>Year</varname> and <varname>Final
+                                Winners</varname>.</li>
+                        <li>remove the word <q>Details</q> in column <varname>Year</varname>.</li>
+                        <li>keep only real years in column <varname>Year</varname>.</li>
+                    </ul></p>
+            </stepsection>
+            <step>
+                <cmd>Select the columns <varname>Year</varname> and <varname>Final Winners</varname>
+                    by clicking on the column header and holding the CTRL key. Then from the ribbon <menucascade>
+                        <uicontrol>Remove Columns (group Manage Columns)</uicontrol>
+                        <uicontrol>Remove Other Columns</uicontrol>
+                    </menucascade>.</cmd>
+            </step>
+            <step>
+                <cmd>Select column <varname>Year</varname> and choose <menucascade>
+                        <uicontrol>tab Home</uicontrol>
+                        <uicontrol>Replace Values (group Transform)</uicontrol>
+                    </menucascade></cmd>
+                <stepresult>
+                    <p>The dialog box <wintitle>Replace Values</wintitle> is displayed.</p>
+                    <fig>
+                        <title>Dialogbox <wintitle>Replace Values</wintitle></title>
+                        <image keyref="replace_values_dialogbox">
+                            <alt>Dialogbox Replace Values</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Type <userinput>Details</userinput> in the textbox <option>Value to
+                        Find</option> and leave the textbox <option>Replace With</option> empty and
+                    click <uicontrol>OK</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Select column <varname>Year</varname> and click on the filter drop down arrow
+                    in the column header. Uncheck <option>Year</option> and click
+                        <uicontrol>OK</uicontrol>.</cmd>
+            </step>
+            <step conref="import_csv.dita#import_csv/step_close_load">
+                <cmd/>
+            </step>
+        </steps>
+    </taskbody>
+</task>

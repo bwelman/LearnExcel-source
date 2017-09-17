@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="formatting_row_height" xml:lang="en-US">
+    <title>Row Height</title>
+    <shortdesc>How to adjust the height of rows.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Row<indexterm>height</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Normally, row heights will change automatically to accommodate the size of the data in
+            the row. But for formatting purposes it is sometimes necessary to adjust the height of a
+            row. You can specify the height of a row from 0 (zero) to 409. This value represents the
+            height in points (1 point is about 0.035 cm). The default height of rows is 12.75 points
+            (about 0.4 cm). When the row height is 0, the row will be hidden.</p>
+        <p>There are several ways to adjust the height of rows.</p>
+        <ul>
+            <li>Double-click the boundary below the row heading. The height of the row will auto-fit
+                the contents of the row.</li>
+            <li>Place the mouse pointer over the right edge of the row heading, press the left mouse
+                button and drag the border of the column up or down until the row has the desired
+                height. While dragging, Excel displays the current height of the row in a small
+                information screen.<image keyref="Rowheight_Drag" placement="break">
+                    <alt>Adjusting row height through dragging</alt>
+                </image></li>
+            <li>Right-click the row heading and select <uicontrol>Row Height...</uicontrol> from the
+                shortcut menu. In the dialog box you can enter the desired height of the row, after
+                that click <uicontrol>OK</uicontrol>.<image keyref="Rowheight_Set" placement="break">
+                    <alt>Specifying row height</alt>
+                </image></li>
+            <li>Select a cell in the column whose width must be adjusted. Then choose <menucascade>
+                    <uicontrol>Home</uicontrol>
+                    <uicontrol>Format (group Cells)</uicontrol>
+                    <uicontrol>Row Height...</uicontrol>
+                </menucascade>. You'll get the same dialog as before.</li>
+        </ul>
+        <note type="tip">You can adjust the height of multiple rows simultaneously. First select
+            these rows using the <uicontrol>SHIFT</uicontrol> key or <uicontrol>CTRL</uicontrol>
+            key.</note>
+    </conbody>
+</concept>

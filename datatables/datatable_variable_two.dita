@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="datatable_variable_two" xml:lang="en-US" >
+	<title>Two-variable Data Table</title>
+	<shortdesc>The layout of a two-variable data table.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords/>
+		</metadata>
+	</prolog>
+	<conbody>
+		<p>The two-variable data table uses a formula that contains two list of input values. The formula
+            must refer to two different input cells: the <term>row input cell</term> and the
+                <term>column input cell</term>.</p>
+		<fig>
+            <title>Data table with 2 input cells</title>
+            <image alt="Gegevenstabel met 2 input cells" keyref="datatable_layout2">
+                <alt>Data table with 2 input cells</alt>
+            </image>
+        </fig>
+		<p>The overall layout looks like a data table with 1 input cell, but there are some important
+            differences:</p>
+		<ul>
+			<li>A data table with 1 input cell can evaluate multiple formulas, while with 2 input cells only
+                the results from 1 formula can be calculated.</li>
+            <li>The values for the variables are both in a column and a row.</li>
+			<li>
+				<p>The upper left cell must contain the formula (or a reference to the formula).</p>
+			</li>
+		</ul>
+	</conbody>
+</concept>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="datatable_variable_one" xml:lang="en-US">
+    <title>One-variable Data Table</title>
+    <shortdesc>The layout of a one-variable data table.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>If you want to calculate the result of a formula with one variable for different values
+            of that variable, you can do that by creating two columns, one with values for the
+            variable and the other with the outcomes of the formula.</p>
+        <p>The next picture shows this for the formula y = 2*x -1.</p>
+        <fig>
+            <title>Example with formulas in each cell</title>
+            <image keyref="formula_example">
+                <alt>Example with formulas in each cell</alt>
+            </image>
+        </fig>
+        <p>In those cases it is much more convenient to create a data table with 1 <term>input
+                cell</term>.</p>
+        <p>In a column orientated table are your variable values in a column and the formula one row
+            above and one cell to the right of the column of the values. You can type additional
+            formulas in the cells right of the first formula.</p>
+        <p>If the data table is row oriented then your variable values are in a row and the
+            formula(s) in the cell one column to the left of the first value and one cell below the
+            row of values. You can type additional formulas in the cells below the first
+            formula.</p>
+        <note type="notice">In stead of formulas you can also use references to formulas.</note>
+        <p>The general layout of a data table looks like:</p>
+        <simpletable frame="none" relcolwidth="1* 1*">
+            <sthead>
+                <stentry>Column oriented data table with 1 input cell</stentry>
+                <stentry>Row oriented data table with 1 input cell</stentry>
+            </sthead>
+            <strow>
+                <stentry><image keyref="datatable_layout1_column">
+                        <alt>Column orientated data table with one input cell</alt>
+                    </image></stentry>
+                <stentry><image keyref="datatable_layout1_row">
+                        <alt>Row orientated data table with one input cell</alt>
+                    </image></stentry>
+            </strow>
+        </simpletable>
+        <p><term>input cell</term></p>
+        <p>This may be in a arbitrary cell on the worksheet. Excel uses this cell as a temporary
+            storage. The used formulas must contain a reference to this cell. The values for the
+            variable are send to the input cell, then the result is calculated and put in the
+            table.</p>
+    </conbody>
+</concept>

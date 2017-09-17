@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="function_logical" xml:lang="en-US">
+    <title>Task: Logical Function IF</title>
+    <shortdesc>A task using conditional operations through the function IF.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Functions<indexterm>logical</indexterm><indexterm>IF</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context><p>Logical functions do something with the results <q>TRUE</q> or <q>FALSE</q>. The
+                best known and most widely used logical function is the IF function. Simply said ,
+                the operation of this function does the following: if a certain condition is true,
+                then do this, otherwise do that. The syntax of the formula is</p>
+            <codeph>=IF(condition,what to do if true,what to do if false)</codeph>
+            <p>The condition is a logical test with possible results TRUE or FALSE.</p>
+            <note type="tip">If need more than one condition, then you can use a new
+                    <userinput>IF()</userinput> function inside the first
+                    <userinput>IF()</userinput> function. Such structures become quickly complicated
+                and difficult to read. Better make use of the logical functions
+                    <userinput>AND()</userinput>, <userinput>OR()</userinput> and
+                    <userinput>NOT()</userinput>.</note>
+            <p>In the following figure you see some marks. Besides the marks the text sufficient or
+                insufficient should be displayed. A result is insufficient if the mark is below 5.5. <fig>
+                    <title>Data to use with function IF</title>
+                    <image keyref="Example_Logical">
+                        <alt>Data to use with function IF</alt>
+                    </image>
+                </fig></p></context>
+        <steps>
+            <step>
+                <cmd>Start with a new worksheet.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the data you see in the figure.</cmd>
+            </step>
+            <step>
+                <cmd>Select cell <uicontrol>B2</uicontrol> and press the button <uicontrol>Insert
+                        Function</uicontrol> on the formula bar.</cmd>
+            </step>
+            <step>
+                <cmd>Select in the <option>Logical</option> category the function
+                        <option>IF</option> and click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult> The <wintitle>Function Arguments</wintitle> dialog box appears.
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Put the cursor in the <varname>Logical_test</varname> box and enter
+                        <userinput>A2&lt;5.5</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Put the cursor in the <varname>Value_if_true</varname> box and enter
+                        <userinput>insufficient</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Put the cursor in the <varname>Value_if_false</varname> box and enter
+                        <userinput>sufficient</userinput>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box function IF</title>
+                        <image keyref="Example_Logical_If">
+                            <alt>Dialog box function if</alt>
+                        </image>
+                    </fig>
+                    <note type="attention">Excel automatically puts double quotes around
+                        texts.</note>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Select cell <uicontrol>B2</uicontrol> and drag the fill handle to
+                        <uicontrol>B6</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Results for function IF</title>
+                        <image keyref="Example_Logical_Result">
+                            <alt>Results for function if</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

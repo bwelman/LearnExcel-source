@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="data_decimal_separator" xml:lang="en-US">
+    <title>Language-dependent number formats</title>
+    <shortdesc>Separators for decimals and thousands are dependent on the language of Windows, but
+        can be changed in Excel.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Decimal separator</indexterm>
+                <indexterm>Thousands separator</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>The way Excel is formatting numbers depends of the language version of Windows.
+            Especially for the decimal and thousands separators this may cause confusion and
+            problems. By default, Windows uses the following characters.</p>
+        <ul>
+            <li>Dutch<ul>
+                    <li>Decimal separator comma: 12,34</li>
+                    <li>Thousands separator point: 12.345</li>
+                </ul></li>
+            <li>English<ul>
+                    <li>Decimal separator point: 12.34</li>
+                    <li>Thousands separator comma: 12,345</li>
+                </ul></li>
+        </ul>
+        <p>When you want to change these settings permanently, it must be done through the regional
+            settings in the control panel of Windows.</p>
+        <p>Fortunately, you can temporarily change these settings in Excel. To do this, follow these
+            steps.</p>
+        <ol>
+            <li>Click <menucascade>
+                    <uicontrol>File</uicontrol>
+                    <uicontrol>Options</uicontrol>
+                    <uicontrol>Advanced</uicontrol>
+                </menucascade></li>
+            <li>Under <q>Editing options</q> clear the check box <uicontrol>Use system
+                    separators</uicontrol>.</li>
+            <li>Type new separators in the <uicontrol>Decimal separator</uicontrol> and
+                    <uicontrol>Thousands separator</uicontrol> boxes.</li>
+        </ol>
+        <note type="tip">When you want to use the system separators again, select the <uicontrol>Use
+                system separators</uicontrol> check box.</note>
+    </conbody>
+</concept>

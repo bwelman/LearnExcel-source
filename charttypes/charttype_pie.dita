@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="charttype_pie" xml:lang="en-US">
+    <title>Task: Pie Chart</title>
+    <shortdesc>A pie chart for showing the percentage distribution within one data series
+        (group).</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Pie chart</indexterm>
+                <indexterm>Charts<indexterm>pie</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>Pie charts are mainly used for displaying the percentage distribution of data within
+                a group, such as election results. Too much information can make a pie chart
+                cluttered. To keep it clear you should have at most 6 or 7 sectors in a pie
+                chart.</p>
+        </context>
+        <section>
+            <title>Problem</title>
+            <p>150 pupils have been asked what their favorite pet is. In the table below you will
+                see the results.</p>
+            <simpletable frame="all" relcolwidth="1* 1*">
+                <sthead>
+                    <stentry>Pet</stentry>
+                    <stentry>Frequency</stentry>
+                </sthead>
+                <strow>
+                    <stentry>Cats</stentry>
+                    <stentry>70</stentry>
+                </strow>
+                <strow>
+                    <stentry>Dogs</stentry>
+                    <stentry>38</stentry>
+                </strow>
+                <strow>
+                    <stentry>Birds</stentry>
+                    <stentry>22</stentry>
+                </strow>
+                <strow>
+                    <stentry>Fish</stentry>
+                    <stentry>13</stentry>
+                </strow>
+                <strow>
+                    <stentry>Others</stentry>
+                    <stentry>7</stentry>
+                </strow>
+            </simpletable>
+            <p>The data should be displayed in a pie chart, as shown in the following figure.</p>
+            <fig>
+                <title>Pie chart  favorite pet</title>
+                <image keyref="pie_result">
+                    <alt>Pie chart  favorite pet</alt>
+                </image>
+            </fig>
+            <note type="other" othertype="File"><filepath>Chart_Pie.xlsx</filepath></note>
+        </section>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open"
+                conrefend="../common/reuse_task_parts.dita#reuse_task_parts/Select_Cell">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Choose<menucascade>
+                        <uicontrol>Insert</uicontrol>
+                        <uicontrol>Insert Pie or Doughnut Chart (group Charts)</uicontrol>
+                        <uicontrol>Pie</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Default pie chart</title>
+                        <image keyref="pie_default">
+                            <alt>Default pie chart</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Add data labels, position <uicontrol>Outside End</uicontrol></cmd>
+                <stepresult>The frequency of ech pet is displayed at the outside of each
+                    piece.</stepresult>
+            </step>
+            <step>
+                <cmd>Select the data labels, right click and select <uicontrol>Format Data
+                        Labels</uicontrol>.</cmd>
+                <stepresult>The task panel <wintitle>Format Data Labels</wintitle> is
+                    displayed.</stepresult>
+            </step>
+            <step>
+                <cmd>Select <option>Category Name</option> and <option>Percentage</option>. Deselect
+                        <option>Value</option>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Label Options</title>
+                        <image keyref="pie_label_options">
+                            <alt>Label Options</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Remove legend.</cmd>
+            </step>
+            <step>
+                <cmd>Change chart title in <userinput>Favorite pet of 150 pupils</userinput>.</cmd>
+            </step> 
+        </steps>
+        <example><note type="tip">By choosing to add data labels as <option>Data Call Out</option> in stead of
+                    <option>Outside End</option>, you get immediately the category names and
+                percentages. Try it.</note></example>
+    </taskbody>
+</task>

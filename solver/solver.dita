@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="solver" xml:lang="en-US" >
+	<title>Solver</title>
+	<shortdesc/>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords/>
+		</metadata>
+	</prolog>
+	<conbody>
+		<p>The <term>Solver</term> is an add-in for Excel with which you can solve optimization problems,
+			for example calculating the maximum profit or the minimum costs. The Solver method
+			belongs to the group of methods for performing so called <term>What-If Analyses</term>,
+			just like the method Goal Seek. However the Solver has more features than Goal
+			Seeking.</p>
+	</conbody>
+</concept>

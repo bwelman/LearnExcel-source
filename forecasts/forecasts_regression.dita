@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept id="forecasts_regression" xml:lang="en-US">
+ <title>Regression</title>
+ <shortdesc/>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <indexterm/>
+      </keywords>
+    </metadata>
+  </prolog>
+ <conbody>
+        <p>Regression is the cohesion, the correlation between two or more variables. There are two
+            variables in simple regression:<ul id="ul_yy2_z44_fv">
+                <li>an independent variable (in time series, this is the time)</li>
+                <li>a dependent variable</li>
+            </ul></p>
+        <p>The investigation on the relationship and the degree of coherence is called
+                <term>regression analysis</term>.</p>
+        <p>How strong the correlation is, is indicated through the <term>correlation
+                coefficient</term> (R). The closer the value of R at  +1 or -1, the stronger the
+            relationship. When there is no relationship between two variables,the value of R is
+            equal to 0.</p>
+        <p>You always start the analysis by making an XY (Scatter) chart. Then try to find a line
+            with the best fit to the points. This line is called <term>regression line</term>
+                (<term>trend line</term> in Excel). The mathematical equation of the line is called
+                <term>regression equation</term>. The statistical method to determine the regression
+            equation is known as the <term>least squares method</term>.</p>
+        <p>A few examples:</p>
+        <fig>
+            <title>Increasing lineair trend</title>
+            <image keyref="lin_inc">
+                <alt>Increasing lineair trend</alt>
+            </image>
+        </fig>
+        <fig>
+            <title>Decreasing linear trend</title>
+            <image keyref="lin_dec">
+                <alt>Decreasing linear trend</alt>
+            </image>
+        </fig>
+        <fig>
+            <title>Increasing exponential trend</title>
+            <image keyref="exp_inc">
+                <alt>Increasing exponential trend</alt>
+            </image>
+        </fig>
+    </conbody>
+</concept>

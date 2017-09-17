@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="function_overview_lookup" xml:lang="en-US">
+  <title>Overview Lookup Functions</title>
+  <shortdesc>An overview of some functions for lookups.</shortdesc>
+  <prolog>
+    <critdates>
+        <created date="2017-08-31"/>
+        <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <indexterm>Functions<indexterm>searching</indexterm><indexterm>HLOOKUP</indexterm><indexterm>VLOOKUP</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section>
+      <title>HLOOKUP</title>
+      <p>This function looks up for a given value in the first row of  a list (table), and returns
+        the corresponding value from another row of the array.</p>
+      <codeblock>HLOOKUP(lookup_value, table_array, row_index_num, [range_lookup])</codeblock>
+      <parml>
+        <plentry>
+          <pt>lookup_value</pt>
+          <pd>Required. The value that you want to look for in the first row of the list.</pd>
+        </plentry>
+        <plentry>
+          <pt>table_array</pt>
+          <pd>Required. The list that you want to search.</pd>
+        </plentry>
+        <plentry>
+          <pt>row_index_num</pt>
+          <pd>Required. The row number from the list, that you want the corresponding value to be
+            returned from. The first row has number 1.</pd>
+        </plentry>
+        <plentry>
+          <pt>range_lookup</pt>
+          <pd>Optional. Possible values: TRUE (for the closest match) or FALSE (for exact
+            matching).</pd>
+        </plentry>        
+      </parml>
+    </section>
+    <section>
+      <title>VLOOKUP</title>
+      <p>This function looks up for a given value in the first column of a list (table) and returns
+        the corresponding value from another column of the array.</p>
+      <codeblock>VLOOKUP(lookup_value, table_array, column_index_num, [range_lookup])</codeblock>
+      <parml>
+        <plentry>
+          <pt>lookup_value</pt>
+          <pd>Required. The value that you want to look for, in the first column of the list.</pd>
+        </plentry>
+        <plentry>
+          <pt>table_array</pt>
+          <pd>Required. The list that you want to search.</pd>
+        </plentry>
+        <plentry>
+          <pt>column_index_num</pt>
+          <pd>Required. The column number from the list that you want the corresponding value to be
+            returned from. The first column has number 1.</pd>
+        </plentry>
+        <plentry>
+          <pt>range_lookup</pt>
+          <pd>Optional. Possible values: TRUE (for the closest match) or FALSE (for exact
+            matching).</pd>
+        </plentry>        
+      </parml>
+    </section>
+  </refbody>
+</reference>

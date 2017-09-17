@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="worksheet_over" xml:lang="en-US">
+    <title>What is a worksheet?</title>
+    <shortdesc>A brief explanation of the design and use of the worksheet.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Worksheets</indexterm>
+                <indexterm>Column</indexterm>
+                <indexterm>Row</indexterm>
+                <indexterm>Cell<indexterm>address</indexterm><indexterm>reference</indexterm><indexterm>active</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>A worksheet contains rows and columns. The intersection of a <term>row</term> and a
+                <term>column</term> is a <term>cell</term>. You can store data and formulas in the cell.<fig>
+                <title>Worksheet with rows, columns and cells</title>
+                <image keyref="Worksheet_Layout">
+                    <alt>Layout worksheet with rows, columns and cells.</alt>
+                </image>
+            </fig>
+        </p>
+        <p>The rows are noted by numbers 1, 2, 3, ... The columns are noted by letters A, B, C, ...
+            And after the letter Z it's it starts again with AA,AB, ... And after ZZ a third letter
+            is added and it's going on with AAA, AAB, etc. A worksheet can contain 16,384 columns
+            and 1,048,576 rows. This provides more than 17 billion cells.</p>
+        <p>Each cell corresponds to a particular row and a particular column. The combination of the
+                <term>column letter</term> and the <term>row number</term> is called a <term>cell
+                address</term> or <term>cell reference</term>. The address of the first cell in the
+            upper left corner is <uicontrol>A1</uicontrol>. The cell address can be used in formulas
+            to make references to the content of the cell.</p>
+        <p>A cell is selected by clicking on it with the mouse. Then it becomes the <term>active
+                cell</term> and the cell is surrounded by a border.<image
+                keyref="Worksheet_ActiveCell">
+                <alt>Outline active cell.</alt>
+            </image></p>
+        <p>There is always an active cell in the worksheet. You can activate another cell by
+            clicking on it, or you can move the active cell with the arrow keys on the keyboard.
+            When you start typing, then the data is entered in the active cell. You can end the data
+            entry with the <uicontrol>Enter key</uicontrol>. By default, the active cell is moved 1
+            cell downwards.<note type="tip">The direction of the movement of the active cell after
+                pressing the Enter key can be changed in the <uicontrol>Excel Options</uicontrol>.
+                The choices are: down, up, right and left.</note></p>
+        <p>The content of a cell can be:<ul>
+                <li>text</li>
+                <li>numbers</li>
+                <li>formulas</li>
+            </ul></p>
+        <p>References to other cells are allowed in the formulas. All the formulas are recalculated
+            if the content of these referenced cells is changed. This makes a spreadsheet very
+            powerful.</p>
+    </conbody>
+</concept>

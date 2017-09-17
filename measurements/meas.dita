@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="meas" xml:lang="en-US">
+    <title>Processing measurement results</title>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>When performing measurements, a lot of numerical material is collected that often has to
+            be processed into charts, from which conclusions can be drawn.This chapter deals with
+            this matter.</p>
+    </conbody>
+</concept>

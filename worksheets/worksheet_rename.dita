@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="worksheet_rename" xml:lang="en-US">
+    <title>Task: Renaming worksheet</title>
+    <shortdesc>Instructions on how to rename a worksheet.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Worksheet<indexterm>rename</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context><p>t is recommended to give meaningful names to worksheets instead of the generated
+                default names like Sheet1, Sheet2, Sheet3, ....</p></context>
+        <steps>
+            <step>
+                <cmd>Rename a worksheet in one of the following ways:</cmd>
+                <choices>
+                    <choice>Right click on the tab name of the worksheet and then choose
+                            <uicontrol>Rename</uicontrol>.</choice>
+                    <choice>Double click on the tab name of the worksheet.</choice>
+                </choices>
+                <stepresult>In both cases the name will be selected.</stepresult>
+            </step>
+            <step>
+                <cmd>Type the new name, closing with <uicontrol>Enter</uicontrol>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

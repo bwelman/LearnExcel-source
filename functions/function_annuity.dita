@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="function_annuity" xml:lang="en-US">
+    <title>Task: Calculating Annuities</title>
+    <shortdesc>Example of a calculation of an annuity with the repayment of a loan.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Functions<indexterm>PMT</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>There are several ways to determine the repayment of a loan. The following example
+                calculates the size of the monthly repayment of a loan of $ 250,000 with a 6% fixed
+                annual interest rate over a period of 15 years according to the annuity. For this,
+                the Excel function <varname>PMT</varname> will be used.</p>
+            <note type="notice">The PMT function calculates the payment for a loan based on constant
+                periodic payments and a constant interest rate.</note>
+            <fig>
+                <title>Data to use for loan repayment</title>
+                <image keyref="Example_Annuity">
+                    <alt>Data to use for loan repayment</alt>
+                </image>
+            </fig>
+            <note type="other" othertype="File"><filepath>Repayment.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Format the cells as shown in the figure.</cmd>
+            </step>
+            <step>
+                <cmd>Select cell <uicontrol>B4</uicontrol> and press the button <uicontrol>Insert
+                        Function</uicontrol> on the formula bar.</cmd>
+            </step>
+            <step>
+                <cmd>Select in the <option>Financial</option> category the function
+                        <option>PMT</option> and click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>The <wintitle>Function Arguments</wintitle> dialog box
+                    appears.</stepresult>
+            </step>
+            <step>
+                <cmd>Put the cursor in the <varname>Rate</varname> box and enter
+                        <userinput>B2/12</userinput>. Then put the cursor in the
+                        <varname>Nper</varname> box and enter <userinput>B3*12</userinput>. Finally
+                    put the cursor in the <varname>Pv</varname> box and enter
+                        <userinput>B1</userinput>.</cmd>
+                <info>
+                    <note type="important">Because the period in this example is in months and not
+                        in years, the annual rate must be divided by 12 and the number of years must
+                        be multiplied by 12.</note>                    
+                </info>
+                <stepresult>
+                    <fig>
+                        <title>Arguments for the function PMT</title>
+                        <image keyref="Example_Annuity_Arguments">
+                            <alt>Arguments for the function PMT</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>
+                    <p>The answer -2109.64 appears. Because the result is an amount to be paid,
+                        so a debt, Excel displays this as a negative number. That is, in a red font
+                        and with a minus sign.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Change this in a positive number by putting a minus sign after the =
+                    sign.</cmd>
+                <stepresult>
+                    <codeph>=-PMT(B2/12,B3*12,B1)</codeph>
+                </stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

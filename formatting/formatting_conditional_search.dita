@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="formatting_conditional_search" xml:lang="en-US">
+    <title>Finding conditional formats</title>
+    <shortdesc>How to find cells with a conditional format.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Conditional format<indexterm>find</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Sometimes it is difficult to see if there are cells in a worksheet with conditional
+            formatting. Excel provides support to find them. This is done as follows:</p>
+        <p>Choose <menucascade>
+                <uicontrol>tab Home</uicontrol>
+                <uicontrol>Find &amp; Select (group Editing)</uicontrol>
+                <uicontrol>Conditional Formatting</uicontrol>
+            </menucascade>.</p>
+        <p>All cells with a conditional format are now selected. If there are no cells with a
+            conditional format, Excel displays the following message: <systemoutput>No cells were
+                found.</systemoutput>.</p>
+    </conbody>
+</concept>

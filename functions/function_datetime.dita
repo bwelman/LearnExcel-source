@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="function_datetime" xml:lang="en-US">
+    <title>Task: Date and Time Functions</title>
+    <shortdesc>An example of calculations with date and time.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Functions<indexterm>date and
+                        time</indexterm><indexterm>YEAR</indexterm><indexterm>MONTH</indexterm><indexterm>DAY</indexterm><indexterm>HOUR</indexterm><indexterm>MINUTE</indexterm><indexterm>SECOND</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>In the Date and Time category you will find multiple functions to perform
+                calculations with date and time. Because Excel sees date and time internally as
+                numbers you can just calculate with date and time. In the following task are both a
+                few features as the count at issue. In the next task a few date and time functions
+                are covered.</p>
+            <fig>
+                <title>Calculation with dates and times</title>
+                <image keyref="Example_Datetime">
+                    <alt>Calculation with dates and times.</alt>
+                </image>
+            </fig>
+            <note type="attention">American date format: Month/Day/Year</note>
+            <note type="other" othertype="File"><filepath>Date.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select cell <uicontrol>C2</uicontrol> and press the button <uicontrol>Insert
+                        Function</uicontrol> on the formula bar.</cmd>
+            </step>
+            <step>
+                <cmd>Select in the <option>Date &amp; Time</option> category the function
+                        <option>YEAR</option> and click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult> The <wintitle>Function Arguments</wintitle> dialog box
+                    appears.</stepresult>
+            </step>
+            <step>
+                <cmd>Put the cursor in the <varname>Serial_number</varname> box and in the worksheet
+                    select cell <userinput>B2</userinput> and click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>The <systemoutput>2011</systemoutput> result appears in cell
+                    C2.</stepresult>
+            </step>
+            <step>
+                <cmd>Enter the same way the following functions:</cmd>
+                <choices>
+                    <choice>in cell <uicontrol>D2</uicontrol> the function
+                            <userinput>=MONTH(B2)</userinput></choice>
+                    <choice>in cell <uicontrol>E2</uicontrol> the function
+                            <userinput>=DAY(B2)</userinput></choice>
+                </choices>
+                <stepresult>
+                    <fig>
+                        <title>Results for start date</title>
+                        <image keyref="Example_Datetime_Startdate">
+                            <alt>Results for start date</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Select <uicontrol>C2:E2</uicontrol> and drag the fill handle down 1 row.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Results for end date</title>
+                        <image keyref="Example_Datetime_Enddate">
+                            <alt>Results for end date</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Select cell B4 and enter the formula <userinput>=B3-B2</userinput>.</cmd>
+                <stepresult>The result is <systemoutput>27</systemoutput>.</stepresult>
+            </step>
+            <step>
+                <cmd>Select cell <uicontrol>B5</uicontrol> and press the button <uicontrol>Insert
+                        Function</uicontrol> on the formula bar.</cmd>
+            </step>
+            <step>
+                <cmd>Select in the <option>Date &amp; Time</option> category the function
+                        <option>NETWORKDAYS</option> and click <uicontrol>OK</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter in the <wintitle>Function Arguments</wintitle> dialog box the cell
+                    addresses for the start date and end date.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box for function NETWORKDAYS</title>
+                        <image keyref="Example_Datetime_Networkdays">
+                            <alt>Dialog box for function networkdays</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>The result is <systemoutput>20</systemoutput>.</stepresult>
+            </step>
+            <step>
+                <cmd>The same way calculate the hours, minutes and seconds from the start date and
+                    end date. Use the functions <userinput>HOUR</userinput>,
+                        <userinput>MINUTE</userinput> and <userinput>SECOND</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Calculate in cell <uicontrol>B10</uicontrol> the time difference through the
+                    formula <userinput>=B9-B8</userinput>.</cmd>
+            </step>
+        </steps>
+        <result>The end result is <fig>
+                <title>Results of the date and time functions</title>
+                <image keyref="Example_Datetime_Result">
+                    <alt>Results of the date and time functions</alt>
+                </image>
+            </fig></result>
+    </taskbody>
+</task>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="macro_editing" xml:lang="en-US">
+	<title>Task: Editing Macros</title>
+	<shortdesc>How to change the options and program code of a macro.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Macro<indexterm>changing</indexterm><indexterm>editing</indexterm></indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<taskbody>
+		<prereq>To perform this task it is necessary that the macro CellFormat was created.</prereq>
+		<context>
+			<p>A macro can be changed without recording the macro again. Both the options of the macro as the
+				program code can be viewed and modified.</p>
+			<p>Changes to be made: Assign the shortcut key <q>Control t</q> to the macro and change the font
+				size to 18 pt.</p>
+		</context>
+		<steps>
+			<step>
+				<cmd>Choose <menucascade>
+						<uicontrol>Developer tab</uicontrol>
+						<uicontrol>Macros (group Code)</uicontrol>
+					</menucascade>.</cmd>
+				<stepresult>
+					<fig>
+                        <title>Dialog box macro CellFormat</title>
+                        <image keyref="macro_cellformat_run">
+                            <alt>Dialog box macro CellFormat</alt>
+                        </image>
+                    </fig>
+				</stepresult>
+			</step>
+			<step>
+				<cmd>Choose <uicontrol>Options</uicontrol>.</cmd>
+				<stepresult>
+					<fig>
+                        <title>Options macro CellFormat</title>
+                        <image keyref="macro_cellformat_options">
+                            <alt>Options macro CellFormat</alt>
+                        </image>
+                    </fig>
+				</stepresult>
+			</step>
+			<step>
+				<cmd>Enter the letter <uicontrol>t</uicontrol> in the box for the shortcut key and
+					change in the description 16pt in <uicontrol>18pt</uicontrol>. Click on
+						<uicontrol>OK</uicontrol>.</cmd>
+			</step>
+			<step>
+				<cmd>Choose now <uicontrol>Edit</uicontrol>.</cmd>
+				<stepresult>
+					<p>A new window <wintitle>Microsoft Visual Basic</wintitle> will appear with the program code
+						of the macro.</p>
+					<codeblock>Sub CellFormat()
+'
+' CellFormat Macro
+' Format cell in Comic Sans, 16pt, bold, italic and red
+'
+
+'
+    With Selection.Font
+        .Name = "Comic Sans MS"
+        .FontStyle = "Bold Italic"
+        .Size = 16
+        .Strikethrough = False
+        .Superscript = False
+        .Subscript = False
+        .OutlineFont = False
+        .Shadow = False
+        .Underline = xlUnderlineStyleNone
+        .Color = 255
+        .TintAndShade = 0
+        .ThemeFont = xlThemeFontNone
+    End With
+    Selection.Columns.AutoFit
+End Sub</codeblock>
+				</stepresult>
+			</step>
+			<step>
+				<cmd>You can find the number 16 in two places. Change it to <userinput>18</userinput> in both
+					places.</cmd>
+			</step>
+			<step>
+				<cmd>Close the window <wintitle>Microsoft Visual Basic</wintitle> with the close button in the
+					upper right corner.</cmd>
+			</step>
+			<step>
+				<cmd>Test the macro on a cell with text using the keyboard shortcut <uicontrol>CTRL
+						t</uicontrol>.</cmd>
+			</step>
+
+		</steps>
+	</taskbody>
+</task>

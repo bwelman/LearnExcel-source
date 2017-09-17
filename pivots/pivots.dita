@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="pivots" xml:lang="en-US">
+	<title>PivotTables</title>
+	<shortdesc/>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords/>			
+		</metadata>
+	</prolog>
+	<conbody>
+		<p>A PivotTable is a data summarization tool. It is an interactive dynamic table in which you can
+            quickly and easily summarize, combine and compare large amounts of data . PivotTables
+            enables you to get information quickly, analyze it and draw conclusions.</p>
+	</conbody>
+</concept>

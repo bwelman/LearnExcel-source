@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="goalseek_over" xml:lang="en-US" >
+	<title>What is Goal Seek?</title>
+	<shortdesc>A brief description of the method Goal Seek.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Goal Seek<indexterm>method</indexterm><indexterm>limitation</indexterm></indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<conbody>
+		<p>A formula is built based on one or more variables. Normally you want to calculate the result of
+			the formula at certain values for the variables. So, the values for the variables are
+			known but not the result of the formula. What if you want a certain result, but don't
+			know the values for the variables. Then you can use Excels <term>Goal Seek</term>. With
+				<term>Goal Seek</term> the value in a specific cell will be changed until a formula
+			that depends on that cell returns the result you want.</p>
+		<p>Goal Seek can only change the value in a single cell. You must use Excels
+				<term>Solver</term> if the result of the formula depends on the values in multiple
+			cells.</p>
+	</conbody>
+</concept>

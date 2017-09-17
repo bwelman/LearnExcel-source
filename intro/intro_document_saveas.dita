@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="intro_document_saveas" xml:lang="en-US">
+    <title>Task: Workbook Saving as</title>
+    <shortdesc>Instructions on how you can save a workbook by another name and in a different file
+        format.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Workbook<indexterm>save as</indexterm></indexterm>
+                <indexterm>Save as<indexterm>workbook</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context><p>Sometimes, it may be desirable to have multiple versions of a file. In that case
+                you can save the file under another name through <uicontrol>Save as</uicontrol>.
+                Also, it may be necessary to save the file in an older Excel format which is also
+                possible through <uicontrol>Save as</uicontrol>.</p></context>
+        <steps>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>File</uicontrol>
+                        <uicontrol>Save as</uicontrol>
+                    </menucascade>.</cmd>
+            </step>
+            <step>
+                <cmd>See further <xref href="intro_document_save.dita#intro_document_save"/>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

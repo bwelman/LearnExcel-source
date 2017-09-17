@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="formatting_font_group" xml:lang="en-US">
+    <title>Font</title>
+    <shortdesc>How to change the format of cells through the commands in the font group.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Font</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>The <uicontrol>group Font (tab Home)</uicontrol> has a number of commands that allows to
+            change the appearance of text in cells. To apply these changes, you must first select
+            the cell(s) and then use the command button. The options in this group are:</p>
+        <dl>
+            <dlentry>
+                <dt><image keyref="Font"/></dt>
+                <dd>Font, choice list through down arrow.</dd>
+            </dlentry>
+            <dlentry>
+                <dt><image keyref="Font_Size"/></dt>
+                <dd>Font size, choice list through down arrow.</dd>
+            </dlentry>
+            <dlentry>
+                <dt><image keyref="Font_Size_Adjust"/></dt>
+                <dd>Increase / Decrease Font size, always in steps of 2 points.</dd>
+            </dlentry>
+            <dlentry>
+                <dt><image keyref="Font_Style"/></dt>
+                <dd>Style, successively: bold, italic, underlined. The specific underscore can be
+                    determined using the down arrow.</dd>
+            </dlentry>
+            <dlentry>
+                <dt><image keyref="Font_Color"/></dt>
+                <dd>Font color, the color can be chosen through the down arrow.</dd>
+            </dlentry>
+            <dlentry>
+                <dt><image keyref="Font_Fillcolor"/></dt>
+                <dd>Fill color, the color can be chosen through the down arrow.</dd>
+            </dlentry>
+        </dl>
+    </conbody>
+</concept>

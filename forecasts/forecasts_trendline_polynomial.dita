@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="forecasts_trendline_polynomial" xml:lang="en-US">
+    <title>Task: Polynomial trend line</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm/>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context><p>A polynomial trend line is a curved line that often fits well with volatile
+                data.</p><p>The equation of the trend line looks like: <codeph>y =
+                        a<sub>n</sub>⋅x<sup>n</sup> ... + a<sub>2</sub>⋅x<sup>2</sup> +
+                        a<sub>1</sub>⋅x + a<sub>0</sub></codeph>. The numbers a<sub>0</sub>,
+                    a<sub>1</sub>, a<sub>2</sub>, ... a<sub>n</sub> are called the coefficiënts of
+                the polynomial and n the order.</p><p>The order of the polynomial is determined by
+                the number of oscillations (peaks and valleys) in the data:<ul>
+                    <li>1e order, the same as the linear trend line.</li>
+                    <li>2e order, usually only one peak or valley in the line. The line is also
+                        called parabola.</li>
+                    <li>3e order, usually one or two peaks or valleys.</li>
+                    <li>4e order, usually up to three peaks or valleys.</li>
+                </ul></p><p>In practice you will have to experiment with the order to find out which
+                is the best fit.</p>The following example is about the performance (in miles per
+            gallon) of a car at various speeds (in miles per hour).<note type="other"
+                othertype="File"><filepath>Trendlines.xlsx</filepath></note></context>
+        <steps>
+            <step>
+                <cmd>Open the practice file and select worksheet
+                    <wintitle>Polynomial</wintitle></cmd>
+            </step>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/Trendline_Start"
+                conrefend="../common/reuse_task_parts.dita#reuse_task_parts/Trendline_End">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select at Trendline Options: <option>Power Order 3</option>. Let equation and
+                    R-squared value be displayed in the chart.</cmd>
+            </step>
+            <step>
+                <cmd>Change the chart title in <userinput>Performance - Speed</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Add Axis titles and change title Y-axis in <userinput>Performance
+                        (miles/gal)</userinput> and title X-axis in <userinput>Speed
+                        (miles/hr)</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Drag in the chart the equation to an empty place.</cmd>
+            </step>
+        </steps>
+        <result>
+            <fig>
+                <title>Example polynomial trend line</title>
+                <image keyref="example_pol">
+                    <alt>Example polynomial trend line</alt>
+                </image>
+            </fig>
+            <p>R<sup>2</sup> = 0,9664 which means that a 2e order polynomial trend line fits the
+                data very well.</p>
+        </result>
+        <example>
+            <title>Worksheet functions</title>
+            <p>Equation: y = a*x<sup>2</sup> + b*x + c<ul>
+                    <li>a =INDEX(LINEST(known_ys ; known_xs^{1\2}) ; 1 ; 1)</li>
+                    <li>b =INDEX(LINEST(known_ys ; known_xs^{1\2}) ; 1 ; 2)</li>
+                    <li>c =INDEX(LINEST(known_ys ; known_xs^{1\2}) ; 1 ; 3)</li>
+                </ul></p>
+        </example>
+    </taskbody>
+</task>

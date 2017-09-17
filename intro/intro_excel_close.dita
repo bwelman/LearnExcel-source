@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="intro_excel_close" xml:lang="en-US">
+    <title>Taak: Closing Excel</title>
+    <shortdesc>Instructions on how to close the Excel window.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Excel<indexterm>closing</indexterm></indexterm>
+                <indexterm>Closing</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context><p>There are two methods to stop working with Excel and closing the program window:<ul>
+                    <li>Through the <term>close button</term> of the program window. This is a
+                        button with an <uicontrol>X</uicontrol> in the upper right corner of the
+                        window.</li>
+                    <li>Though thet menu <menucascade>
+                            <uicontrol>File</uicontrol>
+                            <uicontrol>Close</uicontrol>
+                        </menucascade>.</li>
+                </ul></p>
+            <note type="attention">When something is changed in de workbook, you allways get a
+                dialog window asking whether the changes should or should not be saved.</note>
+        </context>
+        <steps>
+            <step>
+                <cmd>Close Excel with one of these methods.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="function_countif" xml:lang="en-US">
+    <title>Task: COUNTIF</title>
+    <shortdesc>A task in which you learn how to count how many numbers meet certain
+        conditions.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Functions<indexterm>COUNTIF</indexterm></indexterm>
+                <indexterm>Counting<indexterm>conditional</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>The COUNTIF function is very useful when creating frequency tables. In the following
+                example you see a list of camping sites with their category.</p>
+            <fig>
+                <title>Data to use with function COUNTIF</title>
+                <image keyref="Example_Countif">
+                    <alt>Data to use with function countif</alt>
+                </image>
+            </fig>
+            <p>In column E must be the number of campsites in each category.</p>
+            <note type="other" othertype="File"><filepath>Campsites.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select cell <uicontrol>E2</uicontrol> and press the button <uicontrol>Insert
+                        Function</uicontrol> on the formula bar.</cmd>
+            </step>
+            <step>
+                <cmd>Select in the <option>All</option> category the function
+                        <option>COUNTIF</option> and click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult> The <wintitle>Function Arguments</wintitle> dialog box
+                    appears.</stepresult>
+            </step>
+            <step>
+                <cmd>Put the cursor in the <varname>Range</varname> box and select <userinput>column
+                        B</userinput> in the worksheet. Put the cursor in the
+                        <varname>Criteria</varname> box and select cell <userinput>D2</userinput> in
+                    the worksheet.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Arguments for the function COUNTIF</title>
+                        <image keyref="Function_Countif">
+                            <alt>Arguments for the function COUNTIF</alt>
+                        </image>
+                    </fig>
+                    <note type="attention">By specifying as range the entire column B, new rows with
+                        data can be added the bottom without the need to change the formulas.</note>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>In cell D2 appears the result <systemoutput>4</systemoutput>.
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Select cell <uicontrol>E2</uicontrol> and drag the fill handle down to
+                        <uicontrol>E5</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Results of function COUNTIF</title>
+                        <image keyref="Example_Countif_Result">
+                            <alt>Results of function COUNTIF</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

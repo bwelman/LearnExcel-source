@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept id="forecasts_timeserie_components" xml:lang="en-US">
+    <title>Time serie components</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm/>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>In this section four types of patterns in time series are discussed.</p>
+        <section>
+            <title>Trend component</title>
+            <p>Tend to ascending over time (positive trend) or descending(negative trend). It does
+                not have to be linear. Sometimes only a trend referred to as the direction
+                (ascending or descending) in which the changes take place.</p>
+            <fig>
+                <title>Trend component</title>
+                <image keyref="timeserie_comp_trend">
+                    <alt>Trend component</alt>
+                </image>
+            </fig>
+        </section>
+        <section>
+            <title>Seasonality component</title>
+            <p>These are regular fluctuations per day, month, quarter (usually within one year).
+                Sales of ice creams in the summer will be higher than in the winter. Seasonality
+                always concerns a fixed, known period.</p>
+            <fig>
+                <title>Seasonality component</title>
+                <image keyref="timeserie_comp_season">
+                    <alt>Seasonality component</alt>
+                </image>
+            </fig>
+        </section>
+        <section>
+            <title>Cyclic component</title>
+            <p>These are fluctuations over a longer period of time, often for many years, through
+                fluctuations in the business cycle. Characteristic is also that these periods have
+                no fixed length. Can be omitted for a analysis on shorter periods. The business
+                cycle is a combination of different factors or indicators.</p>
+            <fig>
+                <title>Cyclic component</title>
+                <image keyref="timeserie_comp_cyclic">
+                    <alt>Cyclic component</alt>
+                </image>
+            </fig>
+        </section>
+        <section>
+            <title>Random component</title>
+            <p>These are irregular fluctuations that cannot explained. Also called accidental
+                influences.</p>
+            <fig>
+                <title>Random component</title>
+                <image keyref="timeserie_comp_random">
+                    <alt>Random component</alt>
+                </image>
+            </fig>
+        </section>
+    </conbody>
+    <!--<related-links>
+        <link
+            href="http://www.cbs.nl/nl-NL/menu/themas/dossiers/conjunctuur/publicaties/conjunctuurbericht/inhoud/"
+            format="html" scope="external">
+            <linktext>CBS conjunctuurbericht</linktext>
+        </link>
+        <link
+            href="http://www.cbs.nl/nl-NL/menu/informatie/onderwijs/gereedschappen/economie/links/2010-klok.htm"
+            format="html" scope="external">
+            <linktext>CBS conjunctuurklok</linktext>
+        </link>
+    </related-links>-->
+</concept>

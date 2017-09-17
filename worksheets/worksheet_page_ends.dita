@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="worksheet_page_ends" xml:lang="en-US">
+    <title>Page Breaks</title>
+    <shortdesc>The layout of larger worksheets into pages, and how to adjust them.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Page
+                    Break<indexterm>insert</indexterm><indexterm>delete</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>There may be only a certain number of rows and columns that could be printed on one
+            sheet. Excel automatically adds horizontal and vertical page breaks to divide the sheet
+            into appropriate pages. Where these page breaks are depends on many factors such as
+            paper size, margins, row heights, column widths, font, .. You can also determine
+            yourself where pages should started by insert, move or delete page breaks.</p>
+        <section>
+            <title>Page Break Example</title>
+            <p>Although you can work with page breaks in <uicontrol>Normal</uicontrol> view, the
+                best way is to use the <wintitle>Page Break Preview</wintitle>. In this view you can
+                see how choices that you can make (such as page orientation and changes of
+                formatting) affects the automatic page breaks. For example, you can see how a change
+                of row height or column width affects the placement of the automatic page
+                breaks.</p>
+            <p>Choose <menucascade>
+                    <uicontrol>View</uicontrol>
+                    <uicontrol>Page Break Preview (group Workbook Views)</uicontrol>
+                </menucascade>.</p>
+            <p>In this view you can also see the order of the pages. Standard the order is first
+                downwards and then sideways. This order can be changed using <uicontrol>Page
+                    Setup</uicontrol>.</p>
+            <p>To move page breaks, you can drag them with the mouse to the new location.</p>
+            <p>To switch back to the <uicontrol>Normal</uicontrol> view choose <menucascade>
+                    <uicontrol>View</uicontrol>
+                    <uicontrol>Normal (group Workbook Views)</uicontrol>
+                </menucascade>.</p>
+        </section>
+        <section>
+            <title>Inserting Page breaks</title>
+            <p>Page breaks can also be applied manually. To do this, follow these steps.</p>
+            <dl>
+                <dlentry>
+                    <dt>Horizontal page break</dt>
+                    <dd>Select the row that has to start on a new page.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Vertical page break</dt>
+                    <dd>Select the column that has to start on a new page.</dd>
+                </dlentry>
+            </dl>
+            <p>Then choose <menucascade>
+                    <uicontrol>Page Layout</uicontrol>
+                    <uicontrol>Breaks (group Page Setup)</uicontrol>
+                    <uicontrol>Insert Page Break</uicontrol>
+                </menucascade>.</p>
+        </section>
+        <section>
+            <title>Deleting Page breaks</title>
+            <p>The automatically generated page breaks cannot be removed. Only the manually applied
+                page breaks can be removed. To do this, follow these steps.</p>
+            <dl>
+                <dlentry>
+                    <dt>Horizontal page break</dt>
+                    <dd>Select the row below the page break.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Vertical page break</dt>
+                    <dd>Select the column at the right from the page break.</dd>
+                </dlentry>
+            </dl>
+            <p>Then choose <menucascade>
+                    <uicontrol>Page Layout</uicontrol>
+                    <uicontrol>Breaks (group Page Setup)</uicontrol>
+                    <uicontrol>Remove Page Break</uicontrol>
+                </menucascade>.</p>
+        </section>
+    </conbody>
+</concept>

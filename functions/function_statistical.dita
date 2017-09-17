@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="function_statistical" xml:lang="en-US">
+    <title>Task: Statistical Functions</title>
+    <shortdesc>A task to calculate the average, count, minimum and maximum of a set of
+        numbers.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Functions<indexterm>statistical</indexterm><indexterm>AVERAGE</indexterm><indexterm>COUNT</indexterm><indexterm>MIN</indexterm><indexterm>MAX</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>The statistically category contains a variety of functions for statistical analysis
+                like average, count, minimum, and maximum. You will learn to use these last four in
+                the following task.</p>
+            <fig>
+                <title>Input for task with statistical functions</title>
+                <image keyref="Example_Statistical">
+                    <alt>Input for task with statistical functions</alt>
+                </image>
+            </fig>
+            <note type="other" othertype="File"><filepath>Statistics.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select cell <uicontrol>B9</uicontrol> and press the button <uicontrol>Insert
+                        Function</uicontrol> on the formula bar.</cmd>
+            </step>
+            <step>
+                <cmd>Select in the <option>Statistical</option> category the function
+                        <option>AVERAGE</option>. Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult> The <wintitle>Function Arguments</wintitle> dialog box
+                    appears.</stepresult>
+            </step>
+            <step>
+                <cmd>Put the cursor in the box <varname>Number1</varname> and in the worksheet
+                    select the area <userinput>B1:B8</userinput>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Dialog box function average</title>
+                        <image keyref="Example_Statistical_Average">
+                            <alt>Dialog box function average</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>
+                    <p>Cell B9 displays now the result <systemoutput>53.125</systemoutput> and on
+                        the formula bar you see the formula
+                            <systemoutput>=AVERAGE(B1:B8)</systemoutput></p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Enter the following functions in the same way:</cmd>
+                <choices>
+                    <choice>in cell <uicontrol>B10</uicontrol> the function
+                            <userinput>COUNT</userinput></choice>
+                    <choice>in cell <uicontrol>B11</uicontrol> the function
+                            <userinput>MIN</userinput></choice>
+                    <choice>in cell <uicontrol>B12</uicontrol> the function
+                            <userinput>MAX</userinput></choice>
+                </choices>
+                <info>
+                    <note type="attention">Make sure you keep the area B1:B8 as argument.</note>
+                </info>
+            </step>
+        </steps>
+        <result>The end result is<simpletable frame="all">
+                <strow>
+                    <stentry>average</stentry>
+                    <stentry>53.125</stentry>
+                </strow>
+                <strow>
+                    <stentry>count</stentry>
+                    <stentry>8</stentry>
+                </strow>
+                <strow>
+                    <stentry>minimum</stentry>
+                    <stentry>2</stentry>
+                </strow>
+                <strow>
+                    <stentry>maximum</stentry>
+                    <stentry>96</stentry>
+                </strow>
+            </simpletable>
+        </result>
+    </taskbody>
+</task>

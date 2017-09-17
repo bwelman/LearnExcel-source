@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="worksheet" xml:lang="en-US">
+    <title>The worksheet</title>
+    <shortdesc>Worksheet concept</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>A workbook can have one or more worksheets. Each worksheet has a tab that is displayed in
+            the bottom of the workbook window. The tab contains the name of the worksheet. In the
+            worksheet you can enter the data and formulas. The main topics in this chapter are how
+            and where to enter this data in the worksheet and how it is displayed.</p>
+    </conbody>
+</concept>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="formatting_over" xml:lang="en-US">
+    <title>About formatting</title>
+    <shortdesc>Why it is important to make your selections before the formatting.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Worksheet<indexterm>format</indexterm></indexterm>
+                <indexterm>Format<indexterm>worksheet</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>You can apply a format (for example the font type) to the entire worksheet, or to individual
+            cells or areas of cells. The process is usually the same, but it depends on what is
+            selected.</p>
+        <note type="important">First select, then execute the format command.</note>
+        <p>You can select the entire worksheet through the button to the left of the first column and
+            above the first row: <image keyref="Worksheet_Select"><alt>Button for selection of all cells of the worksheet.</alt></image></p>
+    </conbody>
+</concept>

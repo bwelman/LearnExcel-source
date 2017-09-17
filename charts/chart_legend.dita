@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="chart_legend" xml:lang="en-US">
+    <title>Task: Legend</title>
+    <shortdesc>A number of ways to display the legend.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Charts<indexterm>legend</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>A legend is a box that identifies the patterns or colors from the data series in a
+                chart. By default, if applicable, the legend will be shown at the right. The legend
+                can also be removed or dragged to another place.</p>
+            <note conref="../common/reuse_task_parts.dita#reuse_task_parts/Chart_File"/>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/Chart_Select">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>Design</uicontrol>
+                        <uicontrol>Add Chart Element (group Chart Layouts)</uicontrol>
+                        <uicontrol>Legend</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Legend options</title>
+                        <image keyref="chart_legend_options">
+                            <alt>Legend options</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Select the desired option.</cmd>
+                <info>
+                    <note type="tip">If the legend is selected, the legend can be dragged to another
+                        place in the chart area.</note>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

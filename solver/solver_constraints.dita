@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="solver_constraints" xml:lang="en-US" >
+	<title>Solver Constraints</title>
+	<shortdesc>Some background information about adding constraints to the solver.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords/>
+		</metadata>
+	</prolog>
+	<conbody>
+	    <p>You can add constraints through the <wintitle>Solver Parameters</wintitle>:</p>
+	    <fig>
+	        <title>Dialog box Add Constraint</title>
+	        <image keyref="solver_constraint_add">
+	            <alt>Dialog box add constraint</alt>
+	        </image>
+	    </fig>
+	    <p>Every constraint in the Solver consists of a cell reference, a relationship operator and a constraint.<dl>
+                <dlentry>
+                    <dt>Cell Reference</dt>
+                    <dd>The cell address or name of the cell range whose values you want to
+                        constrain. You can use a single cell or a cell range, but not multiple
+                        ranges.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Relationship operator</dt>
+                    <dd>Select one of the possible operators: &lt;=, =, >=, int, bin or dif that you
+                        want between the referenced cell and the constraint.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>Constraint</dt>
+                    <dd>This a number, a cell reference, a name or a formula that needs to
+                        match.</dd>
+                </dlentry>
+            </dl></p>
+        <p>The relationship operators int, bin and dif can only applied to decision variable cells.
+            If int, bin or dif is selected, then the Constraint box displays respectively integer,
+            binary or alldifferent.</p>
+        <dl>
+            <dlentry>
+                <dt>int (integer)</dt>
+                <dd>This requires that the values in the referenced cells must be integers or whole
+                    numbers, such as -1, 0 or 2, to within a small tolerance (determined by the
+                    Constraint Precision option).</dd>
+            </dlentry>
+            <dlentry>
+                <dt>bin (binary)</dt>
+                <dd>This requires that the values in the referenced cells must be either 0 or 1. So
+                    this can also be used to represent a <q>yes/no</q> decision.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>dif (alldifferent)</dt>
+                <dd>This requires that the values in each of the referenced cells must be
+                    different.</dd>
+            </dlentry>
+        </dl>
+    </conbody>
+</concept>

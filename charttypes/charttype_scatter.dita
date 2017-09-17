@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="charttype_scatter" xml:lang="en-US">
+    <title>Task: Scatter (XY) Chart</title>
+    <shortdesc>A scatter chart (XY diagram) is very suitable if you want to analyze and show the
+        relationship between two numeric variables. It also allows you to determine a trend
+        line.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Scatter Chart</indexterm>
+                <indexterm>XY Chart</indexterm>
+                <indexterm>Charts<indexterm>XY</indexterm><indexterm>Scatter</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>In a <term>Scatter Chart</term>, also called <term>XY Chart</term>, the values of two
+                numeric variables are plotted against each other. Each pair makes a point in the
+                chart. A scatter chart is often used to examine a certain relation, a correlation,
+                between the two variables.</p>
+        </context>
+        <section><title>Problem</title><p>To investigate whether there is a relationship between
+                body length and weight the data is measured for 10 students. The measurement data is
+                showed in the following figure.</p><fig>
+                <title>Investigation body length - weight</title>
+                <image keyref="scatter_data">
+                    <alt>Investigation body length - weight</alt>
+                </image>
+            </fig><p>The data should be displayed in a scatter chart, as shown in the following
+                figure.</p><fig>
+                <title>Relation body length - weight</title>
+                <image keyref="scatter_result">
+                    <alt>Relation body length - weight</alt>
+                </image>
+            </fig>
+            <note type="other" othertype="File"><filepath>Chart_Scatter.xlsx</filepath></note>
+        </section>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open"
+                conrefend="../common/reuse_task_parts.dita#reuse_task_parts/Select_Cell">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>Insert</uicontrol>
+                        <uicontrol>Insert Scatter (XY) or Bubble Chart (group Charts)</uicontrol>
+                        <uicontrol>Scatter</uicontrol>
+                    </menucascade>. </cmd>
+                <stepresult>
+                    <p>The chart appears in the worksheet. There are still some adjustments to be
+                        made.</p>
+                    <fig>
+                        <title>Default scatter chart</title>
+                        <image keyref="scatter_default">
+                            <alt>Default scatter chart</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Change the chart title in <userinput>Relation body length -
+                    weight</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Create a horizontal axis title with text <userinput>Length
+                    (cm)</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Create a vertical axis title with text <userinput>Weight
+                    (kg)</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Change the scale of the horizontal axis so that it runs from <userinput>160 to
+                        190</userinput>, with increments of <userinput>5</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Change the scale of the vertical axis so that it runs from <userinput>40 to
+                        80</userinput>, with increments of <userinput>5</userinput>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

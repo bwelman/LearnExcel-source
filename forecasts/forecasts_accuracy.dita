@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept id="forecasts_accuracy" xml:lang="en-US">
+    <title>Accuray of forecasts</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm/>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>The difference between the actual value and the predicted value is called forecast error.
+            To develop forecast models you had to minimise these forecast errors. There are several
+            measures developed to assess the accuracy. You can't just consider one of these as the
+            best. In general, the smaller the number, the better.</p>
+        <p>The measures available in Excel are:</p>
+        <dl>
+            <dlentry>
+                <dt>RMSE</dt>
+                <dd>Root Mean Square Error</dd>
+            </dlentry>
+            <dlentry>
+                <dt>MASE</dt>
+                <dd>Mean Absolute Scaled Error</dd>
+            </dlentry>
+            <dlentry>
+                <dt>SMAPE</dt>
+                <dd>Symmetric Mean Absolute Percentage Error</dd>
+            </dlentry>
+            <dlentry>
+                <dt>MAE</dt>
+                <dd>Mean Absolute Percentage Error</dd>
+            </dlentry>
+        </dl>
+    </conbody>
+</concept>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="table_totalrow" xml:lang="en-US">
+	<title>Task: Total Row</title>
+	<shortdesc>How to add a total row.</shortdesc>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords>
+				<indexterm>Total Row</indexterm>
+				<indexterm>Table<indexterm>total row</indexterm></indexterm>
+			</keywords>
+		</metadata>
+	</prolog>
+	<taskbody>
+		<context>
+            <p>You can summarize numeric data in a table with a subtotal that appears at the bottom
+                of the table. Although the word subtotal implies that you are summing the numeric
+                values in a column, Excel uses the term more broadly. That is, a subtotal can be not
+                only a numeric sum, but also an average, a maximum or minimum, a standard deviation
+                or a variance, or a count of the values in the field.</p>
+            <note type="other" othertype="File"><filepath>Personnel.xlsx</filepath></note>
+        </context>
+		<steps>
+			<step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+				<cmd/>
+			</step>
+		    <step>
+                <cmd>Convert the data range to a table.</cmd>
+            </step>
+		    <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>Design (Table Tools)</uicontrol>
+                        <uicontrol>Check Total Row (group Table Style Options)</uicontrol>
+                    </menucascade></cmd>
+                <stepresult>
+                    <p>A row <systemoutput>Total</systemoutput> is inserted at the bottom of the table and a
+                            <varname>SUBTOTAL</varname> function is added below the last column. In
+                        this case the function is meningless because the last column is a date
+                        column.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Select in the total row the cell below column <varname>Start date</varname>,
+                    then the selector <image keyref="subtotal_selector" id="image_rpj_4zx_r1b"/> and
+                    choose <option>None</option>.</cmd>
+            </step>
+            <step>
+                <cmd>Select in the total row the cell below column <varname>Salary</varname>, then
+                    the selector <image keyref="subtotal_selector" id="image_tyv_rzx_r1b"/> and
+                    choose <option>Sum</option>.</cmd>
+                <stepresult>The total salary is <systemoutput>$
+                    4,874,037.39</systemoutput>.</stepresult>
+            </step>
+		</steps>
+	</taskbody>
+</task>

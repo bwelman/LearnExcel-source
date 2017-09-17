@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="pivots_creating" xml:lang="en-US">
+    <title>Task: Creating PivotTables</title>
+    <shortdesc>Step-by-step instructions on how to create a PivotTable.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Pivot
+                        Table<indexterm>creating</indexterm><indexterm>formatting</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>In the practice file are the monthly sales data in 2016 of three supermarkets for
+                several products. The products are divided in three productgroups: pvf (potatoes,
+                vegetables and fruits), meat and dairy.</p>
+            <fig>
+                <title>Table with sales data</title>
+                <image keyref="supermarket_sales_data">
+                    <alt>Table with sales data</alt>
+                </image>
+            </fig>
+            <p>These data will be analyzed using a PivotTable. The first question to be answered is:
+                    <q>What are the total sales per town per productcategory?</q>.</p>
+            <note type="other" othertype="File"><filepath>Supermarket.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step id="pivot_create_start">
+                <cmd>Select any cell in the table. Choose <menucascade>
+                        <uicontrol>tab Insert</uicontrol>
+                        <uicontrol>PivotTable (group Tables)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <p>The dialog box <wintitle>Create PivotTable</wintitle> appears. The range of
+                        the table has already filled in.</p>
+                    <fig>
+                        <title>Selecting table range</title>
+                        <image keyref="supermarket_pivot_create">
+                            <alt>Selecting table range</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step id="pivot_create_end">
+                <cmd>In this task the PivotTable should appear in the existing worksheet. Select
+                        <userinput>Existing Worksheet</userinput> and click on an empty cell in the
+                    worksheet, e.g. cell <userinput>G3</userinput>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Selecting the location for the PivotTable</title>
+                        <image keyref="pivottable_location">
+                            <alt>Specifying place for PivotTable</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>
+                    <p>Excel adds an empty PivotTable on the specified location and displays a task
+                        panel on the right side with the PivotTable Field List so that you can add
+                        fields to the report.</p>
+                    <simpletable>
+                        <sthead>
+                            <stentry>PivotTable report</stentry>
+                            <stentry>Task panel</stentry>
+                        </sthead>
+                        <strow>
+                            <stentry><image keyref="pivottable_empty">
+                                    <alt>PivotTable</alt>
+                                </image></stentry>
+                            <stentry><image keyref="supermarket_pivot_taskpanel">
+                                    <alt>PivotTable task panel with field list</alt>
+                                </image></stentry>
+                        </strow>
+                    </simpletable>
+                    <note type="attention">The task panel with the field list will be shown when a
+                        cell in the PivotTable is the active cell. As soon as you click on a cell
+                        outside the PivotTable, the task panel disappears. The panel appears again
+                        when you click on any cell within the PivotTable.</note>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Drag in the task panel from the list field <varname>town</varname> to the area
+                        <uicontrol>Rows</uicontrol>, field <varname>productcategory</varname> to the
+                    area <uicontrol>Columns</uicontrol> and field <varname>sales</varname> to the
+                    area <uicontrol>Values</uicontrol>. At the last action the calculation method
+                        <option>Sum</option> of the Sales is applied automatically.</cmd>
+                <info>
+                    <note type="tip">You can delete a field from the PivotTable by dragging it out
+                        the area.</note>
+                </info>
+                <stepresult>
+                    <fig>
+                        <title>Used fields for the PivotTable</title>
+                        <image keyref="supermarket_productcategory-town_fields">
+                            <alt>Used fields for the PivotTable</alt>
+                        </image>
+                    </fig>
+                    <p>The PivotTable in the worksheet is filled with the data.</p>
+                    <fig>
+                        <title>Pivot table report: Sales per month per product</title>
+                        <image keyref="supermarket_productcategory-town"/>
+                    </fig>
+                </stepresult>
+            </step>
+            <stepsection>Part: formatting values as accounting numbers</stepsection>
+            <step id="fieldsettings">
+                <cmd>Select any numeric value in the PivotTable. Choose <menucascade>
+                        <uicontrol>tab Analyze</uicontrol>
+                        <uicontrol>Field Settings (group Active Field</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <p>The dialog box <wintitle>Value Field Settings</wintitle> appears.</p>
+                    <fig>
+                        <title>Dialog box <wintitle>Value Field Settings</wintitle></title>
+                        <image keyref="supermarket_pivot_fieldsettings">
+                            <alt>Dialog box value Field Settings</alt>
+                        </image>
+                    </fig>
+                    <note type="tip">In this window you can also change the displayed name in the
+                        box <uicontrol>Custom Name</uicontrol>.</note>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click on the button <uicontrol>Number Format</uicontrol>.</cmd>
+                <stepresult>The dialog box <wintitle>Format Cells</wintitle> is
+                    displayed.</stepresult>
+            </step>
+            <step>
+                <cmd>Choose category <menucascade>
+                        <uicontrol>Accounting</uicontrol>
+                        <uicontrol>Decimal places: 0</uicontrol>
+                        <uicontrol>Symbol: $</uicontrol>
+                    </menucascade></cmd>
+                <stepresult>
+                    <fig>
+                        <title>Formatting of field <varname>Sum of Sales</varname></title>
+                        <image keyref="cellformat_accounting">
+                            <alt>Formatting of field sum of sales</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click <menucascade>
+                        <uicontrol>OK</uicontrol>
+                        <uicontrol>OK</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>The value fields in the PivotTable appear in the specified
+                    format.</stepresult>
+            </step>
+            <stepsection>Part: Changing column labels and row labels by a field name</stepsection>
+            <step>
+                <cmd>Select any cell in the PivotTable. Choose <menucascade>
+                        <uicontrol>tab Design</uicontrol>
+                        <uicontrol>Report Layout (group Layout)</uicontrol>
+                        <uicontrol>Show in Outline Form</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Formatted PivotTable: sales per town per productcategory</title>
+                        <image keyref="supermarket_productcategory-town_formatted">
+                            <alt>Formatted PivotTable sales per town per productcategory</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <stepsection>Part: Analyzing products within each productcategory</stepsection>
+            <step>
+                <cmd>Drag field <varname>productcategory</varname> frow Columns to Rows and field
+                        <varname>town</varname> from Rows to Columns. Next drag field
+                        <varname>product</varname> to Rows and below field
+                        <varname>productcategory</varname>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Two row fields</title>
+                        <image keyref="supermarket_cat-products-town_fields">
+                            <alt>Two row fields</alt>
+                        </image>
+                    </fig>
+                    <fig>
+                        <title>Report with two row fields</title>
+                        <image keyref="supermarket_cat-products-town">
+                            <alt>Report with two row fields</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <stepsection>In stead of total sales you cal also calculate other values, for example
+                the average monthly sales.</stepsection>
+            <step>
+                <cmd>Select any numeric value in the PivotTable and change through the
+                        <uicontrol>Field Settings</uicontrol> (see step <xref
+                        href="#pivots_creating/fieldsettings" format="dita"/>) the calculation type
+                    from <option>Sum</option> in <option>Average</option>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

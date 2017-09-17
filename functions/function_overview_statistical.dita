@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="function_overview_statistical" xml:lang="en-US">
+  <title>Overview Statistical Functions</title>
+  <shortdesc>An overview of some functions for statistics.</shortdesc>
+  <prolog>
+    <critdates>
+        <created date="2017-08-31"/>
+        <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords>
+        <indexterm>Functions<indexterm>statistical</indexterm></indexterm>
+      </keywords>
+    </metadata>
+  </prolog>
+  <refbody>
+    <section>
+      <title>COUNT</title>
+      <p>This function returns the number of numeric values in a supplied set of cells or values.
+        This count includes both numbers and dates.</p>
+      <codeblock>COUNT(Value1, [Value2], ...)</codeblock>
+      <parml>
+        <plentry>
+          <pt>Value1</pt>
+          <pd>Required. Can be any values or references to cell ranges.</pd>
+        </plentry>
+        <plentry>
+          <pt>Value2,  ...</pt>
+          <pd>Optional.</pd>
+        </plentry>       
+      </parml>
+    </section>
+    <section>
+      <title>COUNTIF</title>
+      <p>This function returns the number of cells of a supplied range, that satisfy a given
+        criteria.</p>
+      <codeblock>COUNTIF(range, criteria)</codeblock>
+      <parml>
+        <plentry>
+          <pt>range</pt>
+          <pd>Required. The range of cells that should be tested.</pd>
+        </plentry>
+        <plentry>
+          <pt>criteria</pt>
+          <pd>Required. A user-defined condition that is tested against each of the cells in
+            range.</pd>
+        </plentry>
+      </parml>
+    </section>
+    <section>
+      <title>AVERAGE</title>
+      <p>This function calculates arithmetic mean of the supplied numbers.</p>
+      <codeblock>AVERAGE(Number1, [Number2], ...)</codeblock>
+      <parml>
+        <plentry>
+          <pt>Number1</pt>
+          <pd>Required. A set of one or more numeric values, arrays of numeric values or references
+            to cells or cell ranges with numeric values.</pd>
+        </plentry>
+        <plentry>
+          <pt>Number2,  ...</pt>
+          <pd>Optional.</pd>
+        </plentry>       
+      </parml>
+    </section>
+    <section>
+      <title>MAX</title>
+      <p>This function returns the largest value from a list of supplied numbers.</p>
+      <codeblock>MAX(Number1 , [Number2], ...)</codeblock>
+      <parml>
+        <plentry>
+          <pt>Number1</pt>
+          <pd>Required. A set of one or more numeric values, arrays of numeric values or references
+            to cells or cell ranges with numeric values.</pd>
+        </plentry>
+        <plentry>
+          <pt>Number2, ...</pt>
+          <pd>Optional.</pd>
+        </plentry>       
+      </parml>
+    </section>  
+    <section>
+      <title>MIN</title>
+      <p>This function returns the smallest value from a list of supplied numbers.</p>
+      <codeblock>MIN(Number1, [Number2], ...)</codeblock>
+      <parml>
+        <plentry>
+          <pt>Number1</pt>
+          <pd>Required. A set of one or more numeric values, arrays of numeric values or references
+            to cells or cell ranges with numeric values.</pd>
+        </plentry>
+        <plentry>
+          <pt>Number2, ...</pt>
+          <pd>Optional.</pd>
+        </plentry>       
+      </parml>
+    </section>  
+    <section>
+      <title>SLOPE</title>
+      <p>This function calculates the slope of the linear regression line through a supplied set of
+        x- and y- values.</p>
+      <codeblock>SLOPE(known_y's, known_x's)</codeblock>
+      <parml>
+        <plentry>
+          <pt>known_y's</pt>
+          <pd>Required. An array of known y-values</pd>
+        </plentry>
+        <plentry>
+          <pt>known_x's</pt>
+          <pd>Required. An array of known x-values</pd>
+        </plentry>       
+      </parml>
+    </section>
+    <section>
+    <title>INTERCEPT</title>
+      <p>This function calculates the intercept of the linear regression line through a supplied set
+        of x- and y- values.</p>
+    <codeblock>INTERCEPT(known_y's, known_x's)</codeblock>
+    <parml>
+      <plentry>
+        <pt>known_y's</pt>
+        <pd>Required. An array of known y-values</pd>
+      </plentry>
+      <plentry>
+        <pt>known_x's</pt>
+        <pd>Required. An array of known x-values</pd>
+      </plentry>       
+    </parml>
+    </section> 
+  </refbody>
+</reference>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept id="forecasts_trendline_excel" xml:lang="en-US">
+ <title>Trend line types in Excel</title>
+ <shortdesc/>
+ <prolog>
+  <critdates>
+   <created date="2017-08-31"/>
+   <revised modified="2017-08-31"/>
+  </critdates>
+  <metadata>
+   <keywords>
+    <indexterm/>
+   </keywords>
+  </metadata>
+ </prolog>
+ <conbody>
+  <p>There are six trend line types in Excel. It is not always immediately obvious what kind of
+            trend line is best choice for your data. Sometimes you see it right away and if not, you
+            have to experiment with a number of different trend lines.</p>
+  <p>The quality of a trend line can be judged by the value of R-squared (R<sup>2</sup>). This is a
+            number from 0 to 1 that indicates how close the calculates values are to the actual
+            values. The closer to 1 the better the trend line. When you add a trend line you can
+            select to display the R-squared value and the equation of the trend line in the
+            chart.</p>
+  <p>When making predictions you need the coefficients of the equation. Excel provides in worksheet
+            functions for these coefficients.</p>
+ </conbody>
+</concept>

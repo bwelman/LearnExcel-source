@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept id="forecasts_timeserie_introduction" xml:lang="en-US">
+ <title>What is a time serie?</title>
+ <shortdesc/>
+ <prolog>
+  <critdates>
+   <created date="2017-08-31"/>
+   <revised modified="2017-08-31"/>
+  </critdates>
+  <metadata>
+   <keywords>
+    <indexterm>Tijdreeks</indexterm>
+   </keywords>
+  </metadata>
+ </prolog>
+ <conbody>
+        <p>The historical data are usually <term>time series</term>, a set of observations of a
+            variable measured at successive intervals or over successive periods. When the data
+            provided have a specific pattern in the time, then can this pattern can be used to make
+            a forecast for a future value.</p>
+        <p>It could also be that the value of a variable depends on other variables than the time.
+            For example, there could be a relation between blood pressure and age. You then have an
+            independent variable (age) and a dependent variable (blood pressure). Such relationships
+            between variables are examined with<term>regression-analysis</term>. This chapter
+            discusses only forecasts with time series. When you see the time as an independent
+            variable, then you can also use regression analysis in time series.</p>
+        <p>After the study and analysis of time series, models with associated forecasting
+            techniques are prepared. Often you try multiple models with an accuracy analysis. The
+            cost of inaccurate predictions can be significant. Over-optimistic forecasts can result
+            in the production of too many items that might be destroyed. And low forecasts can
+            result in lost revenue opportunities.</p>
+        <p>Depending on the amount of data, the desired quality of the forecasts and the presence of
+            specific statistical know-how,  the calculations will be done with statistical software
+            packages (R, SPSS, ...) or with Microsoft Excel. In this chapter you will only work with
+            the standard possibilities of Excel, without specific add-inns. A single time the result
+            of Excel is compared to the result that R provides.</p>
+  <p>A time series is a set of (measure) data of a variable over a certain period of time. The data
+            consists of repeated measurements at fixed times such as each hour day week, month,
+            quarter, year or regular period. The data is thus ordered in time and the time between
+            each observation is constant.</p>
+        <p>Examples of time series:<ul id="ul_o34_xl2_vx">
+                <li>Sickness absence per month or year</li>
+                <li>Sales per month</li>
+                <li>Sales per quarter</li>
+                <li>Road deaths per year</li>
+                <li>…</li>
+            </ul></p>
+        <p>Many time series show a trend (increase or decrease) and / or seasonality, variations
+            specific to a particular time frame. For example the sale of ice in summer will be
+            higher than in winter.</p>
+  <!--<p>Voorbeeld van een tijdreeks laten zien (Airpassengers uit R)</p>-->
+<!--  plot(AirPassengers, xlab="Jaar", ylab ="Aantal passagiers", main="Aantal internationale vliegtuigpassagiers per maand in 1949-1960"); AirPassengers   -->
+        <p>When making forecasts you want to estimate future values ​​of the series. For this you
+            use data from the past. These historical data are studied and analyzed trying to detect
+            a pattern in the data to make the best possible model of the time series.</p>
+ </conbody>
+</concept>

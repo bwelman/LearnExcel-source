@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="forecasts_trendline_ma" xml:lang="en-US">
+    <title>Task: Moving Average trend line</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm/>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>A moving average trend line trend line smooths fluctuations in the data, making the
+                pattern more clearly. </p>
+            <p>The moving average is the average of a fixed number of consecutive values in a time
+                series. The length of time for the fixed number of elements is called the period.
+                The line through these averages is the trend line. Strong fluctuations will be
+                weaker. Usually it takes some experimenting to find a suitable period.</p>
+            <p>This line has no formula and also the R-squared value cannot be calculated. There are
+                other methods available for quality evaluation.</p>
+            <p>The following example is about the price of a share for 20 days.The moving average is
+                calculated for a period of 3 days. The first value for the moving average can only
+                be calculated on day 3 and the value is the average of day 1, 2 and 3. The next
+                value at day 4 is the average of the values on day 2, 3 and 4. And so on.</p>
+            <note type="other" othertype="File"><filepath>Trendlines.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open the practice file and select worksheet
+                    <wintitle>MovingAverage</wintitle></cmd>
+            </step>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/Trendline_Start"
+                conrefend="../common/reuse_task_parts.dita#reuse_task_parts/Trendline_End">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select at Trendline Options: <option>Moving Average with Period
+                    3</option>.</cmd>
+            </step>
+            <step>
+                <cmd>Change the chart title in <userinput>Share prices</userinput>.</cmd>
+            </step>
+            <step>
+                <cmd>Add Axis titles and change title Y-axis in <userinput>Price</userinput> and
+                    title X-axis in <userinput>Day</userinput>.</cmd>
+            </step>
+        </steps>
+        <result>
+            <fig>
+                <title>Example moving average trend line</title>
+                <image keyref="example_ma" id="image_nq3_x5r_bbb">
+                    <alt>Example moving average trend line</alt>
+                </image>
+            </fig>
+            <p>You can clearly see that the trend line smooths the values.</p>
+        </result>
+    </taskbody>
+</task>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="worksheet_print_preview" xml:lang="en-US">
+    <title>Task: Print Preview</title>
+    <shortdesc>The preview shows you how the printed page will look like and gives you options to
+        change several settings.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Printing<indexterm>preview</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>OmTo judge if a print will look good, it is recommended to look at the print preview
+                first. From there you can easily change some print settings.</p>
+            <note type="other" othertype="File"><filepath>Personnel.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Kies <menucascade>
+                        <uicontrol>File</uicontrol>
+                        <uicontrol>Print</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>An preview of the print and possibilities to change settings are displayed.<fig>
+                        <title>Print Preview</title>
+                        <image keyref="Print_Preview">
+                            <alt>Print Preview</alt>
+                        </image>
+                    </fig>
+                    <!-- Image from practice file Personnel.xlsx -->
+                    <note type="tip">If you want to see the margins, then click on the button
+                            <uicontrol>Show Margins</uicontrol> at the bottom right corner of the
+                        window.</note>
+                    <note type="tip">By clicking on <uicontrol>Page Setup</uicontrol> you get a
+                        dialog box with tabs with a lot of print options.</note>
+                </stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

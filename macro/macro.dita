@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="macro" xml:lang="en-US" >
+	<title>Macros</title>
+	<shortdesc/>
+	<prolog>
+		<critdates>
+		    <created date="2017-08-31"/>
+		    <revised modified="2017-08-31"/>
+		</critdates>
+		<metadata>
+			<keywords/>
+		</metadata>
+	</prolog>
+	<conbody>
+		<p>Common actions can be automated with macros. Using macros can increase efficiency and reduce
+			errors. Simple macro's that exist of a number of operations in a sequence, can be
+			recorded with the built-in macro recorder. Complex macros are programmed in the language
+			VBA (Visual Basic for Applications). Only simple macros will be discussed here, so
+			programming knowledge is not necessary.</p>
+	</conbody>
+</concept>

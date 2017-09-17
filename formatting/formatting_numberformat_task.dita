@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="formatting_numberformat_task" xml:lang="en-US">
+    <title>Task: Formatting numbers</title>
+    <shortdesc>A practice in formatting numbers.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Number<indexterm>format</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>In the following example you see a part of a worksheet containing many uses of number format.
+                All formatting has been applied with the predefined styles and / or the command
+                buttons for number formatting.</p>
+            <fig>
+                <title>Example formatting numbers</title>
+                <image keyref="Number_Format_Example">
+                    <alt>Example formatting numbers</alt>
+                </image>
+            </fig>
+            <note type="other" othertype="File"><filepath>Numberformat.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Format the worksheet as shown in the figure. Use of the opportunities available through
+                    the <uicontrol>group Number (tab Home)</uicontrol>.</cmd>
+            </step>
+        </steps>
+        <example>
+            <title>Indications</title>
+            <ul>
+                <li>Column A, numbers formatted as text.</li>
+                <li>Column B, accounting number format.</li>
+                <li>Column C, numbers formatted first with the thousands separator and then decreased the number
+                    of decimals to 0.</li>
+                <li>Column D, numbers entered with the percent symbol and then adjust the number of
+                    decimals.</li>
+                <li>Column E, dates entered, applied the short date format for the first two and the long date
+                    format for the last two.</li>
+            </ul>
+        </example>       
+    </taskbody>
+</task>

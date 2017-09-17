@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="calculation_formula_copy" xml:lang="en-US">
+    <title>Copying formulas</title>
+    <shortdesc>Explanation about copying formulas and the differences between absolute and relative
+        cell addresses.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Formulas<indexterm>copying</indexterm></indexterm>
+                <indexterm>Cell<indexterm>address, absolute</indexterm><indexterm>address,
+                        relative</indexterm></indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>It is very useful to be able to copy formulas to other cells, especially when formulas
+            are very similar to each other. In the following figure you see an example where the
+            formulas in A3, B3, C3 and D3 show great similarities. This makes it possible to enter
+            the formula only in cell A3 and then copy it to B3:D3.</p>
+        <fig>
+            <title>Example with copyable formulas</title>
+            <image keyref="Formula_Copy">
+                <alt>Example with copyable formulas</alt>
+            </image>
+        </fig>
+        <p>Because a formula often contains cell references it is important to consider what to do
+            with these cell references during the copy action. There are two possibilities:</p>
+        <ul>
+            <li>The cell references adjust to a new situation. The cell addresses in the formula are
+                    <term>relative</term>.</li>
+            <li>The cell references don't change and remain the same. The cell addresses in the
+                formula are <term>absolute</term>.</li>
+        </ul>
+        <p>An address is made absolute by putting dollar signs in the address. You can place a
+            dollar sign for the column letter and/or for the row number. The part that contains the
+            dollar sign is absolute and will not be changed during copying. There are four
+            possibilities for a cell address:</p>
+        <simpletable frame="all" relcolwidth="1.0* 1.0*">
+            <sthead>
+                <stentry>Type</stentry>
+                <stentry>Example</stentry>
+            </sthead>
+            <strow>
+                <stentry>Relative address</stentry>
+                <stentry>B1</stentry>
+            </strow>
+            <strow>
+                <stentry>Absolute column and absolute row address</stentry>
+                <stentry>$B$1</stentry>
+            </strow>
+            <strow>
+                <stentry>Absolute column and relative row address</stentry>
+                <stentry>$B1</stentry>
+            </strow>
+            <strow>
+                <stentry> Relative row and absolute column address</stentry>
+                <stentry>B$1</stentry>
+            </strow>
+        </simpletable>
+        <note type="remember">When copying a formula with cell addresses, the absolute part is not
+            modified and the relative part will be modified.</note>
+        <p>You can change the type of a cell reference in one of the following ways:<ul>
+                <li>Type the dollar signs on the desired place.</li>
+                <li>If the cursor is in a cell address, press repeatedly on key
+                        <uicontrol>F4</uicontrol> until the desired result is achieved. During
+                    repetitive pressing on <uicontrol>F4</uicontrol> all four possibilities will be
+                    displayed.</li>
+            </ul></p>
+        <section>
+            <title>Copy rules</title>
+            <p>If you copy formulas with cell references Excel applies the following rules:</p>
+            <ul>
+                <li>By copying to the left or to the right direction the column letter will be
+                    lowered or raised.</li>
+                <li>By copying in the direction upwards or downwards the row number will be
+                    decreased or increased.</li>
+                <li>The parts in the address with a dollar sign in front,are not affected.</li>
+            </ul>
+        </section>
+        <example>
+            <title>Example</title>
+            <table frame="all">
+                <tgroup cols="3">
+                    <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+                    <colspec colname="c3" colnum="3" colwidth="1.0*"/>
+                    <thead>
+                        <row>
+                            <entry>Formula</entry>
+                            <entry>Copy action</entry>
+                            <entry>Result</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>=A1+B2</entry>
+                            <entry>1 cell to the right</entry>
+                            <entry>=B1+C2</entry>
+                        </row>
+                        <row>
+                            <entry/>
+                            <entry>1 cell down</entry>
+                            <entry>=A2+B3</entry>
+                        </row>
+                        <row>
+                            <entry/>
+                            <entry>1 cell to the right and 1 cell down</entry>
+                            <entry>=B2+C3</entry>
+                        </row>
+                        <row>
+                            <entry>=A$1+B$2</entry>
+                            <entry>1 cell to the right</entry>
+                            <entry>=B$1+C$2</entry>
+                        </row>
+                        <row>
+                            <entry/>
+                            <entry>1 cell down</entry>
+                            <entry>=A$1+B$2</entry>
+                        </row>
+                        <row>
+                            <entry/>
+                            <entry>1 cell to the right and 1 cell down</entry>
+                            <entry>=B$1+C$2</entry>
+                        </row>
+                        <row>
+                            <entry>=$A1+$B2</entry>
+                            <entry>1 cell to the right</entry>
+                            <entry>=$A1+$B2</entry>
+                        </row>
+                        <row>
+                            <entry/>
+                            <entry>1 cell down</entry>
+                            <entry>=$A2+$B3</entry>
+                        </row>
+                        <row>
+                            <entry/>
+                            <entry>1 cell to the right and 1 cell down</entry>
+                            <entry>=$A2+$B3</entry>
+                        </row>
+                        <row>
+                            <entry>=$A$1+$B$2</entry>
+                            <entry>each copy action</entry>
+                            <entry>=$A$1+$B$2</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </example>
+    </conbody>
+</concept>

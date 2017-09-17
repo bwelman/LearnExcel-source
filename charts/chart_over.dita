@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="chart_over" xml:lang="en-US">
+    <title>Charts and Excel</title>
+    <shortdesc>A brief description of charts.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Chart</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Visualizing your data with charts makes it easier to analyze the data. And when you
+            create a chart, the data in the worksheet is used as the source for the chart. If the
+            data is changed later the chart will be automatically adjusted.Excel offers a wide range
+            of chart types and choosing the right chart type is important.</p>
+        <p>To easily create a chart in Excel the data should be well organized in the worksheet. The
+            most convenient way to do this is with a table form.</p>
+        <p>There are two locations for a chart:<ul>
+                <li>as an <term>object</term> in a worksheet. The chart is then called an
+                        <term>embedded</term> chart. The advantage of this location is that you are
+                    able to see and print the chart together with the data in the worksheet.</li>
+                <li>a special worksheet for a chart, called a <term>chart sheet</term>.</li>
+            </ul>It is possible to change the location of the chart afterwards.</p>
+    </conbody>
+</concept>
