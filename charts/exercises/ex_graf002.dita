@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_graf002" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: graf002 - Travel bookings</title>
+  <shortdesc>Level: 1</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>The following table lists the data of travel bookings in the years 2008-2010.</p>
+      <p>
+        <fig>
+                    <image keyref="ex_graf002_data"/>
+                </fig>
+      </p>
+      <p>Put the data in a worksheet and use formulas for the totals. After that create the
+        following chart.</p>
+        <fig>
+                <image keyref="ex_graf002_chart"/>
+            </fig>
+      <note type="other" othertype="File"><filepath>Graf002.xlsx</filepath></note>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>The totals must be calculated using the SUM function.</p>
+      <p>Select the travel data including the name but without the year numbers. This is because
+        Excel interprets these dates as numbers. Create the chart as follows.</p>
+      <ul>
+        <li>Chart type: Stacked column</li>
+        <li>Choose <menucascade>
+            <uicontrol>tab Design (Chart Tools)</uicontrol>
+            <uicontrol>Switch Row/Column (group Data)</uicontrol>
+          </menucascade></li>
+        <li>Choose <uicontrol>tab Design (Chart Tools)</uicontrol><uicontrol>Select Data (group
+            Data)</uicontrol>. In the dialog box click <uicontrol>Edit</uicontrol> under
+            <wintitle>Horizontal (Category) Axis Labels</wintitle>. Select the area with the year
+          numbers as <uicontrol>Axis label range </uicontrol>and click <uicontrol>OK</uicontrol>
+          (2x).</li>
+        <li>If desired, you can make some columns wider by reducing the gap as follows: <menucascade>
+            <uicontrol>select a column</uicontrol>
+            <uicontrol>Right mouse click</uicontrol>
+            <uicontrol>Format Data Series</uicontrol>
+          </menucascade> and reduce the <uicontrol>Gap Width</uicontrol>.</li>
+      </ul>
+    </section>
+  </body>
+</topic>

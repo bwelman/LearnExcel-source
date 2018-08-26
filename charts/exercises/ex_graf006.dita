@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_graf006" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: graf006 - Counting agarics</title>
+  <shortdesc>Level: 1</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>In a given area the number of agarics is counted annually. In the following table you can
+        see the number of agarics per hectare for some years.</p>
+      <fig>
+                <image keyref="ex_graf006_data"/>
+            </fig>
+      <p>Create from this data, the next chart.</p>
+      <fig>
+                <image keyref="ex_graf006_chart"/>
+            </fig>
+      <note type="other" othertype="File"><filepath>Graf006.xlsx</filepath></note>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>Create the chart as follows:<ul>
+          <li>Start creating a radar chart.</li>
+          <li>Layout adjustments: title, remove legend, size.</li>
+        </ul></p>
+    </section>
+  </body>
+</topic>

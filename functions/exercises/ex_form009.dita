@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_form009" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: form009 - Savings deposit</title>
+  <shortdesc>Level: 1</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>An amount of $ 20,000 will be put for a year in a savings deposit at an interest rate of
+        2.75%. Create a calculation model in which both the interest and the total amount after one
+        year is calculated.</p>
+      <note type="other" othertype="File"><filepath>Form009.xlsx</filepath></note>
+    </section>
+    <section otherprops="answer">
+      <title>Answer</title>
+      <p>Interest = $ 550.00 and Amount = $ 20,550.00</p>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <fig>
+                <image keyref="ex_form009_solution"/>
+            </fig>
+      <p>Calculation after 1 year</p>
+      <p>Interest <codeph>=Amount*Interest_rate</codeph></p>
+      <p>Amount <codeph>=Amount+Interest</codeph>.</p>
+    </section>
+  </body>
+</topic>

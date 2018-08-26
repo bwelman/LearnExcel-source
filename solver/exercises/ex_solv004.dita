@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_solv004" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: solv004 - Production of aluminum ladders</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>A manufacturer of aluminum ladders makes three types of ladders. The order in the
+        production is sewing the material first, then assembling and finally the finishing. The
+        production times and profit per ladder are listed in the following figure:</p>
+      <fig>
+                <image keyref="ex_solv004_data"/>
+            </fig>
+      <p>The total available production capacity is 80 for sewing, 100  for assembling and 120 for
+        finishing.</p>
+      <p>Use the Solver to determine how many ladders of each type should be produced for a maximun
+        profit.</p>
+    </section>
+    <section otherprops="answer">
+      <title>Answer</title>
+      <p>Number type 1 = 0, type 2 = 4 and type 3 = 10. Profit = $1080.</p>
+    </section>
+  </body>
+</topic>

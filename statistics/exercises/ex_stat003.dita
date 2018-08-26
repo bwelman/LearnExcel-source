@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="stat003" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: stat003 - Sales prognoses</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>The following table shows the sales in 10 years of a CD player of a particular brand.</p>
+      <fig>
+                <image keyref="stat003_data"/>
+            </fig>
+      <p>Assume a linear trend and forecast sales for the next five years.</p>
+      <note type="other" othertype="File"><filepath>Stat003.xlsx</filepath></note>
+    </section>
+    <section otherprops="answer">
+            <title>Answer</title>
+            <image keyref="stat003_result"/>
+        </section>
+  </body>
+</topic>

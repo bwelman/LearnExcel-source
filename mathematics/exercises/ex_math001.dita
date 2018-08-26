@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="math001" outputclass="exercise" xml:lang="en-US">
+    <title>Exercise: math001 - Function approximation</title>
+    <shortdesc>Level: 3</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Draw the graph of the function <image keyref="math001_function"/> on the interval
+                [0.1 , 1.0].</p>
+            <p>The best fit for this function on this interval is with a third order equation. Sucvh
+                an equation looks like <codeph>ax<sup>3</sup> + bx<sup>2</sup> +cx +d</codeph></p>
+            <p>Use the trend line to determine the coefficients a, b and c.</p>
+            <p>Make an estimate of the accuracy of the function's approximation with the third order
+                polynomial by calculating the sum of the quadratic deviations.</p>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <image keyref="math001_result"/>
+            <p>The sum of the quadratic deviations is 0.0000001245 so almost 1.</p>
+        </section>
+    </body>
+</topic>

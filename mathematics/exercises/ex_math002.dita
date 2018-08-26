@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="math002" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: math002 - Determining shortest distance</title>
+  <shortdesc>Level: 3</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>In the figure below are graphs of the functions <codeph>y = x<sup>2</sup></codeph> and
+                    <codeph>y = x</codeph>. And also the smallest distance between the two lines is
+                drawn.</p>
+      <fig>
+                <image keyref="math002_chart"/>
+            </fig>
+      <ol>
+        <li>Draw the two graphs..</li>
+        <li>Determine the points on both charts for the shirtest distance with the Solver.</li>
+        <li>Add to the chart the shortest distance line.</li>
+      </ol>
+    </section>
+    <section otherprops="answer"><title>Answer</title><image keyref="math002_result"/></section>
+  </body>
+</topic>

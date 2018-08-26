@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_meas003" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: meas003 - Shrinkage and temperature</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>A manufacturer of synthetic fibers examines whether the shrinking of the fibers is related
+        to the temperature at which they are washed. There are 8 experiments in which the fibers are
+        washed at different temperatures. The measured shrinkage is listed below as a percentage of
+        the original length.</p>
+      <fig>
+                <title>Results shrink percentage and temperature of washing</title>
+                <image keyref="ex_meas003_data">
+                    <alt>Results shrink percentage and temperature of washing</alt>
+                </image>
+            </fig>
+      <ol>
+        <li>Imagine a linear relationship and determine the equation where the shrink percentage is
+          a function from the temperature.</li>
+        <li>Predict the shrinkage at a temperature of 65 <sup>o</sup>C.</li>
+      </ol>
+      <note type="other" othertype="File"><filepath>Meas003.xlsx</filepath></note>
+    </section>
+    <section otherprops="answer">
+      <title>Answer</title>
+      <codeblock>Shrink percentage= 0.0796*Temp - 3.546
+At a temperature of 65 <sup>o</sup>C the predicted shrinkage percentage is 1.6%.</codeblock>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>The independent variable (x) is the temperature and the dependent variable (y) is the
+        shrink percentage. Determine the slope of the line with the function
+          <uicontrol>SLOPE()</uicontrol> and the interception with the y-axis with the function
+          <uicontrol>INTERCEPT()</uicontrol>.</p>
+      <p>Formula for shrink percentage at 65 <sup>o</sup>C is <codeph>= 0.0796*65 -
+        3.546</codeph></p>
+    </section>
+  </body>
+</topic>

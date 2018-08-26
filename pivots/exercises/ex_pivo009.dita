@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_pivo009" outputclass="exercise" xml:lang="en-US">
+    <title>Exercise: pivo009 - Transport research</title>
+    <shortdesc>Level: 3</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>A market research has been performed among the visitors of a city center. The
+                following table shows the data of the respondents who were questioned about means of
+                transport to the center to go shopping. In the table you see if they went by car or
+                by bus, how far they live from the center (in km.) and the travel time (in min.)</p>
+            <fig>
+                <image keyref="ex_pivo009_data"/>
+            </fig>
+            <p>Enter the data in a worksheet. Determine using a pivot table the average travel time
+                by car for residents living more then 15 km of the city center.</p>
+            <note type="other" othertype="File"><filepath>Pivo009.xlsx</filepath></note>
+            <note type="tip">Create an extra column to determine if the distance to the center is
+                more than 15 km.</note>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <p>28.5 min.</p>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p>Create first the extra column and calculate the values with the formula
+                    <codeph>=IF(cell address distance>15;"yes";"no")</codeph><image
+                    keyref="ex_pivo009_dataplus" placement="break"/></p>
+            <p conkeyref="pivot/start" conrefend="pivot/end"/>
+            <simpletable>
+                <sthead>
+                    <stentry>Report Filter</stentry>
+                    <stentry>Column Labels</stentry>
+                    <stentry>Row Labels</stentry>
+                    <stentry>Values</stentry>
+                </sthead>
+                <strow>
+                    <stentry>resident car distance>15</stentry>
+                    <stentry/>
+                    <stentry/>
+                    <stentry>time car</stentry>
+                </strow>
+            </simpletable>
+            <p conkeyref="pivot/options"/>/> <p>Change the type of calculation in
+                    <uicontrol>Average</uicontrol>.</p>
+            <fig>
+                <image keyref="ex_pivo009_report"/>
+            </fig>
+        </section>
+    </body>
+</topic>

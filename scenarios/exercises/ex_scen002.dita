@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_scen002" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: scen002 - Budget sports club</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>In the following figure you see a simplified budget of a sports club. The rent is exactly
+        known. For the other posts a reasonable indication of the lower and an upper limits can be
+        given.</p>
+      <ul>
+        <li>The subscription revenues are between $1800 and $2400.</li>
+        <li>The canteen revenues are between $600 and $800.</li>
+        <li>The costs of materials are between $500 and $800.</li>
+        <li>The miscellaneous costs are between $400 and $700.</li>
+      </ul>
+      <fig>
+                <image keyref="ex_scen002_data"/>
+            </fig>
+      <p>Enter the model in a worksheet. Create with the Scenario Manager the most positive and most
+        negative scenario. The output should look like the following:</p>
+      <fig>
+                <image keyref="ex_scen002_report"/>
+            </fig>
+      <note type="other" othertype="File"><filepath>Scen002.xlsx</filepath></note>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>Create the scenarios with <menucascade>
+          <uicontrol>tab Data</uicontrol>
+          <uicontrol>What-If Analysis (group Data Tools)</uicontrol>
+          <uicontrol>Scenario Manager</uicontrol>
+        </menucascade>.<ul>
+          <li>Changing cells: Subscriptions, Canteen, Materials and Miscellaneous</li>
+          <li>Scenario summary result cells: Profit</li>
+        </ul>
+        <note type="tip">To get names instead of cell addresses in the summary report you should
+          give names to the cells before using the scenario manager. </note>
+      </p>
+    </section>
+  </body>
+</topic>

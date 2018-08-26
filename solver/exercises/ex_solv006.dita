@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_solv006" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: solv006 - Vitamins for cattle feeding</title>
+  <shortdesc>Level: 3</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>A farmer uses three types of cattle feed, type 1, type 2 and type 3. The nutritional
+        composition and the cost per kg of each type is displayed in the following figure.</p>
+      <fig>
+                <image keyref="ex_solv006_data"/>
+            </fig>
+      <p>A magazine has published the minimum day requirements (MDR) in milligrams per animal for
+        the vitamins A, B and C. These are 120 mg A, 180 mg B and 100 mg C. Furthermore, an animal
+        can not eat more than 7½ kg of type 1 and 5 kg of type 2 and 2½ kg of type 3.</p>
+      <p>How many kilos of each type should the farmer provide every day to get the costs as low as
+        possible and still meet the minimum day requirements?</p>
+    </section>
+    <section otherprops="answer">
+      <title>Answer</title>
+      <p>Per day: type 1 = 7.500 kg, type 2 = 1.397 kg and type 3 = 1.426 kg. Costs = $68.37.</p>
+    </section>
+  </body>
+</topic>

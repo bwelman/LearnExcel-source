@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_form008" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: form008 - Property tax</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>The property tax has two parts, an owner part and a user part. If the owner occupies the
+        property himself, then he must pay both parts. The rate for both parts depends of the
+        assessment of the value according to the WOZ act. The property tax for 2010 in a certain
+        community amounts for the owner 0.1064% and for the user 0.1224% of the WOZ value.</p>
+      <fig>
+                <image keyref="ex_form008_model"/>
+            </fig>
+      <p>Create this model in a worksheet. The calculated values for owner and user depends on the
+        answer <q>yes</q>  or <q>no</q> on both questions.</p>
+      <note type="other" othertype="File"><filepath>Form008.xlsx</filepath></note>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>Amount owner <codeph>=IF(owner="yes",rate_owner * value_property,0)</codeph></p>
+      <p>Amount user <codeph>=IFuser="yes",rate_user * value_property,0)</codeph></p>
+      <p>Total due<codeph>=Amount_Owner + Amount_User</codeph></p>
+    </section>
+  </body>
+</topic>

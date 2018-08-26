@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="conref_source_ex_pivo" xml:lang="en-US">
+    <title>Reusable objects</title>
+    <body>
+        <p id="start">Select any cell in the table and choose <menucascade>
+                <uicontrol>tab Insert</uicontrol>
+                <uicontrol>Pivot Table (group Tables)</uicontrol>
+                <uicontrol>Accept the range</uicontrol>
+                <uicontrol>select Existing worksheet</uicontrol>
+                <uicontrol>Specify a cell as starting location</uicontrol>
+                <uicontrol>OK</uicontrol>
+            </menucascade>.</p>
+        <p id="end">Drag the fields as follows:</p>
+        <p id="options">Select a number in the pivot table and choose <menucascade>
+                <uicontrol>tab Options</uicontrol>
+                <uicontrol>Field Settings (group Active Field)</uicontrol>
+            </menucascade>.</p>
+        <p id="labels">Change the layout of the report in <option>Show in Outline Form</option>.</p>
+    </body>
+</topic>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="conref_source_ex_macr" xml:lang="en-US">
+    <title>Reusable macro parts</title>
+    <body>
+        <p id="start">Choose <menucascade>
+            <uicontrol>tab Developer</uicontrol>
+            <uicontrol>Record Macro (group Code)</uicontrol>
+        </menucascade>. Give the macro a name and a description and click
+            <uicontrol>OK</uicontrol>.</p>
+        <p id="stop">Choose <menucascade>
+            <uicontrol>tab Developer</uicontrol>
+            <uicontrol>Stop Recording (group Code)</uicontrol>
+        </menucascade>.</p>
+    </body>
+</topic>

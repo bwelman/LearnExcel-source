@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_macr004" outputclass="exercise" xml:lang="en-US">
+    <title>Exercise: macr004 - Printing gridlines</title>
+    <shortdesc>Level: 2</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Create a macro which ensures that the grid lines will be printed at printing.</p>
+            <note type="tip">You can find this property at <menucascade>
+                    <uicontrol>tab Page Layout</uicontrol>
+                    <uicontrol>Page Setup</uicontrol>
+                    <uicontrol>tab Sheet</uicontrol>
+                </menucascade>.</note>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <p>An example of a solution.</p>
+            <codeblock>Sub Print_Gridlines()
+'
+' exercise macr004
+'
+    With ActiveSheet.PageSetup
+        .PrintGridlines = True
+    End With
+End Sub</codeblock>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p conkeyref="macro/start"/>
+            <p>Choose <menucascade>
+                    <uicontrol>tab Page Layout</uicontrol>
+                    <uicontrol>Page Setup</uicontrol>
+                    <uicontrol>tab Sheet</uicontrol>
+                    <uicontrol>check Print Gridlines</uicontrol>
+                    <uicontrol>OK</uicontrol>
+                </menucascade>.</p>
+            <p conkeyref="macro/stop"/>
+        </section>
+    </body>
+</topic>

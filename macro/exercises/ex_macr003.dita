@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_macr003" outputclass="exercise" xml:lang="en-US">
+    <title>Exercise: macr003 - Formatting cell A1</title>
+    <shortdesc>Level: 2</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Record a macro that performs the following:</p>
+            <ul>
+                <li>Height of row 1 is 18</li>
+                <li>Width of column 1 is 3</li>
+                <li>Font of text in cell A1 is Tahoma 14, bold, blue color</li>
+            </ul>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <p>An example of a solution.</p>
+            <codeblock>Sub FormatA1()
+'
+' exercise macr003
+'
+    Rows("1:1").Select
+    Selection.RowHeight = 18
+    Columns("A:A").Select
+    Selection.ColumnWidth = 3
+    Range("A1").Select
+    With Selection.Font
+        .Name = "Tahoma"
+        .Size = 14
+        .Bold = True
+        .Color = -4165632
+    End With
+End Sub</codeblock>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p conkeyref="macro/start"/>
+            <p>Right click on row 1 and choose <menucascade>
+                    <uicontrol>Row Height</uicontrol>
+                    <uicontrol>18</uicontrol>
+                    <uicontrol>OK</uicontrol>
+                </menucascade>.</p>
+            <p>Right click on column 1 and choose <menucascade>
+                    <uicontrol>Column Width</uicontrol>
+                    <uicontrol>3</uicontrol>
+                    <uicontrol>OK</uicontrol>
+                </menucascade>.</p>
+            <p>Select cell A1 <menucascade>
+                    <uicontrol>Font</uicontrol>
+                    <uicontrol>Tahoma</uicontrol>
+                    <uicontrol>Font Size</uicontrol>
+                    <uicontrol>14</uicontrol>
+                    <uicontrol>Bold</uicontrol>
+                    <uicontrol>Font Color</uicontrol>
+                    <uicontrol>Blue</uicontrol>
+                </menucascade>.</p>
+            <p conkeyref="macro/stop"/>
+        </section>
+    </body>
+</topic>

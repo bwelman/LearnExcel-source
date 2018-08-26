@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_meas002" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: meas002 - Study time and exam grade</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>The study time and marks of some students is listed in the following figure.</p>
+      <fig>
+                <title>Results study time and marks</title>
+                <image keyref="ex_meas002_data">
+                    <alt>Results study time and marks</alt>
+                </image>
+            </fig>
+      <p>Imagine a linear relationship and determine the equation where the mark is a function from
+        the study time.</p>
+      <note type="other" othertype="File"><filepath>Meas002.xlsx</filepath></note>
+    </section>
+    <section otherprops="answer">
+      <title>Answer</title>
+      <codeblock>Mark = 0.2038*Study time + 3.3637</codeblock>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>The independent variable (x) is study time and the dependent variable (y) is mark.
+        Determine the slope of the line with the function <uicontrol>SLOPE()</uicontrol> and the
+        interception with the y-axis with the function <uicontrol>INTERCEPT()</uicontrol>.</p>
+    </section>
+  </body>
+</topic>

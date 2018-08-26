@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_pivo011" outputclass="exercise" xml:lang="en-US">
+    <title>Exercise: pivo011 - Fuel consumption cars</title>
+    <shortdesc>Level: 2</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords> </keywords>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Determine using a pivot table the minimum and maximum fuel consumption per car brand
+                and per fuel type.</p>
+            <note type="other" othertype="File"><filepath>Car.xlsx</filepath></note>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <fig>
+                <image keyref="ex_pivo011_report"/>
+            </fig>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p conkeyref="pivot/start" conrefend="pivot/end"/>
+            <simpletable>
+                <sthead>
+                    <stentry>Report Filter</stentry>
+                    <stentry>Column Labels</stentry>
+                    <stentry>Row Labels</stentry>
+                    <stentry>Values</stentry>
+                </sthead>
+                <strow>
+                    <stentry/>
+                    <stentry>Fuel</stentry>
+                    <stentry>Brand</stentry>
+                    <stentry>Consumption Consumption</stentry>
+                </strow>
+            </simpletable>
+            <p>Select in the pivot table a number in a column <q>Sum of Consumption</q> and choose <menucascade>
+                    <uicontrol>tab Options</uicontrol>
+                    <uicontrol>Field Settings</uicontrol>
+                </menucascade> and change the type of calculation in <uicontrol>Max</uicontrol> and
+                the name in <userinput>Max of Consumption</userinput>.</p>
+            <p>Select in the pivot table a number in a column <q>Sum of Consumption2</q> and choose <menucascade>
+                    <uicontrol>tab Options</uicontrol>
+                    <uicontrol>Field Settings</uicontrol>
+                </menucascade> and change the type of calculation in <uicontrol>Min</uicontrol> and
+                the name in <userinput>Min of Consumption</userinput>.</p>
+            <p>Drag the field <varname>Values</varname> from Column Labels to Row Labels under the
+                field <varname>Brand</varname>.</p>
+            <p>Choose <menucascade>
+                    <uicontrol>tab Design</uicontrol>
+                    <uicontrol>Grand Totals (group Layout)</uicontrol>
+                    <uicontrol>Off for Rows and Columns</uicontrol>
+                </menucascade>.</p>
+            <p>Change the text <q>Row labels</q> in <q>Brand</q> and the text <q>Column Labels</q>
+                in <q>Fuel</q>.</p>
+        </section>
+    </body>
+</topic>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_tabl001" xml:lang="en-US">
+  <title>Exercise: tabl001 - Repayment Loan</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>A loan of $10,000 must be repaid in a number of monthly periods at an annual interest of
+                5%. The calculation of the monthly amount to repay is calculated with the PMT
+                function. In the following illustration you can see this for a payment period of 36
+                months.</p>
+      <fig>
+                <title>Calculation montly repayment loan</title>
+                <image keyref="ex_tabl001_data">
+                    <alt>Calculation montly repayment loan</alt>
+                </image>
+            </fig>
+      <p><ol>
+          <li>Make the above model in a new worksheet and create a formula for the month
+                        repayment.</li>
+          <li>Create a data table with an overview of the monthly repayments for redemption periods
+                        of 12, 18, 24, 30, ..., 72 months.</li>
+          <li>Create a new data table with an overview of the monthly repayments for redemption
+                        periods of 12, 18, 24, 30, ..., 72 months and annual interest rates of 3%,
+                        3½%, 4%, 4½% ... 6%.</li>
+        </ol></p>
+    </section>
+    <section otherprops="answer">
+      <title>Answer</title>
+      <fig>
+                <title>Data table monthly repayments for different redemption periods</title>
+                <image keyref="ex_tabl001_result1">
+                    <alt>Data table monthly repayments for different redemption periods</alt>
+                </image>
+            </fig>
+      <fig>
+                <title>Data table monthly repayments for different redemption periods and interest
+                    rates</title>
+                <image keyref="ex_tabl001_result2">
+                    <alt>Data table monthly repayments for different redemption periods and interest
+                        rates</alt>
+                </image>
+            </fig>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <ol>
+        <li>Formula in B4: <userinput>=-PMT(B2/12,B3,B1)</userinput></li>
+        <li>In B7 is a reference to this formula: <userinput>=B4</userinput>. Column input cell:
+                        <userinput>B3</userinput></li>
+        <li>In A7 is a reference to this formula: <userinput>=B4</userinput>. Column input cell:
+                        <userinput>B3</userinput>. Row input cell: <userinput>B2</userinput></li>
+      </ol>
+    </section>
+  </body>
+</topic>

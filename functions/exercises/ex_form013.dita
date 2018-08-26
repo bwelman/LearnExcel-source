@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_form013" outputclass="exercise" xml:lang="en-US">
+    <title>Exercise: form013 - Price olive oil</title>
+    <shortdesc>Level: 2</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2018-08-25"/>
+            <revised modified="2018-08-25"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Olive oil can be purchased in cans of 5 liter. The price depends upon the amount of cans:<ul>
+                    <li>$45 per can for the first 20 cans</li>
+                    <li>$40 for any can more than 20</li>
+                </ul></p>
+            <p>Create a spreadsheet model where you can enter the total amount of cans and the total
+                price should be calculated. Use cells for the price per can and the 20 cans limit.
+                Give also names to all cells.</p>
+        </section>
+        <section otherprops="answer"/>
+        <section otherprops="solution">
+            <title>Solution</title>
+            
+        </section>
+        <simpletable frame="all" relcolwidth="1* 1* 1* 1*">
+            <strow>
+                <stentry>quantity_limit</stentry>
+                <stentry>20</stentry>
+                <stentry>cans_total</stentry>
+                <stentry>25</stentry>
+            </strow>
+            <strow>
+                <stentry>price_high</stentry>
+                <stentry>$ 45</stentry>
+                <stentry>price_total</stentry>
+                <stentry>$ 1100</stentry>
+            </strow>
+            <strow>
+                <stentry>price_low</stentry>
+                <stentry>$ 40</stentry>
+                <stentry/>
+                <stentry/>
+            </strow>
+        </simpletable>
+        <p>Formula price_total: <codeph>=IF(cans_total&lt;=quantity_limit,
+                cans_total*price_high,quantity_limit*price_high+(cans_total-quantity_limit)*price_low)</codeph></p>
+    </body>
+</topic>

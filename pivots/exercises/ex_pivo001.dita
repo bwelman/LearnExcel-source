@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_pivo001" outputclass="exercise" xml:lang="en-US">
+    <title>Exercise: pivo001 - Salary averages</title>
+    <shortdesc>Level: 2</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Create a pivot table to calculate the avarage salary per department and per division.
+                The table should look as follows.</p>
+            <fig>
+                <image keyref="ex_pivo001_report"/>
+            </fig>
+            <note type="other" othertype="File"><filepath>Personnel.xlsx</filepath></note>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p conkeyref="pivot/start" conrefend="pivot/end"/>
+            <simpletable>
+                <sthead>
+                    <stentry>Report Filter</stentry>
+                    <stentry>Column Labels</stentry>
+                    <stentry>Row Labels</stentry>
+                    <stentry>Values</stentry>
+                </sthead>
+                <strow>
+                    <stentry/>
+                    <stentry>Division</stentry>
+                    <stentry>Department</stentry>
+                    <stentry>Salary</stentry>
+                </strow>
+            </simpletable>
+            <p conkeyref="pivot/options"/>/> <p>Change type of calculation in
+                    <option>Average</option> and <uicontrol>Number Format</uicontrol> in
+                    <option>Accounting</option>.</p>
+            <p conkeyref="pivot/labels"/>/> </section>
+    </body>
+</topic>

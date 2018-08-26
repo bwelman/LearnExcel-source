@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_list003" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: list003 - Consolidating sales data</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>The following table lists the sales numbers of bread types in the North and South branches
+        of a store. Furthermore you see the total sales numbers obtained by consolidation.</p>
+      <p>
+        <fig>
+                    <image keyref="ex_list003_data"/>
+                </fig>
+      </p>
+      <p>Enter the data for the two branches in a worksheet. Determine the totals through
+        consolidation.</p>
+      <note type="other" othertype="File"><filepath>List003.xlsx</filepath></note>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>Select the upper left cell of the output area and choose <menucascade>
+          <uicontrol>tab Data</uicontrol>
+          <uicontrol>Consolidate (group Data Tools)</uicontrol>
+        </menucascade>. Specify in the dialog box: <ul>
+          <li>Function <uicontrol>Sum</uicontrol>.</li>
+          <li>Add the tables with the data of the branches North and South as references.</li>
+          <li>Check <uicontrol>Use labels in top row</uicontrol> and <uicontrol>Use labels in left column</uicontrol>.</li>
+        </ul>
+      </p>
+    </section>
+  </body>
+</topic>

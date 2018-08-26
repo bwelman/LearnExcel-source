@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_fcast001" xml:lang="en-US">
+    <title>Exercise: fcast001 - Revenue from ads</title>
+    <shortdesc>Niveau: 3</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <note type="other" othertype="File"><filepath>Fcast001.xlsx</filepath></note>
+            <p>This file shows revenue from ads from a two-week appearing home magazine.</p>
+            <ol>
+                <li>Create a chart showing the revenue against the week number.</li>
+                <li>Add a polynomical trend line. Experiment with a 2nd, 3rd and 4th degree
+                    polynomial. For each of these trend lines, display the R-squared value. Choose
+                    the most appropriate trend line.</li>
+            </ol>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p>Maak</p>
+            <simpletable frame="all">
+                <sthead>
+                    <stentry>degree</stentry>
+                    <stentry>R-square</stentry>
+                </sthead>
+                <strow>
+                    <stentry>2</stentry>
+                    <stentry>0.8135</stentry>
+                </strow>
+                <strow>
+                    <stentry>3</stentry>
+                    <stentry>0.9514</stentry>
+                </strow>
+                <strow>
+                    <stentry>4</stentry>
+                    <stentry>0.9883</stentry>
+                </strow>
+            </simpletable>
+            <p>The 4th degree polynomial has the highest R-squared value and is the best choice.</p>
+            <fig>
+                <title>Chart with a 4th degree polynomial</title>
+                <image keyref="ex_fcast001_chart">
+                    <alt>Chart with a 4th degree polynomial</alt>
+                </image>
+            </fig>
+        </section>
+    </body>
+</topic>

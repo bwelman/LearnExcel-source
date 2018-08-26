@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_pivo002" outputclass="exercise" xml:lang="en-US">
+    <title>Exercise: pivo002 - Salary totals</title>
+    <shortdesc>Level: 2</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Create a pivot table to calculate the total salary per function and per division.
+                Furthermore, it should be possible to filter per department. The table should look
+                as follows.</p>
+            <fig>
+                <image keyref="ex_pivo002_report"/>
+            </fig>
+            <note type="other" othertype="File"><filepath>Personnel.xlsx</filepath></note>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p conkeyref="pivot/start" conrefend="pivot/end"/>
+            <simpletable>
+                <sthead>
+                    <stentry>Report Filter</stentry>
+                    <stentry>Column Labels</stentry>
+                    <stentry>Row Labels</stentry>
+                    <stentry>Values</stentry>
+                </sthead>
+                <strow>
+                    <stentry>Department</stentry>
+                    <stentry>Division</stentry>
+                    <stentry>Function</stentry>
+                    <stentry>Salary</stentry>
+                </strow>
+            </simpletable>
+            <p conkeyref="pivot/options"/>/> <p>Change <uicontrol>Number Format</uicontrol> in
+                    <option>Accounting with 0 decimals</option>.</p>
+            <p conkeyref="pivot/labels"/>/> </section>
+    </body>
+</topic>

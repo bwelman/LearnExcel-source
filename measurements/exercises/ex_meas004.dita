@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_meas004" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: meas004 - Resistance and temperature</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>The resistance of a metal block depends on the temperature among other things. In the
+        following figure you see the resistance at some temperatures.</p>
+      <fig>
+                <title>Results resistance and temperature</title>
+                <image keyref="ex_meas004_data" alt="Resultaten weerstand en temperatuur"/>
+            </fig>
+      <ol>
+        <li>Imagine a linear relationship and determine the equation where the resistance is a
+          function from the temperature.</li>
+        <li>Predict the resistance at a temperature of 400 <sup>o</sup>C</li>
+      </ol>
+      <note type="other" othertype="File"><filepath>Meas004.xlsx</filepath></note>
+    </section>
+    <section otherprops="answer">
+      <title>Answer</title>
+      <codeblock>Resistance = 0.0786*Temp + 21.214
+At a temperature of 400<sup>o</sup>C the predicted resistance is 52.6 Ohm.</codeblock>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>The independent variable (x) is the temperature and the dependent variable (y) is the
+        resistance. Determine the slope of the line with the function <uicontrol>SLOPE()</uicontrol>
+        and the interception with the y-axis with the function
+        <uicontrol>INTERCEPT()</uicontrol>.</p>
+      <p>Formula for resistance at 400 <sup>o</sup>C is <codeph>= 0.0786*400 + 21.214</codeph></p>
+    </section>
+  </body>
+</topic>

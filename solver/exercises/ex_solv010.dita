@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_solv010" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: solv010 - Savings bank</title>
+  <shortdesc>Level: 3</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>A savings bank has 3 million euros to invest. The investment portfolios are personal loans,
+        mortgages (first and second mortgages) and car leasing. In the articles of the bank
+        association you can find some conditions regarding the spending of the funds:</p>
+      <ul>
+        <li>At least 30 percent of the total loaned amount must be invested in mortgages.</li>
+        <li>At least 50% of the amount intended for mortgages must be invested in first
+          mortgages.</li>
+        <li>Up to 25% of the total loaned amount is allowed to be spent to personal loans and car
+          leasing together.</li>
+        <li>Up to 15% of the total loaned amount is allowed to be invested in personal loans.</li>
+      </ul>
+      <p>The annual yield of each type of loan is listed in the following table.</p>
+      <simpletable frame="all">
+        <sthead>
+          <stentry>Loan type</stentry>
+          <stentry>Yield</stentry>
+        </sthead>
+        <strow>
+          <stentry>Personal loan</stentry>
+          <stentry>18%</stentry>
+        </strow>
+        <strow>
+          <stentry>First mortgage</stentry>
+          <stentry>12%</stentry>
+        </strow>
+        <strow>
+          <stentry>Second mortgage</stentry>
+          <stentry>14%</stentry>
+        </strow>
+        <strow>
+          <stentry>Car leasing</stentry>
+          <stentry>16%</stentry>
+        </strow>
+      </simpletable>
+      <p>Determine, using the Solver, how much money (in multiples of € 1000,-) in each of the four
+        types of loans should be invested so that the yield is as high as possible.</p>
+    </section>
+    <section otherprops="answer">
+      <title>Answer</title>
+      <simpletable frame="all">
+        <sthead>
+          <stentry>Loan type</stentry>
+          <stentry>Amount</stentry>
+        </sthead>
+        <strow>
+          <stentry>Personal loan</stentry>
+          <stentry>450 K€</stentry>
+        </strow>
+        <strow>
+          <stentry>First mortgage</stentry>
+          <stentry>1125 K€</stentry>
+        </strow>
+        <strow>
+          <stentry>Second mortgage</stentry>
+          <stentry>1125 K€</stentry>
+        </strow>
+        <strow>
+          <stentry>Car leasing</stentry>
+          <stentry>300 K€</stentry>
+        </strow>
+      </simpletable>
+      <p>Total yield 422 K€. Rounding on euro cents can cause small differences.</p>
+    </section>
+  </body>
+</topic>

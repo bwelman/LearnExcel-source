@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_solv009" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: solv009 - Solving system of linear equations</title>
+  <shortdesc>Level: 3</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+        <section>
+            <p>Solv the following system of equations using the Solver.</p>
+            <fig>
+                <image keyref="ex_solv009_data"/>
+            </fig>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+        </section>
+        <image keyref="ex_solv009_result"/>
+    </body>
+</topic>

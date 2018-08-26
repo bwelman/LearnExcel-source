@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="stat004" outputclass="exercise" xml:lang="en-US">
+    <title>Exercise: stat004 - Service level</title>
+    <shortdesc>Level: 3</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>The weekly demand for the top product of a company is normally divided with an
+                average of 400 pieces and a standard deviation of 50 pieces. For this top product,
+                the company wants to handle a 95% service level, which is the percentage of demand
+                that can be delivered directly from stock. For this purpose, the stock is added up
+                to a certain level at the beginning of the week.</p>
+            <ol>
+                <li>Determine for different stock levels, from 450 pieces to 550 pieces and
+                    increasing with 10, the corresponding service level.</li>
+                <li>Draw in a chart the service level against the stock level.</li>
+                <li>Determine the stock level for a service level of 95%.<note type="tip">Calculate
+                        first with function NORMSINV the z-score for a probability of
+                    95%.</note></li>
+            </ol></section>
+        <section otherprops="answer"><title>Answer</title><image keyref="stat004_result"/></section>
+    </body>
+</topic>

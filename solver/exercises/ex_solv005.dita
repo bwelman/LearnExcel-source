@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_solv005" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: solv005 - Production of dog food</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>There are two types of dog food for sale: ordinary and special. A bag ordinary food
+        contains 3 units minerals, 2 units protein and 3 units fat. This bag costs $8. A bag special
+        food contains 8 units minerals, 2 units protein and 1 unit fat. The price of this bag is
+        $14. Over a period of time a dog should at least consumed 72 units minerals, 36 units
+        protein and 36 units fat.</p>
+      <p>Determine the quantity of both bags to be bought with minimum costs.</p>
+    </section>
+    <section otherprops="answer">
+      <title>Answer</title>
+      <p>Number bags ordinary = 14, special= 4. Costs = $168.</p>
+    </section>
+  </body>
+</topic>

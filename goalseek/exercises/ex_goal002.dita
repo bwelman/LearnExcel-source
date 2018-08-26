@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_goal002" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: goal002 - Loan payment</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section><p>Using the PMT function you can calculate the periodic payment of a loan based on constant
+        payments and a constant interest rate. The following illustration is an example of such a
+        calculation. The payment is done at the beginning of each term and after the last term the
+        loan is fully paid off.</p>
+      <fig>
+                <image keyref="ex_goal002_model"/>
+            </fig>
+      <ol>
+        <li>Create this model in a worksheet.</li>
+        <li>Determine with Goal Seek how much you can borrow if you can pay up to $ 750,-per
+          month.</li>
+      </ol>
+      <note type="attention">Because a payment is a cash outflow the outcome is seen as a negative
+        number.</note>
+    </section>
+    <section otherprops="answer">
+      <title>Answer</title>
+      <p>Borrowed amount $ 7280.</p>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>Create the model as shown in the figure.  Formule in resultaatcel:
+          <codeph>=PMT(annual_interest_rate
+          /12,number_monthly_payments,borrowed_amount,0,1)</codeph>.</p>
+      <p>Because the payments are monthly you must specify the interest rate also per month. Hence
+        the annual interest rate has to be divided by 12. The third argument is 0 after the final
+        payment the loan has to be repaid. The fourth argument is 1 because the payment are made
+        ​​at the beginning of each month.</p>
+      <p>Choose <menucascade>
+        <uicontrol>tab Data</uicontrol>
+        <uicontrol>What-If Analysis (group Data Tools)</uicontrol>
+        <uicontrol>Goal Seek</uicontrol>
+      </menucascade>.</p>
+      <p>The cell to set is the result cell, to value -750, by changing the cell with the borrowed
+        amount.</p>
+    </section>
+  </body>
+</topic>

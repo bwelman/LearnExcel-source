@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_macr002" outputclass="exercise" xml:lang="en-US">
+    <title>Exercise: macr002 - Percentage formatting</title>
+    <shortdesc>Level: 2</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Record a macro with the name <userinput>PercentageFormat</userinput> that is
+                formatting a numeric value as percentage with 1 decimal and also centers the content
+                in the cell.</p>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <p>An example of a solution.</p>
+            <codeblock>Sub PercentageFormat()
+'
+' Numeric value formatted as percentage with 1 dec. and horizontally centered
+'
+    Selection.NumberFormat = "0.0%"
+    With Selection
+        .HorizontalAlignment = xlCenter
+    End With
+End Sub</codeblock>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p conkeyref="macro/start"/>
+            <p>Right click on a cell and choose <menucascade>
+                    <uicontrol>Format Cells</uicontrol>
+                    <uicontrol>tab Number</uicontrol>
+                    <uicontrol>Percentage with 1 decimal</uicontrol>
+                    <uicontrol>tab Alignment</uicontrol>
+                    <uicontrol>Horizontal: Center</uicontrol>
+                    <uicontrol>OK</uicontrol>
+                </menucascade>.</p>
+            <p conkeyref="macro/stop"/>
+        </section>
+    </body>
+</topic>

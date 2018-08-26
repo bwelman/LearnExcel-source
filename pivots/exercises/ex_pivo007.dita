@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_pivo007" outputclass="exercise" xml:lang="en-US">
+    <title>Exercise: pivo007 - Shop opening hours</title>
+    <shortdesc>Level: 2</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords> </keywords>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>By order of the shopkeepers' association, a survey was conducted on the evening
+                opening hours of shops. The results of the interviewees can be seen in the following
+                table</p>
+            <fig>
+                <image keyref="ex_pivo007_data"/>
+            </fig>
+            <p>Enter the data in a worksheet. Determine using a pivot table the number of supporters
+                and opponents by age and by sex.</p>
+            <note type="other" othertype="File"><filepath>Pivo007.xlsx</filepath></note>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <fig>
+                <image keyref="ex_pivo007_report"/>
+            </fig>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p conkeyref="pivot/start" conrefend="pivot/end"/>
+            <simpletable>
+                <sthead>
+                    <stentry>Report Filter</stentry>
+                    <stentry>Column Labels</stentry>
+                    <stentry>Row Labels</stentry>
+                    <stentry>Values</stentry>
+                </sthead>
+                <strow>
+                    <stentry/>
+                    <stentry>yes/no</stentry>
+                    <stentry>age gender</stentry>
+                    <stentry>yes/no</stentry>
+                </strow>
+            </simpletable>
+            <p>Select a number in the pivot table and choose <menucascade>
+                    <uicontrol>tab Design</uicontrol>
+                    <uicontrol>Report Layout (group Layout)</uicontrol>
+                    <uicontrol>Show in Tabular Form</uicontrol>
+                </menucascade>.</p>
+        </section>
+    </body>
+</topic>

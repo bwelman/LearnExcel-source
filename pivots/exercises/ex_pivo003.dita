@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_pivo003" outputclass="exercise" xml:lang="en-US">
+    <title>Exercise: pivo003 - Turnover, travel expenses and commission</title>
+    <shortdesc>Level: 3</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>For each salesman the following information is stored in the worksheet: Month,
+                Region, Saleman, Sales, Expenses and Commission.</p>
+            <p>Create one pivot table with which you get an overview of the total sales, expenses
+                and commission per month and per salesman with a possibility to filter per region.
+                All values should have a currency format with no decimals.</p>
+            <note type="other" othertype="File"><filepath>Pivo003.xlsx</filepath></note>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <fig>
+                <image keyref="ex_pivo003_report"/>
+            </fig>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p conkeyref="pivot/start" conrefend="pivot/end"/>
+            <simpletable>
+                <sthead>
+                    <stentry>Report Filter</stentry>
+                    <stentry>Column Labels</stentry>
+                    <stentry>Row Labels</stentry>
+                    <stentry>Values</stentry>
+                </sthead>
+                <strow>
+                    <stentry>Region</stentry>
+                    <stentry>Month</stentry>
+                    <stentry>Salesman</stentry>
+                    <stentry>Sales Expenses Commission</stentry>
+                </strow>
+            </simpletable>
+            <p>Drag the field Values from Column Labels to Row Labels under Salesman.</p>
+            <p conkeyref="pivot/options"/>/> <p>Change <uicontrol>Number Format</uicontrol> in
+                    <option>Accounting with 0 decimals</option>.</p>
+            <p conkeyref="pivot/labels"/>/> </section>
+    </body>
+</topic>

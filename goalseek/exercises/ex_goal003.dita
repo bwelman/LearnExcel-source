@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_goal003" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: goal003 - Break-even point</title>
+  <shortdesc>Level: 3</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>An entrepreneur has to deal with costs and revenues that depend on the production quantity
+        Q. The relationship between the total cost (TC), the total revenues (TR) and the production
+        quantity Q is as
+        follows:<codeblock>TC = Q<sup>2</sup> + 8Q + 15
+TR = -5Q<sup>2</sup> + 80Q</codeblock></p>
+      <p>In the following chart TC and TR are plotted as a function of Q.</p>
+      <fig>
+                <image keyref="ex_goal003_chart"/>
+            </fig><ol>
+        <li>Draw this chart.</li>
+        <li>Determine the break-even point. This is the amount of Q for which the costs and the
+          revenues are equal. The chart shows that there are two of these points. Determine both
+          solutions using Goal Seek and give the answers in 4 decimal places.</li>
+      </ol>
+    </section>
+    <section otherprops="answer">
+      <title>Answer</title>
+      <p>Solution 1: Q=0,2120 and TC=TR=16,74</p>
+      <p>Solution 2: Q=11,7879 and TC=TR=248,26</p>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title><p>Create a table with different values for Q in the first column.
+        Start with the value 0 with increments for example of 0.2 and finish with the value 16. So 0
+        0.2 0.4 0.6 ... Put formulas in the second column for calculating the values of TC and in
+        the third column for calculating the values of TR.</p><p>In order to make an estimate for
+        the break-even points an estimate you need a chart. Create a scatter chart and format the
+        chart as shown.</p><p>A break-even point is the intersection of the two lines in the chart.
+        As you can see in the chart there are two intersections, one for a Q-value between 0 and 1
+        and another one between 11 and 12.</p><p>Create a second table for the determination of the
+        two break-even points. To find the intersection you need to calculate the difference of TC
+        and TR because this difference is 0 for the intersection. Use as starting value 0 for the
+        first point and 11 for the second point.</p><p>Choose <menucascade>
+          <uicontrol>tab Data</uicontrol>
+          <uicontrol>What-If Analysis (group Data Tools)</uicontrol>
+          <uicontrol>Goal Seek</uicontrol>
+        </menucascade>.</p><p>The cell to set is the cell with the result of TR-TC, to value 0, by
+        changing the cell with the value for Q.</p><p>You nee to perform Goal Seek twice, first for
+        the calculation of point 1 and a second time for the calculation of point 2. The result
+        is</p>
+      <image keyref="ex_goal003_breakeven"/>
+    </section>
+  </body>
+</topic>

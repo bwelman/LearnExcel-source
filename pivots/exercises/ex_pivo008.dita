@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_pivo008" outputclass="exercise" xml:lang="en-US">
+    <title>Exercise: pivo008 - Own home and average value</title>
+    <shortdesc>Level: 3</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords> </keywords>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>In the next table you see for some people how many years of study they have, whether
+                or not they have a own house and if applicable the value of the house.</p>
+            <fig>
+                <image keyref="ex_pivo008_data"/>
+            </fig>
+            <p>Enter the data in a worksheet. Determine using a pivot table the number of people
+                with a own house and the average value of the house as a function of the number of
+                years of study.</p>
+            <note type="other" othertype="File"><filepath>Pivo008.xlsx</filepath></note>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <fig>
+                <image keyref="ex_pivo008_report"/>
+            </fig>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p conkeyref="pivot/start" conrefend="pivot/end"/>
+            <simpletable>
+                <sthead>
+                    <stentry>Report Filter</stentry>
+                    <stentry>Column Labels</stentry>
+                    <stentry>Row Labels</stentry>
+                    <stentry>Values</stentry>
+                </sthead>
+                <strow>
+                    <stentry>own house</stentry>
+                    <stentry/>
+                    <stentry>years study</stentry>
+                    <stentry>own house value</stentry>
+                </strow>
+            </simpletable>
+            <p conkeyref="pivot/options"/>/> <p>Change type of calculation in
+                    <option>Average</option> and <uicontrol>Number Format</uicontrol> in
+                    <option>Accounting with 0 decimals</option>.</p>
+            <p>Choose <menucascade>
+                    <uicontrol>tab Design</uicontrol>
+                    <uicontrol>Report Layout (group Layout)</uicontrol>
+                    <uicontrol>Show in Outline Form</uicontrol>
+                </menucascade>.</p>
+        </section>
+    </body>
+</topic>

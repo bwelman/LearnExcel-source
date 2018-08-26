@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_list002" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: list002 - Consolidating examination results</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>The following table shows the results of a group students for an examination and a
+        re-examination. Furthermore you see the final result, obtained through consolidating the
+        data.This final result is the highest rating.</p>
+      <p>
+        <fig>
+                    <image keyref="ex_list002_data"/>
+                </fig>
+      </p>
+      <p>Enter the data for the examination and re-examination in a worksheet. Determine the final
+        result through consolidation.</p>
+      <note type="other" othertype="File"><filepath>List002.xlsx</filepath></note>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>Select the upper left cell of the output area and choose <menucascade>
+          <uicontrol>tab Data</uicontrol>
+          <uicontrol>Consolidate (group Data Tools)</uicontrol>
+        </menucascade>. In the dialog box specify:<ul>
+          <li>Function <uicontrol>Max</uicontrol>.</li>
+          <li>Add the tables with the data for the examination and the re-examination as
+            references.</li>
+          <li>Check <uicontrol>Use labels in left column</uicontrol>.</li>
+        </ul></p>
+    </section>
+  </body>
+</topic>

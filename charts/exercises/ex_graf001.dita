@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_graf001" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: graf001 - Third-degree chart</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>Create the following chart. Make the layout as similar as possible.</p>
+      <p>
+        <fig>
+                    <image keyref="ex_graf001_chart"/>
+                </fig>
+      </p>
+      <note type="tip">First, create two columns in a worksheet with values for X and calculated
+        values for Y. Create a scatter chart and apply the formatting.</note>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>Create first a table with two columns for the X and Y values. The range for the X - values
+        ​​is from -1 to +2 with an increment of 0.1. The Y values ​​must be calculated using the
+        formula  <codeph>= (X -0,5)^3</codeph>.</p>
+      <p>Create a scatter chart and format it.</p>
+    </section>
+  </body>
+</topic>

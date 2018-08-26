@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_solv001" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: solv001 - Bonbon box</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>A well-known bonbon manufacturer wants to offer an assortment box with 2 types of
+        chocolates (cherry bonbons and hazelnut chocolates) and maximum profits. Further is
+        known:</p>
+      <ul>
+        <li>A cherry bonbon takes 16 cm<sup>2</sup> space and a hazelnut bonbon 8 cm<sup>2</sup>.
+          The bonbons are separated by paper. At least 320 cm<sup>2</sup> of the box should be
+          covered with bonbons.</li>
+        <li>A cherry bonbon weighs 2 gram and a hazelnut bonbon weighs 1 gram. Market research has
+          shown that the ideal weight of the contents of the box is between the 40 grams and 60
+          grams.</li>
+        <li>Also, market research revealed that the box must contain at least 35 bonbons with at
+          least 10 cherry bonbons.</li>
+        <li>The profit on a cherry bonbon is $0.28 and $0.20 on a hazelnut bonbon.</li>
+      </ul>
+      <ol>
+        <li>What are the decision variables?</li>
+        <li>What is the objective function?</li>
+        <li>What restrictions are there?</li>
+        <li>Build the model in Excel using the guidelines indicated in this textbook. You see an
+                    example in the following figure. Formulas need to be placed in the empty cells.
+                    Both decision variables have got a starting value of 10. With these numbers you
+                    can easily check if the formulas are ok and give the correct results.<fig>
+                        <image keyref="ex_solv001_model"/>
+                    </fig></li>
+        <li>Enter the model in the Solver and then determine the optimal number of each bonbon type
+          for the box.</li>
+      </ol>
+    </section>
+    <section otherprops="answer">
+      <title>Answer</title>
+      <ol>
+        <li>Two decision variables: number of cherry bonbons per box (= C) and number of hazelnut
+          bonbons per box (= H).</li>
+        <li>Objective function is the maximum profit on a box (= P): <codeph>P = 0,28*C +
+            0,20*H</codeph></li>
+        <li>Restrictions: <ul>
+            <li>Number of cherry bonbons per box: <codeph>C >= 10</codeph></li>
+            <li>Total number of bonbons per box <codeph>C + H >= 35</codeph></li>
+            <li>Weight box: <codeph>2*C + 1*H >= 40</codeph></li>
+            <li>Weight box: <codeph>2*C + 1*H &lt;= 60</codeph></li>
+            <li>Area bonbons: <codeph>16*C + 8*H >= 320</codeph></li>
+            <li>Number of bonbons is an integer: <codeph>C = integer , H = integer</codeph></li>
+            <li>Number of bonbons is a positive number: <codeph>C >= 0 , H >= 0</codeph></li>
+          </ul>
+        </li>
+      </ol>
+      <p>Optimal content box: number of cherry chocolates = 10, number of hazelnut chocolates = 40.
+        The profit per box is $10.80 and all constraints are met.</p>
+    </section>
+  </body>
+</topic>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_scen004" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: scen004 - Gainings automation company</title>
+  <shortdesc>Level: 3</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>The revenues and expenditures of an automation company for 2010 are listed in the following
+        figure. The executive board would like to make a profit forecast for the years 2011 and
+        2012. The revenues and expenditures for these two years are influenced by the following
+        factors.</p>
+      <ul>
+        <li>An increase of all revenues with a growth factor which is currently 10%.</li>
+        <li>An increase of all expenditures except interest by an inflation factor which is
+          currently 3%.</li>
+        <li>The interest rate which is currently 8% .</li>
+        <li>The tax percentage which is currently 35%.</li>
+      </ul>
+      <fig>
+                <image keyref="ex_scen004_data"/>
+            </fig>
+      <p>Create this model in a worksheet. The revenues and expenditures for 2010 are fixed an these
+        should be calculated for 2011 and 2012. Provide the right formulas in the cells whose values
+        has to be calculated.</p>
+      <p>Management wants a prediction of the profit forecast, but there is still some uncertainty
+        about the development of a number of factors that affect the profit. The central planning
+        bureau has released predictions of these factors. Based on these predictions three
+        scenario's are computed:</p>
+      <fig>
+                <image keyref="ex_scen004_scenarios"/>
+            </fig>
+      <p>Create a summary report for these three scenarios using the Scenario Manager.</p>
+      <note type="other" othertype="File"><filepath>Scen004.xlsx</filepath></note>
+    </section>
+    <section otherprops="answer">
+            <title>Answer</title>
+            <image keyref="ex_scen004_report"/>
+        </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>The values for 2011 and 2011 should be calculated with formulas referencing to the cells
+        with the percentages.</p>
+      <p>Create the scenarios with <menucascade>
+          <uicontrol>tab Data</uicontrol>
+          <uicontrol>What-If Analysis (group Data Tools)</uicontrol>
+          <uicontrol>Scenario Manager</uicontrol>
+        </menucascade>. <ul>
+          <li>Changing cells: Growth, Inflation, Interest and Tax</li>
+          <li>Scenario summary result cells: Profit 2011 and Profit 2012 (after Tax).</li>
+        </ul>
+        <note type="tip">To get names instead of cell addresses in the summary report you should
+          give names to the cells before using the scenario manager.</note>
+      </p>
+    </section>
+  </body>
+</topic>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_solv007" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: solv007 - Vitamin pills</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>A nutritionist recommends a patient the following minimum day requirements for vitamin B
+        and C: 400 units vitamin B and 800 units vitamin C. The local pharmacy can provide two
+        different vitamin brands: Y and Z. A vitamine pill of brand Y contains 75 units vitamine B
+        and 100 units vitamine C and costs $0.10. A vitamin pill of brand Z contains 50 units
+        vitamine B and 200 units vitamin C and costs $0.08. How much vitamin pills of each branch
+        must be consumed every day at the lowest possible cost?</p>
+    </section>
+    <section otherprops="answer">
+      <title>Answer</title>
+      <p>Per day: branch Y = 4 pills and branch Z = 2 pills. Costs = $0.56.</p>
+    </section>
+  </body>
+</topic>

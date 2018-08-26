@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_scen003" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: scen003 - Scenarios business profit</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>A company makes three products (A, B en C). To manufacture each product a different number
+        of working hours and amount of materials is needed. In following figure you see the rates
+        for labour and material costs as well as the quantities needed to make these products. Also
+        the costs and revenues are calculated for the current production quantities.</p>
+      <fig>
+                <image keyref="ex_scen003_data"/>
+            </fig>
+      <p>Enter the model in a worksheet. Provide the right formulas in the cells which values have
+        to be calculated.</p>
+      <p>Management wants a prediction of the operating profit, but there is still some uncertainty
+        about the amount of labor and material costs. For the prediction are therefore three
+        scenarios available: the most favorable case, the most bad case and the current (most
+        likely) case. The different rates are listed in the following table.</p>
+      <simpletable frame="all">
+        <sthead>
+          <stentry>scenario</stentry>
+          <stentry>wages</stentry>
+          <stentry>material costs</stentry>
+        </sthead>
+        <strow>
+          <stentry>favorable</stentry>
+          <stentry>$ 60</stentry>
+          <stentry>$ 114</stentry>
+        </strow>
+        <strow>
+          <stentry>bad</stentry>
+          <stentry>$ 76</stentry>
+          <stentry>$ 124</stentry>
+        </strow>
+        <strow>
+          <stentry>current</stentry>
+          <stentry>$ 68</stentry>
+          <stentry>$ 118</stentry>
+        </strow>
+      </simpletable>
+      
+      <p>Create a summary report for these three scenarios using the Scenario Manager.</p>
+      <note type="other" othertype="File"><filepath>Scen003.xlsx</filepath></note>
+    </section>
+    <section otherprops="answer">
+            <title>Answer</title>
+            <image keyref="ex_scen003_report"/>
+        </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>Create the scenarios with <menucascade>
+        <uicontrol>tab Data</uicontrol>
+        <uicontrol>What-If Analysis (group Data Tools)</uicontrol>
+        <uicontrol>Scenario Manager</uicontrol>
+      </menucascade>. <ul>
+        <li>Changing cells: Wages, Material costs</li>
+        <li>Scenario summary result cells: Operating profit</li>
+      </ul>
+        <note type="tip">To get names instead of cell addresses in the summary report you should give names to the cells before using the scenario manager.
+        </note>
+      </p>
+    </section>
+  </body>
+</topic>

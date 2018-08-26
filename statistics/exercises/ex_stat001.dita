@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="stat001" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: stat001 - Distribution shoe sizes</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>Use a function to create a random distribution of 85 shoe sizes from the range 37 to 43).
+                After that make a frequency distribution and calculate average, median, modus,
+                variance and standard deviation.</p>
+    </section>
+      <section otherprops="solution">
+        <title>Solution</title>
+        <p>First create a table with two columns. In de first column the shoe sizes 37, 38, …, 43.
+                In the second column the probability. Each shoe size has the same probability, so
+                1/7.</p>
+            <p>Then generate the shoe size with <menucascade>
+                    <uicontrol>Tab Data</uicontrol>
+                    <uicontrol>Data Analysis (group Analyze)</uicontrol>
+                    <uicontrol>Random Number Generation</uicontrol>
+                </menucascade>. Specify 1 variable, 85 random numbers, discrete distribution, value
+                and probability input range and a cell for the start of the output range.</p>
+            <p>Create a histogram with the values 37, 38, …, 43 as bin range.</p>
+          <p>Then generate the shoe size with <menucascade>
+                    <uicontrol>Tab Data</uicontrol>
+                    <uicontrol>Data Analysis (group Analyze)</uicontrol>
+                    <uicontrol>Descriptive statistics</uicontrol>
+                </menucascade>. Specify the range with generated numbers as input range, grouped by
+                columns, summary statistics and a cell for the start of the output range.</p>
+    </section>
+  </body>
+</topic>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_form002" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: form002 - Lookup article details</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>A computer store has the following article information in a table: article number, name and
+        price. To quickly search data from a specific article, the article number can be entered in
+        a cell. The corresponding name and price are automatically looked up in the table.</p>
+      <fig>
+                <image keyref="ex_form002_data"/>
+            </fig>
+      <p>Enter the data in a worksheet and use formulas (VLOOKUP) to get the search results.</p>
+      <note type="other" othertype="File"><filepath>Form002.xlsx</filepath></note>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>Search result Name <codeph>=VLOOKUP(artnr;searchtable;2;FALSE)</codeph></p>
+      <p>Search result Price <codeph>=VLOOKUP(artnr;searchtable;3;FALSE)</codeph></p>
+    </section>
+  </body>
+</topic>

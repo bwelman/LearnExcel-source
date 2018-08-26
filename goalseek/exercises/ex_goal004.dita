@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_goal004" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: goal004 - Savings amount</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>On 1 January 2010, an amount of $ 1000 is deposited into a savings account. The interest is
+        2.7% annually and this is added to the savings account. In the following table you see the
+        growth of the amount on the savings account for the first ten years.</p>
+      <fig>
+                <image keyref="ex_goal004_model"/>
+            </fig>
+      <ol>
+        <li>Create the model in a worksheet.</li>
+        <li>Determine with Goal Seek how much the deposit should be at the beginning to get $ 2500
+          on the savings account after 10 years.</li>
+      </ol>
+    </section>
+    <section otherprops="answer">
+      <title>Answer</title>
+      <p>Deposit $ 1915,29.</p>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>Create a table as shown. Enter the years ​​in the fist column. For the year 2010 the cell
+        for interest remains empty and for the value you enter the formula: <codeph>=
+          Deposit</codeph>.</p>
+      <p>Calculate for the year 2011 the interest with the formula <codeph>= Interest_per_year (abs.
+          address) * Value_2010 (relative address)</codeph> and the value with the formule <codeph>=
+          Value_2010 (rel. address) + Interest_2011 (rel. address)</codeph>. For the other years you
+        copy the two formulas for the year 2011 down.</p>
+      <p>Choose <menucascade>
+        <uicontrol>tab Data</uicontrol>
+        <uicontrol>What-If Analysis (group Data Tools)</uicontrol>
+        <uicontrol>Goal Seek</uicontrol>
+      </menucascade>.</p>
+      <p>The cell to set is the cell with the value for 2020, to 2500, by changing the cell with the
+        Deposit.</p>
+    </section>
+  </body>
+</topic>

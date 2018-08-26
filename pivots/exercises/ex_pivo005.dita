@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_pivo005" outputclass="exercise" xml:lang="en-US">
+    <title>Exercise: pivo005 - Frequency distribution figures</title>
+    <shortdesc>Level: 2</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords> </keywords>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>In the next table you see the marks of some students.</p>
+            <fig>
+                <image keyref="ex_pivo005_data"/>
+            </fig>
+            <p>Create a frequency distribution of the grades using a pivot table.</p>
+            <note type="other" othertype="File"><filepath>Pivo005.xlsx</filepath></note>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <fig>
+                <image keyref="ex_pivo005_report"/>
+            </fig>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p conkeyref="pivot/start" conrefend="pivot/end"/>
+            <simpletable>
+                <sthead>
+                    <stentry>Report Filter</stentry>
+                    <stentry>Column Labels</stentry>
+                    <stentry>Row Labels</stentry>
+                    <stentry>Values</stentry>
+                </sthead>
+                <strow>
+                    <stentry/>
+                    <stentry/>
+                    <stentry>Mark</stentry>
+                    <stentry>Mark</stentry>
+                </strow>
+            </simpletable>
+            <p conkeyref="pivot/options"/>/> <p>Change the type of calculation in
+                    <option>Count</option>.</p>
+            <p conkeyref="pivot/labels"/>/> </section>
+    </body>
+</topic>

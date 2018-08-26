@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="math003" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: math003 - Maximum of a function</title>
+  <shortdesc>Level: 3</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+        <p>Given are three functions:</p>
+        <fig>
+            <image keyref="math003_function"/>
+        </fig>
+            <ol>
+                <li>Draw the graphs of each function in one figure on the domain [1,20]. To do this,
+                    first calculate 20 points for each graph.</li>
+                <li>Determine the maximum of y<sub>3</sub> on this domain in four decimals.</li>
+            </ol>
+    </section>
+    <section otherprops="answer">
+      <title>Answer</title>
+      <fig>
+                <image keyref="math003_chart"/>
+            </fig>
+      <p>Maximum of y<sub>3</sub> is 2.1479.</p>
+    </section>
+  </body>
+</topic>

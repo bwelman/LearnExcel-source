@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_fcast002" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: fcast002 - Sales forecast</title>
+  <shortdesc>Niveau: 3</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+        <note type="other" othertype="File"><filepath>Fcast002.xlsx</filepath></note>
+      <p>This file represents the sales of a company over the years 2007-2015.</p>
+      <ol>
+        <li>Create a chart showing the sales against the year.</li>
+        <li>Add the following trend lines in succession: linear, logarithmic and
+                    exponentiall.Display for each of these trend lines the R-squared value. Choose
+                    the most appropriate trend line.</li>
+        <li>Make a forecast of the sales for 2016 through the options for the trend line and read
+                    the value in the chart.</li>
+        <li>Calculate a more accurate prediction with a worksheet formula.</li>
+        <li>Experiment with the trend line options to figure out when a revenue of $ 25,000,000 is
+                    expected.</li>
+      </ol>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <simpletable frame="all">
+        <sthead>
+          <stentry>trendlijn</stentry>
+          <stentry>R-square</stentry>
+        </sthead>
+        <strow>
+          <stentry>linear</stentry>
+          <stentry>0.9669</stentry>
+        </strow>
+        <strow>
+          <stentry>logarithmic</stentry>
+          <stentry>0.9667</stentry>
+        </strow>
+        <strow>
+          <stentry>exponential</stentry>
+          <stentry>0.9829</stentry>
+        </strow>
+      </simpletable>
+      <p>The exponential trend line has the highest R-squared value and is the best choice.</p>
+      <fig>
+                <title>Chart with exponential trend line</title>
+                <image keyref="ex_fcast002_chart">
+                    <alt>Chart with exponential trend line</alt>
+                </image>
+            </fig>
+      <p>Forecast for 2016, read from the chart: about $ 20,000,000</p>
+      <p>Because the best trend line is exponential you can use the function GROWTH.
+                    <codeph>=GROWTH(B2:B10,A2:A10,A11)</codeph> gives $20,000,000.</p>
+      <p>In the trendline options the number of forward periods opties has to be set on 3 to get a
+                forecast > 25,000,000. This will be expected somewhere in 2018.</p>
+    </section>
+  </body>
+</topic>

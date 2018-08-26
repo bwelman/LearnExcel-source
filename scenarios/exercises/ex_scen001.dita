@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_scen001" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: scen001 - Profit margin - Sales price</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>Create the following table as accurate as possible. Use formulas for the determination of
+        the margin, VAT and the selling prices.</p>
+      <fig>
+                <image keyref="ex_scen001_data"/>
+            </fig>
+      <p>Use the Scenario Manager to determine the selling prices (incl. VAT) for successively the
+        profit margin rates of : 15%, 20%, 25% and 30%. The output should look like the
+        following:</p>
+      <fig>
+                <image keyref="ex_scen001_report"/>
+            </fig>
+      <note type="other" othertype="File"><filepath>Scen001.xlsx</filepath></note>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>Formulas for the table: <ul>
+          <li>Margin <codeph>=Profit margin * Purchasing price</codeph></li>
+          <li>Selling price excl <codeph>=Purchasing price + Marge</codeph></li>
+          <li>VAT <codeph>=BTW percentage * Selling price excl</codeph></li>
+          <li>Selling price incl <codeph>=Selling price excl + VAT</codeph></li>
+        </ul>
+        <note type="tip"> For the calculation of the margin and the VAT It is recommended that you
+          round the numbers to 2 decimal places with a rounding function.</note>
+      </p>
+      <p>Create the scenarios with <menucascade>
+          <uicontrol>tab Data</uicontrol>
+          <uicontrol>What-If Analysis (group Data Tools)</uicontrol>
+          <uicontrol>Scenario Manager</uicontrol>
+        </menucascade>. <ul>
+          <li>Changing cells: Profit margin</li>
+          <li>Scenario summary result cells: Selling prices (incl. VAT).</li>
+        </ul>
+        <note type="tip">To get names instead of cell addresses in the summary report you should give names to the cells before using the scenario manager.
+        </note>
+      </p>
+    </section>
+  </body>
+</topic>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_data001" xml:lang="en-US">
+    <title>Exercise: data001 - Import simple csv file</title>
+    <shortdesc>Level: 2</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <note type="other" othertype="File"><filepath>Revenues.csv</filepath></note>
+            <p>First open this file with a plain text editor (Notepad) to investigate how the file
+                looks like. Important to know is if there are field names in it and which separator
+                symbol (comma, semicolon, ...) is used. Mostly Excel recognize this automatically,
+                but it is useful to know this yourself.</p>
+            <p>Import the data through<uicontrol>Get &amp; Transform</uicontrol>. Use also the query
+                editor to verify that the fields are converted to the correct data type. If not,
+                change the data type.</p>
+        </section>
+        <!--<section otherprops="solution">
+            <title>Solution</title>
+        </section>-->
+    </body>
+</topic>

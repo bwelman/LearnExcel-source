@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_list004" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: list004 - Filtering overview cars</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>In a worksheet you can find some data of cars. A customer is interested in cars that meet
+        the following conditions:<ul>
+          <li>6 cylinders</li>
+          <li>top speed of at least 180 km\/hour</li>
+          <li>petrol (ordinary or super) as fuel</li>
+        </ul></p>
+      <p>Make a list of all the cars with the corresponding data that meet these conditions.</p>
+      <note type="other" othertype="File"><filepath>Car.xlsx</filepath></note>
+    </section>
+    <section otherprops="answer">
+      <title>Answer</title>
+      <fig>
+                <image keyref="ex_list004_solution"/>
+            </fig>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>Select a cell in the table and then <menucascade>
+          <uicontrol>tab Data</uicontrol>
+          <uicontrol>Filter (group Sort &amp; Filter)</uicontrol>
+        </menucascade>.<ul>
+          <li>Select at <uicontrol>Cylinders</uicontrol> the value <userinput>6</userinput>.</li>
+          <li>Select at <uicontrol>Fuel</uicontrol> the values <userinput>Super</userinput> and
+              <userinput>Ordinary</userinput>.</li>
+          <li>Choose at <uicontrol>Top Speed</uicontrol> for <menucascade>
+              <uicontrol>Number Filters</uicontrol>
+              <uicontrol>Greater than or equal to</uicontrol>
+            </menucascade> and enter <userinput>180</userinput>.</li>
+        </ul></p>
+    </section>
+  </body>
+</topic>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_pivo012" outputclass="exercise" xml:lang="en-US">
+    <title>Exercise: pivo012 - Hobby club</title>
+    <shortdesc>Level: 3</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords> </keywords>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>In a worksheet you can find in the last two columns the number of visited club
+                meetings in 2009 and 2010. Create using pivot tables the next reports.</p>
+            <ol>
+                <li>The number of members of the club by domicile and by gender.</li>
+                <li>The percentage of members by hobby and by gender.</li>
+                <li>An overview of the presence in 2010 by gender, with the number of visited club
+                    meetings divided into three groups as shown in the following figure:<image
+                        keyref="ex_pivo012_meetings_count" placement="break"/>
+                </li>
+            </ol>
+            <note type="other" othertype="File"><filepath>Pivo012.xls</filepath></note>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <ol>
+                <li>The number of members by domicile and by gender<image
+                        keyref="ex_pivo012_members_count" placement="break"/></li>
+                <li>The percentage of members by hobby and by gender<image
+                        keyref="ex_pivo012_members_percent" placement="break"/></li>
+                <li>Presence in 2010 by gender<image keyref="ex_pivo012_meetings_count"
+                        placement="break"/></li>
+            </ol>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <ol>
+                <li>Create a pivot table with <uicontrol>Column Labels</uicontrol>
+                    <userinput>gender</userinput>, <uicontrol>Row Labels</uicontrol>
+                    <userinput>domicile</userinput> and <uicontrol>Values</uicontrol>
+                    <userinput>name (Count</userinput>). Report Layout: Outline form and without
+                    field captions.</li>
+                <li>Create a pivot table with <uicontrol>Column Labels</uicontrol>
+                    <userinput>gender</userinput>, <uicontrol>Row Labels</uicontrol>
+                    <userinput>hobby</userinput> and <uicontrol>Values</uicontrol>
+                    <userinput>name (Count</userinput>). Choose <menucascade>
+                        <uicontrol>tab Options</uicontrol>
+                        <uicontrol>Field Settings (group Active Field)</uicontrol>
+                        <uicontrol>tab Show Values As</uicontrol>
+                        <uicontrol>% of Grand Total</uicontrol>
+                    </menucascade>. Number format in <uicontrol>Percentage with 0
+                        decimals</uicontrol>. Report Layout: Outline form without field
+                    captions.</li>
+                <li>Create a pivot table with <uicontrol>Column Labels</uicontrol>
+                    <userinput>gender</userinput>, <uicontrol>Row Labels</uicontrol>
+                    <userinput>2010</userinput> and <uicontrol>Values</uicontrol>
+                    <userinput>2010 (Count</userinput>). Select a number under Row Labels and choose <menucascade>
+                        <uicontrol>tab Options</uicontrol>
+                        <uicontrol>Group Field (group Group)</uicontrol>
+                    </menucascade> and start the grouping with 20, end with 49 with increments of
+                    10. Report Layout: Outline form without field captions.</li>
+            </ol>
+        </section>
+    </body>
+</topic>

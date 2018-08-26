@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_form003" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: form003 - Calculating with dates</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>In the following table you can enter your date of birth and the pension age (67 years). The
+        date when you get your pension, the current date and the number of days until your pension
+        date should be calculated with formulas.</p>
+      <p>
+        <fig>
+                    <image keyref="ex_form003_data"/>
+                </fig>
+      </p>
+      <p>Create this model in a worksheet and use formulas to calculate the output results.</p>
+      <note type="other" othertype="File"><filepath>Form003.xlsx</filepath></note>
+      <note type="tip">
+        <ol>
+          <li>Used functions: DATE, YEAR, MONTH, DAY, TODAY.</li>
+          <li>A date layout like <systemoutput>Wed 01/3/1967</systemoutput> can be get through the
+            number format of the cell. Choose <menucascade>
+              <uicontrol>tab Home</uicontrol>
+              <uicontrol>Category Custom (group Number)</uicontrol>
+            </menucascade>, or right click on the cell and choose <uicontrol>Format
+              cells</uicontrol>. In the box <uicontrol>Type</uicontrol> you can enter the desired
+            format. The format used in the example is <userinput>ddd dd/m/yyyy</userinput>. Try also
+            other formats like <userinput>dddd dd/mmm/yy</userinput> to figure out how the
+            formatting works.</li>
+          <li>A date in Excel is in reality just a number, with which you can make calculations. In
+            order to determine the time difference between two dates, you can subtract these two
+            dates.</li>
+        </ol>
+      </note>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>Format of dates: <codeph>ddd dd/m/yyyy</codeph></p>
+      <p>Output formulas:<ul id="ul_jzy_jgj_rd">
+          <li>pension date <codeph>=DATE(YEAR(date_of_birth)+
+              pension_age;MONTH(date_of_birth);DAY(date_of_birth))</codeph>.</li>
+          <li>current date <codeph>=TODAY()</codeph>.</li>
+          <li>number of days until pension <codeph>=pension_date - current_date</codeph> or
+              <codeph>=pension_date - TODAY()</codeph>.</li>
+        </ul></p>
+    </section>
+  </body>
+</topic>

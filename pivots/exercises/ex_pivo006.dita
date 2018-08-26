@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_pivo006" outputclass="exercise" xml:lang="en-US">
+    <title>Exercise: pivo006 - Clothing sales by region</title>
+    <shortdesc>Level: 2</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords> </keywords>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>In the next table you see the menswear and ladieswear sales in the four regions in
+                the years 2009 and 2010.</p>
+            <fig>
+                <image keyref="ex_pivo006_data"/>
+            </fig>
+            <p>Enter and format the data in a worksheet. Determine using a pivot table the total
+                annual sales per region and per type.</p>
+            <note type="other" othertype="File"><filepath>Pivo006.xlsx</filepath></note>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <fig>
+                <image keyref="ex_pivo006_report"/>
+            </fig>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p conkeyref="pivot/start" conrefend="pivot/end"/>
+            <simpletable>
+                <sthead>
+                    <stentry>Report Filter</stentry>
+                    <stentry>Column Labels</stentry>
+                    <stentry>Row Labels</stentry>
+                    <stentry>Values</stentry>
+                </sthead>
+                <strow>
+                    <stentry/>
+                    <stentry>Region</stentry>
+                    <stentry>Year Type</stentry>
+                    <stentry>Sales</stentry>
+                </strow>
+            </simpletable>
+            <p conkeyref="pivot/options"/>/> <p>Change <uicontrol>Number Format</uicontrol> in
+                    <option>Accounting with 0 decimals</option>.</p>
+            <p>Choose <menucascade>
+                    <uicontrol>tab Option</uicontrol>
+                    <uicontrol>Options (group PivotTable)</uicontrol>
+                    <uicontrol>tab Display</uicontrol>
+                </menucascade> and uncheck <uicontrol>Display field captions and filter drop
+                    downs</uicontrol>.</p>
+        </section>
+    </body>
+</topic>

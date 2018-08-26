@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_pivo010" outputclass="exercise" xml:lang="en-US">
+    <title>Exercise: pivo010 - Coffee yield per region</title>
+    <shortdesc>Level: 2</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords> </keywords>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>A worksheet contains the yields of some types of coffee per month and per area. The
+                management would like to determine the total yield of the products for each region.
+                Create a pivot table for the monthly yields per coffee type. The region should be
+                selected through a report filter.</p>
+            <note type="other" othertype="File"><filepath>Coffee.xlsx</filepath></note>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <fig>
+                <image keyref="ex_pivo010_report"/>
+            </fig>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p conkeyref="pivot/start" conrefend="pivot/end"/>
+            <simpletable>
+                <sthead>
+                    <stentry>Report Filter</stentry>
+                    <stentry>Column Labels</stentry>
+                    <stentry>Row Labels</stentry>
+                    <stentry>Values</stentry>
+                </sthead>
+                <strow>
+                    <stentry>Region</stentry>
+                    <stentry>Product</stentry>
+                    <stentry>Month</stentry>
+                    <stentry>Yield</stentry>
+                </strow>
+            </simpletable>
+            <p conkeyref="pivot/options"/>/> <p>Change <uicontrol>Number Format</uicontrol> in
+                    <option>Accounting with 0 decimals</option>.</p>
+        </section>
+    </body>
+</topic>

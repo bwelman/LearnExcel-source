@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_goal001" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: goal001 - Freelancer</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>Suppose you want to work as a freelancer and you have the intention to do this only if you
+        can earn at least $ 5000,- per month. You get a commission of 7.8% for each project.</p>
+      <ol>
+        <li>Create a model in a worksheet in which you can enter the total sales and the percentage
+          of commission. Calculate the the commission.</li>
+        <li>Determine through Goal Seek the total sales that must be made to get a commission of
+          $ 5000.</li>
+      </ol>
+    </section>
+    <section otherprops="answer">
+      <title>Answer</title>
+      <p>Total sales $ 64,102.56</p>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>Create two input cells: commission percentage and total sales. Calculate in another cell
+        the commission amount with the formula <codeph>= commission_percentage *
+          total_sales</codeph>.</p>
+      <p>Choose <menucascade>
+          <uicontrol>tab Data</uicontrol>
+          <uicontrol>What-If Analysis (group Data Tools)</uicontrol>
+          <uicontrol>Goal Seek</uicontrol>
+        </menucascade>.</p>
+      <p>The cell to set is  the cell with the commission amount., to value 5000, by changing the
+        cell with the total sales.</p>
+    </section>
+  </body>
+</topic>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_graf005" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: graf005 - Relationship production time - cost</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>At a toy manufacturing company it is suspected that the price of the toys largely depend on
+        the production time. To investigate this, the production time of the toys is measured. The
+        results and the associated cost are listed in the following figure.</p>
+      <fig>
+                <image keyref="ex_graf005_data"/>
+            </fig>
+      <ol>
+        <li>Create a chart in which the cost is plotted against the production time (the independent
+          variable).</li>
+        <li>Add a linear trend line to the chart. Also add the equation of the trend line to the
+          chart.</li>
+      </ol>
+      <note type="other" othertype="File"><filepath>Graf005.xlsx</filepath></note>
+    </section>
+    <section otherprops="answer">
+            <title>Answer</title>
+            <image keyref="ex_graf005_chart"/>
+        </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>Create the chart as follows:<ul>
+          <li>Start creating a scatter chart.</li>
+          <li>Layout adjustments: scaling axis, legend, horizontal gridlines.</li>
+          <li>Add linear trendline in the chart and display the equation.</li>
+        </ul></p>
+    </section>
+  </body>
+</topic>

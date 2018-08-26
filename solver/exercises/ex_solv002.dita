@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_solv002" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: solv002 - Number of supermarkets</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>A supermarket chain wants to open a number of new branches for a maximum investment of 14
+        million dollar. The chain has 4 types of shops: A, B, C and D. In the following figure you
+        can see the costs for setting up the four store types and the (expected) sales in the next
+        financial year.</p>
+      <fig>
+                <image keyref="ex_solv002_data"/>
+            </fig>
+      <p>All new build branches can be ready for the next financial year. The possible locations are
+        comparable in terms of population. The executive board wants the greatest possible sales of
+        the new branches in the next financial year. How many branches of each type should be build
+        to achieve this?.</p>
+      <ol>
+        <li>What are the decision variables?</li>
+        <li>What is the objective function?</li>
+        <li>What restrictions are there?</li>
+        <li>Build the model in Excel using the guidelines indicated in this textbook. You see an
+                    example in the following figure. Formulas need to be placed in the empty cells.
+                    Both decision variables have got a starting value of 2. <fig>
+                        <image keyref="ex_solv002_model"/>
+                    </fig></li>
+        <li>Enter the model in the Solver and then determine the optimal number of branches of each
+          type and the expected total sales..</li>
+      </ol>
+    </section>
+    <section otherprops="answer">
+      <title>Answer</title>
+      <ol>
+        <li>Four decision variables: Number branches type A (= A), type B (= B), type C (= C) and
+          type D (= D).</li>
+        <li>Objective function is the total sales (= S): <codeph>S = 24*A + 20*B + 11*C +
+            5*D</codeph></li>
+        <li>Restrictions: <ul>
+            <li>Maximum investment: <codeph>4*A + 3*B + 2*C + 1*D &lt;= 14</codeph></li>
+            <li>Each number of branches is an integer: <codeph>A = integer , B = integer , C =
+                integer , D = integer</codeph></li>
+            <li>Each number of branches is a positive number: <codeph>A >= 0 , B >= 0 , C >= 0 , D
+                >= 0</codeph></li>
+          </ul>
+        </li>
+      </ol>
+      <p>Optimal number of branches type A = 0, type B = 4, type C = 1, type D = 0. The total sales
+        is 91 million dollar.</p>
+    </section>
+  </body>
+</topic>

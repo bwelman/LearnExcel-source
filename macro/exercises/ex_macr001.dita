@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_macr001" outputclass="exercise" xml:lang="en-US">
+    <title>Exercise: macr001 - Background color</title>
+    <shortdesc>Level: 2</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>Record a macro that gives the active cell a gray background color.</p>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <p>An example of a solution.</p>
+            <codeblock>Sub Background_Gray()
+'
+' Lightgray background for active cell
+'
+    With Selection.Interior
+        .Pattern = xlSolid
+        .PatternColorIndex = xlAutomatic
+        .ThemeColor = xlThemeColorDark1
+        .TintAndShade = -0.14996795556505
+        .PatternTintAndShade = 0
+    End With
+End Sub</codeblock>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p conkeyref="macro/start"/>
+            <p>Right click on a cell and choose <menucascade>
+                    <uicontrol>Format Cells</uicontrol>
+                    <uicontrol>tab Fill</uicontrol>
+                    <uicontrol>select a gray color</uicontrol>
+                    <uicontrol>OK</uicontrol>
+                </menucascade>.</p>
+            <p conkeyref="macro/stop"/>
+        </section>
+    </body>
+</topic>

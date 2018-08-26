@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_form004" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: form004 - Determining commission</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>A company with three salesmen has the objective that each salesman sells for at least $
+        150,000 per year. If that amount is reached their commission will be 6.25% of that sales
+        amount. If not, then their commission will be only 5.5%. In the following figure you see a
+        model to calculate the commission for each salesman.</p>
+      <p>
+        <fig>
+                    <image keyref="ex_form004_data"/>
+                </fig>
+      </p>
+      <p>Create this model in a worksheet and use formulas for the calculation of the
+        commissions.</p>
+      <note type="other" othertype="File"><filepath>Form004.xlsx</filepath></note>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>Formula commission <codeph>=IF(Sales &lt;
+          Sales_Target;Commission_Low*Sales;Commission_High*Sales)</codeph></p>
+    </section>
+  </body>
+</topic>

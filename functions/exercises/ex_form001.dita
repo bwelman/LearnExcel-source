@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_form001" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: form001 - Results computer company</title>
+  <shortdesc>Level: 1</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body><section>
+    <p>The following table reflects the results of a computer company for the year 2010. The
+        company's target is to achieve a gross profit per product of more than $ 5000,- and a
+        realized margin of more than 15%. Only if both targets are realized, the operating result
+        can be characterized as good , in all other cases as bad.</p>
+    <p>
+      <fig>
+        <image keyref="ex_form001_data"/>
+      </fig>
+    </p>
+    <p>Create this model in a worksheet. Formulas should be used for the determination of the gross
+        profit, the margin and the result. If the gross profit and margin targets will be changed
+        then result should be adjusted.</p>
+    <note type="other" othertype="File"><filepath>Form001.xlsx</filepath></note>
+  </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <ul>
+        <li>gross profit = revenues - costs</li>
+        <li>margin realized = gross profit / costs. Format as percentage with no decimals.</li>
+        <li>For the determination of the result you should use the IF function. Because you had to
+          test 2 conditions, a second IF must be embedded within the first IF. An alternative is to
+          use the AND function inside the IF function.<ul>
+            <li><codeph>=IF(D4>Target_Profit;IF(E4>Target_Margin;"good";"bad");"bad")</codeph></li>
+            <li><codeph>=IF(AND(D4>Target_Profit;E4>Target_Margin);"good";"bad")</codeph></li>
+          </ul></li>
+      </ul>
+    </section>
+  </body>
+</topic>

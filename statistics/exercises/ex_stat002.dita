@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="stat002" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: stat002 - Relationship study time - mark</title>
+  <shortdesc>Level: 3</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+        <section>
+            <p>Of a class of students, everyone has kept the number of study hours that they spent
+                on a particular subject and the grade they obtained for the test.The data can be
+                found in the following overview:</p>
+            <fig>
+                <image keyref="stat002_data"/>
+            </fig>
+            <p> The teacher would like to know if there is a connection between them.</p>
+            <ol>
+                <li>Draw in a chart the mark against the study hour.</li>
+                <li>Calculate the following statistics: number of students, number insufficients
+                    (this is with a mark below 5.5), average and standard deviation for time and
+                    mark and the correlation coefficient.</li>
+            </ol>
+            <note type="other" othertype="File"><filepath>Stat002.xlsx</filepath></note>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+        </section>
+        <image keyref="stat002_result"/>
+    </body>
+</topic>

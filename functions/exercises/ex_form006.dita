@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_form006" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: form006 - VAT return</title>
+  <shortdesc>Level: 3</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>A company buys goods from suppliers and pays sales tax (VAT) to these suppliers. Then the
+        company sells these goods to customers who have to pay VAT to the company. Every quarter,
+        the company must submit a tax declaration. The difference between VAT received (through
+        sales) and VAT paid (through purchases) must be paid to the tax authority. If this
+        difference is negative, then there is a refund to the company. A small entrepeneur can get a
+        reduction for the VAT through the so called <term>Regulation Small Entrepeneurs</term>
+        (RSE). This regulation is worked out in the following table. </p>
+      <fig>
+                <image keyref="ex_form006_rules"/>
+            </fig>
+      <ol>
+        <li>Create a model with cells for data entry of the total sales and prepaid VAT and with
+          cells for the constants (the thresholds and VAT percentage). Calculate in other cells the
+          VAT initially to be paid, the reduction and the final amount to be paid or to received.
+          Use only one VAT rate of 21%. The final amount should automatically be labeled as a
+          payment or a receipt. All amounts must be formatted in whole euros.</li>
+        <li>Test the model thoroughly with all possibilities.</li>
+      </ol>
+      <note type="other" othertype="File"><filepath>Form006.xlsx</filepath></note>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <fig>
+                <image keyref="ex_form006_solution"/>
+            </fig>
+      <p>Formulas calculation: <ul>
+          <li>VAT to be paid: <codeph>=VAT_percentage * Sales</codeph></li>
+          <li>Prepaid VAT: <codeph>=VAT_paid_by_purchasing</codeph></li>
+          <li>VAT initially to be paid: <codeph>=VAT_to_be_paid - Prepaid_VAT</codeph></li>
+          <li>Reduction RSE: <codeph>=IF(VAT_initially_to_be_paid&lt;0, 0,
+              IF(VAT_initially_to_be_paid>upper_threshold , 0,
+              IF(VAT_initially_to_be_paid&lt;=lower_threshold, VAT_initially_to_be_paid,
+              2.5*(upper_threshold-VAT_initially_to_be_paid))))</codeph></li>
+          <li>Payable: <codeph>=ABS(VAT_initially_to_be_paid - Reduction_RSE)</codeph></li>
+          <li>Final text: <codeph>=IF(Payable&lt;0,"To receive","To pay")</codeph></li>
+        </ul></p>
+    </section>
+  </body>
+</topic>

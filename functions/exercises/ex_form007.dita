@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_form007" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: form007 - Ticket price</title>
+  <shortdesc>Level: 1</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>The following table shows the prices of a ticket for a sports game. There are two
+        categories: children and adults. There is also a cell where for entering the age (in whole
+        years). After entering the age the ticket price is automatically calculated.</p>
+      <p>
+        <fig>
+                    <image keyref="ex_form007_model"/>
+                </fig>
+      </p>
+      <p>Create this model in a worksheet. Use an IF function for the price calculation. Test the
+        solution with different ages.</p>
+      <note type="other" othertype="File"><filepath>Form007.xlsx</filepath></note>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>Ticket price <codeph>=IF(Age > 12,Price_Adults,Price_Children)</codeph></p>
+    </section>
+  </body>
+</topic>

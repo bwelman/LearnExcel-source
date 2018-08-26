@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_graf003" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: graf003 - Sales figures</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>In the following table you see the estimated and actual sales figures per quarter for 2010,
+        as well as the difference between actual and estimated. The average percentage of the
+        differences is also determined.</p>
+      <p>
+        <fig>
+                    <image keyref="ex_graf003_data"/>
+                </fig>
+      </p>
+      <p>Put the data in a worksheet and use formulas for the differences and the average. After
+        that create the following chart.</p>
+        <fig>
+                <image keyref="ex_graf003_chart"/>
+            </fig>
+      <note type="other" othertype="File"><filepath>Graf003.xlsx</filepath></note>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>Calculate in a new column the difference with the formula <codeph>= (actual - estimated) /
+          estimated</codeph>. Format the values as percentages with 0 decimals.</p>
+      <p>Create the chart as follows:<ul>
+        <li>Start with chart type Çlustered Column. You get for each quarter two columns side by
+            side, the left one for estimated and the right one for actual.</li>
+          <li>Then <menucascade>
+              <uicontrol>select column actual</uicontrol>
+              <uicontrol>right click</uicontrol>
+              <uicontrol>Change Series Chart Type</uicontrol>
+              <uicontrol>Line with markers</uicontrol>
+              <uicontrol>OK</uicontrol>
+            </menucascade>.</li>
+          <li>Make adjustments for: chart title, location legend, gap width, scale vertical
+            axis.</li>
+        </ul></p>
+    </section>
+  </body>
+</topic>

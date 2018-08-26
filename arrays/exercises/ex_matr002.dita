@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_matr002" outputclass="exercise" audience="level3" xml:lang="en-US">
+  <title>Exercise: matr002 - Failures per district</title>
+  <shortdesc>Level: 3</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section><p>The public utility of a city keeps a list for recording per district the reported failures to
+        gas, water and electricity. You can see this list in the following figure. The management of
+        the company would like an overview of the total number of failures per district as
+        calculated under resume. The easiest way to do this is by using array formulas.</p>
+        <fig>
+                <image keyref="ex_matr002_data"/>
+            </fig>
+      <note type="other" othertype="File"><filepath>Matr002.xlsx</filepath></note>
+      <p>Enter the array formulas in the cells C16, C17, C18 en C19 to calculate the total number of
+        failures per district.</p>
+      <note type="tip">
+        <ol>
+          <li>The formula {(B2:B11)=B16} provides a matrix column of 10 rows. If the value in a cell
+                        from the range B2:B11 is equal to the value in cell B16 (= North) then the
+                        value in the array is TRUE (=1) otherwise FALSE (=0).<fig>
+                            <image keyref="ex_matr002_tip1"/>
+                        </fig>
+                    </li>
+          <li>By multiplying the column array with the array {C2:E11} you get a new array of 10 rows
+                        and three columns. The cells in the rows which are multiplied with FALSE get
+                        all the value zero. The cells which are multiplied with TRUE keep there
+                        original values:<fig>
+                            <image keyref="ex_matr002_tip2"/>
+                        </fig>
+                    </li>
+          <li>Calculating the sum of all these values gives you the total number of failures for the
+            district North.</li>
+        </ol>
+      </note>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>Select the cell for the total of North and enter the formula
+          <codeph>=SUM(($B$2:$B$11=B16)*($C$2:$E$11))</codeph> and press
+          <uicontrol>Ctrl-Shift-Enter</uicontrol>. The copy this formula down.</p>
+    </section>
+  </body>
+</topic>

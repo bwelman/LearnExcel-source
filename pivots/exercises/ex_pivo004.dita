@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_pivo004" outputclass="exercise" xml:lang="en-US">
+    <title>Exercise: pivo004 - Average rating</title>
+    <shortdesc>Level: 2</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2017-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords> </keywords>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>In the next table you see the marks for information technology (it) of some students
+                from two different classes.</p>
+            <fig>
+                <image keyref="ex_pivo004_data"/>
+            </fig>
+            <p>Determine using a pivot table the average mark by class and by gender.</p>
+            <note type="other" othertype="File"><filepath>Pivo004.xlsx</filepath></note>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <fig>
+                <image keyref="ex_pivo004_report"/>
+            </fig>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p conkeyref="pivot/start" conrefend="pivot/end"/>
+            <simpletable>
+                <sthead>
+                    <stentry>Report Filter</stentry>
+                    <stentry>Column Labels</stentry>
+                    <stentry>Row Labels</stentry>
+                    <stentry>Values</stentry>
+                </sthead>
+                <strow>
+                    <stentry/>
+                    <stentry>gender</stentry>
+                    <stentry>class</stentry>
+                    <stentry>it</stentry>
+                </strow>
+            </simpletable>
+            <p conkeyref="pivot/options"/>/> <p>Change the type of calculation in
+                    <option>Average</option>.</p>
+        </section>
+    </body>
+</topic>

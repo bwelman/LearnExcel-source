@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="map_ex_data" xml:lang="en-US">
+    <title>Exercise Importing Data</title>
+    <topichead navtitle="Exercises">
+        <topicref href="ex_data001.dita" scope="local" type="topic"/>
+    </topichead>
+</map>

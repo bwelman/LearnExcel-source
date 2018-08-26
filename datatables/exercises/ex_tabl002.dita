@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_tabl002" xml:lang="en-US">
+  <title>Exercise: tabl002 - Sales forecast</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>In a worksheet the forecast of the sales in 2014, based on the sales in 2013 and an
+                estimated sales growth.</p>
+      <fig>
+                <title>Forecast sales</title>
+                <image keyref="ex_tabl002_data">
+                    <alt>Forecast sales</alt>
+                </image>
+                <ol>
+                    <li>Make the above model in a new worksheet and create a formula for the the
+                        forecast of the sales in 2014.</li>
+                    <li>Create a data table with an overview of the sales forecast with growth rates
+                        of 1%, 2%, ... 10%.</li>
+                </ol>
+            </fig>
+    </section>
+    <section otherprops="answer">
+      <title>Answer</title>
+      <fig>
+                <title>Data table sales forecast</title>
+                <image keyref="ex_tabl002_result">
+                    <alt>Data table sales forecast</alt>
+                </image>
+            </fig>
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <ol>
+        <li>Formula in B3: <userinput>=B1*(1+B2)</userinput></li>
+        <li>In B5 is a reference to this formula: <userinput>=B3</userinput>. Column input cell:
+                        <userinput>B2</userinput></li>
+      </ol>
+    </section>
+  </body>
+</topic>

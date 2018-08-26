@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_list001" outputclass="exercise" xml:lang="en-US">
+  <title>Exercise: list001 - Selecting</title>
+  <shortdesc>Level: 2</shortdesc>
+  <prolog>
+    <critdates>
+      <created date="2017-08-31"/>
+      <revised modified="2017-08-31"/>
+    </critdates>
+    <metadata>
+      <keywords/>
+    </metadata>
+  </prolog>
+  <body>
+    <section>
+      <p>The following table lists the marks of some students.</p>
+      <p>
+        <fig>
+          <image keyref="ex_list001_data"/>
+        </fig>
+      </p>
+      <p>Now apply a filter so that only the rows are displayed for students who have no rating or a
+        mark 3 or lower.For this exercise the table is kept small. For your solution you should take
+        much larger tables into account.</p>
+      <note type="other" othertype="File"><filepath>List001.xlsx</filepath></note>
+    </section>
+    <section otherprops="answer">
+      <title>Answer</title>
+      <p>
+        <fig>
+                    <image keyref="ex_list001_solution"/>
+                </fig>
+      </p>      
+    </section>
+    <section otherprops="solution">
+      <title>Solution</title>
+      <p>Select the cell mark and then <menucascade>
+          <uicontrol>tab Data</uicontrol>
+          <uicontrol>Filter (group Sort &amp; Filter)</uicontrol>
+        </menucascade>. Click on the arrow and choose <menucascade>
+          <uicontrol>Number Filters</uicontrol>
+          <uicontrol>Custom Filter</uicontrol>
+          <uicontrol>is less than or equal to</uicontrol>
+        </menucascade> and enter the number <userinput>3</userinput>. Check the option
+          <uicontrol>Or</uicontrol> and choose <uicontrol>equals</uicontrol> and left the number box
+        blank. Click <uicontrol>OK</uicontrol>.</p>
+    </section>
+  </body>
+</topic>

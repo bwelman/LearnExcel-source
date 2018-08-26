@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_form012" outputclass="exercise" xml:lang="en-US">
+    <title>Exercise: form012 - Multiplication table</title>
+    <shortdesc>Level: 1</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2018-08-25"/>
+            <revised modified="2018-08-25"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>First create the following table:</p>
+            <fig>
+                <image keyref="ex_form012_table"/>
+            </fig>
+            <p>Then enter in cell B2 a formula that you can copy down and to the right to the rest
+                of the table so that the value inside each cell in the table is the multiplication
+                of number before the row and the number above the column.</p>
+            <note type="tip">You will need a combination of absolute and relative addressing in your
+                formula.</note>
+        </section>
+        <section otherprops="answer"/>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p>Formula: <codeph>=B$1*$A2</codeph></p>
+        </section>
+    </body>
+</topic>
