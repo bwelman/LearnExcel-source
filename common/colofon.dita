@@ -24,38 +24,27 @@
                     >http://www.softwijs.nl/</xref></p>
             <p>Email: <xref href="mailto:info@softwijs.nl" format="html" scope="external"
                     >info@softwijs.nl</xref></p>
-            <p>All publications of Softwijs are available in the following formats: PDF, EPUB, MOBI,
-                CHM and HTML.</p>
         </section>
         <section id="Edition">
             <title>Edition</title>
             <p>Edition <keyword keyref="versionnr"/>, <keyword keyref="versiondate"/></p>
         </section>
-        <section id="Design">
-            <p>Design: softwijs.nl</p>
-            <p>Cover design: Jeremy Taylor</p>
-            <p>Cover illustration: Baris Onal</p>
-        </section>
         <section id="Copyright">
             <title>Copyright</title>
             <p>© 2017, Softwijs Neede</p>
             <p>No part of this publication may be reproduced and / or published by print , photocopy
-                , microfilm , electronic or any other means without prior written permission of
+                , microfilm , electronic or any other means without prior permission of
                 Softwijs.</p>
         </section>
         <section id="DRM">
-            <title>Security - DRM - Watermark - Versions</title>
-            <p>The digital editions of Softwijs are not protected with DRM. You don't need a
-                password to read or print them. We want to bring our high quality textbooks to our
-                customers as simply as possible.</p>
-            <p>However all publications are watermarked. Each digital edition is personalized by
-                visible and invisible attributes connected to the client. Be assured, these
-                characteristics do not contain personal information.</p>
+            <title>Security - DRM - Watermark</title>
+            <p>The digital editions of Softwijs are not protected with DRM. And you don't need a
+                password to read or print them. However all publications are personalized with a
+                watermark that connects the publication to the client, but does not contain personal
+                information.</p>
             <p>It is allowed to make copies of a file for personal use. However it is not allowed to
                 give files to other people or placing them on servers without permission of
                 Softwijs.</p>
-            <p>When a new version of this textbook is published, the buyer has the right for a free
-                update.</p>
         </section>
     </body>
 </topic>

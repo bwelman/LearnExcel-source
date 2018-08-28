@@ -3,6 +3,7 @@
 <bookmap id="Excel2016EN" xml:lang="en-US">
     <booktitle>
         <mainbooktitle>Excel 2016</mainbooktitle>
+        <booktitlealt>A task oriented textbook</booktitlealt>
     </booktitle>
     <bookmeta>
         <author>Ben Welman</author>
@@ -38,7 +39,7 @@
                 <person>Ben Welman</person>
             </bookowner>
         </bookrights>
-        <data name="covergraphic" value="common/images/cover_excel.jpg"/>
+        <data name="covergraphic" value="common/images/cover_excel.png"/>
     </bookmeta>
     <frontmatter>
         <booklists>

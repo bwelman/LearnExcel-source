@@ -5,43 +5,32 @@
     <prolog>
         <critdates>
             <created date="2017-08-31"/>
-            <revised modified="2017-08-31"/>
+            <revised modified="2018-08-28"/>
         </critdates>
     </prolog>
     <body>
         <p>The textbooks from Softwijs differ from other textbooks by content, composition and
-            output format.</p>
-        <p>The parts are developed with the idea that the student must learn to perform a specific
-            task, master a certain skill, no more and no less. This has resulted in concrete
-            stepwise tasks without additional information that may cause only distraction. Each task
-            is a paragraph in a chapter and the title of such a paragraph always starts with the
-            word <wintitle>Task:</wintitle> so that it is clear that something has to be carried out
-            in this paragraph. If necessary, background information and overviews for reference is
-            given in other paragraphs.</p>
+            output format. The parts are developed with the idea that the student must learn to
+            perform a specific task, master a certain skill, no more and no less. This has resulted
+            in concrete stepwise tasks without additional information that may cause only
+            distraction. Each task has a title that starts with the word <wintitle>Task:</wintitle>
+            so that it is clear that something has to be carried out.</p>
         <p>At the end of most chapters there is a series of exercises. The title of an exercise
             always starts with the word <wintitle>Exercise:</wintitle> followed by a unique code and
             a short description. If the exercise has a final answer than it appears.</p>
         <p>The content of the tasks and exercises is mainly determined by competences and skills
-            that middle and higher education requires. Many of the problems have come from
-            experiences of students in the professional practice during internships and
-            graduation.</p>
-        <p>The textbooks can be are available in the following output formats:<ul>
-                <li>PDF: for reading on a PC / laptop and for making a paper print. The content is
-                    search able and can be zoomed.</li>
-                <li>EPUB: for reading on a PC / laptop, e-reader, iPad, tablet. Te user can adjust
-                    font and font size, depending on the device. And the content is search able. And
-                    the content is search able.</li>
-            </ul></p>
-        <p>Further, it is also possible to deliver the content of the textbook in other output
-            formats like: MOBI (for Kindle), HTML (for websites), CHM (Windows Help) and Eclipse
-            Help.</p>
-        <p>Softwijs provides the following textbooks:<ul>
-                <li>Microsoft Access (Dutch, English, different versions)</li>
-                <li>Microsoft Excel (Dutch, English, different versions)</li>
-            </ul></p>
-        <p>Furthermore you can download for free from the website of Softwijs<ul>
-                <li>Grafieken, a Dutch guide about the use of various types of graphs.</li>
-                <li>Zotero, a guide about how to use this free reference manager.</li>
-            </ul></p>
+            that higher education requires. Many of the problems have come from experiences of
+            students in the professional practice during internships and graduation.</p>
+        <p>The online editions of the textbooks are free and are regularly updated. You don't have
+            to wait until the next edition for errors to be corrected or new added topics.</p>
+        <p>PDF and EPUB versions of the textbooks can be purchased.
+            <ul>
+                <li>PDF: suitable for reading on a PC / laptop and for making a paper print. The
+                    content is searchable and can be zoomed.</li>
+                <li>EPUB: suitable for reading on a PC / laptop, e-reader, iPad, tablet. Font and
+                    font size can be adjusted (depending on the device). The content is
+                    searchable.</li>
+            </ul>
+        </p>
     </body>
 </topic>
