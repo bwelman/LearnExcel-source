@@ -18,7 +18,7 @@
     <taskbody>
         <context>
             <p>The possibilities to start Excel depend on the way the system is installed. This
-                course assumes a default installation of Microsoft Office <ph keyref="officeversion"
+                course assumes a default installation of Microsoft Office <ph keyref="productversion"
                 /> EN on a system with Windows 10. On almost all computers Excel can be started
                 through the start button of Windows and this method is described here..</p>
             <note type="tip">The most convenient start is through a shortcut on the desktop or
