@@ -9,14 +9,17 @@
         </critdates>
     </prolog>
     <body>
-        <p>Welcome to this online textbook of <ph keyref="productname"/> <ph keyref="productversion"/>.</p>
-        <p>This textbook is intended to provide a thorough introduction to <ph keyref="productname"/> and to present
-            enough information about features in <ph keyref="productname"/> for readers to be able to use them.</p>
+        <p>Welcome to this online textbook of <ph keyref="productname"/>
+            <ph keyref="productversion"/>.</p>
+        <p>This textbook is intended to provide a thorough introduction to <ph keyref="productname"
+            /> and to present enough information about features in <ph keyref="productname"/> for
+            readers to be able to use them.</p>
         <p>The book is written for:<ol>
                 <li>students in the middle and higher education.</li>
-            <li>business people using <ph keyref="productname"/></li>
+                <li>business people using <ph keyref="productname"/></li>
             </ol></p>
-        <p>The book is different from other <ph keyref="productname"/> textbooks in several ways.</p>
+        <p>The book is different from other <ph keyref="productname"/> textbooks in several
+            ways.</p>
         <ul>
             <li>It is free and online, making it accessible to a wide audience.</li>
             <li>The online version is regularly updated. You don’t have to wait until the next
@@ -35,6 +38,9 @@
                 experiences of students in the professional practice during internships and
                 graduation.</li>
         </ul>
+        <note type="important">For making the tasks and exercises in this book you need the practice
+            files which you can download through <xref keyref="practicefiles">practice
+            files</xref>.</note>
         <p><b>A digital edition of the textbook can be purchased in PDF and EPUB format.</b><ul>
                 <li>PDF: suitable for reading on a PC / laptop and for making a paper print. The
                     content is searchable and can be zoomed.</li>
@@ -42,6 +48,6 @@
                     font size can be adjusted (depending on the device). The content is
                     searchable.</li>
             </ul></p>
-        <p>Information about how to buy a digital edition will be followed soon.</p>
+        <p>For purchasing a PDF and EPUB click on: <xref keyref="buylink"><image keyref="cover" scale="5"/></xref>.</p>
     </body>
 </topic>
