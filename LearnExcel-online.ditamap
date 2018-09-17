@@ -2,29 +2,11 @@
 <!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
 <bookmap id="Excel2016EN" xml:lang="en-US">
     <booktitle>
-        <mainbooktitle>Excel 2016</mainbooktitle>
+        <mainbooktitle>Learn Excel 2016</mainbooktitle>
         <booktitlealt>A task oriented textbook</booktitlealt>
     </booktitle>
     <bookmeta>
         <author>Ben Welman</author>
-        <authorinformation>
-            <organizationinfo>
-                <namedetails>
-                    <organizationnamedetails>
-                        <organizationname>Softwijs</organizationname>
-                    </organizationnamedetails>
-                </namedetails>
-                <emailaddresses>
-                    <emailaddress>info@softwijs.nl</emailaddress>
-                </emailaddresses>
-                <urls>
-                    <url>http://www.softwijs.nl</url>
-                </urls>
-            </organizationinfo>
-        </authorinformation>
-        <publisherinformation>
-            <organization>Softwijs</organization>
-        </publisherinformation>
         <keywords>
             <keyword>Excel</keyword>
             <keyword>Textbook</keyword>
@@ -39,7 +21,6 @@
                 <person>Ben Welman</person>
             </bookowner>
         </bookrights>
-        <data name="covergraphic" value="common/images/cover_excel_en.png"/>
     </bookmeta>
     <frontmatter>
         <booklists>
@@ -47,7 +28,7 @@
         </booklists>
         <topicref href="common/keys_common.ditamap" format="ditamap" scope="local"
             processing-role="resource-only"/>
-        <topicref href="common/preface.dita" type="topic" format="dita" scope="local"/>
+        <topicref href="common/preface-online.dita" type="topic" format="dita" scope="local"/>
     </frontmatter>
     <part href="part_excel.dita">
         <chapter href="intro/map_intro.ditamap" format="ditamap" scope="local"/>

@@ -1,2 +1,2 @@
-# learnexcel
-DITA source for the LearnExcel textbook.
+# LearnExcel
+DITA source files for the LearnExcel textbook.
