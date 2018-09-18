@@ -15,29 +15,21 @@
         </metadata>
     </prolog>
     <body>
-        <section id="Publisher">
-            <title>This is a publication of</title>
-            <p>Softwijs</p>
-            <p>Julianastraat 17</p>
-            <p>7161 CP Neede</p>
-            <p>Website: <xref href="http://www.softwijs.nl/" format="html" scope="external"
-                    >http://www.softwijs.nl/</xref></p>
-            <p>Email: <xref href="mailto:info@softwijs.nl" format="html" scope="external"
-                    >info@softwijs.nl</xref></p>
-        </section>
-        <section id="Edition">
-            <title>Edition</title>
+        <bodydiv id="Edition">
             <p>Edition <keyword keyref="versionnr"/>, <keyword keyref="versiondate"/></p>
-        </section>
-        <section id="Copyright">
-            <title>Copyright</title>
-            <p>© 2017, Softwijs Neede</p>
-            <p>No part of this publication may be reproduced and / or published by print , photocopy
-                , microfilm , electronic or any other means without prior permission of
-                Softwijs.</p>
-        </section>
-        <section id="DRM">
-            <title>Security - DRM - Watermark</title>
+        </bodydiv>
+        <bodydiv id="Publisher">
+            <p>This is a publication of Softwijs Neede (NL): <xref
+                    href="https://softwijs.netlify.com" format="html" scope="external"
+                    >Website</xref> , <xref href="mailto:softwijsinfo@gmail.com" format="html"
+                    scope="external">Email</xref></p>
+        </bodydiv>
+        <bodydiv id="Copyright">
+            <p>Copyright © 2017, Softwijs Neede. No part of this publication may be reproduced and /
+                or published by print , photocopy , microfilm , electronic or any other means
+                without prior permission of Softwijs.</p>
+        </bodydiv>
+        <bodydiv id="DRM">
             <p>The digital editions of Softwijs are not protected with DRM. And you don't need a
                 password to read or print them. However all publications are personalized with a
                 watermark that connects the publication to the client, but does not contain personal
@@ -45,6 +37,6 @@
             <p>It is allowed to make copies of a file for personal use. However it is not allowed to
                 give files to other people or placing them on servers without permission of
                 Softwijs.</p>
-        </section>
+        </bodydiv>
     </body>
 </topic>
