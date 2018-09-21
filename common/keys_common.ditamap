@@ -32,7 +32,7 @@
     </keydef>
     <keydef keys="buylink" href="https://gum.co/Ovtymt" scope="external" format="html"/>
     <keydef keys="cover" href="images/cover_excel_en.png" scope="local" format="png"/>
-    <keydef keys="practicefiles" href="http://www.softwijs.eu/download/Excel2016EN_practicefiles.zip" scope="external" format="html"/>
+    <keydef keys="practicefiles" href="https://softwijs.netlify.com/download/" scope="external" format="html"/>
     <keydef keys="button_chart_elements" href="images/button_chart_elements.png" format="png"/>
     <keydef keys="button_chart_filters" href="images/button_chart_filters.png" format="png"/>
     <keydef keys="button_chart_styles" href="images/button_chart_styles.png" format="png"/>
