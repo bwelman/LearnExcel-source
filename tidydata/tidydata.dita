@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tidydata" xml:lang="en-US">
+    <title>Tidy Data</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2018-10-09"/>
+            <revised modified="2018-10-09"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm/>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>When importing data from external sources, you don't have control  over the format and
+            type of data and the way it is organized. Before you can analyze the data, you often
+            have to spend a lot of time to clean and structure the data.</p>
+        <p>Many data files are dirty, data is missing or the data is not well structured. Excel has
+            some features to help you with this job. But unfortunately Excel can't track and log
+            your manipulations. So it is important to document what you have done with the original
+            data to make it suitable for analysis. Actions that you perform with the Power
+            Query-Editor are recorded in a script. Therefore try to use the Power-Query Editor as
+            much as possible.</p>
+        <p>In this chapter a number of tasks are addressed to create tidy data.</p>
+        <p>This chapter is still under development!</p>
+    </conbody>
+</concept>

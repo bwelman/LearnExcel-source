@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="pivots_unpivoting" xml:lang="en-US">
+    <title>Task: Unpivot data</title>
+    <shortdesc>Unpivot data that is in crosstab/pivot format.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2018-03-27"/>
+            <revised modified="2018-10-09"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Crosstab<indexterm>unpivot</indexterm></indexterm>
+                <indexterm>Pivot<indexterm>unpivot</indexterm></indexterm>
+                <indexterm>Unpivot</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>Often data is in the form of cross tables. See the example below, which shows the
+                population of men and women in the countries of the Benelux.</p>
+            <simpletable>
+                <strow>
+                    <stentry>Country</stentry>
+                    <stentry>Gender</stentry>
+                    <stentry>2000</stentry>
+                    <stentry>2005</stentry>
+                    <stentry>2010</stentry>
+                    <stentry>2015</stentry>
+                </strow>
+                <strow>
+                    <stentry>Belgium</stentry>
+                    <stentry>Woman</stentry>
+                    <stentry>5247226</stentry>
+                    <stentry>5372650</stentry>
+                    <stentry>5566774</stentry>
+                    <stentry>5739297</stentry>
+                </strow>
+                <strow>
+                    <stentry>Belgium</stentry>
+                    <stentry>Man</stentry>
+                    <stentry>5034820</stentry>
+                    <stentry>5174235</stentry>
+                    <stentry>5371961</stentry>
+                    <stentry>5548634</stentry>
+                </strow>
+                <strow>
+                    <stentry>
+                        <p>Luxembourg</p>
+                    </stentry>
+                    <stentry>Woman</stentry>
+                    <stentry>221319</stentry>
+                    <stentry>231913</stentry>
+                    <stentry>255593</stentry>
+                    <stentry>282300</stentry>
+                </strow>
+                <strow>
+                    <stentry>
+                        <p>Luxembourg</p>
+                    </stentry>
+                    <stentry>Man</stentry>
+                    <stentry>214787</stentry>
+                    <stentry>225935</stentry>
+                    <stentry>252297</stentry>
+                    <stentry>284441</stentry>
+                </strow>
+                <strow>
+                    <stentry>
+                        <p>The Netherlands</p>
+                    </stentry>
+                    <stentry>Woman</stentry>
+                    <stentry>8037448</stentry>
+                    <stentry>8251078</stentry>
+                    <stentry>8398523</stentry>
+                    <stentry>8518105</stentry>
+                </strow>
+                <strow>
+                    <stentry>
+                        <p>The Netherlands</p>
+                    </stentry>
+                    <stentry>Man</stentry>
+                    <stentry>7888740</stentry>
+                    <stentry>8116075</stentry>
+                    <stentry>8284404</stentry>
+                    <stentry>8420387</stentry>
+                </strow>
+            </simpletable>
+            <p>You want to analyze this data and, for example, study the development of the
+                population per gender per year and possibly even per country. A pivot chart and
+                pivot table are best suited for this, see the following figure.</p>
+            <fig>
+                <title>Pivot table and chart</title>
+                <image keyref="benelux_pivot_chart">
+                    <alt>Pivot table and chart of the population per gender per year</alt>
+                </image>
+            </fig>
+            <p>However, the data in the form of a crosstab is not suitable for this, because they
+                are not in a well structured Excel table. In this crosstab, the four columns for a
+                given year (2000, 2005, 2010, 2015) always contain the same type of data, namely the
+                population. In fact, this crosstab has four variables: <varname>Country</varname>,
+                    <varname>Gender</varname>, <varname>Year</varname> and
+                    <varname>Population</varname>.</p>
+            <p>To make data suitable for analysis, they must be well structured. For this they must
+                meet the following conditions: <ol>
+                    <li>Each variable in a own column.</li>
+                    <li>Each observation of a variable in a row.</li>
+                </ol></p>
+            <p>This means that the data in the crosstab must be converted to a table with four
+                columns: <varname>Country</varname>, <varname>Gender</varname>,
+                    <varname>Year</varname> and <varname>Population</varname>. And each row is an
+                observation for the population.</p>
+            <p>
+                <simpletable frame="all">
+                    <strow>
+                        <stentry>Country</stentry>
+                        <stentry>Gender</stentry>
+                        <stentry>Year</stentry>
+                        <stentry>Population</stentry>
+                    </strow>
+                    <strow>
+                        <stentry>Belgium</stentry>
+                        <stentry>Woman</stentry>
+                        <stentry>2000</stentry>
+                        <stentry>5247226</stentry>
+                    </strow>
+                    <strow>
+                        <stentry>Belgium</stentry>
+                        <stentry>Woman</stentry>
+                        <stentry>2005</stentry>
+                        <stentry>5372650</stentry>
+                    </strow>
+                    <strow>
+                        <stentry>...</stentry>
+                        <stentry>...</stentry>
+                        <stentry>...</stentry>
+                        <stentry>...</stentry>
+                    </strow>
+                </simpletable>
+            </p>
+            <p>With the standard functions of Excel this is hard to do, but easy with the
+                possibilities of Power Query.</p>
+            <note type="other" othertype="File"
+                ><filepath>Benelux_Population.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select any cell with data and choose <menucascade>
+                        <uicontrol>tab Data</uicontrol>
+                        <uicontrol>From Table / Range (Get &amp; Transform Data)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <p>A dialog box is displayed in which the table data can be specified.</p>
+                    <fig>
+                        <title>Dialog box Create Table</title>
+                        <image keyref="benelux_table_create">
+                            <alt>Dialog box Create Table</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Make sure the option for headers is selected and click
+                        <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>
+                    <p>The data on the worksheet is first converted into an Excel table. Then, in a
+                        new window, the Power Query Editor is started that reads the data from the
+                        table.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>In the Power Query editor, select the last four columns.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Power Query editor</title>
+                        <image keyref="benelux_query_columns">
+                            <alt/>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Transform</uicontrol>
+                        <uicontrol><image keyref="button_unpivot"/> Unpivot Columns (group Any Column)</uicontrol>
+                    </menucascade></cmd>
+                <stepresult>
+                    <fig>
+                        <p>Unpivoted columns for the years 2000-2015</p>
+                        <image keyref="benelux_query_unpivot">
+                            <alt>Unpivoted columns for the years 2000-2015</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Change the name of the last two columns into respectively Year and
+                    Population.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Changed column names</title>
+                        <image keyref="benelux_query_column_names">
+                            <alt>Changed column names</alt>
+                        </image>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Home</uicontrol>
+                        <uicontrol>Close &amp; Load (group Close)</uicontrol>
+                    </menucascade></cmd>
+                <stepresult>
+                    <p>The data is now loaded in a new table in a new worksheet.</p>
+                    <fig>
+                        <title>Structured data in an Excel table</title>
+                        <image keyref="benelux_unpivoted">
+                            <alt>Structured data in an Excel table</alt>
+                        </image>
+                    </fig>
+                    <p>The data is now in a structured Excel table and suitable for creating pivot
+                        charts and pivot tables.</p>
+                </stepresult>
+            </step>
+        </steps>
+        <example>
+            <title>Voorbeeld analyse</title>
+            <p>Create the pivot chart and table that can be seen at the beginning.</p>
+        </example>
+    </taskbody>
+</task>
