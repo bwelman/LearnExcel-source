@@ -46,29 +46,35 @@
             </step>
             <step>
                 <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Table Candyboxes</title>
+                        <image keyref="candybox_table">
+                            <alt>Table Candyboxes</alt>
+                        </image>
+                    </fig>
+                    <p>The range is converted to a table:<ul>
+                        <li>A table format (style) is applied.</li>
+                        <li>Filter/Sorting buttons appear in each column heading.</li>
+                        <li>The tab <uicontrol>Design (Table Tools)</uicontrol> appears, and here
+                                you can see that the table has been given a default name like
+                                Table1.</li>
+                    </ul></p>
+                    <fig>
+                        <title>Design ribbon</title>
+                        <image keyref="ribbon_table_design">
+                            <alt>Design ribbon</alt>
+                        </image>
+                        <note type="notice">Depending on your screen width it s possible that you see some
+                            styles instead of the button Quick Styles (group Table Styles).</note>
+                    </fig>
+                    <note type="tip">
+                        <p>It is wise to change the default name to a meaningful name so that you
+                            can work with the table more easily later. You do this by selecting the
+                            name and then typing in the new name.</p>
+                    </note>
+                </stepresult>
             </step>
         </steps>
-        <result>
-            <fig>
-                <title>Table Candyboxes</title>
-                <image keyref="candybox_table">
-                    <alt>Table Candyboxes</alt>
-                </image>
-            </fig>
-            <p>The range is converted to a table:<ul>
-                    <li>A table format (style) is applied.</li>
-                    <li>Filter/Sorting buttons appear in each column heading.</li>
-                    <li>The tab <uicontrol>Design (Table Tools)</uicontrol> appears.</li>
-                </ul></p>
-            <fig>
-                <title>Design ribbon</title>
-                <image keyref="ribbon_table_design">
-                    <alt>Design ribbon</alt>
-                </image>
-                <note type="notice">Depending on your screen width it s possible that you see some
-                    styles instead of the button Quick Styles (group Table Styles).</note>
-            </fig>
-        </result>
-        
     </taskbody>
 </task>

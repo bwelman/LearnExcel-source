@@ -21,7 +21,8 @@
                 of the table. Although the word subtotal implies that you are summing the numeric
                 values in a column, Excel uses the term more broadly. That is, a subtotal can be not
                 only a numeric sum, but also an average, a maximum or minimum, a standard deviation
-                or a variance, or a count of the values in the field.</p>
+                or a variance, or a count of the values in the field. The calculation is based on
+                the visible cells in the table's column.</p>
             <note type="other" othertype="File"><filepath>Personnel.xlsx</filepath></note>
         </context>
 		<steps>

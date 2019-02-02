@@ -17,8 +17,9 @@
             Although Excel is not a real database program such as MS Access, Excel can be used for
             simple databases. These simple databases consist of one table such as address lists,
             phone lists, etc. The name database is usually reserved for external files from specific
-            database programs. A table with data in Excel was formerly called a list. Working with
-            good structured tables is a common activity, especially at data analysis. Structured
-            tables are a necessity for working with pivot tables.</p>
+            database programs. A table with data in Excel was formerly called a
+            <term>list</term>.</p>
+        <p>Working with good structured tables is a common activity, especially at data analysis. A
+            structured Excel table is also a very good basis for creating pivot tables.</p>
     </conbody>
 </concept>

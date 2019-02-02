@@ -74,9 +74,9 @@
             <li>A table can start everywhere in the worksheet. It's not necessary that the first row
                 of the table must be the first row of the worksheet.</li>
             <li>There should be no blank rows in the table. A row can contain empty cells, but not
-                all cells can be empty.</li>
+                all cells in a row can be empty.</li>
             <li>There should be no blank columns in the table. A column can contain empty cells, but
-                not all cells can be empty.</li>
+                not all cells in a column can be empty.</li>
         </ul>
         <p>In Excel, a table is a rectangular range of cells where data is stored. Although a table
             looks much like a regular Excel range, it offers a number of features that differentiate
@@ -92,5 +92,13 @@
             transferred to a table, the appearance changes, but also built-in features are available
             for filtering, sorting and the ability to add a total row with several functions for
             totalization.</p>
+        <p>By default an Excel table will expand automatically, and fill formulas down to the last
+            row. Examples:<ul id="ul_bl1_spv_qgb">
+                <li>You can add  new data in the row immediately below the last row of the table, or
+                    in the column to its immediate right. The table will expand automatically to
+                    include the new data.</li>
+                <li>When you enter a formula in de first cell of a new blank column, then after
+                    pressing Enter that formula fills down to all the remaining rows.</li>
+            </ul></p>
     </conbody>
 </concept>
