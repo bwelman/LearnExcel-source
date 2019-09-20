@@ -5,6 +5,6 @@
     <prop att="audience" val="level2" action="include"/>
     <prop att="audience" val="level3" action="include"/>    
     <prop att="otherprops" val="exercises" action="include"/>
-    <prop att="otherprops" val="answer" action="exclude"/>
+    <prop att="otherprops" val="answer" action="include"/>
     <prop att="otherprops" val="solution" action="exclude"/>
 </val>

@@ -7,7 +7,7 @@
     <keydef keys="ex_tabl001_result2" href="images/ex_tabl001_result2.png" format="png"/>
     <keydef keys="ex_tabl002_data" href="images/ex_tabl002_data.png" format="png"/>
     <keydef keys="ex_tabl002_result" href="images/ex_tabl002_result.png" format="png"/>
-    <topichead navtitle="Exercise">
+    <topichead navtitle="Exercises">
         <topicref href="ex_tabl001.dita" scope="local" type="topic" audience="level2"/>
         <topicref href="ex_tabl002.dita" scope="local" type="topic" audience="level2"/>
     </topichead>
