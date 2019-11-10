@@ -1,51 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
-<concept id="forecasts_timeserie_example" xml:lang="en-US">
- <title>Time serie examples</title>
- <shortdesc/>
- <prolog>
-  <critdates>
-   <created date="2017-08-31"/>
-   <revised modified="2017-08-31"/>
-  </critdates>
-  <metadata>
-   <keywords>
-    <indexterm/>
-   </keywords>
-  </metadata>
- </prolog>
- <conbody>
-  <p>In the next chart you see the Australian beer production per quarter for the years
-            1956-1973.</p>
-  <fig>
-            <title>Australian beer production per year/quarter</title>
-            <image keyref="timeserie_beer1">
-                <alt>Voorbeeld</alt>
-            </image>
-        </fig>
-  <!--  Bron: tekst https://onlinecourses.science.psu.edu/stat510/node/47  data https://datamarket.com/data/set/22ry/quarterly-beer-production-in-australia-megalitres-march-1956-june-1994#!ds=22ry&display=line-->
-  <p>In the chart you can see the following characteristics:<ul>
-                <li>There is an upward trend, may not be a straight line but slightly bent.</li>
-                <li>There is a strong seasonality through the regular peaks and troughs related to
-                    the different quarters. The peaks are always in quarter 4, the valleys at the
-                    quarters 2 and 3 and the values for quarter 1 are between peak and valley.</li>
-                <li>There are no outliers.</li>
-                <li>There is no long term cycle.</li>
-                <li>The variance in the values seems to increasing a little over time.</li>
-            </ul></p>
-  <p>The seasonality is also evident when the data  are plotted against the individual quarters as
-            you can see in the next  chart.<fig>
-                <title>Yearly beer production per quarter</title>
-                <image keyref="timeserie_beer2">
-                    <alt>Yearly beer production per quarter</alt>
-                </image>
-            </fig></p>
-  <p>In the following figure, the data for each quarter is separately plotted against the years.
-            Here you can see that the increasing trend is evident for each quarter.<fig>
-                <title>Quarterly beer production per year</title>
-                <image keyref="timeserie_beer3">
-                    <alt>Quarterly beer production per year</alt>
-                </image>
-            </fig></p>
- </conbody>
-</concept>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="forecasts_timeserie_example" xml:lang="en-US">
+    <title>Task: Australian beer production</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2017-08-31"/>
+            <revised modified="2019-11-10"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm/>
+            </keywords>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>As an example of a time series, the beer production (in megaliters) in Australia for
+                the years 1956-1973 will be observed and analysed.</p>
+            <note type="other" othertype="File"><filepath>AusBeer56-73.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select a cell in the table and then choose <menucascade>
+                        <uicontrol>tab Insert</uicontrol>
+                        <uicontrol>PivotChart (group Charts)</uicontrol>
+                        <uicontrol>PivotChart</uicontrol>
+                        <uicontrol>OK</uicontrol>
+                    </menucascade></cmd>
+                <stepresult>
+                    <p>An empty pivot table and chart is created in a new worksheet.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Add field <varname>Volume</varname> to area <uicontrol>Values</uicontrol> and
+                    field <varname>Date</varname> to area <uicontrol>Axis
+                    (Categories)</uicontrol>.</cmd>
+                <stepresult>
+                    <p>In addition to the <varname>Date</varname> field, the
+                            <varname>Years</varname> and <varname>Quarters</varname> fields are also
+                        created. And the chart is a column chart with columns for each year.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Change the chart type in <option>Line with Markers</option>.</cmd>
+            </step>
+            <step>
+                <cmd>Select a year in the pivot table. Then right mouse click and choose from the
+                    context menu <menucascade>
+                        <uicontrol>Expand/Collapse</uicontrol>
+                        <uicontrol>Expand Entire Field</uicontrol>
+                    </menucascade></cmd>
+                <stepresult>
+                    <p>Both in the pivot table and pivot chart, the years are divided into quarters.
+                        In principle, the time series is now ready. However, the layout can be
+                        improved.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Make the following changes to the layout.</cmd>
+                <itemgroup>
+                    <ul>
+                        <li>In the PivotChart Fields List, remove field <varname>Date</varname> from
+                            the <uicontrol>Axis</uicontrol> area.</li>
+                        <li>In the pivot table, change "Sum of Volume" to "Beer Production", in the
+                            top right cell. That will change the label at the top left of the pivot
+                            chart.</li>
+                        <li>Scale Y-axis from 200 to 600 with increments 50.</li>
+                        <li>Add a title to the Y-axis.</li>
+                        <li>Remove legend and chart title.</li>
+                        <li>Make the line a little thinner and give the markers a different color
+                            than the line.</li>
+                        <li>Adjust the dimensions if necessary.</li>
+                    </ul>
+                </itemgroup>
+                <stepresult>
+                    <fig>
+                        <title>Australian beer production (megaliters) per quarter</title>
+                        <image keyref="timeserie_beer1">
+                            <alt>Australian beer production in megaliters per quarter</alt>
+                        </image>
+                        <p>In the chart you can see the following characteristics:<ul>
+                                <li>There is an upward trend, may not be a straight line but
+                                    slightly bent.</li>
+                                <li>There is a strong seasonality through the regular peaks and
+                                    troughs related to the different quarters. The peaks are always
+                                    in quarter 4, the valleys at the quarters 2 and 3 and the values
+                                    for quarter 1 are between peak and valley.</li>
+                                <li>There are no outliers.</li>
+                                <li>There is no long term cycle.</li>
+                                <li>The variance in the values seems to increasing a little over
+                                    time.</li>
+                            </ul></p>
+                    </fig>
+                </stepresult>
+            </step>
+            <stepsection>
+                <p>To get a clearer picture of the seasonality, the graph is changed so that the
+                    data for each year is plotted against the individual quarters.</p>
+            </stepsection>
+            <step>
+                <cmd>In the PivotChart Fields List, drag the <uicontrol>Years</uicontrol> field from
+                    the <uicontrol>Axis</uicontrol> area into the <uicontrol>Legend
+                        (Series)</uicontrol> area.</cmd>
+            </step>
+            <step>
+                <cmd>In the pivot chart:</cmd>
+                <itemgroup>
+                    <ul id="ul_q1b_rzw_qjb">
+                        <li>Add a legend to the Top</li>
+                        <li>Right-click the Legend: <menucascade>
+                                <uicontrol>Format Legend</uicontrol>
+                                <uicontrol> Uncheck the option to Show the legend without
+                                    overlapping the chart</uicontrol>
+                            </menucascade>.</li>
+                        <li>Right-click on the Legend button and choose: <uicontrol>Hide Legend
+                                Field buttons on Chart</uicontrol>.</li>
+                        <li>Drag the Legend to a better position, so it doesn't cover the
+                            lines.</li>
+                    </ul>
+                </itemgroup>
+                <stepresult>
+                    <fig>
+                        <title>Yearly Australian beer production (megaliters) per quarter</title>
+                        <image keyref="timeserie_beer2">
+                            <alt>Yearly Australian beer production (megaliters) per quarter</alt>
+                        </image>
+                    </fig>
+                    <p>The seasonality is evident.</p>
+                </stepresult>
+            </step>
+            <stepsection>
+                <p>To study the behavior per quarter, the data for each quarter is plotted against
+                    the years.</p>
+            </stepsection>
+            <step>
+                <cmd>In the PivotChart Fields List, swap the fields <varname>Years</varname> and
+                        <varname>Quarters</varname>, so <varname>Years</varname> is in the
+                        <uicontrol>Axis</uicontrol> area and <varname>Quarters</varname> in  the
+                        <uicontrol>Legend (Series)</uicontrol> area.</cmd>
+                <stepresult>
+                    <fig>
+                        <title>Quarterly beer production per year in Australia</title>
+                        <image keyref="timeserie_beer3">
+                            <alt>Quarterly beer production per year in Australia</alt>
+                        </image>
+                    </fig>
+                    <p>Now you can see that the increasing trend is evident for each quarter.</p>
+                </stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>
