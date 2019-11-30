@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="query_options" xml:lang="en-US">
+    <title>Query options</title>
+    <shortdesc>The most relevant query settings.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2019-11-29"/>
+            <revised modified="2019-11-29"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <!--    Source: https://www.excelinppc.com/recommended-power-query-settings/ -->
+    <!--    Source: https://www.sumproduct.com/blog/article/power-query-blogs/power-query-querying-query-options -->
+    <conbody>
+        <p>You can navigate to the query options in two ways.<ul>
+                <li>From Excel: <menucascade>
+                        <uicontrol>tab Data</uicontrol>
+                        <uicontrol>Get Data (group Get &amp; Transform Data)</uicontrol>
+                        <uicontrol>Query Options</uicontrol>
+                    </menucascade></li>
+                <li>From Query Editor: <menucascade>
+                        <uicontrol>File</uicontrol>
+                        <uicontrol>options and settings</uicontrol>
+                    </menucascade><i/><menucascade>
+                        <uicontrol>Query Options</uicontrol>
+                    </menucascade></li>
+            </ul></p>
+        <p>Only the most relevant settings will be covered. And several settings are
+            self-explanatory.</p>
+        <section>
+            <title>GLOBAL Data Load</title>
+            <p>Using one of the aforementioned methods you get the following window.</p>
+            <fig>
+                <title>Global Data Load</title>
+                <image keyref="q_options_global_data">
+                    <alt>Window query options global data load</alt>
+                </image>
+            </fig>
+            <p>It is important to distinguish between Global and Current Workbook settings:<ul>
+                    <li>GLOBAL: settings will affect all the projects you create.</li>
+                    <li>CURRENT WORKBOOK: settings will affect only the current Excel file .</li>
+                </ul></p>
+            <p><uicontrol>Default Query Load Settings</uicontrol></p>
+            <p>The data load settings affect how the queries are loaded. The standard load settings
+                    are<ul id="ul_wvf_4d1_xjb">
+                    <li>When loading a single query the query is loaded to a new worksheet.</li>
+                    <li>When loading multiple queries the queries are loaded to the Data Model.</li>
+                </ul></p>
+            <p>A preferred method is to load a query manual. In that case you select <option>Specify
+                    custom default load settings</option> and unticking both choices. Then only a
+                connection is build and you need to load the query manually:</p>
+            <ul>
+                <li>In Excel: <menucascade>
+                        <uicontrol>tab Data</uicontrol>
+                        <uicontrol>Queries &amp; Connection</uicontrol>
+                        <uicontrol>Right click on query</uicontrol>
+                        <uicontrol>Load to</uicontrol>
+                    </menucascade></li>
+                <li>In Query Editor: <menucascade>
+                        <uicontrol>tab Home</uicontrol>
+                        <uicontrol>Close &amp; Load</uicontrol>
+                        <uicontrol>Load to</uicontrol>
+                    </menucascade></li>
+            </ul>
+            <p><uicontrol>Fast Data Load</uicontrol></p>
+            <p>By enabling the Fast Data Load option, your queries will take less time to load, but
+                Excel may be unresponsive for long periods.</p>
+            <p><uicontrol>Data Cache Management Options</uicontrol></p>
+            <p>Copies of queries preview results are stored on your local disk for faster viewing
+                later. You can clear this cache or configure how much disk space is allowed to be
+                used.</p>
+            <note type="tip">Cleaning the cache can be useful when something is not working as expected.</note>
+        </section>
+        <section>
+            <title>Global Power Query Editor</title>
+            <fig>
+                <title>Global Power Query Editor</title>
+                <image keyref="q_options_global_editor">
+                    <alt>Window query options global power query editor</alt>
+                </image>
+            </fig>
+            <p>These options mostly have to do with how the Query Editor appears. The formula bar
+                converts your actions into Power Query M language. It’s possible to edit the code in
+                the formula bar. If you prefer, you can select to display preview content in
+                monospace font and not to show whitespace and newline characters.</p>
+            <note type="note">Some of these options can also be found on <uicontrol>tab
+                    View</uicontrol> in de Query Editor.</note>
+        </section>
+        <section>
+            <title>Global Privacy</title>
+            <fig>
+                <title>Global Privacy</title>
+                <image keyref="q_options_global_privacy">
+                    <alt>Window query options global privacy</alt>
+                </image>
+            </fig>
+            <p>When you are combining data from various sources then it is possible that you get
+                lots of error messages because these actions can conflict with your privacy level
+                settings. These messages mostly make no sense to the end user. To avoid these
+                messages you can savely select <option>Always ignore Privacy Level
+                settings</option>.</p>
+        </section>
+        <section>
+            <title>Current Regional Settings</title>
+            <fig>
+                <title>Current Regional Settings</title>
+                <image keyref="q_options_current_regional">
+                    <alt>Window query options current regional</alt>
+                </image>
+            </fig>
+            <p>The regional settings affect how Power Query manipulates dates, currencies and other
+                features specific to regions &amp; countries.</p>
+        </section>
+    </conbody>
+</concept>
