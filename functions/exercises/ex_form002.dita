@@ -14,9 +14,10 @@
   </prolog>
   <body>
     <section>
-      <p>A computer store has the following article information in a table: article number, name and
-        price. To quickly search data from a specific article, the article number can be entered in
-        a cell. The corresponding name and price are automatically looked up in the table.</p>
+      <p>A computer store has the following article information in a table: article number, name,
+                and price. To quickly search data from a specific article, the article number can be
+                entered in a cell. The corresponding name and price are automatically looked up in
+                the table.</p>
       <fig>
                 <image keyref="ex_form002_data"/>
             </fig>

@@ -15,13 +15,13 @@
   <body>
     <section>
       <p>Create the following table as accurate as possible. Use formulas for the determination of
-        the margin, VAT and the selling prices.</p>
+                the margin, VAT, and the selling prices.</p>
       <fig>
                 <image keyref="ex_scen001_data"/>
             </fig>
       <p>Use the Scenario Manager to determine the selling prices (incl. VAT) for successively the
-        profit margin rates of : 15%, 20%, 25% and 30%. The output should look like the
-        following:</p>
+                profit margin rates of  15%, 20%, 25%, and 30%. The output should look like the
+                following:</p>
       <fig>
                 <image keyref="ex_scen001_report"/>
             </fig>

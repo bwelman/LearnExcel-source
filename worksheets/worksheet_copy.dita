@@ -21,8 +21,8 @@
         <context/>
         <steps>
             <step>
-                <cmd>Right click on the tab name of the worksheet and then choose <uicontrol>Move or
-                        Copy ...</uicontrol>.</cmd>
+                <cmd>Right-click on the tab name of the worksheet and then choose <uicontrol>Move or
+                        Copy ..</uicontrol>.</cmd>
                 <stepresult>
                     <fig>
                         <title>Dialog box <wintitle>Move or Copy</wintitle> worksheet</title>
@@ -41,7 +41,7 @@
                     </chhead>
                     <chrow>
                         <choption>To book:</choption>
-                        <chdesc>Default, this is the same workbook. By clicking on the drop down
+                        <chdesc>Default, this is the same workbook. By clicking on the drop-down
                             arrow at the end, you can choose another open workbook or a new
                             workbook. In the latter case, a new workbook is created.</chdesc>
                     </chrow>

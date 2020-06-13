@@ -21,9 +21,9 @@
             <p>It is possible to create a condition that depends on all values in a set. For
                 example, you can create a conditional format for the top/bottom three in a set of
                 values, or the worst or best 10% values.</p>
-            <p>In a spreadsheet are all kinds of data from cars. In one of the columns you can find
-                the fuel consumption. The task is to give a green background color to the 10% cars
-                with the lowest fuel consumption.</p>
+            <p>In a spreadsheet are all kinds of data from cars. In one of the columns, you can find
+                fuel consumption. The task is to give a green background color to the 10% cars with
+                the lowest fuel consumption.</p>
             <note type="other" othertype="File"><filepath>Car.xlsx</filepath></note>
         </context>
         <steps>

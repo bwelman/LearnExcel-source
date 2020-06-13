@@ -2,7 +2,7 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <task id="calculation_names_create" xml:lang="en-US">
     <title>Task: Creating names</title>
-    <shortdesc>In this task you will learn a few ways to assign names to cells and use them in
+    <shortdesc>In this task, you will learn a few ways to assign names to cells and use them in
         formulas.</shortdesc>
     <prolog>
         <critdates>
@@ -20,8 +20,8 @@
         <context>
             <p>There are several ways to assign a name to a cell. The method used in practice
                 usually depends on the preferences of the user and their entering speed. In this
-                task there are two ways proposed to assign a name to a cell and three methods to use
-                the name in a formula.</p>
+                task, there are two ways proposed to assign a name to a cell and three methods to
+                use the name in a formula.</p>
             <note type="tip">The same methods can be used to assign a name to an area of
                 cells.</note>
         </context>
@@ -43,11 +43,10 @@
                         <image keyref="Name_New">
                             <alt>Dialog box new name</alt>
                         </image>
-                    </fig>In the <uicontrol>Name</uicontrol> text boxy you can enter the name.
-                    Sometimes Excel gives a suggestion for the name. In the
-                        <uicontrol>Comment</uicontrol> box you can optionally give an explanation,
-                    which can be useful later (audits) for checking and creating documentation for
-                    the model.</stepresult>
+                    </fig>In the <uicontrol>Name</uicontrol> text box you can enter the name.
+                    Sometimes Excel suggests a name. In the <uicontrol>Comment</uicontrol> box, you
+                    can optionally give an explanation, which can be useful later (audits) for
+                    checking and creating documentation for the model.</stepresult>
             </step>
             <step>
                 <cmd>Enter the name <userinput>Purchases</userinput> and click on

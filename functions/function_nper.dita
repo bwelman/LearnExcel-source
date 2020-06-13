@@ -19,7 +19,7 @@
         <context>
             <p>When taking a personal loan of € 4000 you agreed to pay a monthly amount of € 125.
                 Calculate the number of months you have to repay at a 6% fixed annual interest rate.
-                For this calculation the Excel function <varname>NPER</varname> will be used. This
+                For this calculation, the Excel function <varname>NPER</varname> will be used. This
                 function calculates the number of periods for an investment based on periodic,
                 constant payments and a constant interest rate.</p>
             <note type="attention">Payments are entered as negative numbers.</note>
@@ -48,7 +48,7 @@
             <step>
                 <cmd>Put the cursor in the <varname>Rate</varname> box and enter
                         <userinput>B2/12</userinput>. Then put the cursor in the
-                        <varname>Pmt</varname> box and enter <userinput>B3</userinput>. Finally put
+                        <varname>Pmt</varname> box and enter <userinput>B3</userinput>. Finally, put
                     the cursor in the <varname>Pv</varname> box and enter
                     <userinput>B1</userinput>.</cmd>
                 <info>

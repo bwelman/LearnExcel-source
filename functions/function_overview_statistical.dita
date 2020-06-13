@@ -33,8 +33,8 @@
     </section>
     <section>
       <title>COUNTIF</title>
-      <p>This function returns the number of cells of a supplied range, that satisfy a given
-        criteria.</p>
+      <p>This function returns the number of cells of a supplied range, that satisfy given
+                criteria.</p>
       <codeblock>COUNTIF(range, criteria)</codeblock>
       <parml>
         <plentry>
@@ -43,14 +43,14 @@
         </plentry>
         <plentry>
           <pt>criteria</pt>
-          <pd>Required. A user-defined condition that is tested against each of the cells in
-            range.</pd>
+          <pd>Required. A user-defined condition that is tested against each of the cells in a
+                        range.</pd>
         </plentry>
       </parml>
     </section>
     <section>
       <title>AVERAGE</title>
-      <p>This function calculates arithmetic mean of the supplied numbers.</p>
+      <p>This function calculates the arithmetic mean of the supplied numbers.</p>
       <codeblock>AVERAGE(Number1, [Number2], ...)</codeblock>
       <parml>
         <plentry>

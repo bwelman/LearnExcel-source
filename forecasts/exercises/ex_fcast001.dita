@@ -18,7 +18,7 @@
             <p>This file shows revenue from ads from a two-week appearing home magazine.</p>
             <ol>
                 <li>Create a chart showing the revenue against the week number.</li>
-                <li>Add a polynomical trend line. Experiment with a 2nd, 3rd and 4th degree
+                <li>Add a polynomial trend line. Experiment with a 2nd, 3rd, and 4th-degree
                     polynomial. For each of these trend lines, display the R-squared value. Choose
                     the most appropriate trend line.</li>
             </ol>
@@ -44,7 +44,7 @@
                     <stentry>0.9883</stentry>
                 </strow>
             </simpletable>
-            <p>The 4th degree polynomial has the highest R-squared value and is the best choice.</p>
+            <p>The 4th-degree polynomial has the highest R-squared value and is the best choice.</p>
             <fig>
                 <title>Chart with a 4th degree polynomial</title>
                 <image keyref="ex_fcast001_chart">

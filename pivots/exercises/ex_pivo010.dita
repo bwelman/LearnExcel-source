@@ -43,8 +43,9 @@
                     <stentry>Yield</stentry>
                 </strow>
             </simpletable>
-            <p conkeyref="pivot/options"/>/> <p>Change <uicontrol>Number Format</uicontrol> in
-                    <option>Accounting with 0 decimals</option>.</p>
+            <p conkeyref="pivot/options"/>
+            <p>Change <uicontrol>Number Format</uicontrol> in <option>Accounting with 0
+                    decimals</option>.</p>
         </section>
     </body>
 </topic>

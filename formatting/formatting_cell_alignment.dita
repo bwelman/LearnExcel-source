@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="formatting_cell_alignment" xml:lang="en-US">
     <title>Cell Alignment</title>
-    <shortdesc>How to align the content in cells, horizontally, vertically and even
+    <shortdesc>How to align the content in cells, horizontally, vertically, and even
         rotated.</shortdesc>
     <prolog>
         <critdates>
@@ -17,9 +17,9 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>A cell has a vertical and a horizontal alignment. By default, the vertical alignment is
-            the bottom align for all cells. The default horizontal alignment is left align for text,
-            right align for numbers and center align for logical values ​​(TRUE or FALSE ). You can
+        <p>A cell has a vertical and horizontal alignment. By default, the vertical alignment is the
+            bottom alignment for all cells. The default horizontal alignment is left-align for text,
+            right-align for numbers and center-align for logical values ​​(TRUE or FALSE ). You can
             change all these alignments as you can see in the following figure.</p>
         <fig>
             <title>Examples of alignments</title>
@@ -40,33 +40,33 @@
         </fig>
         <p>The buttons don't need an explanation. When you hover the mouse over a button you get
             some explanation.</p>
-        <p>In the example the following options are used.</p>
+        <p>In the example, the following options are used.</p>
         <dl>
             <dlentry>
                 <dt>Vertical alignment</dt>
-                <dd>The options are: top, middle, bottom. Applied in the cells A1:A3.</dd>
+                <dd>The options are top, middle, bottom. Applied in the cells A1:A3.</dd>
             </dlentry>
             <dlentry>
                 <dt>Horizontal alignment</dt>
-                <dd>The options are: left, center, right. Applied in the cells A5:A7.</dd>
+                <dd>The options are left, center, right. Applied in the cells A5:A7.</dd>
             </dlentry>
             <dlentry>
                 <dt>Indentation</dt>
-                <dd>The options are: increase indent, decrease indent. Applied in the cells
+                <dd>The options are increase indent, decrease indent. Applied in the cells
                     A10:A12.</dd>
             </dlentry>
             <dlentry>
                 <dt>Orientation</dt>
-                <dd>With this button you get a number of predefined options. Applied in the cells
-                    D13:F13 and in B14.</dd>
+                <dd>With this button, you get some predefined options. Applied in the cells D13:F13
+                    and in B14.</dd>
             </dlentry>
             <dlentry>
                 <dt>Wrap Text</dt>
                 <dd>The text appears on multiple lines in the cell. For this, the row height will be
                     made larger. A long text will take less horizontal space. Applied in D3:F3.<note
-                        type="attention">If all wrapped text is not visible it is maybe because of
-                        the fact that the row is set to a specific height. To allow the row to
-                        adjust automatically and show all wrapped text, choose <menucascade>
+                        type="attention">If all wrapped text is not visible, the reason could be
+                        that the row is set to a specific height. To allow the row to adjust
+                        automatically and show all wrapped text, choose <menucascade>
                             <uicontrol>Home</uicontrol>
                             <uicontrol>Format (group Cells)</uicontrol>
                             <uicontrol>AutoFit Row Height</uicontrol>

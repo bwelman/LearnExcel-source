@@ -31,9 +31,10 @@
     </section>
     <section otherprops="solution">
       <title>Solution</title>
-      <p>The independent variable (x) is study time and the dependent variable (y) is mark.
-        Determine the slope of the line with the function <uicontrol>SLOPE()</uicontrol> and the
-        interception with the y-axis with the function <uicontrol>INTERCEPT()</uicontrol>.</p>
+      <p>The independent variable (x) is study time and the dependent variable (y) is marked.
+                Determine the slope of the line with the function <uicontrol>SLOPE()</uicontrol> and
+                the interception with the y-axis with the function
+                    <uicontrol>INTERCEPT()</uicontrol>.</p>
     </section>
   </body>
 </topic>

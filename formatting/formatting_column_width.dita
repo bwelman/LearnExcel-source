@@ -15,10 +15,9 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>It is possible that a column is not wide enough to display the entire contents of a cell.
-            If the content of the cell is a text, you will see only that part of the text that fits
-            into the cell. If the content of the cell is a number, you will see <q>hashes</q>:
-            ####.</p>
+        <p>A column could be too small to display the entire contents of a cell. If the content of
+            the cell is a text, you will see only that part of the text that fits into the cell. If
+            the content of the cell is a number, you will see <q>hashes</q>: ####.</p>
         <p>In a worksheet, you can specify the column width from 0 (zero) to 255. This value
             represents the number of characters that can be displayed in a cell that is formatted
             with the default font. The default width of columns in Excel is 8.43. Eight characters
@@ -29,14 +28,14 @@
             <li>Double-click the right edge of the column heading. The width of the column is now
                 automatically set to the longest text in the column.</li>
             <li>Place the mouse pointer over the right edge of the column header, press the left
-                mouse button and drag the right edge of the column to the left or to the right until
-                the column has the desired width. While dragging Excel displays the current width of
-                the column in a small information screen.<image keyref="Columnwidth_Drag"
+                mouse button, and drag the right edge of the column to the left or to the right
+                until the column has the desired width. While dragging Excel displays the current
+                width of the column in a small information screen.<image keyref="Columnwidth_Drag"
                     placement="break">
                     <alt>Adjusting column width through dragging</alt>
                 </image></li>
             <li>Right-click the column header and select <uicontrol>Column Width</uicontrol> from
-                the shortcut menu. In the dialog box you can enter the desired width of the column,
+                the shortcut menu. In the dialog box, you can enter the desired width of the column,
                 after that click <uicontrol>OK</uicontrol>.<image keyref="Columnwidth_Set"
                     placement="break">
                     <alt>Specifying column width</alt>
@@ -47,13 +46,13 @@
                     <uicontrol>Column Width...</uicontrol>
                 </menucascade>. You'll get the same dialog as before.</li>
         </ul>
-        <note type="tip">You can adjust the width of multiple columns simultaneously. First select
-            these columns using the <uicontrol>SHIFT</uicontrol> key or <uicontrol>CTRL</uicontrol>
-            key.</note>
+        <note type="tip">You can adjust the width of multiple columns simultaneously. First, select
+            these columns using the <uicontrol>SHIFT-key</uicontrol> or
+                <uicontrol>CTRL-key</uicontrol> .</note>
         <note type="tip">You can change the width of all columns in the worksheet through <menucascade>
                 <uicontrol>Home</uicontrol>
                 <uicontrol>Format (group Cells)</uicontrol>
-                <uicontrol>Default Width...</uicontrol>
+                <uicontrol>Default Width..</uicontrol>
             </menucascade>.</note>
     </conbody>
 </concept>

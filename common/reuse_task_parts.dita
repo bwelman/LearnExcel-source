@@ -33,10 +33,10 @@
                 <cmd>Select a cell in the data area.</cmd>
             </step>
             <step>
-                <cmd>Insert a <uicontrol>XY (Scatter) Chart</uicontrol>.</cmd>
+                <cmd>Insert an <uicontrol>XY (Scatter) Chart</uicontrol>.</cmd>
             </step>
             <step id="Trendline_End">
-                <cmd>Select the data serie in the chart by clicking on a point. Right mouse click
+                <cmd>Select the data series in the chart by clicking on a point. Right mouse click
                     and choose <uicontrol>Add Trend line</uicontrol>.</cmd>
             </step>
         </steps>

@@ -17,10 +17,10 @@
         </metadata>
     </prolog>
     <taskbody>
-        <context><p>Sometimes, it may be desirable to have multiple versions of a file. In that case
-                you can save the file under another name through <uicontrol>Save as</uicontrol>.
-                Also, it may be necessary to save the file in an older Excel format which is also
-                possible through <uicontrol>Save as</uicontrol>.</p></context>
+        <context><p>Sometimes, it may be desirable to have multiple versions of a file. In that case, you can save
+                the file under another name through <uicontrol>Save as</uicontrol>. Also, it may be
+                necessary to save the file in an older Excel format which is also possible through
+                    <uicontrol>Save as</uicontrol>.</p></context>
         <steps>
             <step>
                 <cmd>Choose <menucascade>

@@ -2,7 +2,7 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <task id="array_complex" xml:lang="en-US">
 	<title>Task: Complex Array Formulas</title>
-	<shortdesc>Task with a more complex array formula.</shortdesc>
+	<shortdesc>A task with a more complex array formula.</shortdesc>
 	<prolog>
 		<critdates>
 		    <created date="2017-08-31"/>
@@ -14,8 +14,8 @@
 	</prolog>
 	<taskbody>
 		<context>
-			<p>In the following example, some students gender and length (in cm) are listed. Use an array
-				formula to calculate the average length of the male and female students.</p>
+			<p>In the following example, from some student's gender and length (in cm) are listed. Use an
+                array formula to calculate the average length of the male and female students.</p>
 			<fig>
                 <title>Average length of students per gender</title>
                 <image keyref="Example_Studentlength">

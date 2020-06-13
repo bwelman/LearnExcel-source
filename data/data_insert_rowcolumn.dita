@@ -20,11 +20,11 @@
         <p>It often happens that you want to insert a row or a column somewhere in between data in a
             worksheet. The process is the same for rows and columns.</p>
         <ol>
-            <li>Right click on the header of the row or column.</li>
+            <li>Right-click on the header of the row or column.</li>
             <li>Choose <uicontrol>Insert</uicontrol>.</li>
         </ol>
         <note type="tip">To insert multiple rows or columns, select the desired number of
-            rows/columns, right click and choose <uicontrol>Insert</uicontrol>. Then the number will
-            be inserted before the first row or column of the selection.</note>
+            rows/columns, right-click, and choose <uicontrol>Insert</uicontrol>. Then the number
+            will be inserted before the first row or column of the selection.</note>
     </conbody>
 </concept>

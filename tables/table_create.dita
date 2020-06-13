@@ -31,7 +31,7 @@
                         <uicontrol>Table</uicontrol>
                     </menucascade></cmd>
                 <stepresult>
-                    <p>The dialogbox <wintitle>Create Table</wintitle> appears. The address of the
+                    <p>The dialog box <wintitle>Create Table</wintitle> appears. The address of the
                         range to convert is already present.</p>
                     <fig>
                         <title>Dialogbox Create Table</title>
@@ -65,8 +65,9 @@
                         <image keyref="ribbon_table_design">
                             <alt>Design ribbon</alt>
                         </image>
-                        <note type="notice">Depending on your screen width it s possible that you see some
-                            styles instead of the button Quick Styles (group Table Styles).</note>
+                        <note type="notice">Depending on your screen width its possible that you see
+                            some styles instead of the button Quick Styles (group Table
+                            Styles).</note>
                     </fig>
                     <note type="tip">
                         <p>It is wise to change the default name to a meaningful name so that you

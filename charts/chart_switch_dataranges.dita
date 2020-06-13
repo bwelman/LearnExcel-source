@@ -17,16 +17,16 @@
     </prolog>
     <taskbody>
         <context>
-            <p>In the figure below are the yearly sales by quarter of a bakery. The annual data are
-                in columns and the quarterly data in rows.</p>
+            <p>In the figure below are the quarterly sales of a bakery. The annual data are in
+                columns and the quarterly data in rows.</p>
             <fig>
                 <title>Sales bakery</title>
                 <image keyref="bakery_data">
                     <alt>Sales bakery</alt>
                 </image>
             </fig>
-            <p>In a chart, you can compare the years and the quarters. In the first case each year
-                forms a data series. In the second case each quarter forms a data series. When
+            <p>In a chart, you can compare the years and the quarters. In the first case, each year
+                forms a data series. In the second case, each quarter forms a data series. When
                 creating the graph Excel tries to guess whether the columns or the rows form the
                 data series. The choice made by Excel is not always the desired one, but can easily
                 be changed.</p>

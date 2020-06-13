@@ -14,12 +14,12 @@
   </prolog>
   <body>
     <section>
-      <p>In a worksheet you can find some data of cars. A customer is interested in cars that meet
-        the following conditions:<ul>
-          <li>6 cylinders</li>
-          <li>top speed of at least 180 km\/hour</li>
-          <li>petrol (ordinary or super) as fuel</li>
-        </ul></p>
+      <p>In a worksheet, you can find some data of cars. A customer is interested in cars that meet
+                the following conditions:<ul>
+                    <li>6 cylinders</li>
+                    <li>top speed of at least 180 km\/hour</li>
+                    <li>petrol (ordinary or super) as fuel</li>
+                </ul></p>
       <p>Make a list of all the cars with the corresponding data that meet these conditions.</p>
       <note type="other" othertype="File"><filepath>Car.xlsx</filepath></note>
     </section>

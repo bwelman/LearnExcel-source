@@ -22,8 +22,8 @@
           The bonbons are separated by paper. At least 320 cm<sup>2</sup> of the box should be
           covered with bonbons.</li>
         <li>A cherry bonbon weighs 2 gram and a hazelnut bonbon weighs 1 gram. Market research has
-          shown that the ideal weight of the contents of the box is between the 40 grams and 60
-          grams.</li>
+                    shown that the ideal weight of the contents of the box is between 40 grams and
+                    60 grams.</li>
         <li>Also, market research revealed that the box must contain at least 35 bonbons with at
           least 10 cherry bonbons.</li>
         <li>The profit on a cherry bonbon is $0.28 and $0.20 on a hazelnut bonbon.</li>
@@ -34,7 +34,7 @@
         <li>What restrictions are there?</li>
         <li>Build the model in Excel using the guidelines indicated in this textbook. You see an
                     example in the following figure. Formulas need to be placed in the empty cells.
-                    Both decision variables have got a starting value of 10. With these numbers you
+                    Both decision variables have got a starting value of 10. With these numbers, you
                     can easily check if the formulas are ok and give the correct results.<fig>
                         <image keyref="ex_solv001_model"/>
                     </fig></li>

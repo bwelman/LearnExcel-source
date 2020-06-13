@@ -18,22 +18,22 @@
     <conbody>
         <p>There may be only a certain number of rows and columns that could be printed on one
             sheet. Excel automatically adds horizontal and vertical page breaks to divide the sheet
-            into appropriate pages. Where these page breaks are depends on many factors such as
-            paper size, margins, row heights, column widths, font, .. You can also determine
-            yourself where pages should started by insert, move or delete page breaks.</p>
+            into appropriate pages. Where these page breaks depend on many factors such as paper
+            size, margins, row heights, column widths, font, .. You can also determine yourself
+            where pages should be started by insert, move or delete page breaks.</p>
         <section>
             <title>Page Break Example</title>
             <p>Although you can work with page breaks in <uicontrol>Normal</uicontrol> view, the
-                best way is to use the <wintitle>Page Break Preview</wintitle>. In this view you can
-                see how choices that you can make (such as page orientation and changes of
-                formatting) affects the automatic page breaks. For example, you can see how a change
+                best way is to use the <wintitle>Page Break Preview</wintitle>. In this view, you
+                can see how choices that you can make (such as page orientation and changes of
+                formatting) affect the automatic page breaks. For example, you can see how a change
                 of row height or column width affects the placement of the automatic page
                 breaks.</p>
             <p>Choose <menucascade>
                     <uicontrol>View</uicontrol>
                     <uicontrol>Page Break Preview (group Workbook Views)</uicontrol>
                 </menucascade>.</p>
-            <p>In this view you can also see the order of the pages. Standard the order is first
+            <p>In this view, you can also see the order of the pages. Standard the order is first
                 downwards and then sideways. This order can be changed using <uicontrol>Page
                     Setup</uicontrol>.</p>
             <p>To move page breaks, you can drag them with the mouse to the new location.</p>

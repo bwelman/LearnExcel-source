@@ -19,7 +19,7 @@
             <p>The practice file contains a data table named <varname>SalesData</varname> and
                 columns <varname>Region</varname>, <varname>Salesman</varname>,
                     <varname>InvoiceNr</varname>, <varname>InvoiceDate</varname>,
-                    <varname>ProductCategory</varname> and <varname>InvoiceAmount</varname>.</p>
+                    <varname>ProductCategory</varname>, and <varname>InvoiceAmount</varname>.</p>
             <note type="other" othertype="File"><filepath>Invoices.xlsx</filepath></note>
         </context>
         <steps>
@@ -45,13 +45,13 @@
                 </stepresult>
             </step>
             <step>
-                <cmd>In this task the PivotTable should appear in a new worksheet. So accept the
+                <cmd>In this task, the PivotTable should appear in a new worksheet. So accept the
                     default location and click <uicontrol>OK</uicontrol>.</cmd>
             </step>
             <step>
-                <cmd>Drag  field <varname>Salesman</varname> to the area
-                    <uicontrol>Rows</uicontrol>,  field <varname>Productcategory</varname> to the
-                    area <uicontrol>Columns</uicontrol> and  field <varname>InvoiceAmount</varname>
+                <cmd>Drag field <varname>Salesman</varname> to the area <uicontrol>Rows</uicontrol>,
+                    field <varname>Productcategory</varname> to the area
+                        <uicontrol>Columns</uicontrol>, and field <varname>InvoiceAmount</varname>
                     to the area <uicontrol>Values</uicontrol>. Give the values a currency
                     format.</cmd>
                 <stepresult>
@@ -61,7 +61,7 @@
                             <alt>Pivot table sales per salesman</alt>
                         </image>
                     </fig>
-                    <p>Note that there are big differences in the sales per salesman.</p>
+                    <p>Note that there are big differences in sales per salesman.</p>
                 </stepresult>
             </step>
             <step>
@@ -76,7 +76,7 @@
                                 <alt>Automatically added Quarters and Years fields</alt>
                             </image>
                         </fig></p>
-                    <p>And in the PivotTable the sales are grouped per year.<fig>
+                    <p>And in the PivotTable, the sales are grouped per year.<fig>
                             <title>PivotTable with grouped data</title>
                             <image keyref="invoices_sales_grouped">
                                 <alt>PivotTable with grouped data</alt>
@@ -92,7 +92,7 @@
                         <uicontrol>+</uicontrol> button in front of <option>Qtr1</option>.</cmd>
                 <stepresult>
                     <p>First the levels of the years <option>2010</option> are expanded tot
-                        quarters. After that the <option>Qtr1</option> levels are expanded to the
+                        quarters. After that, the <option>Qtr1</option> levels are expanded to the
                         months. <fig>
                             <title>Drill-down Year and Quarter</title>
                             <image keyref="invoices_pivot_drilldown">
@@ -103,7 +103,7 @@
                 </stepresult>
             </step>
             <step>
-                <cmd>Click on the <uicontrol>- </uicontrol>(minus) buttons to collaps all
+                <cmd>Click on the <uicontrol>- </uicontrol>(minus) buttons to collapse all
                     levels.</cmd>
             </step>
             <step>
@@ -128,7 +128,7 @@
                 </stepresult>
             </step>
             <stepsection>To easily compare values you can also choose for displaying percentages (of
-                row total, column total or grand total).</stepsection>
+                row total, column total ,or grand total).</stepsection>
             <step>
                 <cmd>Select a numeric value in the PivotTable and choose <menucascade>
                         <uicontrol>tab Analyze</uicontrol>
@@ -159,21 +159,21 @@
         </steps>
         <example>
             <title>Data analyze questions</title>
-            <p>Use the PivotTable possibilities to answer the following questions. There are muliple
-                ways to find the answers.</p>
+            <p>Use the PivotTable possibilities to answer the following questions. There are
+                multiple ways to find the answers.</p>
             <ol>
-                <li>Which salesman has the greatest total sales in december 2010?<draft-comment
+                <li>Which salesman has the greatest total sales in December 2010?<draft-comment
                         author="benw">Phillips. Columns=InvoiceDate,
                     Rows=Salesman</draft-comment></li>
-                <li>In which month of which year was the maximum sales of software?<draft-comment
+                <li>In which month of which year were the maximum sales of software?<draft-comment
                         author="benw">January 2011, Columns=Years, Rows=InvoiceDate,
                         Filters=Productcategory (software)</draft-comment></li>
                 <li>What are the sales percentages for hard- and software per region?</li>
                 <li>In which quarter of which year has Anderson the lowest sales?<draft-comment
                         author="benw">Qtr3 of 2011, Colums=Quarters, Rows=Salesman-Years,
                         Filters=Salesman (Anderson)</draft-comment></li>
-                <li>Analyse the sales of Brown in quarter 2 of 2011. Do you notice
-                        something?<draft-comment author="benw">Only sales in 1 month (Juny),
+                <li>Analyze the sales of Brown in quarter 2 of 2011. Do you notice
+                        anything?<draft-comment author="benw">Only sales in 1 month (June),
                         Rows=Salesman-Years-Quarters-InvoiceDate</draft-comment></li>
             </ol>
         </example>

@@ -15,9 +15,9 @@
     <taskbody>
         <context>
             <p>A summer cottage can be rented for 350-600 dollars a week, the price depends on the
-                season. The expenses are fixed on 175 dollar per week. Using a data table, calculate
-                the revenues for 5, 10, 15, ..., 50 weken and rental prices 350, 400, 450, …
-                600.</p>
+                season. The expenses are fixed on 175 dollars per week. Using a data table,
+                calculate the revenues for 5, 10, 15, ..., 50 weeks and rental prices 350, 400, 450,
+                … 600.</p>
                      <fig>
                 <title>Rental cottage with variable price</title>
                 <image keyref="cottage_rental_variable">
@@ -25,9 +25,9 @@
                 </image>
             </fig>
             <p>The data table will be in <userinput>A7:G17</userinput>. The two input cells are B3
-                (rental price) and B5 (number of rental weeks). In <userinput>A7</userinput> is a
-                formula with references to the two input cells. The values for input cell B3 are in
-                row <userinput>B7:G7</userinput>. The values for input cell B5 are in column
+                (rental price) and B5 (number of rental weeks). In cell <userinput>A7</userinput> is
+                a formula with references to the two input cells. The values for input cell B3 are
+                in row <userinput>B7:G7</userinput>. The values for input cell B5 are in column
                     <userinput>A8:A17</userinput>.</p>
             <note type="other" othertype="File"><filepath>Rental_variable.xlsx</filepath></note>           
         </context>
@@ -46,7 +46,7 @@
                 <cmd/>
             </step>
             <step>
-                <cmd>Put the cursor in box <option>Row input cell</option> and click on cell
+                <cmd>Put the cursor in the box <option>Row input cell</option> and click on cell
                         <userinput>B3</userinput>.</cmd>
             </step>
             <step>

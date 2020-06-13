@@ -14,16 +14,18 @@
   </prolog>
   <body>
     <section>
-      <p>A farmer uses three types of cattle feed, type 1, type 2 and type 3. The nutritional
-        composition and the cost per kg of each type is displayed in the following figure.</p>
+      <p>A farmer uses three types of cattle feed, type 1, type 2, and type 3. The nutritional
+                composition and the cost per kg of each type are displayed in the following
+                figure.</p>
       <fig>
                 <image keyref="ex_solv006_data"/>
             </fig>
       <p>A magazine has published the minimum day requirements (MDR) in milligrams per animal for
-        the vitamins A, B and C. These are 120 mg A, 180 mg B and 100 mg C. Furthermore, an animal
-        can not eat more than 7½ kg of type 1 and 5 kg of type 2 and 2½ kg of type 3.</p>
+                the vitamins A, B, and C. These are 120 mg A, 180 mg B, and 100 mg C. Furthermore,
+                an animal can not eat more than 7½ kg of type 1 and 5 kg of type 2 and 2½ kg of type
+                3.</p>
       <p>How many kilos of each type should the farmer provide every day to get the costs as low as
-        possible and still meet the minimum day requirements?</p>
+                possible and still meet the minimum daily requirements?</p>
     </section>
     <section otherprops="answer">
       <title>Answer</title>

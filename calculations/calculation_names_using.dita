@@ -17,10 +17,10 @@
     </prolog>
     <taskbody>
         <context>
-            <p>When you assign a name to a cell or cell range, Excel automatically use them in new
-                formulas, but not in already existing formulas. In the next example cell B5 contains
-                the formula <codeph>=B2+B3+B4</codeph>. When you assign now names to the cells B2,
-                B3 and B4, the formula remain unchanged.</p>
+            <p>When you assign a name to a cell or cell range, Excel automatically uses them in new
+                formulas, but not in already existing formulas. In the next example, cell B5
+                contains the formula <codeph>=B2+B3+B4</codeph>. When you assign names to the cells
+                B2, B3, and B4, the formula remains unchanged.</p>
             <fig>
                 <title>Formula with addresses instead of names</title>
                 <image keyref="Example_Expenses">
@@ -28,7 +28,7 @@
                 </image>
             </fig>
             <p>However, you can quite easily use new names in existing formulas. In the practice
-                file of this example the cells in the formula already have names. Through the
+                file of this example, the cells in the formula already have names. Through the
                 following steps, the addresses in the formula will be replaced by their names.</p>
             <note type="other" othertype="File"><filepath>Office_Expenses.xlsx</filepath></note>
         </context>

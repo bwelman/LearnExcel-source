@@ -16,10 +16,10 @@
     </prolog>
     <taskbody>
         <context>
-            <p>A logarithmic trend line is best appropriate curved line that fits well with data
-                that in the beginning soon rise (or fall) and then stabilize.<note type="attention"
-                    >There should be no null values in the data set.</note></p>
-            <p>The equation of the trend line is: <codeph>y = a*ln(x) + b</codeph> with a and b as
+            <p>A logarithmic trend line is the best appropriate curved line that fits well with data
+                that in the beginning soon rises (or falls) and then stabilizes.<note
+                    type="attention">There should be no null values in the data set.</note></p>
+            <p>The equation of the trend line is <codeph>y = a*ln(x) + b</codeph> with a and b as
                 constants.</p>
             <p>The following example is about the growth of the number of bacteria in culture.</p>
             <note type="other" othertype="File"><filepath>Trendlines.xlsx</filepath></note>

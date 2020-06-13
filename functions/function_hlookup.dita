@@ -22,15 +22,16 @@
 				(table) and returns the corresponding value from another row.</p>
 			<p>Syntax: <codeph>VLOOKUP(lookup_value, table_array, row_index_num, [range_lookup])</codeph></p>
 			<p>The last argument is optional and can be set to TRUE or FALSE.<ul>
-					<li>FALSE : Search for an exact match with the supplied lookup_value.</li>
-					<li>TRUE : Give the closest match below the supplied value if an exact match can
-						not be found.</li>
-				</ul><note type="attention">It is mostly the best to specify to search for an exact
-					match, otherwise incorrect results are possible. And if an approximation is
-					allowed then first row of the table_array must be in ascending order.</note></p>
-			<p>In the next figure is an overview of shoe sizes for some people with the name in the first
-                row. When you specify the name you can find the corresponding age, length and shoe
-                size with the HLOOKUP function.<fig>
+                    <li>FALSE: Search for an exact match with the supplied lookup_value.</li>
+                    <li>TRUE: Give the closest match below the supplied value if an exact match can
+                        not be found.</li>
+                </ul><note type="attention">It is mostly the best to specify to search for an exact
+                    match, otherwise incorrect results are possible. And if an approximation is
+                    allowed then the first row of the table_array must be in ascending
+                order.</note></p>
+			<p>The next figure is an overview of shoe sizes for some people with the name in the first row.
+                When you specify the name you can find the corresponding age, length, and shoe size
+                with the HLOOKUP function.<fig>
                     <title>Overview shoe sizes</title>
                     <image keyref="Example_Hlookup">
                         <alt>Overview shoe sizes</alt>
@@ -46,8 +47,8 @@
 			<step>
 				<cmd>Select cell <uicontrol>C4</uicontrol> and enter the formula:
 						<userinput>=HLOOKUP($C$2,$C$8:$E$11,2,FALSE)</userinput>.</cmd>
-				<stepresult>As result the error <systemoutput>#N/A</systemoutput> appears in the cell. This is
-					because there is no search value in cell C2.</stepresult>
+				<stepresult>As result, the error <systemoutput>#N/A</systemoutput> appears in the cell. This is
+                    because there is no search value in cell C2.</stepresult>
 			</step>
 			<step>
 				<cmd>Enter in cell <uicontrol>C2</uicontrol> the value <userinput>Pietersen</userinput>.</cmd>

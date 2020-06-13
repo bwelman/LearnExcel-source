@@ -16,7 +16,7 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>You can apply a format (for example the font type) to the entire worksheet, or to individual
+        <p>You can apply a format (for example the font type) to the entire worksheet, or individual
             cells or areas of cells. The process is usually the same, but it depends on what is
             selected.</p>
         <note type="important">First select, then execute the format command.</note>

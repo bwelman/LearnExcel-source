@@ -15,7 +15,7 @@
         </metadata>
     </prolog>
     <taskbody>
-        <context>Excel has a number of predefined styles for formatting a list (table) quickly and
+        <context>Excel has several predefined styles for formatting a list (table) quickly and
                 easily.<note type="other" othertype="File"
                 ><filepath>Personnel.xlsx</filepath></note></context>
         <steps>
@@ -30,8 +30,8 @@
                     </menucascade>.</cmd>
             </step>
             <step>
-                <cmd>Choose a style from the examples shown, for example <uicontrol>Table Style Medium
-                    4</uicontrol>.</cmd>
+                <cmd>Choose a style from the examples shown, for example, <uicontrol>Table Style
+                        Medium 4</uicontrol>.</cmd>
                 <stepresult>
                     <fig>
                         <title>Dialog box <wintitle>Format As Table</wintitle></title>

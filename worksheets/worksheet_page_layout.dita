@@ -50,21 +50,22 @@
         </fig>
         <p>By clicking the arrow at the end of the header and footer boxes you can select from a set
             of predefined texts. Here you have also the choice <q>(none)</q> if you don't want a
-            header or footer. If you want to design your own header or footer, then click the button
-            for the custom text. You'll get a dialog box where you can type text and format it.</p>
+            header or footer. If you want to design your custom header or footer, then click the
+            button for the custom text. You'll get a dialog box where you can type text and format
+            it.</p>
         <fig>
             <title>Content and format of header and footer</title>
             <image keyref="Worksheet_Pagesetup_HeaderFooter_Content">
                 <alt>Content and format of header and footer</alt>
             </image>
         </fig>
-        <p>Headers and footers have three sections each (left, center and right). In each section
+        <p>Headers and footers have three sections each (left, center, and right). In each section,
             you can enter your text. You can also enter predefined content through the available
             buttons, such as:<ul>
                 <li>Page Number</li>
                 <li>Number of Pages</li>
                 <li>Date and Time</li>
-                <li>File Path, File Name and the Sheet Name</li>
+                <li>File Path, File Name, and the Sheet Name</li>
             </ul></p>
         <fig>
             <title>Page Setup - Sheet</title>
@@ -72,12 +73,12 @@
                 <alt>Settings for the sheet</alt>
             </image>
         </fig>
-        <p>VaakOften there are titles in the first row(s) or column(s) of a worksheet. And if the
+        <p>Often there are titles in the first row(s) or column(s) of a worksheet. And if the
             worksheet is bigger than one page, you can indicate how that row( s) and / or column(s )
             should appear on each page.</p>
         <p>An interesting option is that you can indicate that the grid lines of the worksheet
             should be printed.</p>
-        <note type="tip">The settings of the page setup are also accessible through the menue <menucascade>
+        <note type="tip">The settings of the page setup are also accessible through the menu <menucascade>
                 <uicontrol>Page Layout</uicontrol>
                 <uicontrol>group Page Setup</uicontrol>
             </menucascade>.</note>

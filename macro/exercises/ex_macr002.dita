@@ -15,8 +15,8 @@
     <body>
         <section>
             <p>Record a macro with the name <userinput>PercentageFormat</userinput> that is
-                formatting a numeric value as percentage with 1 decimal and also centers the content
-                in the cell.</p>
+                formatting a numeric value as a percentage with 1 decimal and also centers the
+                content in the cell.</p>
         </section>
         <section otherprops="answer">
             <title>Answer</title>

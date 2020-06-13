@@ -22,7 +22,7 @@
     </prolog>
     <conbody>
         <p>A graph consists of many elements. These are not always created by default in Excel. They
-            can always be added afterwards. Also moving and deleting most of the elements is
+            can always be added afterward. Also moving and deleting most of the elements is
             possible.</p>
         <fig>
             <title>Elements of a chart</title>
@@ -39,14 +39,14 @@
             <dlentry>
                 <dt>Plot area (2)</dt>
                 <dd>The rectangular area bounded by the axes, including all data series. In the
-                    figure, the area with the light-coloured background.</dd>
+                    figure, the area with the light-colored background.</dd>
             </dlentry>
             <dlentry>
                 <dt>Data series (3)</dt>
-                <dd>A data serie is a row or column in your worksheet with numbers. These are
-                    plotted in the chart. In the example chart  are two data series: the
-                    blue-coloured and the brown coloured. The data series have names, here 2009 and
-                    2010, and these names form the legend.</dd>
+                <dd>A data series is a row or column in your worksheet with numbers. These are
+                    plotted in the chart. In the example chart are two data series: the blue-colored
+                    and the brown colored. The data series have names, here 2009 and 2010, and these
+                    names form the legend.</dd>
             </dlentry>
             <dlentry>
                 <dt>Data point (4)</dt>
@@ -55,8 +55,8 @@
             </dlentry>
             <dlentry>
                 <dt>Category axis (5)</dt>
-                <dd>This is the horizontal axis or X-axis. The text (labels) along this axis come
-                    from cells in the worksheet. In the example chart you see four categories Q1,
+                <dd>This is the horizontal axis or X-axis. The text (labels) along this axis comes
+                    from cells in the worksheet. In the example chart, you see four categories Q1,
                     Q2, Q3 and Q4.</dd>
             </dlentry>
             <dlentry>
@@ -89,8 +89,7 @@
             </dlentry>
             <dlentry>
                 <dt>Data labels (12)</dt>
-                <dd>A number of a data point which provides the actual value for the data
-                    point.</dd>
+                <dd>A number of a data point that provides the actual value for the data point.</dd>
             </dlentry>
         </dl>
     </conbody>

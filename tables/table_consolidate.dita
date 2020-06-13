@@ -31,8 +31,8 @@
 			<step>
 				<cmd>Select cell <uicontrol>A1</uicontrol> in the worksheet <uicontrol>Total</uicontrol>.</cmd>
 				<info>The lists to summarize are in the worksheets <wintitle>PRA</wintitle> and
-						<wintitle>PRB</wintitle>. The consolidated data will be put in worksheet
-						<wintitle>Total</wintitle>.</info>
+                        <wintitle>PRB</wintitle>. The consolidated data will be put in the worksheet
+                        <wintitle>Total</wintitle>.</info>
 			</step>
 			<step>
                 <cmd>Choose <menucascade>

@@ -15,7 +15,8 @@
     <taskbody>
         <context>
             <p>A summer cottage can be rented for 450 dollars a week. The expenses per week are 175
-                dollar. Using a data table, calculate the revenues for 5, 10, 15, ..., 50 weken.</p>
+                dollars. Using a data table, calculate the revenues for 5, 10, 15, ..., 50
+                weeks.</p>
             <fig>
                 <title>Rental cottage with fixed price</title>
                 <image keyref="cottage_rental_fixed">
@@ -54,7 +55,7 @@
                 </stepresult>
             </step>
             <step>
-                <cmd>Put the cursor in box <option>Column input cell</option> and click on cell
+                <cmd>Put the cursor in the box <option>Column input cell</option> and click on cell
                         <userinput>B5</userinput>.</cmd>
                 <stepresult>Excel transforms it to <systemoutput>$B$5</systemoutput>.</stepresult>
             </step>

@@ -17,9 +17,9 @@
 				type of array formula can simplify a worksheet because multiple formulas are
 				replaced by only one array formula.</p>
 			<p>The following example shows a stock portfolio with prices. In order to calculate the total
-				value of the shares at a given price you normally calculate the value for each share
-				and then add these values​​. With an array formula this calculation can be done
-				without calculating the intermediate results.</p>
+                value of the shares at a given price you normally calculate the value for each share
+                and then add these values​​. With an array formula, this calculation can be done
+                without calculating the intermediate results.</p>
 			<fig>
                 <title>Prices of shares</title>
                 <image keyref="Example_Shares">

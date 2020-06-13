@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="array_over" xml:lang="en-US">
-    <title>What are Array Formulas</title>
-    <shortdesc>A brief description about what an array and an array formula is and in which
-        situation you can use them.</shortdesc>
+    <title>What is an Array Formula</title>
+    <shortdesc>A brief description of what an array and an array formula is and in which situation
+        you can use them.</shortdesc>
     <prolog>
         <critdates>
             <created date="2017-08-31"/>
@@ -17,8 +17,9 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>An array formula is a formula that uses an array instead of single cell value as input.
-            An array formula can be seen as many formulas packed into a single super formula.</p>
+        <p>An array formula is a formula that uses as input an array of values instead of single
+            cell value. An array formula can be seen as many formulas packed into a single super
+            formula.</p>
         <p>An array in Excel is a data set. This data can be in one row (a 1-dimensional horizontal
             array), in one column (a 1-dimensional vertical array) or in multiple rows and columns
             (a 2-dimensional array).<fig>
@@ -33,7 +34,7 @@
             an outcome. The result is a row with values, a column with values or a table with
             values. To use array formulas you should first think about how many results there are
             and how these are arranged (one cell, one row, one column or one table).</p>
-        <p>Array formulas are also called <varname>CSE-formulas</varname>, because you have to press
+        <p>Array formulas are also called <varname>CSE-formulas</varname> because you have to press
             on the <uicontrol>CTRL+SHIFT+ENTER</uicontrol> keys to enter them. After entering these
             shortcut keys braces are placed around the formula automatically.</p>
         <note type="attention">

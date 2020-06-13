@@ -15,27 +15,27 @@
   <body>
     <section>
       <p>A company has stores in 6 cities (Amersfoort, Eindhoven, Enschede, Lelystad, Tiel, Zwolle).
-        Supplying the stores is done from 3 distribution centers (DC) in Coevorden, Venlo and
-        Woerden. The stores make every week a sales forecast for the next week and submit the
-        required number of products to the head office. The head office makes a transport planning
-        to the shops based on the available stocks in the DC's and the required number of
-        products.</p>
+                Supplying the stores is done from 3 distribution centers (DC) in Coevorden, Venlo,
+                and Woerden. The stores make every week a sales forecast for the next week and
+                submit the required number of products to the head office. The head office makes a
+                transport planning to the shops based on the available stocks in the DC's and the
+                required number of products.</p>
       <fig>
                 <image keyref="ex_solv008_model"/>
             </fig>
       <p>Explanation:</p>
       <ul>
         <li>The upper table shows the transport costs per product unit from the DC to the store. So
-          the costs of transport of 1 product from DC Coevorden to the store in Amersfoort is
-          $100.</li>
-        <li> In the column <q>Number Needed</q> you see the number of products the store needs. So
-          Amersfoort must receive 225 products. </li>
+                    the cost of transport of 1 product from DC Coevorden to the store in Amersfoort
+                    is $100.</li>
+        <li> In the column <q>Number Needed</q> is the number of products the store needs. So
+                    Amersfoort must receive 225 products. </li>
         <li>The area <q>Number transported from</q> should display the number of products that will
           be transported from the DC to the store. The Solver should determine these numbers..</li>
-        <li>The row <q>Initial stock</q> contains the number of products that is in stock in the
-          DC.</li>
+        <li>The row <q>Initial stock</q> contains the number of products that are in stock in the
+                    DC.</li>
       </ul>
-      <p>Create the cheapest transport planning using the Solver.</p>
+      <p>Create the cheapest transport planning using Solver.</p>
       <note type="other" othertype="File"><filepath>Solv008.xlsx</filepath></note>
     </section>
     <section otherprops="answer"><title>Answer</title><image keyref="ex_solv008_result"/></section>

@@ -13,7 +13,7 @@
     <taskbody>
         <context>
             <p>A lot of data in external sources is available as text (filetype
-                    <filepath>.txt</filepath>) or as comma (or character) separated values (filetype
+                    <filepath>.txt</filepath>) or comma (or character) separated values (filetype
                     <filepath>.csv</filepath>).</p>
             <note type="other" othertype="File"><filepath>SalesJan2009.csv</filepath></note>
         </context>
@@ -42,19 +42,19 @@
             <step>
                 <cmd>Click <uicontrol>Edit</uicontrol>.</cmd>
                 <stepresult>
-                    <p id="start_que">The Query Editor is started in a new window. On the right site below
-                            <wintitle>Query Settings</wintitle> under <uicontrol>Applied
-                            Steps</uicontrol> you see the steps already applied.</p>
+                    <p id="start_que">The Query Editor is started in a new window. On the right site
+                        below <wintitle>Query Settings</wintitle> under <uicontrol>Applied
+                            Steps</uicontrol>, you see the steps already applied.</p>
                 </stepresult>
             </step>
             <step>
                 <cmd>Select the columns <varname>Account_Created, Last_Login, Latitude,
-                        Longitude</varname>) by clicking on the column header and holding the CTRL
-                    key. Then choose <menucascade>
+                        Longitude</varname>) by clicking on the column header and holding the
+                    CTRL-key. Then choose <menucascade>
                         <uicontrol>Remove Columns (group Manage Columns)</uicontrol>
                         <uicontrol>Remove Columns</uicontrol>
                     </menucascade>.</cmd>
-                <info>An alternative is right mouseclick and then select trhe appropriate
+                <info>An alternative is right mouseclick and then select the appropriate
                     action.</info>
                 <stepresult>The columns are removed and this step is added to the <uicontrol>Applied
                         Steps</uicontrol>.</stepresult>
@@ -77,11 +77,11 @@
                     needs to be replaced, then choose to replace the current conversion.</cmd>
             </step>
             <stepsection>
-                <p>In column <varname>Name</varname> most names started with a capital, but not
+                <p>In column <varname>Name</varname>, most names started with a capital, but not
                     all.</p>
             </stepsection>
             <step>
-                <cmd>Select column <varname>Name</varname>, Right Click and select <menucascade>
+                <cmd>Select column <varname>Name</varname>, Right Click, and select <menucascade>
                         <uicontrol>Transform</uicontrol>
                         <uicontrol>Capitalize Each Word</uicontrol>
                     </menucascade>.</cmd>
@@ -91,9 +91,9 @@
                         <uicontrol>Close &amp; Load (group Close)</uicontrol>
                         <uicontrol>Close &amp; Load</uicontrol>
                     </menucascade>.</cmd>
-                <stepresult><p>The data is loaded in an Excel table in a new sheet. You can work with the data and save the the
+                <stepresult><p>The data is loaded in an Excel table in a new sheet. You can work with the data and save the
                         Excel map for later use.</p>
-                    <note type="note">It is always possible to change the query afterwards. For this
+                    <note type="note">It is always possible to change the query afterward. For this
                         select a cell in the table and choose <menucascade>
                             <uicontrol>tab Query</uicontrol>
                             <uicontrol>Edit (group Edit)</uicontrol>

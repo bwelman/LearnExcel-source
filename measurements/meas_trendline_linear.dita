@@ -19,8 +19,8 @@
 		<context>
 			<p>In a timber factory, a large number of similar items are manufactured, which mainly show
                 differences in their dimensions and weight. To investigate whether the production
-                time of these items depends on their weight, a number of measurements are
-                performed.A linear relationship is assumed.</p>
+                time of these items depends on their weight, several measurements are performed. A
+                linear relationship is assumed.</p>
 			<note type="other" othertype="File"><filepath>Prodtime_Weight.xlsx</filepath></note>
 		</context>
 		<steps>
@@ -93,7 +93,7 @@
 			<p>Changes made:<ul>
                     <li>Scaling both axis</li>
                     <li>No decimals along the horizontal axis</li>
-                    <li>Trenline thicker red line</li>
+                    <li>Trendline thicker red line</li>
                     <li>Titles for axis and chart</li>
                     <li>Equation moved</li>
                 </ul></p>

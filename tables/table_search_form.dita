@@ -18,10 +18,10 @@
     </prolog>
     <taskbody>
         <prereq conref="table_data_entry_form.dita#table_data_entry_form/qat_form"/>
-        <context>A data form is very useful to search a range/table for records that meet specific
-            conditions. You will learn this in the following task. At the end of this task you will
-            find examples on how criteria can be applied.<note type="other" othertype="File"
-                    ><filepath>Personnel.xlsx</filepath></note></context>
+        <context>A data form is very useful to search for a range/table for records that meet
+            specific conditions. You will learn this in the following task. At the end of this task,
+            you will find examples of how criteria can be applied.<note type="other"
+                othertype="File"><filepath>Personnel.xlsx</filepath></note></context>
         <steps>
             <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open"
                 conrefend="../common/reuse_task_parts.dita#reuse_task_parts/Select_Cell">
@@ -69,7 +69,7 @@
             </step>
         </steps>
         <example>
-            <title>Examples search criteria</title>
+            <title>Examples of search criteria</title>
             <p>In the table below are some examples of search criteria. Try this out and verify that
                 the found records match the criteria. It is also possible to combine multiple
                 criteria. Always first make the criteria list empty before you start with a new

@@ -2,7 +2,7 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <task id="chart_area" xml:lang="en-US">
     <title>Task: Plot Area</title>
-    <shortdesc>Options to make a chart with a coloured background or border.</shortdesc>
+    <shortdesc>Options to make a chart with a colored background or border.</shortdesc>
     <prolog>
         <critdates>
             <created date="2017-08-31"/>
@@ -19,7 +19,7 @@
             <p>The plot area in a chart refers to a rectangular area of the chart that graphically
                 displays the data being charted. The plot area is the area bounded by the axes, It
                 includes the axes but not the titles. You can format the plot area for example with
-                a coloured background and border.</p>
+                a colored background and border.</p>
             <note conref="../common/reuse_task_parts.dita#reuse_task_parts/Chart_File"/>
         </context>
         <steps>
@@ -30,7 +30,7 @@
                 <cmd/>
             </step>
             <step>
-                <cmd>Select the plot area, right click and choose <uicontrol>Format Plot
+                <cmd>Select the plot area, right-click and choose <uicontrol>Format Plot
                         Area</uicontrol></cmd>
                 <stepresult>Task panel <wintitle>Format Plot Area</wintitle> is
                     displayed.</stepresult>
@@ -41,7 +41,7 @@
             </step>
             <step>
                 <cmd>Open option <option>Border</option> and select <option>Solid line</option> with
-                    a <option>black color</option>.</cmd>
+                        <option>black color</option>.</cmd>
             </step>
         </steps>
         <result>

@@ -19,13 +19,12 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>Most worksheets with calculation models will be printed. When printing, you have a number
-            of options available to customize the page layout. For example you can choose headers
-            and footers, margins, portrait or landscape orientation, the layout of the pages,
-            etc.</p>
-        <p>It is recommended that before you actually print, you should first take a look at the
-            print preview on the screen. From there you can then change several settings before
-            actual printing.</p>
+        <p>Most worksheets with calculation models will be printed. When printing, you have many
+            options available to customize the page layout. For example, you can choose headers and
+            footers, margins, portrait or landscape orientation, the layout of the pages, etc.</p>
+        <p>It is recommended that before you print, you should first take a look at the print
+            preview on the screen. From there you can then change several settings before the actual
+            printing.</p>
         <p>For making a print choose <menucascade>
                 <uicontrol>File</uicontrol>
                 <uicontrol>Print</uicontrol>

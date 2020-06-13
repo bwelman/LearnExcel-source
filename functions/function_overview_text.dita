@@ -28,7 +28,7 @@
         <plentry>
           <pt>start_num</pt>
           <pd>Required. An integer that specifies the position of the first character that you want
-            to be returned. The counting starts with 1.</pd>
+                        to be returned. The counting starts at 1.</pd>
         </plentry>
         <plentry>
           <pt>num_chars</pt>

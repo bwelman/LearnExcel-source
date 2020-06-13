@@ -15,11 +15,12 @@
   <body>
     <section>
       <p>A nutritionist recommends a patient the following minimum day requirements for vitamin B
-        and C: 400 units vitamin B and 800 units vitamin C. The local pharmacy can provide two
-        different vitamin brands: Y and Z. A vitamine pill of brand Y contains 75 units vitamine B
-        and 100 units vitamine C and costs $0.10. A vitamin pill of brand Z contains 50 units
-        vitamine B and 200 units vitamin C and costs $0.08. How much vitamin pills of each branch
-        must be consumed every day at the lowest possible cost?</p>
+                and C: 400 units vitamin B and 800 units vitamin C. The local pharmacy can provide
+                two different vitamin brands: Y and Z. A vitamin pill of brand Y contains 75 units
+                vitamin B and 100 units vitamin C and costs $0.10. A vitamin pill of brand Z
+                contains 50 units vitamin B and 200 units vitamin C and costs $0.08. How much
+                vitamin pills of each branch must be consumed every day at the lowest possible
+                cost?</p>
     </section>
     <section otherprops="answer">
       <title>Answer</title>

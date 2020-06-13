@@ -18,28 +18,28 @@
 	</prolog>
 	<conbody>
 		<p>The <term>Solver</term> is an add-in for Excel to perform optimization calculations. In such
-			calculations you want to find the optimal value for a formula in one cell, mostly the
-				<term>minimum</term> or <term>maximum</term> or a very specific value.</p>
+            calculations, you want to find the optimal value for a formula in one cell, mostly the
+                <term>minimum</term> or <term>maximum</term> or a very specific value.</p>
 		<p>The cell you want to find the optimal value for is called the <term>objective cell</term>. The
-			result of the formula in the objective cell always depends on values in other cells.
-			When these values are adjusted, the value of the objective cell will also change. You
-			can change the value of these cells to influence the result in the objective cell. These
-			cells are called <term>variable cells</term>, <term>changing cells</term> or
-				<term>decision variables</term>.</p>
+            result of the formula in the objective cell always depends on values in other cells.
+            When these values are adjusted, the value of the objective cell will also change. You
+            can change the value of these cells to influence the result in the objective cell. These
+            cells are called <term>variable cells</term>, <term>changing cells</term>, or
+                <term>decision variables</term>.</p>
 		<p>It often happens that the <term>variable cells</term> can not have every possible value. Those
-			values are often bound to certain limits. This can also be true for other cells that
-			influence the value of the objective cell. So the value in cells can have limitations.
-			Limitations are called <term>restrictions</term> or <term>constraints</term>. The
-			possible solution can therefore depend on restrictions or limits to the values of other
-			cells. The Solver adjusts the values in the decision variable cells to satisfy the
-			limits or constraint cells and produces the result you want for the objective cell.</p>
-		<p>In summary you have:</p>
+            values are often bound to certain limits. This can also be true for other cells that
+            influence the value of the objective cell. So the value in cells can have limitations.
+            Limitations are called <term>restrictions</term> or <term>constraints</term>. The
+            possible solution can depend on restrictions or limits to the values of other cells. The
+            Solver adjusts the values in the decision variable cells to satisfy the limits or
+            constraint cells and produces the result you want for the objective cell.</p>
+		<p>In summary, you have:</p>
 		<ul>
 			<li>One <term>objective cell</term>, which should get an optimal value (minimum, maximum,
 				other).</li>
 			<li>One or more <term>variable cells</term> whose values can be adjusted to get a different
 				result for the objective cell.</li>
-			<li>Possible <term>restrictions</term> for the values of some cells.</li>
+			<li>Possible <term>restrictions</term> on the values of some cells.</li>
 		</ul>
 		<p>To be able to carry out such an optimization calculation, you must first set up a suitable
 			calculation model in Excel. This is often much more difficult than using the Solver

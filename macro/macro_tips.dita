@@ -18,9 +18,9 @@
   <refbody>
     <section>
       <title>Relative References</title>
-      <p>Recorded macros will  use absolute cell references by default. This means that the exact
-        locations of cells, rows and columns in the program code of the macro will be used. The
-        macro works then always at the same addresses.</p>
+      <p>Recorded macros will use absolute cell references by default. This means that the exact
+                locations of cells, rows, and columns in the program code of the macro will be used.
+                The macro works then always at the same addresses.</p>
       <p>When you want to use relative references in the macro you need to click on the button
           <wintitle>Use Relative References</wintitle>.</p>
       <fig>

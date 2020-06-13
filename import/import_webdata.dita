@@ -12,9 +12,9 @@
     </prolog>
     <taskbody>
         <context>
-            <p>Webpages often tables in it. The Power Query in Excel can recognize these tables and
-                import them. In this task you are going to import some data from the UEFA European
-                football championship that is available in a wikipedia page.</p>
+            <p>Webpages have often tables in it. The Power Query in Excel can recognize these tables
+                and import them. In this task, you are going to import some data from the UEFA
+                European football championship that is available on a Wikipedia page.</p>
         </context>
         <steps>
             <step>
@@ -26,7 +26,7 @@
                         <uicontrol>From Web (group Get &amp; Transform Data)</uicontrol>
                     </menucascade>.</cmd>
                 <stepresult>
-                    <p>A dialogbox is displayed to enter the URL of the web page.</p>
+                    <p>A dialog box is displayed to enter the URL of the web page.</p>
                     <fig>
                         <title>From Web dialogbox</title>
                         <image keyref="web_url_textbox">
@@ -61,7 +61,7 @@
                 </stepresult>
             </step>
             <stepsection>
-                <p>Next you will clean up and shape the data to your needs. In sequence, you will<ul>
+                <p>Next, you will clean up and shape the data to your needs. In sequence, you will<ul>
                         <li>remove all columns except <varname>Year</varname> and <varname>Final
                                 Winners</varname>.</li>
                         <li>remove the word <q>Details</q> in column <varname>Year</varname>.</li>
@@ -70,7 +70,7 @@
             </stepsection>
             <step>
                 <cmd>Select the columns <varname>Year</varname> and <varname>Final Winners</varname>
-                    by clicking on the column header and holding the CTRL key. Then from the ribbon <menucascade>
+                    by clicking on the column header and holding the CTRL-key. Then from the ribbon <menucascade>
                         <uicontrol>Remove Columns (group Manage Columns)</uicontrol>
                         <uicontrol>Remove Other Columns</uicontrol>
                     </menucascade>.</cmd>
@@ -96,7 +96,7 @@
                     click <uicontrol>OK</uicontrol>.</cmd>
             </step>
             <step>
-                <cmd>Select column <varname>Year</varname> and click on the filter drop down arrow
+                <cmd>Select column <varname>Year</varname> and click on the filter drop-down arrow
                     in the column header. Uncheck <option>Year</option> and click
                         <uicontrol>OK</uicontrol>.</cmd>
             </step>

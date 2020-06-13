@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="chart_operations" xml:lang="en-US">
     <title>Chart Operations</title>
-    <shortdesc>Some general instructions how to change chart elements.</shortdesc>
+    <shortdesc>Some general instructions on how to change chart elements.</shortdesc>
     <prolog>
         <critdates>
             <created date="2017-08-31"/>
@@ -17,18 +17,18 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>You can perform several operations with the individual elements of a chart . The
-            possibilities depend on the chart item. For an element that contains text you can change
-            size, font, color, etc. Before an operation can be carried out, you first must select
-            this element. Then the operation can be chosen from the menu or the right-click shortcut
-            menu.</p>
+        <p>You can perform several operations with the individual elements of a chart. The
+            possibilities depend on the chart item. For an element that contains text, you can
+            change the size, font, color, etc. Before an operation can be carried out, you first
+            must select this element. Then the operation can be chosen from the menu or the
+            right-click shortcut menu.</p>
         <section>
             <title>Selecting a chart element</title>
             <p>Most of the time this is very easy. But sometimes it is not, especially when the
                 elements are located close to each other.</p>
             <p>After selecting the chart you have the following options to select a chart element:<ul>
                     <li>Click on the chart element.</li>
-                    <li>Through the menu<menucascade>
+                    <li>Through the menu <menucascade>
                             <uicontrol>Format (Chart Tools)</uicontrol>
                             <uicontrol>arrow Chart Elements (group Current Selection)</uicontrol>
                         </menucascade>. </li>
@@ -45,7 +45,7 @@
                     <alt>Selecting chart element</alt>
                 </image>
             </fig>
-            <note type="tip">In the <wintitle>Current Selection</wintitle> you can allways see which
+            <note type="tip">In the <wintitle>Current Selection</wintitle> you can always see which
                 element is selected.</note>
         </section>
         <section>
@@ -55,8 +55,8 @@
         </section>
         <section>
             <title>Changing dimensions</title>
-            <p>If an resizable element has been selected, the element will be surrounded with sizing
-                handles <image keyref="chart_elements_sizinghandles"/> . Drag a handle to change
+            <p>If a resizable element has been selected, the element will be surrounded by sizing
+                handles <image keyref="chart_elements_sizinghandles"/>. Drag a handle to change
                 height or width.</p>
         </section>
         <section>
@@ -64,9 +64,9 @@
             <p>Select the element. Choose <menucascade>
                     <uicontrol>tab Format (Chart Tools)</uicontrol>
                     <uicontrol>Format Selection (group Current Selection)</uicontrol>
-                </menucascade>. A task panel is displayed at the right side with options for
+                </menucascade>. A task panel is displayed on the right side with options for
                 formatting the element.</p>
-            <note type="tip">The task panel can also be accessed through: <menucascade>
+            <note type="tip">The task panel can also be accessed through <menucascade>
                     <uicontrol>right mouse click</uicontrol>
                     <uicontrol>Format ...</uicontrol>
                 </menucascade>.</note>
@@ -74,8 +74,8 @@
         <section>
             <title>Apply chart style</title>
             <p>Excel includes many predefined formats, called styles. You can apply a style through
-                button <uicontrol>Chart Styles <image keyref="button_chart_styles"/>
-                </uicontrol>.</p>
+                button <uicontrol>Chart Styles <image keyref="button_chart_styles"
+                /></uicontrol>.</p>
         </section>
         <section>
             <title>Deleting chart</title>
@@ -84,7 +84,7 @@
             <ul>
                 <li><term>Embedded chart</term>: select the chart and press the key
                         <uicontrol>Delete</uicontrol>.</li>
-                <li><term>Chart Sheet</term>: right click on the tab of the chart sheet and choose
+                <li><term>Chart Sheet</term>: right-click on the tab of the chart sheet and choose
                     from the shortcut menu <uicontrol>Delete</uicontrol>.</li>
             </ul>
         </section>

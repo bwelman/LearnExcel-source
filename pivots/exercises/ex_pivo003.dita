@@ -15,8 +15,8 @@
     <body>
         <section>
             <p>For each salesman the following information is stored in the worksheet: Month,
-                Region, Saleman, Sales, Expenses and Commission.</p>
-            <p>Create one pivot table with which you get an overview of the total sales, expenses
+                Region, Saleman, Sales, Expenses, and Commission.</p>
+            <p>Create one pivot table with which you get an overview of the total sales, expenses,
                 and commission per month and per salesman with a possibility to filter per region.
                 All values should have a currency format with no decimals.</p>
             <note type="other" othertype="File"><filepath>Pivo003.xlsx</filepath></note>
@@ -45,8 +45,10 @@
                 </strow>
             </simpletable>
             <p>Drag the field Values from Column Labels to Row Labels under Salesman.</p>
-            <p conkeyref="pivot/options"/>/> <p>Change <uicontrol>Number Format</uicontrol> in
-                    <option>Accounting with 0 decimals</option>.</p>
-            <p conkeyref="pivot/labels"/>/> </section>
+            <p conkeyref="pivot/options"/>
+            <p>Change <uicontrol>Number Format</uicontrol> in <option>Accounting with 0
+                    decimals</option>.</p>
+            <p conkeyref="pivot/labels"/>
+        </section>
     </body>
 </topic>

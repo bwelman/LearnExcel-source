@@ -14,8 +14,8 @@
     </prolog>
     <body>
         <section>
-            <p>In the next table you see the marks for information technology (it) of some students
-                from two different classes.</p>
+            <p>In the following table, you see the marks for information technology (it) of some
+                students from two different classes.</p>
             <fig>
                 <image keyref="ex_pivo004_data"/>
             </fig>
@@ -45,8 +45,8 @@
                     <stentry>it</stentry>
                 </strow>
             </simpletable>
-            <p conkeyref="pivot/options"/>/> <p>Change the type of calculation in
-                    <option>Average</option>.</p>
+            <p conkeyref="pivot/options"/>
+            <p>Change the type of calculation in <option>Average</option>.</p>
         </section>
     </body>
 </topic>

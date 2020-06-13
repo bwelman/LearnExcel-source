@@ -14,8 +14,8 @@
   </prolog>
   <body>
     <section>
-      <p>In a given area the number of agarics is counted annually. In the following table you can
-        see the number of agarics per hectare for some years.</p>
+      <p>In a given area the number of agarics is counted annually. In the following table, you can
+                see the number of agarics per hectare for some years.</p>
       <fig>
                 <image keyref="ex_graf006_data"/>
             </fig>
@@ -29,7 +29,7 @@
       <title>Solution</title>
       <p>Create the chart as follows:<ul>
           <li>Start creating a radar chart.</li>
-          <li>Layout adjustments: title, remove legend, size.</li>
+          <li>Layout adjustments: title, size, legend (removing).</li>
         </ul></p>
     </section>
   </body>

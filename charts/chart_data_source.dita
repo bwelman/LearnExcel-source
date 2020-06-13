@@ -2,7 +2,7 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <task id="chart_data_source" xml:lang="en-US">
     <title>Task: Adding and Removing Data Series</title>
-    <shortdesc>Through a number of small tasks you learn various ways to add data series to a chart
+    <shortdesc>Through some small tasks, you will learn various ways to add data series to a chart
         and how to remove one.</shortdesc>
     <prolog>
         <critdates>
@@ -90,10 +90,10 @@
                     </fig>
                 </stepresult>
             </step>
-            <stepsection>Part: adding series 2008 and removing series 2011 through
-                dialog box</stepsection>
+            <stepsection>Part: adding series 2008 and removing series 2011 through a dialog
+                box</stepsection>
             <step>
-                <cmd>Right click on the chart and choose <uicontrol>Select
+                <cmd>Right-click on the chart and choose <uicontrol>Select
                     Data...</uicontrol>.</cmd>
                 <info>
                     <note type="tip">An alternative is <menucascade>
@@ -132,8 +132,8 @@
                 </stepresult>
             </step>
             <step>
-                <cmd>Put the cursor in box <uicontrol>Series name</uicontrol> and then select in the
-                    worksheet cell <uicontrol>B1</uicontrol>.</cmd>
+                <cmd>Put the cursor in the box <uicontrol>Series name</uicontrol> and then select in
+                    the worksheet cell <uicontrol>B1</uicontrol>.</cmd>
             </step>
             <step>
                 <cmd>Select the contents of the box <uicontrol>Series values</uicontrol> and then
@@ -142,9 +142,9 @@
             <step>
                 <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
                 <stepresult>
-                    <p>In the chart and in the dialog box <wintitle>Select Data Source</wintitle>
-                        the data series 2008 is added. However, this data set is added at the end,
-                        making the order not logical.</p>
+                    <p>In the chart and dialog box <wintitle>Select Data Source</wintitle> the data
+                        series 2008 is added. However, this data set is added at the end, making the
+                        order not logical.</p>
                     <fig>
                         <title>Change order data series</title>
                         <image keyref="bakery_datasource_moveup">

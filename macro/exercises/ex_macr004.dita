@@ -14,8 +14,8 @@
     </prolog>
     <body>
         <section>
-            <p>Create a macro which ensures that the grid lines will be printed at printing.</p>
-            <note type="tip">You can find this property at <menucascade>
+            <p>Create a macro that ensures that the grid lines will be printed at printing.</p>
+            <note type="tip">You can find this property at the <menucascade>
                     <uicontrol>tab Page Layout</uicontrol>
                     <uicontrol>Page Setup</uicontrol>
                     <uicontrol>tab Sheet</uicontrol>

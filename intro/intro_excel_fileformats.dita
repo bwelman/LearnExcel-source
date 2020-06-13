@@ -22,7 +22,7 @@
                 <dlentry>
                     <dt>XLSX</dt>
                     <dd>This is the default format for workbooks without macros, created with Excel
-                        2007, Excel 2010, Excel 2013 and Excel 2016. In this file format macros are
+                        2007, Excel 2010, Excel 2013, and Excel 2016. In this formats, macros are
                         not allowed.</dd>
                 </dlentry>
                 <dlentry>
@@ -53,7 +53,7 @@
                     <dt>XLS</dt>
                     <dd>This is the file format for workbooks created with Excel 2003 and older
                         programs. When you open this file format in a newer Excel version, it will
-                        be opened in the <term>Compatibility mode</term>. In this mode you can make
+                        be opened in the <term>Compatibility mode</term>. In this mode, you can make
                         changes, but if you want to save the file, Excel checks whether the changes
                         are supported in the old file format and displays a list of components that
                         are not supported.</dd>

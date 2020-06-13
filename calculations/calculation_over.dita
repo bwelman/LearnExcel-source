@@ -18,11 +18,11 @@
     </prolog>
     <conbody>
         <p>Calculations are performed using formulas. Formulas contain numbers or references to
-            cells with numbers. Between the numbers there are the symbols for the calculations to be
-            carried out, such as + , - , * , / , etc.</p>
+            cells with numbers. Between the numbers, there are the symbols for the calculations to
+            be carried out, such as +, -, *, /, etc.</p>
         <note type="attention">A formula should always begin with the <userinput>=</userinput>
             symbol. It is possible to start a formula with a <userinput>+</userinput>, but in that
-            case Excel translates this in <systemoutput>=</systemoutput> after entering the
+            case, Excel translates this in <systemoutput>=</systemoutput> after entering the
             data.</note>
         <p>To enter a formula you start typing <userinput>=</userinput> and then you enter the
             calculation as you would do it on a calculator. Instead of numbers, you also can type

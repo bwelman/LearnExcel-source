@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="charttype_line_scatter" xml:lang="en-US">
     <title>Line or Scatter Chart?</title>
-    <shortdesc>The differences between a line chart and an xy (scatter) chart.</shortdesc>
+    <shortdesc>The differences between a line chart and a xy (scatter) chart.</shortdesc>
     <prolog>
         <critdates>
             <created date="2017-08-31"/>
@@ -21,9 +21,8 @@
         <p>Line charts and scatter charts look quite similar, especially when a scatter chart is
             displayed with connecting lines. However, there are important differences in the way how
             the data is plotted along the horizontal axis (x-axis) and the vertical axis (y-axis).
-            So mistakes can be made easily and it is therefore important to make the right
-            choice.</p>
-        <p>As an example the annual sales data of a company are plotted with a line chart and a
+            So mistakes can be made easily and it's important to make the right choice.</p>
+        <p>As an example, the annual sales data of a company are plotted with a line chart and a
             scatter chart.</p>
         <p>
             <simpletable frame="all" relcolwidth="1* 1*">
@@ -39,16 +38,16 @@
                 </strow>
             </simpletable>
         </p>
-        <p>The difference in scaling can cause incorrect conclusions. In the line chart it looks
+        <p>The difference in scaling can cause incorrect conclusions. In the line chart, it looks
             like a strong growth in the first years and a stagnation in more recent years. This is
-            actually not the case. The real growth can be seen in the scatter chart.</p>
+            not the case. The real growth can be seen in the scatter chart.</p>
         <section>
             <title>Line chart</title>
             <p>A line chart has one value axis, the vertical axis. The horizontal axis is a category
                 axis, with evenly spaced categories of data (text or dates). A date axis displays
                 dates in chronological order.</p>
-            <p>A line chart is good for displaying the change of a variable over time. Examples are:
-                sales, turnover, profit, price etc., by day, week, month, quarter, year. The time
+            <p>A line chart is good for displaying the change of a variable over time. Examples:
+                sales, turnover, profit, price, etc., by day, week, month, quarter, year. The time
                 unit is always along the horizontal axis and the value of the measured variable
                 along the vertical axis.</p>
         </section>
@@ -56,8 +55,8 @@
             <title>Scatter chart</title>
             <p>A scatter chart has always two value axes, both to set numerical values. The
                 horizontal axis can display numeric values or date values. And you can change the
-                scaling options of both axes. The chart displays points at the intersection of an x
-                value and an y value.</p>
+                scaling options of both axes. The chart displays points at the intersection of the x
+                value and the y value.</p>
             <p>A scatter chart is used to examine the relationship between two variables. If one
                 variable becomes larger or smaller, what happens then with the other variable, does
                 it become larger or smaller? The data values are displayed as separate points on the
@@ -65,10 +64,10 @@
                 because it suggests that the changes are proceeding according to these lines. It is
                 better to show a relationship via a trendline. This is a line that reflects the
                 relationship between the two variables best. The measured points can be on this
-                trend line, but usually they are distributed around (above or below) the trend line.
-                Scatter charts are widely used in science and technology. In management reports you
-                also can find scatter charts, for example whether there is a correlation between
-                price increases and sales.</p>
+                trend line, but usually, they are distributed around (above or below) the trend
+                line. Scatter charts are widely used in science and technology. In management
+                reports, you also can find scatter charts, for example, whether there is a
+                correlation between price increases and sales.</p>
         </section>
         <section>
             <title>Resume</title>

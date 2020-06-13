@@ -22,9 +22,9 @@
                     <li>C1, the purchase amount.</li>
                     <li>B2, the profit rate.</li>
                     <li>B5, the VAT rate.</li>
-                </ul>Four cells (C2, C3, C5 and C6) contain formulas. The idea is that if you change
-                one or more of the values in C1, B2 or B5 all the depending values are automatically
-                adjusted.</p>
+                </ul>Four cells (C2, C3, C5, and C6) contain formulas. The idea is that if you
+                change one or more of the values in C1, B2 or B5 all the depending values are
+                automatically adjusted.</p>
             <fig>
                 <title>Example calculation purchase-profit-selling</title>
                 <image keyref="Example_Sellings">
@@ -50,30 +50,30 @@
                 <cmd>Enter in cell <uicontrol>C2</uicontrol> the formula
                         <userinput>=B2*C1</userinput>.</cmd>
                 <stepresult>After pressing the <uicontrol>Enter</uicontrol> key, in cell
-                        <uicontrol>C2</uicontrol> the result of the formula appears:
-                        <systemoutput>1000</systemoutput>. This is the calculated
+                        <uicontrol>C2</uicontrol> the result of the formula,
+                        <systemoutput>1000</systemoutput>,  is displayed. This is the calculated
                     profit.</stepresult>
             </step>
             <step>
                 <cmd>Enter in cell <uicontrol>C3</uicontrol> the formula
                         <userinput>=C1+C2</userinput>.</cmd>
-                <stepresult>Upon completion of the input in cell C3 the result appears:
-                        <systemoutput>5000</systemoutput>.</stepresult>
+                <stepresult>Upon completion of the input in cell C3 the result,
+                        <systemoutput>5000</systemoutput>, is displayed.</stepresult>
             </step>
             <step>
                 <cmd>Enter in cell <uicontrol>C5</uicontrol> the formula
                         <userinput>=B5*C3</userinput>.</cmd>
-                <stepresult>After completion in cell <uicontrol>C5</uicontrol> the result appears:
-                        <systemoutput>1050</systemoutput>.</stepresult>
+                <stepresult>After completion in cell <uicontrol>C5</uicontrol> the result,
+                        <systemoutput>1050</systemoutput>, is displayed.</stepresult>
             </step>
             <step>
                 <cmd>Enter in cell <uicontrol>C6</uicontrol> the formula
                         <userinput>=C3+C5</userinput>.</cmd>
-                <stepresult>After completion in cell <uicontrol>C6</uicontrol> the result appears:
-                        <systemoutput>6050</systemoutput>.</stepresult>
+                <stepresult>After completion in cell <uicontrol>C6</uicontrol> the result,
+                        <systemoutput>6050</systemoutput>, is displayed..</stepresult>
             </step>
             <step>
-                <cmd>Experiment with other values for purchase, profit rate and VAT rate.</cmd>
+                <cmd>Experiment with other values for purchase, profit rate, and VAT rate.</cmd>
                 <stepresult>Note that by changing the values, all formulas will be automatically
                     recalculated.</stepresult>
             </step>

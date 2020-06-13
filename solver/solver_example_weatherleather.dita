@@ -15,8 +15,8 @@
     </prolog>
     <taskbody>
         <context>
-            <p>As an example the case study WeatherLeather is used. In this case the profit must be
-                maximized.</p>
+            <p>As an example, the case study WeatherLeather is used. In this case, the profit must
+                be maximized.</p>
             <note type="other" othertype="File"><filepath>WeatherLeather.xlsx</filepath></note>
         </context>
         <steps>
@@ -67,7 +67,7 @@
                 <cmd>Enter a restriction <userinput>D8 &lt;= E8</userinput> and click on
                         <uicontrol>OK</uicontrol>.</cmd>
                 <stepresult>The dialog box <wintitle>Solver Parameters</wintitle> appears again and
-                    Excel has the first restriction converted to: <systemoutput>$D$8 &lt;=
+                    Excel has the first restriction converted to <systemoutput>$D$8 &lt;=
                         $E$8</systemoutput>.</stepresult>
             </step>
             <step>
@@ -78,7 +78,7 @@
                         <uicontrol>Add</uicontrol>.</cmd>
                 <stepresult>Now the empty dialog box <wintitle>Add Constraint</wintitle> is
                     displayed. You don't see now that Excel has added the second restriction.<note
-                        type="tip"> By clicking on <uicontrol>Add</uicontrol> in stead of
+                        type="tip"> By clicking on <uicontrol>Add</uicontrol> instead of
                             <uicontrol>OK</uicontrol> you can add the restrictions easily without
                         having to return to the <wintitle>Solver Parameters</wintitle>
                     again.</note></stepresult>
@@ -111,7 +111,7 @@
             <step>
                 <cmd>Click on <uicontrol>Solve</uicontrol>.</cmd>
                 <stepresult>
-                    <p>After short time the results pane of the Solver appears.</p>
+                    <p>After a short time, the results pane of the Solver appears.</p>
                     <fig>
                         <title>Solver Results</title>
                         <image keyref="solver_results_solution_dialogbox">
@@ -141,14 +141,14 @@
                         </image>
                     </fig>
                     <note type="tip">The names that are used in the report are not always accurate
-                        or clear. This is because Excel takes these names out of the the text cells
-                        in the surrounding area. To ensure there are good names in the report, you
+                        or clear. This is because Excel takes these names out of the text cells in
+                        the surrounding area. To ensure there are good names in the report, you
                         first have to supply meaningful names to the relevant cells in the
                         worksheet. This is highly recommended.</note>
                     <note type="attention">At the section Constraints in the Answer Report you can
                         see in the column Status which restrictions are <term>Binding</term>. If so,
                         this indicates that the limit of the constraint is reached and there is no
-                        slack. In this example you can see that all capacity for the cutting time
+                        slack. In this example, you can see that all capacity for the cutting time
                         and sewing time is used. For the long jackets, the limit for the market is
                         not reached, there could be 6 more pieces sold.</note>
                 </stepresult>

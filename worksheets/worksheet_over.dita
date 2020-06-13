@@ -27,7 +27,7 @@
             </fig>
         </p>
         <p>The rows are noted by numbers 1, 2, 3, ... The columns are noted by letters A, B, C, ...
-            And after the letter Z it's it starts again with AA,AB, ... And after ZZ a third letter
+            And after the letter Z it's it starts again with AA, AB, ... And after ZZ a third letter
             is added and it's going on with AAA, AAB, etc. A worksheet can contain 16,384 columns
             and 1,048,576 rows. This provides more than 17 billion cells.</p>
         <p>Each cell corresponds to a particular row and a particular column. The combination of the
@@ -46,7 +46,7 @@
             entry with the <uicontrol>Enter key</uicontrol>. By default, the active cell is moved 1
             cell downwards.<note type="tip">The direction of the movement of the active cell after
                 pressing the Enter key can be changed in the <uicontrol>Excel Options</uicontrol>.
-                The choices are: down, up, right and left.</note></p>
+                The choices are: down, up, right, and left.</note></p>
         <p>The content of a cell can be:<ul>
                 <li>text</li>
                 <li>numbers</li>

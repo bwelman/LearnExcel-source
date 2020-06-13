@@ -14,7 +14,7 @@
   </prolog>
   <body>
         <section>
-            <p>Solv the following system of equations using the Solver.</p>
+            <p>Solve the following system of equations using the Solver.</p>
             <fig>
                 <image keyref="ex_solv009_data"/>
             </fig>

@@ -15,10 +15,10 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>It is very common that you want to perform one command on a number of cells. For example,
-            if you want to centralize the text in a number of cells, or change the font of these
-            cells. Therefore it is very important that you get a good routine selecting multiple
-            cells at the same time. In the table below you can see the most common selections.</p>
+        <p>Commonly, you want to perform one command on several cells. For example, if you want to
+            centralize the text in some cells, or change the font of these cells. Therefore you must
+            get a good routine selecting multiple cells at the same time. In the table below you can
+            see the most common selections.</p>
         <simpletable>
             <sthead>
                 <stentry>desired selection</stentry>
@@ -30,7 +30,8 @@
             </strow>
             <strow>
                 <stentry>range of cells</stentry>
-                <stentry>Click the first cell in the range and then drag to the last cell.</stentry>
+                <stentry>Click the first cell in the range and then drag it to the last
+                    cell.</stentry>
             </strow>
             <strow>
                 <stentry>single column</stentry>
@@ -38,7 +39,7 @@
             </strow>
             <strow>
                 <stentry>adjacent columns</stentry>
-                <stentry>Click on the first column letter and drag to the last column
+                <stentry>Click on the first column letter and drag it to the last column
                     letter.</stentry>
             </strow>
             <strow>
@@ -47,14 +48,14 @@
             </strow>
             <strow>
                 <stentry>adjacent rows</stentry>
-                <stentry>Click on the first row number and drag to the last row number.</stentry>
+                <stentry>Click on the first row number and drag it to the last row number.</stentry>
             </strow>
             <strow>
                 <stentry>all cells in worksheet</stentry>
-                <stentry>Click on the <uicontrol>Select All button</uicontrol>, above row number 1
+                <stentry>Click on the <uicontrol>Select All button</uicontrol>, above row number 1,
                     and left from column A. <image keyref="Worksheet_Select">
                         <alt>Select All button</alt>
-                    </image><note type="tip">Shortcut CTRL A</note></stentry>
+                    </image><note type="tip">Shortcut CTRL-A</note></stentry>
             </strow>
         </simpletable>
         <p>When selecting, you can also use the <uicontrol>Shift key</uicontrol> or the
@@ -75,32 +76,32 @@
             </dlentry>
             <dlentry>
                 <dt>CTRL key</dt>
-                <dd>Using the CTRL key, you can select non-adjacent area's. Select the first cell,
+                <dd>Using the CTRL key, you can select non-adjacent areas. Select the first cell,
                     area, row or column, hold down the <uicontrol>CTRL key</uicontrol> while you
-                    select the other cells, areas, rows and columns.</dd>
+                    select the other cells, areas, rows, and columns.</dd>
             </dlentry>
         </dl>
         <note type="attention"><ul>
                 <li>Selections are only possible when the mouse pointer has the shape for making
-                    selections (thick plus sign): <image keyref="mouse_pointer_cross">
+                    selections (thick plus sign) <image keyref="mouse_pointer_cross">
                         <alt>Mouse selection shape</alt>
                     </image>.</li>
-                <li>A selected area is highlighted in color except the cell where you started the
-                    selection. This cell is the <term>active cell</term> and has a white
+                <li>A selected area is highlighted in color except for the cell where you started
+                    the selection. This cell is the <term>active cell</term> and has a white
                     background.</li>
             </ul>
         </note>
-        <note type="tip">Dragging from bottom to top and from right to left is easier then doing it
+        <note type="tip">Dragging from bottom to top and from right to left is easier than doing it
             in the reverse direction.</note>
         <section>
             <title>Indicating areas</title>
             <p>You can use cell addresses for indicating adjacent areas. A few examples:</p>
             <ul>
-                <li><uicontrol>A2: C7</uicontrol> is a rectangular area cells of A2 through C7. You
-                    always start with the cell address of the upper left corner, followed by a colon
-                    and then the address of the bottom right corner.</li>
-                <li><uicontrol>B:E</uicontrol> are the columns B through E.</li>
-                <li><uicontrol>3:9</uicontrol> are the rows 3 through 9.</li>
+                <li><uicontrol>A2: C7</uicontrol> is a rectangular area of cells of A2 through C7.
+                    You always start with the cell address of the upper left corner, followed by a
+                    colon and then the address of the bottom right corner.</li>
+                <li><uicontrol>B:E</uicontrol> are columns B through E.</li>
+                <li><uicontrol>3:9</uicontrol> are rows 3 through 9.</li>
             </ul>
         </section>
     </conbody>

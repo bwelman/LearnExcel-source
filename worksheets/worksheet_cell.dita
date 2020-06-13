@@ -34,12 +34,12 @@
         <p>Looking at the figure it is difficult to see what the format and what the content is.
             Content and formatting are two different things.</p>
         <note type="attention">Make sure you do not type the formatting when entering data in a
-            cell. For example if you type in cell A9 <userinput>40.299 hours</userinput>, then is
-            considered as text and not a number. And because it is a text you cannot calculate with
-            the content. It is possible to only enter the number and then format the cell so that it
-            has the appearance as shown. The content of the cell is than a number with which you can
-            make calculations.</note>
-        <note type="tip">The preferred method is first enter the content in the cell and give the
+            cell. For example, if you type in cell A9 <userinput>40.299 hours</userinput>, then it
+            is considered as text and not a number. And because it is a text you cannot calculate
+            with the content. It is possible to only enter the number and then format the cell so
+            that it has the appearance as shown. The content of the cell is then a number with which
+            you can make calculations.</note>
+        <note type="tip">The preferred method is to first enter the content in the cell and give the
             cell the desired format after that.</note>
     </conbody>
 </concept>

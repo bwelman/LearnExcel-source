@@ -15,13 +15,13 @@
     <body>
         <section>
             <note type="other" othertype="File"><filepath>Revenues.csv</filepath></note>
-            <p>First open this file with a plain text editor (Notepad) to investigate how the file
-                looks like. Important to know is if there are field names in it and which separator
-                symbol (comma, semicolon, ...) is used. Mostly Excel recognize this automatically,
+            <p>First, open this file with a plain text editor (Notepad) to investigate how the file
+                looks. Important to know is if there are field names in it and which separator
+                symbol (comma, semicolon, ...) is used. Mostly Excel recognizes this automatically,
                 but it is useful to know this yourself.</p>
-            <p>Import the data through<uicontrol>Get &amp; Transform</uicontrol>. Use also the query
-                editor to verify that the fields are converted to the correct data type. If not,
-                change the data type.</p>
+            <p>Import the data through <uicontrol>Get &amp; Transform</uicontrol>. Use also the
+                query editor to verify that the fields are converted to the correct data type. If
+                not, change the data type.</p>
         </section>
         <!--<section otherprops="solution">
             <title>Solution</title>

@@ -15,7 +15,7 @@
 		</metadata>
 	</prolog>
 	<taskbody>
-		<prereq>To perform this task it is necessary that the macro CellFormat was created.</prereq>
+		<prereq>To perform this task, the macro CellFormat should have been created.</prereq>
 		<context>
 			<p>A very convenient way to run a macro is by placing a command button on the
 				worksheet.</p>
@@ -37,8 +37,8 @@
 			</step>
 			<step>
 				<cmd>Click on <uicontrol>Button (Form Control)</uicontrol></cmd>
-				<stepresult>The cursor will change to a <systemoutput>+</systemoutput>. With this cursor you can
-					draw a rectangle in the worksheet for the button.</stepresult>
+				<stepresult>The cursor will change to a <systemoutput>+</systemoutput>. With this cursor, you
+                    can draw a rectangle in the worksheet for the button.</stepresult>
 			</step>
 			<step>
 				<cmd>Click the left mouse button and draw a rectangle with the desired dimensions for the button
@@ -49,7 +49,7 @@
                         <image keyref="command_button1">
                             <alt>Design button.</alt>
                         </image>
-                    </fig>Furthermore you will see the dialog box <wintitle>Assign Macro</wintitle>.<fig>
+                    </fig>Furthermore, you will see the dialog box <wintitle>Assign Macro</wintitle>.<fig>
                         <title>Assign macro CellFormat</title>
                         <image keyref="macro_cellformat_assign">
                             <alt>Assign macro CellFormat</alt>
@@ -62,9 +62,9 @@
 					<uicontrol>OK</uicontrol>.</cmd>
 			</step>
 			<step>
-				<cmd>Select the text on the button and change it to a more appropriate text, for example
-						<userinput>Cell format</userinput>.</cmd>
-			</step>
+                <cmd>Select the text on the button and change it to a more appropriate text, for
+                    example, <userinput>Cell format</userinput>.</cmd>
+            </step>
 			<step>
 				<cmd>Deselect the button by clicking anywhere in the worksheet.</cmd>
 				<stepresult>

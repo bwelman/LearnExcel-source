@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
 <concept id="forecasts_accuracy" xml:lang="en-US">
-    <title>Accuray of forecasts</title>
+    <title>Accuracy  of forecasts</title>
     <shortdesc/>
     <prolog>
         <critdates>
@@ -15,10 +15,10 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>The difference between the actual value and the predicted value is called forecast error.
-            To develop forecast models you had to minimise these forecast errors. There are several
-            measures developed to assess the accuracy. You can't just consider one of these as the
-            best. In general, the smaller the number, the better.</p>
+        <p>The difference between the actual value and the predicted value is called the forecast
+            error. To develop forecast models you had to minimize these forecast errors. There are
+            several measures developed to assess accuracy. You can't just consider one of these as
+            the best. In general, the smaller the number, the better.</p>
         <p>The measures available in Excel are:</p>
         <dl>
             <dlentry>

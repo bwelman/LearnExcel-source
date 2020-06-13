@@ -18,8 +18,8 @@
     <taskbody>
         <context>
             <p>In the practice file are the monthly sales data in 2016 of three supermarkets for
-                several products. The products are divided in three productgroups: pvf (potatoes,
-                vegetables and fruits), meat and dairy.</p>
+                several products. The products are divided into three product groups: pvf (potatoes,
+                vegetables, and fruits), meat, and dairy.</p>
             <fig>
                 <title>Table with sales data</title>
                 <image keyref="supermarket_sales_data">
@@ -51,7 +51,7 @@
                 </stepresult>
             </step>
             <step id="pivot_create_end">
-                <cmd>In this task the PivotTable should appear in the existing worksheet. Select
+                <cmd>In this task, the PivotTable should appear in the existing worksheet. Select
                         <userinput>Existing Worksheet</userinput> and click on an empty cell in the
                     worksheet, e.g. cell <userinput>G3</userinput>.</cmd>
                 <stepresult>
@@ -90,14 +90,15 @@
                 </stepresult>
             </step>
             <step>
-                <cmd>Drag in the task panel from the list field <varname>town</varname> to the area
-                        <uicontrol>Rows</uicontrol>, field <varname>productcategory</varname> to the
-                    area <uicontrol>Columns</uicontrol> and field <varname>sales</varname> to the
-                    area <uicontrol>Values</uicontrol>. At the last action the calculation method
+                <cmd>Drag in the task panel field <varname>town</varname> from the list with fields
+                    to the area <uicontrol>Rows</uicontrol>, field
+                        <varname>productcategory</varname> to the area
+                        <uicontrol>Columns</uicontrol>, and field <varname>sales</varname> to the
+                    area <uicontrol>Values</uicontrol>. At the last action, the calculation method
                         <option>Sum</option> of the Sales is applied automatically.</cmd>
                 <info>
                     <note type="tip">You can delete a field from the PivotTable by dragging it out
-                        the area.</note>
+                        of the area.</note>
                 </info>
                 <stepresult>
                     <fig>
@@ -127,7 +128,7 @@
                             <alt>Dialog box value Field Settings</alt>
                         </image>
                     </fig>
-                    <note type="tip">In this window you can also change the displayed name in the
+                    <note type="tip">In this window, you can also change the displayed name in the
                         box <uicontrol>Custom Name</uicontrol>.</note>
                 </stepresult>
             </step>
@@ -196,7 +197,7 @@
                     </fig>
                 </stepresult>
             </step>
-            <stepsection>In stead of total sales you cal also calculate other values, for example
+            <stepsection>Instead of total sales you can also calculate other values, for example,
                 the average monthly sales.</stepsection>
             <step>
                 <cmd>Select any numeric value in the PivotTable and change through the

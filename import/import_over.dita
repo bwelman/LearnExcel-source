@@ -21,7 +21,7 @@
             the data. To do this, a <term>Query Editor</term> is started to create a set of
             instructions that carry out your commands. The last step is loading the data as a table
             in a worksheet.</p>
-        <note>You also have the possibility to load the data into the built-in Data Model.</note>
+        <note>You can also load the data into the built-in Data Model.</note>
         <p>You can also edit the query later and/or refresh the data.</p>
         <p>To create a query, use the <uicontrol>Data</uicontrol> tab in the ribbon, then select one
             of the actions in the <uicontrol>Get &amp; Transform</uicontrol> group.</p>
@@ -31,7 +31,7 @@
                 <alt>Ribbon Data</alt>
             </image>
         </fig>
-        <p>There are buttons for getting data from text/csv, web and an Excel Table/range. These
+        <p>There are buttons for getting data from text/csv, web, and an Excel Table/range. These
             data sources and a lot more are available through the <uicontrol>Get Data</uicontrol>
             button.</p>
         <p>The group <uicontrol>Queries &amp; Connections</uicontrol> has a button for refreshing

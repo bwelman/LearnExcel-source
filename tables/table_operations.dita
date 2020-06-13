@@ -52,7 +52,7 @@
             </ul>
         </section>
         <section>
-            <title>Convert table to a range</title>
+            <title>Convert a table to a range</title>
             <p>Select a cell inside the table. Choose <menucascade>
                     <uicontrol>tab Design (Table Tools) </uicontrol>
                     <uicontrol>Convert to Range (group Tools)</uicontrol>
@@ -76,14 +76,14 @@
         </section>
         <section>
             <title>Table Name</title>
-            <p>When a table is created, then automatically a name is supplied tot the table. The
+            <p>When a table is created, then automatically a name is supplied to the table. The
                 generated names look like Table1, Table2, … When the table is selected, you see the
                 name at <menucascade>
                     <uicontrol>tab Design</uicontrol>
                     <uicontrol>Table Name (group Properties)</uicontrol>
-                </menucascade> . To change the name you can type the new name in the name box.</p>
+                </menucascade>. To change the name you can type the new name in the name box.</p>
             <p>Using appropriate names for tables can be important because when you add formulas to
-                an table, the names of tables columns automatically appears in the formulas. For
+                a table, the names of the tables columns automatically appear in the formulas. For
                 example: <systemoutput>=SUM(Table1[@Column3])</systemoutput></p>
         </section>
     </conbody>

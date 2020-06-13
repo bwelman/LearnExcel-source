@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <task id="worksheet_delete" xml:lang="en-US">
-    <title>Task: Deleting worksheet</title>
+    <title>Task: Deleting a worksheet</title>
     <shortdesc>Instructions on how to delete a worksheet.</shortdesc>
     <prolog>
         <critdates>
@@ -22,12 +22,12 @@
                 case, the worksheet will be removed immediately.</p></context>
         <steps>
             <step>
-                <cmd>Right click on the tab name of the worksheet and then choose
+                <cmd>Right-click on the tab name of the worksheet and then choose
                         <uicontrol>Delete</uicontrol>.</cmd>
                 <stepresult>There are now two possibilities:<ul>
                         <li>The worksheet will be removed immediately. In that case, there is no
                             next step.</li>
-                        <li>A dialog box appears, asking for a conformation of the delete
+                        <li>A dialog box appears, asking for a confirmation of the delete
                             action.</li>
                     </ul></stepresult>
             </step>

@@ -50,13 +50,13 @@
             <step>
                 <cmd>Put the cursor in the <varname>Rate</varname> box and enter
                         <userinput>B2/12</userinput>. Then put the cursor in the
-                        <varname>Nper</varname> box and enter <userinput>B3*12</userinput>. Finally
+                        <varname>Nper</varname> box and enter <userinput>B3*12</userinput>. Finally,
                     put the cursor in the <varname>Pv</varname> box and enter
                         <userinput>B1</userinput>.</cmd>
                 <info>
                     <note type="important">Because the period in this example is in months and not
                         in years, the annual rate must be divided by 12 and the number of years must
-                        be multiplied by 12.</note>                    
+                        be multiplied by 12.</note>
                 </info>
                 <stepresult>
                     <fig>

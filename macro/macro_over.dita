@@ -16,17 +16,17 @@
 	</prolog>
 	<conbody>
 		<p>A task you have to perform regularly in Microsoft Excel can be automated with a macro. A macro
-			is a series of commands and functions that can be executed by a single command or click.
-			A serie of commands can be put in a macro. By running the macro, those commands and
-			actions are carried out in succession.</p>
-		<p>The language in which the Excel macros are written is Visual Basic for Applications, or VBA.
-			The commands and actions of the macro are stored in a Visual Basic module. With the
-			Visual Basic editor you can edit macros, copy macros from one module to another, copy
-			macros between different workbooks and rename the modules and macros.</p>
+            is a series of commands and functions that can be executed by a single command or click.
+            A series of commands can be put in a macro. By running the macro, those commands and
+            actions are carried out in succession.</p>
+		<p>Excel macros are written in the language Visual Basic for Applications (VBA). The commands and
+            actions of the macro are stored in a Visual Basic module. With the Visual Basic editor,
+            you can edit macros, copy macros from one module to another, copy macros between
+            different workbooks and rename the modules and macros.</p>
 		<p>The simple macros can be made by recording the actions with the built-in macro recorder. After
-			starting the recorder all actions are recorded and converted to VBA code, until the
-			recorder is stopped. To get a good macro, it is therefore important to first note the
-			actions to be carried out. To record, edit and run macros, the Developer tab must be
-			made visible.</p>
+            starting the recorder all actions are recorded and converted to VBA code until the
+            recorder is stopped. To get a good macro, it is therefore important to first note the
+            actions to be carried out. To record, edit, and run macros, the Developer tab must be
+            made visible.</p>
 	</conbody>
 </concept>

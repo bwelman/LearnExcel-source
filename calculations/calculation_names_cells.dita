@@ -25,7 +25,7 @@
             <li>Names should begin with a letter or with the underscore symbol (_), digits are
                 allowed after that. It is not allowed to start a name with a digit.</li>
             <li>Names cannot contain spaces. To simulate a space you can use the underscore symbol,
-                for example Sales_2010.</li>
+                for example, Sales_2010.</li>
             <li>Most symbols (comma, colon, exclamation point, etc.) can not be used.</li>
         </ul>
     </conbody>

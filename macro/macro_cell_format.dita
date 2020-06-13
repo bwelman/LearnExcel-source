@@ -16,10 +16,10 @@
 		</metadata>
 	</prolog>
 	<taskbody>
-		<context>In this task you will create a macro that should format the text in the selected cell
-			with the font Comic Sans MS, bold, italic, 16 pt and red. The column width must be
-			adjusted to the width of the text in the cell. The name of the macro should be
-				<q>CellFormat</q>.</context>
+		<context>In this task, you will create a macro that should format the text in the selected cell
+            with the font Comic Sans MS, bold, italic, 16 pt, and red. The column width must be
+            adjusted to the width of the text in the cell. The name of the macro should be
+                <q>CellFormat</q>.</context>
 		<steps>
 			<step>
 				<cmd>Start with an empty worksheet and enter a text in any cell.</cmd>
@@ -85,8 +85,8 @@
 				<cmd>Test the macro on another cell with text.</cmd>
 				<substeps>
 					<substep>
-						<cmd>Select the cell that contains text.</cmd>
-					</substep>
+                        <cmd>Select the cell that contains the text.</cmd>
+                    </substep>
 					<substep>
 						<cmd>Choose <menucascade>
 								<uicontrol>Developer tab</uicontrol>

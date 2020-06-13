@@ -15,37 +15,39 @@
   <body>
     <section>
       <p>A mother-child center in a hospital would like to have a daily overview of babies who are
-        born too early, too late and on time. For too early and too late they also want to see how
-        many days too early or too late. And for babies who still have to be born they want to see
-        they are overdue.</p>
+                born too early, too late, and on time. For too early and too late they also want to
+                see how many days too early or too late. And for babies who still have to be born,
+                they want to see they are overdue.</p>
       <p>
         <fig>
                     <image keyref="ex_form005_data"/>
                 </fig>
       </p>
-      <p>Create this model in a worksheet. Also make a similar layout.</p>
+      <p>Create this model in a worksheet. Also, make a similar layout.</p>
       <note type="other" othertype="File"><filepath>Form005.xlsx</filepath></note>
       <note type="tip"><ol>
-        <li>In the last four columns the answer depends on one or more conditions, so you need to
-            use the function IF.</li>
-          <li>In the case of two conditions you can embed a second IF function within the first IF
-            function. An alternative is to use the AND function within the IF function.</li>
-          <li>A birth date is too early when this date is before the expected date.</li>
+        <li>In the last four columns, the answer depends on one or more conditions, so you need to
+                        use the function IF.</li>
+          <li>In the case of two conditions, you can embed a second IF function within the first IF
+                        function. An alternative is to use the AND function within the IF
+                        function.</li>
+          <li>Birth date is too early when this date is before the expected date.</li>
           <li>A date in Excel is in reality just a number, with which you can perform calculations.
-            So you can determine whether a date is smaller, larger or the same as another date.</li>
+                        So you can determine whether a date is smaller, larger, or the same as
+                        another date.</li>
           <li>If no date is known, then the appropriate field is empty. You can check in Excel if a
             field is empty.</li>
       </ol></note>
     </section>
     <section otherprops="solution">
       <title>Solution</title>
-      <p>Formula Days too early. Two conditions should be checked. First check if the baby has been
-        born by testing if there is a birthday value. And if so, test if the birthday is before
-        the expected day. Two possible solutions:<ul>
-          <li><codeph>=IF(Birthday>&lt;>"",IF(Birthday&lt;Expected,Expected-Birthday,""),"")</codeph></li>
-          <li><codeph>=IF(AND(Birthday&lt;>"",Birthday&lt;Expected),Expected-Birthday,"")</codeph></li>
-        </ul>The latest version has a slight preference because it is easier to read and
-        understand.</p>
+      <p>Formula Days too early. Two conditions should be checked. First, check if the baby has been
+                born by testing if there is a birthday value. And if so, test if the birthday is
+                before the expected day. Two possible solutions:<ul>
+                    <li><codeph>=IF(Birthday>&lt;>"",IF(Birthday&lt;Expected,Expected-Birthday,""),"")</codeph></li>
+                    <li><codeph>=IF(AND(Birthday&lt;>"",Birthday&lt;Expected),Expected-Birthday,"")</codeph></li>
+                </ul>The latest version has a slight preference because it is easier to read and
+                understand.</p>
       <p>Formula Days too late similar like before. A possible solution:<ul>
           <li><codeph>=IF(AND(Birthday&lt;>"";Birthday>Expected);Birthday-Expected;"")</codeph></li>
         </ul></p>

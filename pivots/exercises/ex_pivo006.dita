@@ -14,8 +14,8 @@
     </prolog>
     <body>
         <section>
-            <p>In the next table you see the menswear and ladieswear sales in the four regions in
-                the years 2009 and 2010.</p>
+            <p>In the following table, you see the menswear and ladieswear sales in the four regions
+                in the years 2009 and 2010.</p>
             <fig>
                 <image keyref="ex_pivo006_data"/>
             </fig>
@@ -46,8 +46,9 @@
                     <stentry>Sales</stentry>
                 </strow>
             </simpletable>
-            <p conkeyref="pivot/options"/>/> <p>Change <uicontrol>Number Format</uicontrol> in
-                    <option>Accounting with 0 decimals</option>.</p>
+            <p conkeyref="pivot/options"/>
+            <p>Change <uicontrol>Number Format</uicontrol> in <option>Accounting with 0
+                    decimals</option>.</p>
             <p>Choose <menucascade>
                     <uicontrol>tab Option</uicontrol>
                     <uicontrol>Options (group PivotTable)</uicontrol>

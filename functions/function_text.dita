@@ -2,7 +2,8 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <task id="function_text" xml:lang="en-US">
     <title>Task: Text Functions</title>
-    <shortdesc>A task splitting a text in different parts by using four text functions.</shortdesc>
+    <shortdesc>A task splitting a text into different parts by using four text
+        functions.</shortdesc>
     <prolog>
         <critdates>
             <created date="2017-08-31"/>
@@ -17,11 +18,11 @@
     <taskbody>
         <context><p>Excel has several functions for performing operations on texts. For example, you
                 can determine the length of a text and retrieve certain pieces of text from a larger
-                text.</p><p>In the following figure you see some full names in column A. The idea is
-                to extract the first and last names out of the full names and put these in separate
-                columns. In the example the first and last names are separated by a space. To
-                extract the different parts you need to know the location of the space. The text
-                before the space is the first name and the text after the space is the last name. <fig>
+                text.</p><p>In the following figure, you see some full names in column A. The idea is to extract the first
+                and last names out of the full names and put these in separate columns. In the
+                example, the first and last names are separated by a space. To extract the different
+                parts you need to know the location of the space. The text before the space is the
+                first name and the text after the space is the last name. <fig>
                     <title>Data to use with the text functions and their results</title>
                     <image keyref="Example_Text_Result">
                         <alt>Data to use with the text functions and their results</alt>
@@ -47,10 +48,11 @@
             <step>
                 <cmd>Put the cursor in the <varname>Text</varname> box, select in the worksheet cell
                         <userinput>A2</userinput> and click <uicontrol>OK</uicontrol>.</cmd>
-                <stepresult>The value <systemoutput>10</systemoutput> appears in cell B2 appears.
+                <stepresult>The value of <systemoutput>10</systemoutput> appears in cell B2 appears.
                     So, the text in A2 contains 10 characters.</stepresult>
             </step>
-            <stepsection>Part: determine the space location with the function SEARCH</stepsection>
+            <stepsection>Part: determine the location of the space with the function
+                SEARCH</stepsection>
             <step>
                 <cmd>Select cell <uicontrol>C2</uicontrol> and press the button <uicontrol>Insert
                         Function</uicontrol> on the formula bar.</cmd>
@@ -94,7 +96,7 @@
             <step>
                 <cmd>Enter the values for the arguments in the <wintitle>Function
                         Arguments</wintitle> dialog box as displayed in the following figure.</cmd>
-                <info>In the <varname>Num_chars</varname> box you need to specify the length of the
+                <info>In the <varname>Num_chars</varname> box, you need to specify the length of the
                     text to extract. This is one less than the position of the space and that
                     position can be found in cell C2.</info>
                 <stepresult>
@@ -124,7 +126,7 @@
             <step>
                 <cmd>Enter the values for the arguments in the <wintitle>Function
                         Arguments</wintitle> dialog box as displayed in the following figure.</cmd>
-                <info>In the <varname>Num_chars</varname> box you need to specify the length of the
+                <info>In the <varname>Num_chars</varname> box, you need to specify the length of the
                     text to extract. This is equal to the total length of the text (in B2) minus the
                     position of the space (in C2).</info>
                 <stepresult>

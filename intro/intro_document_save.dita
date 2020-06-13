@@ -19,7 +19,7 @@
     </prolog>
     <taskbody>
         <context><p>The most frequently used methods to save a workbook are through <uicontrol>File</uicontrol> and
-                through the <uicontrol>Quick Access Toolbar</uicontrol>. When you re- save an
+                through the <uicontrol>Quick Access Toolbar</uicontrol>. When you re-save an
                 existing workbook, the previous version of the workbook is overwritten. When you
                 save a workbook for the first time, then Excel shows the dialog box <wintitle>Save
                     as</wintitle>.</p></context>
@@ -47,11 +47,11 @@
                 <cmd>Select the desired storage location</cmd>
             </step>
             <step>
-                <cmd>Enter your file name in the box <varname>Bestandsnaam</varname> and click
+                <cmd>Enter your file name in the box <varname>File name</varname> and click
                         <uicontrol>Save</uicontrol>.</cmd>
                 <info>
                     <note type="tip">
-                        <p>You also have the possibility here to save the file in an other format.
+                        <p>You also have the possibility here to save the file in other formats.
                             Choose the desired file format. <fig>
                                 <title>Choice file format</title>
                                 <image keyref="Saveas_Format_Choice">

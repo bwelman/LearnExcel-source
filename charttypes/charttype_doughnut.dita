@@ -24,8 +24,8 @@
         </context>
         <section>
             <title>Problem</title>
-            <p>In the following figure sales by quarter of a company in the years 2008 and 2009 are
-                shown.</p>
+            <p>In the following figure, the quarterly sales of a company are shown for the years
+                2008 and 2009.</p>
             <fig>
                 <title>Sales by quarter</title>
                 <image keyref="doughnut_data">

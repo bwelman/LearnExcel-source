@@ -14,9 +14,10 @@
   </prolog>
   <body>
     <section><p>The public utility of a city keeps a list for recording per district the reported failures to
-        gas, water and electricity. You can see this list in the following figure. The management of
-        the company would like an overview of the total number of failures per district as
-        calculated under resume. The easiest way to do this is by using array formulas.</p>
+                gas, water, and electricity. You can see this list in the following figure. The
+                management of the company would like an overview of the total number of failures per
+                district as calculated under the resume. The easiest way to do this is by using
+                array formulas.</p>
         <fig>
                 <image keyref="ex_matr002_data"/>
             </fig>
@@ -33,7 +34,7 @@
                     </li>
           <li>By multiplying the column array with the array {C2:E11} you get a new array of 10 rows
                         and three columns. The cells in the rows which are multiplied with FALSE get
-                        all the value zero. The cells which are multiplied with TRUE keep there
+                        all the value zero. The cells which are multiplied with TRUE keep their
                         original values:<fig>
                             <image keyref="ex_matr002_tip2"/>
                         </fig>
@@ -46,8 +47,8 @@
     <section otherprops="solution">
       <title>Solution</title>
       <p>Select the cell for the total of North and enter the formula
-          <codeph>=SUM(($B$2:$B$11=B16)*($C$2:$E$11))</codeph> and press
-          <uicontrol>Ctrl-Shift-Enter</uicontrol>. The copy this formula down.</p>
+                    <codeph>=SUM(($B$2:$B$11=B16)*($C$2:$E$11))</codeph> and press
+                    <uicontrol>Ctrl-Shift-Enter</uicontrol>. Then copy this formula down.</p>
     </section>
   </body>
 </topic>

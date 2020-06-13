@@ -17,12 +17,12 @@
     <taskbody>
         <context>
             <p>A shop at the international airport sells articles both tax-free and with 21% VAT.
-                The currency for tax-free prices is U.S. dollar, but customers can also pay in
+                The currency for tax-free prices is the U.S. dollar, but customers can also pay in
                 euros. For the VAT and the prices with VAT only the euro will be used. In the
-                following figure you can see a part of the price table. Article numbers and dollar
-                prices are somewhat artificial in order to practice several Excel skills. The
-                intention is to create this table as convenient as possible. Only some indications
-                are given, no detailed steps.</p>
+                following figure, you can see a part of the price table. Article numbers and dollar
+                prices are somewhat artificial to practice several Excel skills. The intention is to
+                create this table as convenient as possible. Only some indications are given, no
+                detailed steps.</p>
             <fig>
                 <title>Price table</title>
                 <image keyref="Example_Prices">
@@ -44,7 +44,7 @@
                 <li>The price in euro can be calculated from the dollar price by multiplying this
                     price with the dollar exchange rate. You only need to enter the correct formula
                     in the first cell (C6) then you can copy it down. Use an absolute address for
-                    the dollar exchange rate, this address should not updated during the copy
+                    the dollar exchange rate, this address should not be updated during the copy
                     action.</li>
                 <li>To calculate the amount of VAT the euro price should be multiplied by the VAT
                     rate. And for the price incl. VAT the amount of VAT must be added to the

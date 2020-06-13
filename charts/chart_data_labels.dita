@@ -16,7 +16,7 @@
     </prolog>
     <taskbody>
         <context>
-            <p>Data labels are numbers at the data points which show the actual values for the data
+            <p>Data labels are numbers at the data points that show the actual values for the data
                 points.</p>
             <note conref="../common/reuse_task_parts.dita#reuse_task_parts/Chart_File"/>
         </context>

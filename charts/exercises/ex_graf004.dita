@@ -14,8 +14,8 @@
   </prolog>
   <body>
     <section>
-      <p>In the following table the percentages of the Dutch population age structure for the years
-        1950-2010 is listed, divided into nine age classes (source: CBS).</p>
+      <p>In the following table, the percentages of the Dutch population age structure for the years
+                1950-2010 are listed, divided into nine age classes (source: CBS).</p>
       <fig>
                 <image keyref="ex_graf004_data"/>
             </fig>
@@ -34,9 +34,9 @@
               <uicontrol>Switch Row/Column (group Data)</uicontrol>
             </menucascade>.</li>
           <li>For the indication of the data source <menucascade>
-              <uicontrol>choose tab Layout</uicontrol>
-              <uicontrol>Text Box (group Insert)</uicontrol>
-            </menucascade>, draw the box and enter the text.</li>
+                            <uicontrol>choose tab Layout</uicontrol>
+                            <uicontrol>Text Box (group Insert)</uicontrol>
+                        </menucascade>, draw the box, and enter the text.</li>
           <li>Format the values on the vertical axis as percentages without decimals.</li>
         </ul></p>
     </section>

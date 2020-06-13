@@ -14,8 +14,8 @@
     </prolog>
     <body>
         <section>
-            <p>In a worksheet you can find in the last two columns the number of visited club
-                meetings in 2009 and 2010. Create using pivot tables the next reports.</p>
+            <p>In a worksheet, you can find in the last two columns the number of visited club
+                meetings in 2009 and 2010. Create using pivot tables in the next reports:</p>
             <ol>
                 <li>The number of members of the club by domicile and by gender.</li>
                 <li>The percentage of members by hobby and by gender.</li>
@@ -42,12 +42,12 @@
             <ol>
                 <li>Create a pivot table with <uicontrol>Column Labels</uicontrol>
                     <userinput>gender</userinput>, <uicontrol>Row Labels</uicontrol>
-                    <userinput>domicile</userinput> and <uicontrol>Values</uicontrol>
+                    <userinput>domicile</userinput>, and <uicontrol>Values</uicontrol>
                     <userinput>name (Count</userinput>). Report Layout: Outline form and without
                     field captions.</li>
                 <li>Create a pivot table with <uicontrol>Column Labels</uicontrol>
                     <userinput>gender</userinput>, <uicontrol>Row Labels</uicontrol>
-                    <userinput>hobby</userinput> and <uicontrol>Values</uicontrol>
+                    <userinput>hobby</userinput>, and <uicontrol>Values</uicontrol>
                     <userinput>name (Count</userinput>). Choose <menucascade>
                         <uicontrol>tab Options</uicontrol>
                         <uicontrol>Field Settings (group Active Field)</uicontrol>
@@ -58,7 +58,7 @@
                     captions.</li>
                 <li>Create a pivot table with <uicontrol>Column Labels</uicontrol>
                     <userinput>gender</userinput>, <uicontrol>Row Labels</uicontrol>
-                    <userinput>2010</userinput> and <uicontrol>Values</uicontrol>
+                    <userinput>2010</userinput>, and <uicontrol>Values</uicontrol>
                     <userinput>2010 (Count</userinput>). Select a number under Row Labels and choose <menucascade>
                         <uicontrol>tab Options</uicontrol>
                         <uicontrol>Group Field (group Group)</uicontrol>

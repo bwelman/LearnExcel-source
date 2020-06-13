@@ -25,6 +25,6 @@
             arrowhead, clicking on it shows a list of the most recent actions. By clicking on an
             action in this list, all changes up to and including this action will be undone.</p>
         <p>Using the button <uicontrol>Redo</uicontrol> can redo the actions you undid. Besides this
-            button there can be an arrowhead with a list of the most recent actions.</p>
+            button, there can be an arrowhead with a list of the most recent actions.</p>
     </conbody>
 </concept>

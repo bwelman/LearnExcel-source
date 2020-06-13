@@ -19,8 +19,8 @@
     </prolog>
     <conbody>
         <p>It is very useful to be able to copy formulas to other cells, especially when formulas
-            are very similar to each other. In the following figure you see an example where the
-            formulas in A3, B3, C3 and D3 show great similarities. This makes it possible to enter
+            are very similar to each other. In the following figure, you see an example where the
+            formulas in A3, B3, C3, and D3 show great similarities. This makes it possible to enter
             the formula only in cell A3 and then copy it to B3:D3.</p>
         <fig>
             <title>Example with copyable formulas</title>
@@ -65,9 +65,9 @@
         <note type="remember">When copying a formula with cell addresses, the absolute part is not
             modified and the relative part will be modified.</note>
         <p>You can change the type of a cell reference in one of the following ways:<ul>
-                <li>Type the dollar signs on the desired place.</li>
+                <li>Type the dollar signs at the desired place.</li>
                 <li>If the cursor is in a cell address, press repeatedly on key
-                        <uicontrol>F4</uicontrol> until the desired result is achieved. During
+                        <uicontrol>F4</uicontrol>, until the desired result is achieved. During
                     repetitive pressing on <uicontrol>F4</uicontrol> all four possibilities will be
                     displayed.</li>
             </ul></p>
@@ -79,7 +79,7 @@
                     lowered or raised.</li>
                 <li>By copying in the direction upwards or downwards the row number will be
                     decreased or increased.</li>
-                <li>The parts in the address with a dollar sign in front,are not affected.</li>
+                <li>The parts in the address with a dollar sign in front, are not affected.</li>
             </ul>
         </section>
         <example>

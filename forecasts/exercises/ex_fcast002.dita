@@ -18,12 +18,12 @@
       <p>This file represents the sales of a company over the years 2007-2015.</p>
       <ol>
         <li>Create a chart showing the sales against the year.</li>
-        <li>Add the following trend lines in succession: linear, logarithmic and exponentiall.
+        <li>Add the following trend lines in succession: linear, logarithmic, and exponential.
                     Display for each of these trend lines the R-squared value. Based on this value,
                     choose the most appropriate model.</li>
         <li>Make a forecast of the sales in 2016 through the options for the trend line and read the
                     value in the chart.</li>
-                <li>Experiment with the trend line options to figure out when a revenue of $
+                <li>Experiment with the trend line options to figure out when revenue of $
                     25,000,000 is expected.</li>
         <li>Calculate a prediction of the sales in 2016 with a worksheet formula. Which formula you
                     can use for this depends on the chosen model. See section <xref
@@ -61,8 +61,8 @@
                 </image>
             </fig>
       <p>Forecast for 2016, read from the chart: about $ 20,000,000</p>
-            <p>In the trendline options the number of forward periods opties has to be set on 3 to
-                get a forecast > 25,000,000. This will be expected somewhere in 2018.</p>
+            <p>In the trendline options, the number of forwarding periods has to be set on 3 to get
+                a forecast > 25,000,000. This will be expected somewhere in 2018.</p>
       <p>Based on the R<sup>2</sup> value, the exponential model is the best choice.</p>
             <p>ecause the best trend line is exponential you can use the function GROWTH.
                     <codeph>=GROWTH(B2:B10,A2:A10,A11)</codeph> gives $20,000,000.</p>

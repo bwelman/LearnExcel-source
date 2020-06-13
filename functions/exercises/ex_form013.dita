@@ -14,7 +14,7 @@
     </prolog>
     <body>
         <section>
-            <p>Olive oil can be purchased in cans of 5 liter. The price depends upon the amount of cans:<ul>
+            <p>Olive oil can be purchased in cans of 5 liters. The price depends upon the number of cans:<ul>
                     <li>$45 per can for the first 20 cans</li>
                     <li>$40 for any can more than 20</li>
                 </ul></p>

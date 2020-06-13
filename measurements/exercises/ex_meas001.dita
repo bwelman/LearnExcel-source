@@ -14,7 +14,7 @@
   </prolog>
   <body>
     <section>
-      <p>The height and weight of some school children is listed in the following figure.</p>
+      <p>The height and weight of some school children are listed in the following figure.</p>
       <fig>
                 <title>Results height and weight</title>
                 <image keyref="ex_meas001_data">

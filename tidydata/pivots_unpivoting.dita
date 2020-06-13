@@ -2,7 +2,7 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <task id="pivots_unpivoting" xml:lang="en-US">
     <title>Task: Unpivot data</title>
-    <shortdesc>Unpivot data that is in crosstab/pivot format.</shortdesc>
+    <shortdesc>Unpivot data that is in the crosstab/pivot format.</shortdesc>
     <prolog>
         <critdates>
             <created date="2018-03-27"/>
@@ -99,16 +99,16 @@
                 are not in a well structured Excel table. In this crosstab, the four columns for a
                 given year (2000, 2005, 2010, 2015) always contain the same type of data, namely the
                 population. In fact, this crosstab has four variables: <varname>Country</varname>,
-                    <varname>Gender</varname>, <varname>Year</varname> and
+                    <varname>Gender</varname>, <varname>Year</varname>, and
                     <varname>Population</varname>.</p>
             <p>To make data suitable for analysis, they must be well structured. For this they must
                 meet the following conditions: <ol>
-                    <li>Each variable in a own column.</li>
+                    <li>Each variable in an own column.</li>
                     <li>Each observation of a variable in a row.</li>
                 </ol></p>
             <p>This means that the data in the crosstab must be converted to a table with four
                 columns: <varname>Country</varname>, <varname>Gender</varname>,
-                    <varname>Year</varname> and <varname>Population</varname>. And each row is an
+                    <varname>Year</varname>, and <varname>Population</varname>. And each row is an
                 observation for the population.</p>
             <p>
                 <simpletable frame="all">
@@ -138,7 +138,7 @@
                     </strow>
                 </simpletable>
             </p>
-            <p>With the standard functions of Excel this is hard to do, but easy with the
+            <p>With the standard functions of Excel, this is hard to do but easy with the
                 possibilities of Power Query.</p>
             <note type="other" othertype="File"
                 ><filepath>Benelux_Population.xlsx</filepath></note>

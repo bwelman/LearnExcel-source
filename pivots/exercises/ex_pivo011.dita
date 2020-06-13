@@ -15,7 +15,7 @@
     <body>
         <section>
             <p>Determine using a pivot table the minimum and maximum fuel consumption per car brand
-                and per fuel type.</p>
+                and fuel type.</p>
             <note type="other" othertype="File"><filepath>Car.xlsx</filepath></note>
         </section>
         <section otherprops="answer">

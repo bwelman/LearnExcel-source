@@ -20,13 +20,13 @@
                     <li>Through the <term>close button</term> of the program window. This is a
                         button with an <uicontrol>X</uicontrol> in the upper right corner of the
                         window.</li>
-                    <li>Though thet menu <menucascade>
+                    <li>Through the menu <menucascade>
                             <uicontrol>File</uicontrol>
                             <uicontrol>Close</uicontrol>
                         </menucascade>.</li>
                 </ul></p>
-            <note type="attention">When something is changed in de workbook, you allways get a
-                dialog window asking whether the changes should or should not be saved.</note>
+            <note type="attention">When something is changed in de workbook, you always get a dialog
+                window asking whether the changes should or should not be saved.</note>
         </context>
         <steps>
             <step>

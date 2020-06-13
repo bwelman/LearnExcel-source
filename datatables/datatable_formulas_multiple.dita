@@ -60,7 +60,7 @@
                 <cmd/>
             </step>
             <step>
-                <cmd>Put the cursor in box <option>Column input cell</option> and click on cell
+                <cmd>Put the cursor in the box <option>Column input cell</option> and click on cell
                         <userinput>B1</userinput>.</cmd>
             </step>
             <step>

@@ -24,35 +24,35 @@
         </fig>
 		<p>There are two possibilities now:</p>
 		<ol>
-			<li>There is no solution for the formulated problem.</li>
-			<li>There is a solution for the formulated problem, but the Solver could not find it.</li>
+			<li>There is no solution to the formulated problem.</li>
+			<li>There is a solution to the formulated problem, but the Solver could not find it.</li>
 		</ol>
-		<p>In most cases you don't know with certainty which situation is present. There are a few
-			guidelines to investigate whether the solution can be found by the Solver.</p>
+		<p>In most cases, you don't know with certainty which situation is present. There are a few
+            guidelines to investigate whether the solution can be found by the Solver.</p>
 		<section>
 			<title>Changing start values <term>variable cells</term></title>
 			<p>Whether it is possible for the Solver to find a solution or not depends on the starting values
-				of the variable cells, among other things. Experimenting with different starting
-				values can sometimes help finding a solution.</p>
+                of the variable cells, among other things. Experimenting with different starting
+                values can sometimes help to find a solution.</p>
 		</section>
 		<section>
 			<title>Changing Solver options</title>
-			<p>Finding a solution also depends on the way in which the Solver works. The search for a
-				solution follows a so-called <term>iterative</term> process. An
-					<term>iteration</term> is the repeated recalculation of a worksheet until a
-				specific condition is met. The Solver has a number of settings for this iteration
-				process. Clicking the button <uicontrol>Options</uicontrol> in the dialog box
-					<wintitle>Solver Parameters</wintitle> displays a window for changing several
-				options of the Solver.</p>
+			<p>Finding a solution also depends on how the Solver works. The search for a solution follows a
+                so-called <term>iterative</term> process. An <term>iteration</term> is the repeated
+                recalculation of a worksheet until a specific condition is met. The Solver has
+                several settings for this iteration process. Clicking the button
+                    <uicontrol>Options</uicontrol> in the dialog box <wintitle>Solver
+                    Parameters</wintitle> displays a window for changing several options of the
+                Solver.</p>
 			<fig>
                 <title>Solver Options</title>
                 <image keyref="solver_options">
                     <alt>Options solver</alt>
                 </image>
             </fig>
-			<p>The dialog box offers extensive possibilities to the solution process. Specifications for
-				certain problems can be saved as a model and reloaded. A few of these settings are
-				listed below and discussed shortly.</p>
+			<p>The dialog box offers extensive possibilities for the solution process. Specifications for
+                certain problems can be saved as a model and reloaded. A few of these settings are
+                listed below and discussed shortly.</p>
 			<simpletable product="OF2007">
 				<sthead>
 					<stentry>Option</stentry><stentry>Explanation</stentry>
@@ -73,15 +73,15 @@
 				<strow>
 					<stentry>Tolerance</stentry>
 					<stentry>The maximal error percentage allowed by <term>integer</term> solutions. The value is
-						only relevant when a restriction with <term>integer</term> is present. The
-						smaller the error rate, the longer the search process takes.</stentry>
+                        only relevant when a restriction with an <term>integer</term> is present.
+                        The smaller the error rate, the longer the search process takes.</stentry>
 				</strow>
 				<strow>
 					<stentry>Assume Linear Model</stentry>
 					<stentry>Only use it when all relationships in the calculation model are <term>linear</term>.
-						The choice may then speed up the search process. Use at
-							<term>non-linear</term> models can ensure that no solution is
-						found.</stentry>
+                        The choice may then speed up the search process. Using with
+                            <term>non-linear</term> models can ensure that no solution is
+                        found.</stentry>
 				</strow>
 				<strow>
 					<stentry>Show Iteration Results</stentry>

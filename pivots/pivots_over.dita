@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="pivots_over" xml:lang="en-US">
 	<title>What are PivotTables?</title>
-	<shortdesc id="shortdesc">A short introduction to PivotTables, what you can use them for and what
+	<shortdesc id="shortdesc">A short introduction to PivotTables, their possibilities, and what
         components it has.</shortdesc>
 	<prolog>
 		<critdates>
@@ -17,10 +17,10 @@
 	</prolog>
 	<conbody>
 		<p>A PivotTable is used when a variable should be plotted against another variable. With
-            PivotTables you can get answer to questions like: what product provides the highest
+            PivotTables you can get answers to questions like what product provides the highest
             profit contribution; which seller makes the highest turnover; which department incurs
             the most costs; etc.</p>
-		<p>If the data is well organized in a Excel worksheet then you can quickly plot data against each
+		<p>If the data is well organized in an Excel worksheet then you can quickly plot data against each
             other with a PivotTable. In the following figure, you can easily compare the sales in
             the three product categories. This is because a PivotTable is interactive. You can
             always change the view of the data to see more details or to make other summaries.</p>
@@ -30,16 +30,15 @@
                 <alt>Example of a PivotTable</alt>
             </image>
         </fig>
-		<p>In a PivotTables at least two types of data are plotted against each other. For example
+		<p>In PivotTables, at least two types of data are plotted against each other. For example
                 <varname>productcategory</varname> against <varname>town</varname>. One data type is
             presented in the column field (productcategory) and the other one in the row field
             (town). Another data type from which you want to see the results (Sales) has to be put
             in the values field. Because these results are summarized you should also indicate which
             calculation method should be used (here Sum). The function Sum is given by default.
-            Other possibilities are: <synph>Count</synph>, <synph>Average</synph>,
-                <synph>Min</synph>, <synph>Max</synph>, <synph>Product</synph>,
-            <synph>Stdev</synph>, <synph>Stdevp</synph>, <synph>Var</synph>,
-            <synph>Varp</synph>.</p>
+            Other possibilities are <synph>Count</synph>, <synph>Average</synph>,
+            <synph>Min</synph>, <synph>Max</synph>, <synph>Product</synph>, <synph>Stdev</synph>,
+                <synph>Stdevp</synph>, <synph>Var</synph>, <synph>Varp</synph>.</p>
 		<p>A PivotTable has four areas in which you can place fields:</p>
 		<simpletable>
 			<sthead>
@@ -53,15 +52,15 @@
 			</strow>
 			<strow>
 				<stentry>Rows</stentry>
-				<stentry>These fields are used to create separate groups and puts the information for each group
-					in a separate row.</stentry>
+				<stentry>These fields are used to create separate groups and put the information for each group
+                    in a separate row.</stentry>
 			</strow>
 			<strow>
 				<stentry>Columns</stentry>
 				<stentry>These fields are also used to create separate groups. Mostly used if you want to
-					subdivide the data in the rows. These groups are displayed in separate columns.
-					Take fields with not too many groups, otherwise the table will be come too
-					wide.</stentry>
+                    subdivide the data into the rows. These groups are displayed in separate
+                    columns. Take fields with not too many groups, otherwise, the table will come
+                    too wide.</stentry>
 			</strow>
 			<strow>
 				<stentry>Filters</stentry>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
 <concept id="forecasts_timeserie_components" xml:lang="en-US">
-    <title>Time serie components</title>
+    <title>Time-serie components</title>
     <shortdesc/>
     <prolog>
         <critdates>
@@ -15,12 +15,12 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>In this section four types of patterns in time series are discussed.</p>
+        <p>In this section, four types of patterns in time-series are discussed.</p>
         <section>
             <title>Trend component</title>
-            <p>Tend to ascending over time (positive trend) or descending(negative trend). It does
-                not have to be linear. Sometimes only a trend referred to as the direction
-                (ascending or descending) in which the changes take place.</p>
+            <p>Tend to ascend over time (positive trend) or descending(negative trend). It does not
+                have to be linear. Sometimes only a trend referred to as the direction (ascending or
+                descending) in which the changes take place.</p>
             <fig>
                 <title>Trend component</title>
                 <image keyref="timeserie_comp_trend">
@@ -42,9 +42,9 @@
         </section>
         <section>
             <title>Cyclic component</title>
-            <p>These are fluctuations over a longer period of time, often for many years, through
+            <p>These are fluctuations over a longer period, often for many years, through
                 fluctuations in the business cycle. Characteristic is also that these periods have
-                no fixed length. Can be omitted for a analysis on shorter periods. The business
+                no fixed length. It can be omitted for analysis on shorter periods. The business
                 cycle is a combination of different factors or indicators.</p>
             <fig>
                 <title>Cyclic component</title>
@@ -55,7 +55,7 @@
         </section>
         <section>
             <title>Random component</title>
-            <p>These are irregular fluctuations that cannot explained. Also called accidental
+            <p>These are irregular fluctuations that cannot be explained. Also called accidental
                 influences.</p>
             <fig>
                 <title>Random component</title>

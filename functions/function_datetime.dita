@@ -17,11 +17,10 @@
     </prolog>
     <taskbody>
         <context>
-            <p>In the Date and Time category you will find multiple functions to perform
+            <p>In the Date and Time category, you will find multiple functions to perform
                 calculations with date and time. Because Excel sees date and time internally as
-                numbers you can just calculate with date and time. In the following task are both a
-                few features as the count at issue. In the next task a few date and time functions
-                are covered.</p>
+                numbers you can just calculate with date and time. In the next task, a few date and
+                time functions are covered.</p>
             <fig>
                 <title>Calculation with dates and times</title>
                 <image keyref="Example_Datetime">
@@ -108,9 +107,9 @@
                 <stepresult>The result is <systemoutput>20</systemoutput>.</stepresult>
             </step>
             <step>
-                <cmd>The same way calculate the hours, minutes and seconds from the start date and
+                <cmd>The same way calculate the hours, minutes, and seconds from the start date and
                     end date. Use the functions <userinput>HOUR</userinput>,
-                        <userinput>MINUTE</userinput> and <userinput>SECOND</userinput>.</cmd>
+                        <userinput>MINUTE</userinput>, and <userinput>SECOND</userinput>.</cmd>
             </step>
             <step>
                 <cmd>Calculate in cell <uicontrol>B10</uicontrol> the time difference through the

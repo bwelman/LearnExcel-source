@@ -21,7 +21,7 @@
     </prolog>
     <taskbody>
         <context>
-            <p>You can create a chart on the same worksheet as the data. This is a <term>embedded
+            <p>You can create a chart on the same worksheet as the data. This is an <term>embedded
                     chart</term>. You can also display add a chart to a separate sheet that only
                 contains a chart, a <term>chart sheet</term>. An embedded chart on a worksheet can
                 be moved by dragging it to another place, but you can also move it to a chart sheet.
@@ -64,7 +64,7 @@
                     click <uicontrol>OK</uicontrol>.</cmd>
                 <stepresult>The chart sheet is displayed.</stepresult>
             </step>
-            <stepsection>Now move the chart back to worksheet.</stepsection>
+            <stepsection>Now move the chart back to the worksheet.</stepsection>
             <step>
                 <cmd>Select the chart in the chart sheet.</cmd>
             </step>

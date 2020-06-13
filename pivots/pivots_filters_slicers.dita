@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <task id="pivots_filters_slicers" xml:lang="en-US">
-    <title>Task: Filters, slicers and timelines</title>
-    <shortdesc>Filtering data in a PivotTables with report filters, slicers and
+    <title>Task: Filters, slicers, and timelines</title>
+    <shortdesc>Filtering data in a PivotTables with report filters, slicers, and
         timelines.</shortdesc>
     <prolog>
         <critdates>
@@ -20,18 +20,18 @@
     <taskbody>
         <context>
             <p>To filter data in a PivotTable, you can create a report filter with the task panel.
-                But when you filter on multiple items you cannot easy see what items are selected
+                But when you filter on multiple items you can't easily see what items are selected
                 for filtering.</p>
             <p>A more user-friendly way is using slicers. They contain a set of buttons with which
                 you can quickly filter the data in a PivotTable. Normally a slicer is created in a
-                PivotTable and is linked to this PivotTable. And only for filtering date fields you
-                can also use timelines, which are simular to slicers. The use of slicers and
-                timelines you see often in so called <term>dashboards</term> while they can linked
-                to multiple PivotTables and charts.</p>
+                PivotTable and is linked to this PivotTable. And only for filtering date fields, you
+                can also use timelines, which are similar to slicers. The use of slicers and
+                timelines you see often in so-called <term>dashboards</term> while they can be
+                linked to multiple PivotTables and charts.</p>
             <p>This task uses the same practice file as <xref
                     href="pivots_creating.dita#pivots_creating"/> which contains the monthly sales
-                data in 2016 of some products, divided in three productcategories: pvf (potatoes,
-                vegetables and fruits), meat and dairy.</p>
+                data in 2016 of some products, divided into three product categories: pvf (potatoes,
+                vegetables, and fruits), meat and dairy.</p>
             <note type="other" othertype="File"><filepath>Supermarket.xlsx</filepath></note>
         </context>
         <steps>
@@ -56,7 +56,7 @@
                 </stepresult>
             </step>
             <step>
-                <cmd>In this task the PivotTable should appear in a new worksheet. So accept the
+                <cmd>In this task, the PivotTable should appear in a new worksheet. So accept the
                     default location and click <uicontrol>OK</uicontrol>.</cmd>
             </step>
             <step>
@@ -68,7 +68,7 @@
                     <p>Excel's automatic time grouping feature also adds the calculated field
                             <varname>Month</varname> to the <uicontrol>Rows</uicontrol>.No other
                         fields like quarters and years are added, because all dates are the last
-                        montly dates from one year.</p>
+                        monthly dates from one year.</p>
                 </stepresult>
             </step>
             <step>
@@ -97,8 +97,8 @@
                         items</uicontrol> and then select <option>Amsterdam</option> and
                         <option>Rotterdam</option>.</cmd>
                 <stepresult>
-                    <p>The data for both towns is displayed. Unfortunately the filter only indicates
-                        that multiple items are selected, but not which items: <image
+                    <p>The data for both towns is displayed. Unfortunately, the filter only
+                        indicates that multiple items are selected, but not which items: <image
                             keyref="supermarket_reportfilter_multiple"/></p>
                     <p>To see which items you must open the drop-down list. For this scenario,
                         slicers are a better alternative.</p>
@@ -114,7 +114,7 @@
             </step>
             <stepsection>Part slicers</stepsection>
             <step>
-                <cmd>Right click on field <varname>town</varname> in the PivotTable field list and
+                <cmd>Right-click on field <varname>town</varname> in the PivotTable field list and
                     select <option>Add as Slicer</option>.</cmd>
                 <stepresult>
                     <fig>
@@ -134,7 +134,7 @@
             </step>
             <step>
                 <cmd>Experiment with the slicer by selecting an item. You can select multiple items
-                    with use of the <uicontrol>Ctrl</uicontrol> key or the <image
+                    with the use of the <uicontrol>Ctrl</uicontrol> key or the <image
                         keyref="slicer_button_multiple-items">
                         <alt>Button select multiple items</alt>
                     </image> button and clear the filter with the button <image
@@ -157,7 +157,7 @@
             </step>
             <step>
                 <cmd>Select <varname>Months</varname> and click <uicontrol>OK</uicontrol>.</cmd>
-                <info>Through the ribbon <uicontrol>Slicer Tools Options</uicontrol> you can format
+                <info>Through the ribbon <uicontrol>Slicer Tools Options</uicontrol>, you can format
                     a slicer such as change their look, settings, colors, ...</info>
             </step>
             <step>
@@ -167,14 +167,14 @@
                 <cmd>Clear all filters. Select slicer <wintitle>Months</wintitle> and press the
                         <uicontrol>Delete</uicontrol> button on the keyboard.</cmd>
             </step>
-            <stepsection><p>Simular to a slicer is the timeline. With a timeline you can filter records by date/time
+            <stepsection><p>Similar to a slicer is the timeline. With a timeline, you can filter records by date/time
                     fields.</p></stepsection>
             <step>
                 <cmd>Click anywhere in the PivotTable report and choose <menucascade>
                         <uicontrol>tab Analyze</uicontrol>
                         <uicontrol>Insert Timeline (group Filter)</uicontrol>
                     </menucascade></cmd>
-                <stepresult>The dialogbox Insert Timelines is displayed with only field
+                <stepresult>The dialog box Insert Timelines is displayed with only field
                         <varname>date</varname> in it.</stepresult>
             </step>
             <step>

@@ -17,7 +17,7 @@
     <taskbody>
         <context>
             <p>When you create a chart, the title appears by default above the chart. You can simply
-                select the text and type the title wou want. You can also hide the title or change
+                select the text and type the title you want. You can also hide the title or change
                 its location.</p>
             <note conref="../common/reuse_task_parts.dita#reuse_task_parts/Chart_File"/>
         </context>
@@ -54,7 +54,7 @@
                     <ul>
                         <li>Select the chart title to drag it to another place in the chart
                             area.</li>
-                        <li>To format the title, richt-click it and choose <uicontrol>Format Chart
+                        <li>To format the title, right-click it and choose <uicontrol>Format Chart
                                 Title</uicontrol>.</li>
                     </ul>
                 </tutorialinfo>

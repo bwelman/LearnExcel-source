@@ -16,7 +16,7 @@
     </prolog>
     <conbody>
         <p>If you are experienced and know the name and construction of a function, then you can
-            just type the function in the formula bar. Usually it is more convenient to use the
+            just type the function in the formula bar. Usually, it is more convenient to use the
                 <term>Function Wizard</term>. You can activate this <term>Wizard</term> in two
             ways:</p>
         <ul>
@@ -34,10 +34,10 @@
                 <alt>Dialog box insert function</alt>
             </image>
         </fig>
-        <p>For quick finding the correct function it is useful to first select the
+        <p>For quick finding of the correct function, it is useful to first select the
                 <term>category</term>. This can be done by clicking the selection arrow in the
-            category box. The categories appears in the drop-down window. Select the desired
-            function, for example <varname>COUNTIF</varname>, click <uicontrol>OK</uicontrol> and
+            category box. The categories appear in the drop-down window. Select the desired
+            function, for example, <varname>COUNTIF</varname>, click <uicontrol>OK</uicontrol>, and
             then the <wintitle>Function Arguments</wintitle> dialog box appears.</p>
         <fig>
             <title>Dialog box <wintitle>Function Arguments</wintitle></title>
@@ -45,7 +45,7 @@
                 <alt>Dialog box function arguments</alt>
             </image>
         </fig>
-        <p>In this dialog box you can specify the <term>arguments</term>. What
+        <p>In this dialog box, you can specify the <term>arguments</term>. What
                 <term>argument(s)</term> you should specify depends on the selected function.</p>
         <note type="tip">By clicking the link <uicontrol>Help on this function</uicontrol> you get
             detailed help for the function.</note>

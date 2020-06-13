@@ -16,18 +16,18 @@
     </prolog>
     <taskbody>
         <context>
-            <p>A moving average trend line trend line smooths fluctuations in the data, making the
-                pattern more clearly. </p>
+            <p>A moving average trend line smooths fluctuations in the data, making the pattern more
+                clearly. </p>
             <p>The moving average is the average of a fixed number of consecutive values in a time
                 series. The length of time for the fixed number of elements is called the period.
                 The line through these averages is the trend line. Strong fluctuations will be
-                weaker. Usually it takes some experimenting to find a suitable period.</p>
+                weaker. Usually, it takes some experimenting to find a suitable period.</p>
             <p>This line has no formula and also the R-squared value cannot be calculated. There are
                 other methods available for quality evaluation.</p>
-            <p>The following example is about the price of a share for 20 days.The moving average is
-                calculated for a period of 3 days. The first value for the moving average can only
-                be calculated on day 3 and the value is the average of day 1, 2 and 3. The next
-                value at day 4 is the average of the values on day 2, 3 and 4. And so on.</p>
+            <p>The following example is about the price of a share for 20 days. The moving average
+                is calculated for 3 days. The first value for the moving average can only be
+                calculated on day 3 and the value is the average of day 1, 2, and 3. The next value
+                on day 4 is the average of the values on day 2, 3, and 4. And so on.</p>
             <note type="other" othertype="File"><filepath>Trendlines.xlsx</filepath></note>
         </context>
         <steps>

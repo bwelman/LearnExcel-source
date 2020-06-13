@@ -15,7 +15,7 @@
 		</metadata>
 	</prolog>
 	<taskbody>
-		<prereq>To perform this task it is necessary that the macro CellFormat was created.</prereq>
+		<prereq>To perform this task, the macro CellFormat should have been created.</prereq>
 		<context>
 			<p>A macro can be changed without recording the macro again. Both the options of the macro as the
 				program code can be viewed and modified.</p>

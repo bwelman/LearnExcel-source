@@ -19,14 +19,14 @@
     <taskbody>
         <context>
             <p>The COUNTIF function is very useful when creating frequency tables. In the following
-                example you see a list of camping sites with their category.</p>
+                example, you see a list of camping sites with their category.</p>
             <fig>
                 <title>Data to use with function COUNTIF</title>
                 <image keyref="Example_Countif">
                     <alt>Data to use with function countif</alt>
                 </image>
             </fig>
-            <p>In column E must be the number of campsites in each category.</p>
+            <p>In column E should come the number of campsites in each category.</p>
             <note type="other" othertype="File"><filepath>Campsites.xlsx</filepath></note>
         </context>
         <steps>
@@ -56,7 +56,8 @@
                         </image>
                     </fig>
                     <note type="attention">By specifying as range the entire column B, new rows with
-                        data can be added the bottom without the need to change the formulas.</note>
+                        data can be added to the bottom without the need to change the
+                        formulas.</note>
                 </stepresult>
             </step>
             <step>

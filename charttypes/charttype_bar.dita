@@ -46,7 +46,7 @@
                 <cmd/>
             </step>
             <step>
-                <cmd>Sort the table on percentage of smokers from largest to smallest.</cmd>
+                <cmd>Sort the table on the percentage of smokers from largest to smallest.</cmd>
                 <stepresult>
                     <fig>
                         <title>Sorted percentage smokers in 2009</title>
@@ -67,8 +67,8 @@
                     </menucascade>.</cmd>
                 <stepresult>
                     <p>The bar chart appears in the worksheet. The longest bar is at the bottom.
-                        This is the default procedure of Excel. This order must therefore be changed
-                        together with changing the title.</p>
+                        This is Excel' default procedure. This order must be changed, together with
+                        changing the title.</p>
                     <fig>
                         <title>Default bar chart (longest bar at the bottom)</title>
                         <image keyref="bar_default">
@@ -80,7 +80,7 @@
             <step>
                 <cmd><menucascade>
                         <uicontrol>Select vertical as</uicontrol>
-                        <uicontrol>right click</uicontrol>
+                        <uicontrol>right-click</uicontrol>
                         <uicontrol>Format Axis</uicontrol>
                     </menucascade>.</cmd>
                 <stepresult>The task panel <wintitle>Format Axis</wintitle> is
@@ -101,7 +101,7 @@
                 </stepresult>
             </step>
             <step>
-                <cmd>Change the text of the title to: <userinput>Percentage Smokers in
+                <cmd>Change the text of the title to <userinput>Percentage Smokers in
                         2009</userinput>.</cmd>
             </step>
         </steps>

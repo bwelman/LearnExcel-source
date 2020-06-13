@@ -16,7 +16,7 @@
     </prolog>
     <conbody>
         <p>Grouping data in a PivotTable can help you to show a subset of your data to analyze. This
-            is especially important when you want to group a list of dates into years, quarters or
+            is especially important when you want to group a list of dates into years, quarters, or
             months. Grouping is used frequently in many business scenarios.</p>
         <fig>
             <title>Example list of dates without grouping</title>
@@ -32,12 +32,12 @@
         </fig>
         <p><term>Automatic time grouping</term> is a new feature Excel 2016. Time-related fields are
             automatically detected and grouped. This automatic grouping creates new relevant
-            Date/Time columns such as Years, Quarters and Months and automatically populates the
-            PivotTable. In the example above, the quarter and month are no fields in the original
-            source data.</p>
-        <p>Which date/time columns are added  depends on the granularity of the dates/times in the
-            data table. For example, if the dates are in days and is for more than a year’s
-            duration, then the added grouping columns would be for months, quarters and years.</p>
+            Date/Time columns such as Years, Quarters, and Months and automatically populates the
+            PivotTable. In the example above, the quarter and month are no fields in the source
+            data.</p>
+        <p>Which date/time columns are added depends on the granularity of the dates/times in the
+            data table. For example, if the dates are in days and are for more than a year’s
+            duration, then the added grouping columns would be for months, quarters, and years.</p>
         <p>Once the Date/Time columns are added to the model you can quickly start analyzing the
             data across the different levels of time with drill-down capabilities. This way you may
             find additional insights. For example, to get a monthly year-over-year comparison of

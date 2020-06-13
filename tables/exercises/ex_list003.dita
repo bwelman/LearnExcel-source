@@ -15,7 +15,8 @@
   <body>
     <section>
       <p>The following table lists the sales numbers of bread types in the North and South branches
-        of a store. Furthermore you see the total sales numbers obtained by consolidation.</p>
+                of a store. Furthermore, you see the total sales numbers obtained by
+                consolidation.</p>
       <p>
         <fig>
                     <image keyref="ex_list003_data"/>
@@ -27,15 +28,17 @@
     </section>
     <section otherprops="solution">
       <title>Solution</title>
-      <p>Select the upper left cell of the output area and choose <menucascade>
-          <uicontrol>tab Data</uicontrol>
-          <uicontrol>Consolidate (group Data Tools)</uicontrol>
-        </menucascade>. Specify in the dialog box: <ul>
-          <li>Function <uicontrol>Sum</uicontrol>.</li>
-          <li>Add the tables with the data of the branches North and South as references.</li>
-          <li>Check <uicontrol>Use labels in top row</uicontrol> and <uicontrol>Use labels in left column</uicontrol>.</li>
-        </ul>
-      </p>
+      <p>Select the upper-left cell of the output area and choose <menucascade>
+                    <uicontrol>tab Data</uicontrol>
+                    <uicontrol>Consolidate (group Data Tools)</uicontrol>
+                </menucascade>. Specify in the dialog box: <ul>
+                    <li>Function <uicontrol>Sum</uicontrol>.</li>
+                    <li>Add the tables with the data of the branches North and South as
+                        references.</li>
+                    <li>Check <uicontrol>Use labels in top row</uicontrol> and <uicontrol>Use labels
+                            in left column</uicontrol>.</li>
+                </ul>
+            </p>
     </section>
   </body>
 </topic>

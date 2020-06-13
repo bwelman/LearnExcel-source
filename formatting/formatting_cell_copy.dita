@@ -16,8 +16,8 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>The format and content of a cell are stored separately. Therefore, you can copy or delete
-            the content and format separately.</p>
+        <p>The format and content of a cell are stored separately. Therefore, you can separately
+            copy or delete the content and format.</p>
         <section>
             <title>Copying format</title>
             <p>The fastest way to copy the format of a cell to another cell is to use the button
@@ -54,10 +54,10 @@
                         </image>
                     </fig></li>
             </ol>
-            <note type="tip">This way you can clear the format, the content or both.</note>
+            <note type="tip">This way you can clear the format, the content, or both.</note>
             <note type="attention">With the <uicontrol>DELETE</uicontrol> key you only clear the
                 content of the cell. The format of the cell (font type, colors, alignment, number
-                format, etc.) will not changed and is still present in the empty cell.</note>
+                format, etc.) will not be changed and is still present in the empty cell.</note>
         </section>
     </conbody>
 </concept>

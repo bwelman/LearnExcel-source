@@ -14,23 +14,22 @@
   </prolog>
   <body>
     <section>
-      <p>A loan of $10,000 must be repaid in a number of monthly periods at an annual interest of
-                5%. The calculation of the monthly amount to repay is calculated with the PMT
-                function. In the following illustration you can see this for a payment period of 36
-                months.</p>
+      <p>A loan of $10,000 must be repaid in some monthly periods at an annual interest of 5%. The
+                calculation of the monthly amount to repay is calculated with the PMT function. In
+                the following figure, you can see this for a payment period of 36 months.</p>
       <fig>
-                <title>Calculation montly repayment loan</title>
+                <title>Calculation monthly repayment loan</title>
                 <image keyref="ex_tabl001_data">
-                    <alt>Calculation montly repayment loan</alt>
+                    <alt>Calculation monthly repayment loan</alt>
                 </image>
             </fig>
       <p><ol>
-          <li>Make the above model in a new worksheet and create a formula for the month
+          <li>Make the above model in a new worksheet and create a formula for the monthly
                         repayment.</li>
           <li>Create a data table with an overview of the monthly repayments for redemption periods
                         of 12, 18, 24, 30, ..., 72 months.</li>
           <li>Create a new data table with an overview of the monthly repayments for redemption
-                        periods of 12, 18, 24, 30, ..., 72 months and annual interest rates of 3%,
+                        periods of 12, 18, 24, 30, ..., 72 months, and annual interest rates of 3%,
                         3½%, 4%, 4½% ... 6%.</li>
         </ol></p>
     </section>

@@ -35,7 +35,7 @@ End Sub</codeblock>
         <section otherprops="solution">
             <title>Solution</title>
             <p conkeyref="macro/start"/>
-            <p>Right click on a cell and choose <menucascade>
+            <p>Right-click on a cell and choose <menucascade>
                     <uicontrol>Format Cells</uicontrol>
                     <uicontrol>tab Fill</uicontrol>
                     <uicontrol>select a gray color</uicontrol>

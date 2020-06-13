@@ -26,7 +26,7 @@
             <step>
                 <cmd>Import the practice file through <uicontrol>Get &amp; Transform
                         Data</uicontrol>.</cmd>
-                <info>If you need help for this, see chapter <wintitle>Data
+                <info>If you need help with this, see chapter <wintitle>Data
                     Import</wintitle>.</info>
             </step>
             <step>
@@ -45,20 +45,20 @@
                             <alt>Window Create Forecast Worksheet</alt>
                         </image>
                     </fig>
-                    <p>In this window you can make a number of choices.<ul>
+                    <p>In this window, you can make several choices.<ul>
                             <li>Chart type (top right): line chart, column chart</li>
                             <li>Forecast End (bottom left): the end date for the forecast, so the
                                 number of forecasts.</li>
-                            <li>Options (bottom left): a number of advanced settings</li>
+                            <li>Options (bottom left): many advanced settings</li>
                         </ul></p>
                 </stepresult>
             </step>
             <step>
-                <cmd>Set<option>Forecast End</option> on 1 december 2013. Then click
+                <cmd>Set<option>Forecast End</option> on 1 December 2013. Then click
                         <uicontrol>Create</uicontrol>.</cmd>
                 <stepresult>
                     <p>A new worksheet is created with the historical data, the predicted values,
-                        confidence bounds (95%) and a default chart.</p>
+                        confidence bounds (95%), and a default chart.</p>
                     <simpletable frame="all" relcolwidth="1.0* 1.04* 2.54* 2.57*">
                         <sthead>
                             <stentry>Date</stentry>

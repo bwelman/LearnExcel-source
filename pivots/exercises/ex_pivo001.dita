@@ -14,8 +14,8 @@
     </prolog>
     <body>
         <section>
-            <p>Create a pivot table to calculate the avarage salary per department and per division.
-                The table should look as follows.</p>
+            <p>Create a pivot table to calculate the average salary per department and division. The
+                table should look as follows.</p>
             <fig>
                 <image keyref="ex_pivo001_report"/>
             </fig>
@@ -38,9 +38,10 @@
                     <stentry>Salary</stentry>
                 </strow>
             </simpletable>
-            <p conkeyref="pivot/options"/>/> <p>Change type of calculation in
-                    <option>Average</option> and <uicontrol>Number Format</uicontrol> in
-                    <option>Accounting</option>.</p>
-            <p conkeyref="pivot/labels"/>/> </section>
+            <p conkeyref="pivot/options"/>
+            <p>Change the type of calculation in <option>Average</option> and <uicontrol>Number
+                    Format</uicontrol> in <option>Accounting</option>.</p>
+            <p conkeyref="pivot/labels"/>
+        </section>
     </body>
 </topic>

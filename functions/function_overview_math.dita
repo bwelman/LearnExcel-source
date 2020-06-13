@@ -93,8 +93,8 @@
     </section>    
     <section>
       <title>SUMIF</title>
-      <p>This function finds values in a supplied array that satisfy a given criteria and returns
-        the sum of the corresponding values in a second supplied array.</p>
+      <p>This function finds values in a supplied array that satisfy given criteria and returns the
+                sum of the corresponding values in a second supplied array.</p>
       <codeblock>SUMIF(range, criteria, [sum_range])</codeblock>
       <parml>
         <plentry>
@@ -104,7 +104,7 @@
         </plentry>
         <plentry>
           <pt>criteria</pt>
-          <pd>Required. The condition to be tested against each of the values in range.</pd>
+          <pd>Required. The condition to be tested against each of the values in a range.</pd>
         </plentry>
         <plentry>
           <pt>sum_range</pt>

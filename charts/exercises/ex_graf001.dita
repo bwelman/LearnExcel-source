@@ -25,9 +25,9 @@
     </section>
     <section otherprops="solution">
       <title>Solution</title>
-      <p>Create first a table with two columns for the X and Y values. The range for the X - values
-        ​​is from -1 to +2 with an increment of 0.1. The Y values ​​must be calculated using the
-        formula  <codeph>= (X -0,5)^3</codeph>.</p>
+      <p>Create first a table with two columns for the X and Y values. The X-value range ​​is from
+                -1 to +2 with an increment of 0.1. The Y-values ​​must be calculated using the
+                formula <codeph>= (X -0,5)^3</codeph>.</p>
       <p>Create a scatter chart and format it.</p>
     </section>
   </body>

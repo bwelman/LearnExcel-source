@@ -14,15 +14,16 @@
     </prolog>
     <body>
         <section>
-            <p>A market research has been performed among the visitors of a city center. The
-                following table shows the data of the respondents who were questioned about means of
-                transport to the center to go shopping. In the table you see if they went by car or
-                by bus, how far they live from the center (in km.) and the travel time (in min.)</p>
+            <p>Market research has been performed among the visitors of the city center. The
+                following table shows the data of the respondents who were questioned about the
+                means of transport to the center to go shopping. In the table you see if they went
+                by car or by bus, how far they live from the center (in km.) and the travel time (in
+                min.)</p>
             <fig>
                 <image keyref="ex_pivo009_data"/>
             </fig>
             <p>Enter the data in a worksheet. Determine using a pivot table the average travel time
-                by car for residents living more then 15 km of the city center.</p>
+                by car for residents living more than 15 km from the city center.</p>
             <note type="other" othertype="File"><filepath>Pivo009.xlsx</filepath></note>
             <note type="tip">Create an extra column to determine if the distance to the center is
                 more than 15 km.</note>
@@ -51,8 +52,8 @@
                     <stentry>time car</stentry>
                 </strow>
             </simpletable>
-            <p conkeyref="pivot/options"/>/> <p>Change the type of calculation in
-                    <uicontrol>Average</uicontrol>.</p>
+            <p conkeyref="pivot/options"/>
+            <p>Change the type of calculation in <uicontrol>Average</uicontrol>.</p>
             <fig>
                 <image keyref="ex_pivo009_report"/>
             </fig>

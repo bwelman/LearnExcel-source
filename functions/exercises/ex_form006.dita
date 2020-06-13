@@ -15,12 +15,13 @@
   <body>
     <section>
       <p>A company buys goods from suppliers and pays sales tax (VAT) to these suppliers. Then the
-        company sells these goods to customers who have to pay VAT to the company. Every quarter,
-        the company must submit a tax declaration. The difference between VAT received (through
-        sales) and VAT paid (through purchases) must be paid to the tax authority. If this
-        difference is negative, then there is a refund to the company. A small entrepeneur can get a
-        reduction for the VAT through the so called <term>Regulation Small Entrepeneurs</term>
-        (RSE). This regulation is worked out in the following table. </p>
+                company sells these goods to customers who have to pay VAT to the company. Every
+                quarter, the company must submit a tax declaration. The difference between VAT
+                received (through sales) and VAT paid (through purchases) must be paid to the tax
+                authority. If this difference is negative, then there is a refund to the company. A
+                small entrepreneur can get a reduction for the VAT through the so called
+                    <term>Regulation Small Entrepreneurs</term> (RSE). This regulation is worked out
+                in the following table.</p>
       <fig>
                 <image keyref="ex_form006_rules"/>
             </fig>

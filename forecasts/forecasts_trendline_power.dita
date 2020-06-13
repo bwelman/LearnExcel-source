@@ -17,11 +17,11 @@
     <taskbody>
         <context>
             <p>A power trend line is a curved line that is very suitable for collections of data
-                that increase at a specific rate, for example the acceleration of a formula 1
+                that increase at a specific rate, for example, the acceleration of a Formula 1
                     car.<note type="attention">There should be no null values in the data
                     set.</note></p>
-            <p>The equation of the trend line is: <codeph>y = a*x<sup>b</sup></codeph> where a and b are
-                constants.</p>
+            <p>The equation of the trend line is <codeph>y = a*x<sup>b</sup></codeph> where a and b
+                are constants.</p>
             <p>The following example is about the distance of an accelerating race car in intervals
                 of 1 second.</p>
             <note type="other" othertype="File"><filepath>Trendlines.xlsx</filepath></note>

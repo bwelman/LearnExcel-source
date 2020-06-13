@@ -15,7 +15,7 @@
         <section>
             <title>Forecast Start</title>
             <p>The starting date for the forecast is automatically set by Excel. You can change it.
-                When you pick a date before the end of the historical data, only data prior to the
+                When you pick a date before the end of the historical data, only data before the
                 start date are used in the prediction (this is sometimes referred to as
                     <q>hindcasting</q>)..</p>
             <note type="tip">Starting your forecast before the last historical point gives you a
@@ -28,17 +28,17 @@
         </section>
         <section>
             <title>Confidence interval</title>
-            <p>Here you can check or uncheck to display a confidence interval. Confidence interval
-                can help you figure out the accuracy of the prediction. A smaller interval implies
-                more confidence in the prediction for the specific point. The default level of 95%
-                confidence can be changed.</p>
+            <p>Here you can check or uncheck to display a confidence interval. The confidence
+                interval can help you figure out the accuracy of the prediction. A smaller interval
+                implies more confidence in the prediction for a specific point. The default level of
+                95% confidence can be changed.</p>
         </section>
         <section>
             <title>Seasonality</title>
             <p>When the data contains a seasonal pattern then you can set here the number of
-                observations for the pattern. Default this number is automatically detected. When
-                Excel fails to automatically discover a seasonal pattern, you get a warning with the
-                advice to switch to Manually.</p>
+                observations for the pattern. The default setting is that this number is
+                automatically detected. When Excel fails to automatically discover a seasonal
+                pattern, you get a warning with the advice to switch to Manually.</p>
             <note>When setting seasonality manually, avoid a value for less than 2 cycles of
                 historical data. With less than 2 cycles, Excel cannot identify the seasonal
                 components. And when the seasonality is not significant enough for the algorithm to

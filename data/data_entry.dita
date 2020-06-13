@@ -26,37 +26,37 @@
             </step>
             <step>
                 <cmd>Type <userinput>home</userinput> and press <uicontrol>Enter</uicontrol>.</cmd>
-                <stepresult>The word home is left aligned in the cell and the cell pointer has moved
+                <stepresult>The word home is left-aligned in the cell and the cell pointer has moved
                     one cell down so now cell A2 is the active cell.</stepresult>
             </step>
             <step>
                 <cmd>Type <userinput>Sales 1e quarter</userinput> and press
                         <uicontrol>Enter</uicontrol>.</cmd>
-                <stepresult>The text is left aligned in the cell, does not fit within the cell
-                    boundaries and therefore seems partly to be in B2, which is not true. It only
+                <stepresult>The text is left-aligned in the cell, does not fit within the cell
+                    boundaries, and therefore seems partly to be in B2, which is not true. It only
                     looks like that because cell B2 is empty. The active cell is now
                     A3.</stepresult>
             </step>
             <step>
                 <cmd>Type <userinput>89</userinput> and press <uicontrol>Enter</uicontrol>.</cmd>
-                <stepresult>The number is right aligned in cell A3. The active cell is now
+                <stepresult>The number is right-aligned in cell A3. The active cell is now
                     A4.</stepresult>
             </step>
             <step>
                 <cmd>Type <userinput>12.34</userinput> and press <uicontrol>Enter</uicontrol>.</cmd>
-                <stepresult>The number is right aligned in the cell A4. The active cell is now
+                <stepresult>The number is right-aligned in the cell A4. The active cell is now
                     A5.</stepresult>
             </step>
             <step>
                 <cmd>Type <userinput>5,6</userinput> and press <uicontrol>Enter</uicontrol>.</cmd>
-                <stepresult>The content of the cell is left aligned. This is because the comma
+                <stepresult>The content of the cell is left aligned. This is because of the comma
                     between 5 and 6. Excel interprets the entry as text and therefore is
                     left-aligned. The active cell is A6.</stepresult>
             </step>
             <step>
                 <cmd>Type <userinput>1/2/2011</userinput> and press
                     <uicontrol>Enter</uicontrol>.</cmd>
-                <stepresult>The date is right aligned in the cell. That's because Excel interprets
+                <stepresult>The date is right-aligned in the cell. That's because Excel interprets
                     dates as numbers, treats them as numbers, but gives them a special date format.
                     The active cell is now A7 .</stepresult>
             </step>
@@ -64,14 +64,14 @@
                 <cmd>Type <userinput>=2+3</userinput> and press <uicontrol>Enter</uicontrol>.</cmd>
                 <stepresult>The cell now displays the number 5. That's because Excel treats all data
                     that starts with a <userinput>=</userinput> a <term>formula</term>, calculates
-                    the result of the formula and displays this result. The active cell is now
+                    the result of the formula, and displays this result. The active cell is now
                         A8.<note>The content of the cell is always the formula and not the
                         result.</note></stepresult>
             </step>
             <step>
                 <cmd>Select cell <uicontrol>B2</uicontrol>, type <userinput>10%</userinput> and
                     press <uicontrol>Enter</uicontrol>.</cmd>
-                <stepresult>In cell B2 the contents appears right aligned. That's because of the
+                <stepresult>In cell B2 the contents appear right-aligned. That's because of the
                     percent sign Excel has interpreted the data as a number. The real content of
                     this cell is therefore 0.1 and this content is displayed as a percentage. And
                     because cell B2 is no longer empty, the text in cell A2 is not fully
@@ -79,7 +79,7 @@
             </step>
             <step>
                 <cmd>Select cell <uicontrol>A2</uicontrol>.</cmd>
-                <stepresult>In the formula bar you can see the fully entered text is still in the
+                <stepresult>In the formula bar, you can see the fully entered text is still in the
                     cell. <fig>
                         <title>Example data entry</title>
                         <image keyref="Data_Entry_Example">
@@ -92,16 +92,16 @@
         <result>
             <p>In this data entry exercise you have learned the following:</p>
             <ul>
-                <li>By default, text is left aligned.</li>
-                <li>By default, numbers are right aligned.</li>
+                <li>By default, the text is left-aligned.</li>
+                <li>By default, numbers are right-aligned.</li>
                 <li>There is an important difference between commas and points in numbers.</li>
                 <li>Formulas always start with the = sign.</li>
                 <li>An input of a date will be treated as a number and formatted as a date.</li>
-                <li>An input of a number with a percent sign will be treated as number and formatted
-                    as a percentage. The cell content is the hundredth part of the number
+                <li>An input of a number with a percent sign will be treated as a number and
+                    formatted as a percentage. The cell content is the hundredth part of the number
                     entered.</li>
                 <li>A cell has a <term>content</term> and a <term>format</term>. What is displayed
-                    is not always the real content.</li>
+                    is not always real content.</li>
             </ul>
         </result>
     </taskbody>

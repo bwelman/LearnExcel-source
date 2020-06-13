@@ -32,7 +32,7 @@
                 12 long leather jackets can be sold per week. For the short jackets, all jackets
                 made can be sold. There is no production to stock. The profit for a short jacket is
                 $90 and for a long jacket $144. How many jackets must be made of each type per week
-                in order to get the highest possible profit?</p>
+                to get the highest possible profit?</p>
         </example>
         <section>
             <title>Understanding the problem</title>
@@ -47,9 +47,9 @@
         <section>
             <title>Decision variables (<term>variable cells</term>)</title>
             <p>Set the decision variables. These are variables you have determine a value that gives
-                the optimal result. In the Excel model these are the <term>variable cells</term>. In
-                this example, there are two decision variables which are conveniently referred with
-                a letter:</p>
+                the optimal result. In the Excel model, these are the <term>variable cells</term>.
+                In this example, there are two decision variables which are conveniently referred
+                with a letter:</p>
             <ul>
                 <li>S = number of short jackets per week</li>
                 <li>L = number of long jackets per week</li>
@@ -64,17 +64,17 @@
             <p><codeph>Profit = 90*S + 144*L</codeph> (This should be maximized.)</p>
             <note type="attention">In more complex models, it is sometimes difficult to formulate
                 the problem so that one goal function is obtained. It may happen that the decision
-                variables are not directly in the objective function. In such case the object
+                variables are not directly in the objective function. In such case, the objective
                 function contains variables whose values depend on the decision variables.</note>
         </section>
         <section>
             <title>Restrictions</title>
-            <p>Usually there are restrictions for the values of the decision variables. These
+            <p>Usually, there are restrictions for the values of the decision variables. These
                 restrictions should be identified and formulated. In this example, there are three
                 restrictions formulated in the case: the limited capacities for the cutting and
                 sewing department and the market demand for the long jackets.</p>
-            <p>In addition, there are often general restrictions which have to do with the data type
-                of the decision variables. In this example the two decision variables, the number of
+            <p>Besides, there are often general restrictions that have to do with the data type of
+                the decision variables. In this example, the two decision variables, the number of
                 produced jackets, must always have to be positive integers.</p>
             <p>This leads to the formulation of the following restrictions:</p>
             <ul>
@@ -89,19 +89,18 @@
         </section>
         <section>
             <title>Model in Excel</title>
-            <p>The model should be built in Excel now so that the problem can be solved with the
-                Solver tool. One possible solution you can see in the following figure.</p>
+            <p>Time to build the model in Excel and solve the problem with the Solver tool. One
+                possible solution you can see in the following figure.</p>
             <fig>
                 <title>Calculation model WeatherLeather</title>
                 <image keyref="weatherleather_model">
                     <alt>Calculation model WeatherLeather</alt>
                 </image>
             </fig>
-            <p>There is not only one good way to build this model in Excel. There are just a number
-                of guidelines. These guidelines are discussed based on the previous figure. You can,
-                of course, build the model yourself using the guidelines and the figure, but it is
-                also made available in the practice file
-                <filepath>WeatherLeather.xlsx</filepath>.</p>
+            <p>There is not one good way to build this model in Excel. There are just some
+                guidelines. These guidelines are discussed based on the previous figure. You can, of
+                course, build the model yourself using the guidelines and the figure, but it is also
+                made available in the practice file <filepath>WeatherLeather.xlsx</filepath>.</p>
             <p>Guidelines for a Solver model in Excel:</p>
             <ol>
                 <li>Organize the data in a logical and orderly manner and put sufficient explanatory
@@ -111,9 +110,9 @@
                     the object function (D5) so they are easily recognized. Put the restrictions in
                     a separate part.</li>
                 <li>Put each decision variable in a separate cell and give them a starting value. In
-                    the example the number of produced short and long jackets respectively are in
+                    the example, the numbers of produced short and long jackets are respectively in
                     cell B4 and cell C4. As starting value 1 is used in both cases. So you can at
-                    least verifiy the correctness of the formulas. </li>
+                    least verify the correctness of the formulas. </li>
                 <li>Create a formula for the object cell. In D5 the formula is
                         <codeph>=B5*B4+C5*C4</codeph>.</li>
                 <li>Create a formula in a separate cell for each restriction. Put in the cell next

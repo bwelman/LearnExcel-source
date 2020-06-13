@@ -14,10 +14,11 @@
   </prolog>
   <body>
     <section>
-      <p>The property tax has two parts, an owner part and a user part. If the owner occupies the
-        property himself, then he must pay both parts. The rate for both parts depends of the
-        assessment of the value according to the WOZ act. The property tax for 2010 in a certain
-        community amounts for the owner 0.1064% and for the user 0.1224% of the WOZ value.</p>
+      <p>The property tax has two parts, an owner part, and a user part. If the owner occupies the
+                property himself, then he must pay both parts. The rate for both parts depends on
+                the assessment of the value according to the WOZ act. The property tax for 2010 in a
+                certain community amounts for the owner 0.1064% and for the user 0.1224% of the WOZ
+                value.</p>
       <fig>
                 <image keyref="ex_form008_model"/>
             </fig>

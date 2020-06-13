@@ -14,9 +14,9 @@
   </prolog>
   <body>
     <section>
-      <p>In the following table you see the estimated and actual sales figures per quarter for 2010,
-        as well as the difference between actual and estimated. The average percentage of the
-        differences is also determined.</p>
+      <p>In the following table, you see the estimated and actual sales figures per quarter for
+                2010, as well as the difference between actual and estimated. The average percentage
+                of the differences is also determined.</p>
       <p>
         <fig>
                     <image keyref="ex_graf003_data"/>
@@ -43,8 +43,8 @@
               <uicontrol>Line with markers</uicontrol>
               <uicontrol>OK</uicontrol>
             </menucascade>.</li>
-          <li>Make adjustments for: chart title, location legend, gap width, scale vertical
-            axis.</li>
+          <li>Make adjustments for chart title, location legend, gap width, scale vertical
+                        axis.</li>
         </ul></p>
     </section>
   </body>

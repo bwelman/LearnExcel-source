@@ -13,9 +13,9 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>A workbook can have one or more worksheets. Each worksheet has a tab that is displayed in
+        <p>A workbook can have one or more worksheets. Each worksheet has a tab that is displayed at
             the bottom of the workbook window. The tab contains the name of the worksheet. In the
-            worksheet you can enter the data and formulas. The main topics in this chapter are how
+            worksheet, you can enter the data and formulas. The main topics in this chapter are how
             and where to enter this data in the worksheet and how it is displayed.</p>
     </conbody>
 </concept>

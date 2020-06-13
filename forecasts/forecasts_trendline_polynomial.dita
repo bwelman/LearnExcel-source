@@ -24,12 +24,12 @@
                 the number of oscillations (peaks and valleys) in the data:<ul>
                     <li>1e order, the same as the linear trend line.</li>
                     <li>2e order, usually only one peak or valley in the line. The line is also
-                        called parabola.</li>
+                        called a parabola.</li>
                     <li>3e order, usually one or two peaks or valleys.</li>
                     <li>4e order, usually up to three peaks or valleys.</li>
-                </ul></p><p>In practice you will have to experiment with the order to find out which
-                is the best fit.</p>The following example is about the performance (in miles per
-            gallon) of a car at various speeds (in miles per hour).<note type="other"
+                </ul></p><p>In practice, you will have to experiment with the order to find out
+                which is the best fit.</p>The following example is about the performance (in miles
+            per gallon) of a car at various speeds (in miles per hour).<note type="other"
                 othertype="File"><filepath>Trendlines.xlsx</filepath></note></context>
         <steps>
             <step>

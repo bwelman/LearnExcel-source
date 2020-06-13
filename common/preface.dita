@@ -15,7 +15,7 @@
             /> and to present enough information about features in <ph keyref="productname"/> for
             readers to be able to use them.</p>
         <p>The book is written for<ol>
-                <li>students in the middle and higher education.</li>
+                <li>students in middle and higher education.</li>
                 <li>business people using <ph keyref="productname"/>.</li>
             </ol></p>
         <p>The book is different from other <ph keyref="productname"/> textbooks in several
@@ -26,12 +26,13 @@
                 information that may cause only distraction. Each task has a title that starts with
                 the word <wintitle>Task:</wintitle> so that it is clear that something has to be
                 carried out.</li>
-            <li>At the end of most chapters there is a series of exercises. The title of an exercise
-                always starts with the word <wintitle>Exercise:</wintitle> followed by a unique code
-                and a short description. If the exercise has a final answer than it appears.</li>
+            <li>At the end of most chapters, there is a series of exercises. The title of an
+                exercise always starts with the word <wintitle>Exercise:</wintitle> followed by a
+                unique code and a short description. If the exercise has a final answer than it
+                appears.</li>
             <li>The content of the tasks and exercises is mainly determined by competences and
                 skills that higher education requires. Many of the problems have come from
-                experiences of students in the professional practice during internships and
+                experiences of students in professional practice during internships and
                 graduation.</li>
         </ul>
         <note type="important">For making the tasks and exercises in this book you need the practice

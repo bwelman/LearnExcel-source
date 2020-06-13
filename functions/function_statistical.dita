@@ -2,7 +2,7 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <task id="function_statistical" xml:lang="en-US">
     <title>Task: Statistical Functions</title>
-    <shortdesc>A task to calculate the average, count, minimum and maximum of a set of
+    <shortdesc>A task to calculate the average, count, minimum, and maximum of a set of
         numbers.</shortdesc>
     <prolog>
         <critdates>
@@ -17,7 +17,7 @@
     </prolog>
     <taskbody>
         <context>
-            <p>The statistically category contains a variety of functions for statistical analysis
+            <p>The statistical category contains a variety of functions for statistical analysis
                 like average, count, minimum, and maximum. You will learn to use these last four in
                 the following task.</p>
             <fig>
@@ -43,8 +43,8 @@
                     appears.</stepresult>
             </step>
             <step>
-                <cmd>Put the cursor in the box <varname>Number1</varname> and in the worksheet
-                    select the area <userinput>B1:B8</userinput>.</cmd>
+                <cmd>Put the cursor in box <varname>Number1</varname> and in the worksheet select
+                    the area <userinput>B1:B8</userinput>.</cmd>
                 <stepresult>
                     <fig>
                         <title>Dialog box function average</title>
@@ -73,7 +73,7 @@
                             <userinput>MAX</userinput></choice>
                 </choices>
                 <info>
-                    <note type="attention">Make sure you keep the area B1:B8 as argument.</note>
+                    <note type="attention">Make sure you keep the area B1:B8 as an argument.</note>
                 </info>
             </step>
         </steps>

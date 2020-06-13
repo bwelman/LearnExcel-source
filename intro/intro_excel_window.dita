@@ -25,10 +25,10 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>The Excel program window has three parts: application control, worksheet and status bar.
+        <p>The Excel program window has three parts: application control, worksheet, and status bar.
             You can see all three parts from top to bottom in the figure below.</p>
         <fig>
-            <title>Programm window Excel</title>
+            <title>Program window Excel</title>
             <image keyref="Window_Excel">
                 <alt>Program window of Excel</alt>
             </image>
@@ -38,10 +38,10 @@
                 <dt>1 File</dt>
                 <dd>This button is in the upper-left corner of the program window. If you click this
                     button, a drop-down list will appear with some basic commands like creating,
-                    opening, saving and printing of files. Through this button you also have access
-                    to the important command <uicontrol>Options</uicontrol>, with which you can set
-                    your preferences.<note type="notice">This is also called the <term>Backstage
-                            view</term>.</note></dd>
+                    opening, saving, and printing of files. Through this button, you also have
+                    access to the important command <uicontrol>Options</uicontrol>, with which you
+                    can set your preferences.<note type="notice">This is also called the
+                            <term>Backstage view</term>.</note></dd>
             </dlentry>
             <dlentry>
                 <dt>2 Quick Access Toolbar</dt>
@@ -72,12 +72,12 @@
             </dlentry>
             <dlentry>
                 <dt>4 Tabs</dt>
-                <dd>At the upper side of the ribbon are tabs. On each tab there are groups of
+                <dd>At the upper side of the ribbon are tabs. On each tab, there are groups of
                     commands. Some tabs are only displayed when they are needed.</dd>
             </dlentry>
             <dlentry>
                 <dt>5 Groups</dt>
-                <dd>On each tab there are <term>groups</term> of related commands. A group contains
+                <dd>On each tab, there are <term>groups</term> of related commands. A group contains
                     all the necessary commands for a particular task. Not all the commands of a
                     group are mostly visible. When you want to see more options for the group you
                     should click on the arrow <image keyref="Button_Dialogwindow"/> in the bottom
@@ -96,8 +96,7 @@
             <dlentry>
                 <dt>8 Active cell</dt>
                 <dd>The selected cell for the active worksheet is the active cell. The active cell
-                    is highlighted with a black border. In the figure the active cell is cell
-                    A1.</dd>
+                    is highlighted with a black border. In the figure, A1 is the active cell..</dd>
             </dlentry>
             <dlentry>
                 <dt>9 Name Box</dt>

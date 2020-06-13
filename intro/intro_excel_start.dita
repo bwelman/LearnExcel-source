@@ -17,12 +17,13 @@
     </prolog>
     <taskbody>
         <context>
-            <p>The possibilities to start Excel depend on the way the system is installed. This
-                course assumes a default installation of Microsoft Office <ph keyref="productversion"
-                /> EN on a system with Windows 10. On almost all computers Excel can be started
-                through the start button of Windows and this method is described here..</p>
-            <note type="tip">The most convenient start is through a shortcut on the desktop or
-                through a button on the task bar.</note>
+            <p>The possibilities to start Excel depends on the way the system is installed. This
+                course assumes a default installation of Microsoft Office <ph
+                    keyref="productversion"/> EN on a system with Windows 10. On almost all
+                computers Excel can be started through the start button of Windows and this method
+                is described here.</p>
+            <note type="tip">The most convenient start is through a shortcut on the desktop or a
+                button on the taskbar.</note>
         </context>
         <steps>
             <step>
@@ -30,8 +31,8 @@
                         <uicontrol>Start button</uicontrol>
                         <uicontrol>Excel 2016</uicontrol>
                     </menucascade>.</cmd>
-                <stepresult>The starting screen from Excel appears. In the left part you can see the
-                    recently opened files and in the right part an overview of the available
+                <stepresult>The starting screen from Excel appears. In the left part, you can see
+                    the recently opened files and in the right part an overview of the available
                     templates.</stepresult>
             </step>
             <step>
@@ -43,8 +44,7 @@
         <example>
             <title>Disabling startscreen</title>
             <p>Normally the start screen appears at startup. This screen displays the most recent
-                documents and the available templates. startscherm toont een lijst met recente
-                documenten en de beschikbare sjablonen. This can be useful in some cases, but it is
+                documents and the available templates. This can be useful in some cases, but it is
                 also possible to start Excel with an empty sheet.</p>
             <p>First start Excel an then choose <menucascade>
                     <uicontrol>File</uicontrol>

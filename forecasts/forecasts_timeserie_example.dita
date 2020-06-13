@@ -16,8 +16,8 @@
     </prolog>
     <taskbody>
         <context>
-            <p>As an example of a time series, the beer production (in megaliters) in Australia for
-                the years 1956-1973 will be observed and analysed.</p>
+            <p>As an example of a time-series, the beer production (in megaliters) in Australia for
+                the years 1956-1973 will be observed and analyzed.</p>
             <note type="other" othertype="File"><filepath>AusBeer56-73.xlsx</filepath></note>
         </context>
         <steps>
@@ -67,7 +67,7 @@
                         <li>In the PivotChart Fields List, remove field <varname>Date</varname> from
                             the <uicontrol>Axis</uicontrol> area.</li>
                         <li>In the pivot table, change "Sum of Volume" to "Beer Production", in the
-                            top right cell. That will change the label at the top left of the pivot
+                            top-right cell. That will change the label at the top left of the pivot
                             chart.</li>
                         <li>Scale Y-axis from 200 to 600 with increments 50.</li>
                         <li>Add a title to the Y-axis.</li>
@@ -84,15 +84,15 @@
                             <alt>Australian beer production in megaliters per quarter</alt>
                         </image>
                         <p>In the chart you can see the following characteristics:<ul>
-                                <li>There is an upward trend, may not be a straight line but
+                                <li>There is an upward trend, which may not be a straight line but
                                     slightly bent.</li>
                                 <li>There is a strong seasonality through the regular peaks and
                                     troughs related to the different quarters. The peaks are always
-                                    in quarter 4, the valleys at the quarters 2 and 3 and the values
-                                    for quarter 1 are between peak and valley.</li>
+                                    in quarter 4, the valleys at quarters 2 and 3 and the values for
+                                    quarter 1 are between peak and valley.</li>
                                 <li>There are no outliers.</li>
                                 <li>There is no long term cycle.</li>
-                                <li>The variance in the values seems to increasing a little over
+                                <li>The variance in the values seems to increase a little over
                                     time.</li>
                             </ul></p>
                     </fig>

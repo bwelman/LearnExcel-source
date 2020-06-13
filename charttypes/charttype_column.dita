@@ -17,10 +17,10 @@
     </prolog>
     <taskbody>
         <context>
-            <p>If time units like years, quarters, months, weeks and days are part of the data, then
-                column charts are the most suitable type. Don't use too many data points. Five to
-                six values are maximum. When you have more than 6 values on the horizontal axis then
-                it is better to choose a line chart.</p>
+            <p>If time units like years, quarters, months, weeks, and days are part of the data,
+                then column charts are the most suitable type. Don't use too many data points. Five
+                to six values are maximum. When you have more than 6 values on the horizontal axis
+                then it is better to choose a line chart.</p>
         </context>
         <section><title>Problem</title><p>The following figure shows the market shares for some
                 supermarket chains for the years 2012-2016 in the Netherlands (source:
@@ -57,8 +57,8 @@
                         chains</userinput>.</cmd>
             </step>
             <step>
-                <cmd>Add vertical axis title with the tex <userinput>Market share (%)</userinput>
-                    .</cmd>
+                <cmd>Add vertical axis title with the tex <userinput>Market share
+                    (%)</userinput>.</cmd>
             </step>
             <step>
                 <cmd>Choose <menucascade>

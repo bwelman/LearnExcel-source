@@ -2,7 +2,7 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <task id="chart_legend" xml:lang="en-US">
     <title>Task: Legend</title>
-    <shortdesc>A number of ways to display the legend.</shortdesc>
+    <shortdesc>Some ways to display the legend.</shortdesc>
     <prolog>
         <critdates>
             <created date="2017-08-31"/>

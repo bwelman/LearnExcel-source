@@ -14,7 +14,7 @@
     </prolog>
     <body>
         <section>
-            <p>First create the following table:</p>
+            <p>First, create the following table:</p>
             <fig>
                 <image keyref="ex_form012_table"/>
             </fig>

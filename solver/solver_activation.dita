@@ -62,9 +62,9 @@
 				<stepresult>A list of available Add-ins is displayed.</stepresult>
 			</step>
 			<step>
-				<cmd>Select the check box for <option>Solver Add-in</option> and click on
-						<uicontrol>OK</uicontrol>.</cmd>
-			</step>
+                <cmd>Select the checkbox for <option>Solver Add-in</option> and click on
+                        <uicontrol>OK</uicontrol>.</cmd>
+            </step>
 			<step>
 				<cmd>Repeat the check in the first step.</cmd>
 			</step>

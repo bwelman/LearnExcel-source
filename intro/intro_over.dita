@@ -19,24 +19,25 @@
     </prolog>
     <conbody>
         <p>A <term>spreadsheet</term> is a computer program with which you can put data (text,
-            numbers, ...) in sheets consisting of rows and columns. In addition of capturing data,
-            you can also perform a variety of operations on the data. Microsoft Excel is such a
-            program.</p>
+            numbers, ...) in sheets consisting of rows and columns. Besides capturing data, you can
+            also perform a variety of operations on the data. Microsoft Excel is such a program.</p>
         <p>The term <term>spreadsheet</term> is also used to refer to the file created by the
-            program. And in Excel an individual file is also referred to as a <term>workbook</term>.
-            The standard file format in Excel is <term>XLSX</term>. However Excel can save a
-            workbook in other file formats and can also read other file formats.</p>
+            program. And in Excel, an individual file is also referred to as a
+            <term>workbook</term>. The standard file format in Excel is <term>XLSX</term>. However,
+            Excel can save a workbook in other file formats and can also read other file
+            formats.</p>
         <p>A <term>workbook</term> can have one or more <term>worksheets</term>. A
-                <term>worksheet</term> is divided in rows and columns. The intersection of a row and
-            a column is a <term>cell</term>. Individual cells are usually identified by a column
+                <term>worksheet</term> is divided into rows and columns. The intersection of a row
+            and a column is a <term>cell</term>. Individual cells are usually identified by a column
             letter and a row number. For example, B3 specifies the cell in column B and row 3. In
-            these cells you can enter text, numbers and formulas. With the formulas you can perform
-            calculations with numbers or operations on texts. In the formulas references to other
-            cells may occur, which gives you the possibility to set up large and complex calculation
-            models. With each change everything will be automatically recalculated. This makes
-            spreadsheets very useful for running so-called <term>What-if analysis</term>. Here you
-            change some values in the model and then look what impact this has on the results in the
-            model. You can then quickly calculate a number of different scenarios. In addition, it
-            is not difficult to make nice graphs using Excel.</p>
+            these cells, you can enter text, numbers, and formulas. With the formulas, you can
+            perform calculations with numbers or operations on texts. In the formulas, references to
+            other cells may occur, which gives you the possibility to set up large and complex
+            calculation models. With each change, everything will be automatically recalculated.
+            This makes spreadsheets very useful for running the so-called <term>What-if
+                analysis</term>. Here you change some values in the model and then look at what
+            impact this has on the results in the model. You can then quickly calculate a number of
+            different scenarios. In addition, it is not difficult to make nice graphs using
+            Excel.</p>
     </conbody>
 </concept>

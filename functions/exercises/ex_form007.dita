@@ -15,8 +15,8 @@
   <body>
     <section>
       <p>The following table shows the prices of a ticket for a sports game. There are two
-        categories: children and adults. There is also a cell where for entering the age (in whole
-        years). After entering the age the ticket price is automatically calculated.</p>
+                categories: children and adults. There is also a cell for entering the age (in whole
+                years). After entering the age the ticket price is automatically calculated.</p>
       <p>
         <fig>
                     <image keyref="ex_form007_model"/>

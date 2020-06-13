@@ -2,8 +2,8 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="datatable_over" xml:lang="en-US" >
 	<title>What are Data Tables?</title>
-	<shortdesc>A short description of data tables, what they are and what you can do with
-		them.</shortdesc>
+	<shortdesc>A short description of data tables, what they are, and what you can do with
+        them.</shortdesc>
 	<prolog>
 		<critdates>
 		    <created date="2017-08-31"/>
@@ -24,7 +24,7 @@
 				<li>Identify the formulas dependent of these variables.</li>
 				<li>Execute the <uicontrol>Data Table</uicontrol> command.</li>
 			</ul></p>
-		<p>Then Excel substitutes each one of the input values in the formulas, calculate the
-			results and shows these in a table form.</p>
+		<p>Then Excel substitutes each one of the input values in the formulas, calculate the results, and
+            shows these in a table form.</p>
 	</conbody>
 </concept>

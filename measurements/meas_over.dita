@@ -20,21 +20,21 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>Researchers often want to have an answer on the question whether the value of a variable
-            depends on the value of another variable. To find out this, they carry out measurements.
-            When performing these measurements, the value of one variable is changed (the
-                <term>independent variable</term>) and the value of another variable (the
+        <p>Researchers often want to have an answer to the question of whether the value of a
+            variable depends on the value of another variable. To find out this, they carry out
+            measurements. When performing these measurements, the value of one variable is changed
+            (the <term>independent variable</term>) and the value of another variable (the
                 <term>dependent variable</term>) is measured. This results in a series of measured
-            values which are the plotted in a chart. The shape of the chart gives mostly a first
+            values that are plotted in a chart. The shape of the chart gives mostly a first
             impression of whether there is a relationship between the two variables and the type of
             it: linear, exponential, logarithmic, … A relationship between two variables is
             represented by a mathematical function, represented by an equation. When a relationship
             is linear, the chart is a straight line.</p>
         <p>When plotting the measurement results, there will mostly be no line that fits all points.
-            Using statistical methods, applications like Excel are able to determine the best
-            fitting line. Such a line is called a <term>regression line</term>. The calculation
-            method for finding the best line is known as the <term>least squares method</term>. The
-            backgrounds of this method and the statistical techniques are not treated. If you want
-            to know more you have to study the literature.</p>
+            Using statistical methods, applications like Excel can determine the best fitting line.
+            Such a line is called a <term>regression line</term>. The calculation method for finding
+            the best line is known as the <term>least-squares method</term>. The backgrounds of this
+            method and the statistical techniques are not treated. If you want to know more you have
+            to study the literature.</p>
     </conbody>
 </concept>

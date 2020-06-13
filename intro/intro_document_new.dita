@@ -18,7 +18,7 @@
     </prolog>
     <taskbody>
         <context>
-            <p>Any time you can create a new workbook. This can be a blank workbook, but als a new
+            <p>Any time you can create a new workbook. This can be a blank workbook, but also a new
                 workbook based on a particular template.</p>
         </context>
         <steps>

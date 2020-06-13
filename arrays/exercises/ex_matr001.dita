@@ -24,8 +24,8 @@
     <section otherprops="solution">
       <title>Solution</title>
       <p>Select the area for the result, enter <userinput>=</userinput>, select the first matrix,
-        enter <userinput>+</userinput>, select the second matrix and press
-          <uicontrol>Ctrl-Shift-Enter</uicontrol>.</p>
+                enter <userinput>+</userinput>, select the second matrix, and press
+                    <uicontrol>Ctrl-Shift-Enter</uicontrol>.</p>
     </section>
   </body>
 </topic>

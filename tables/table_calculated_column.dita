@@ -22,7 +22,7 @@
                 command. Such a column is called a calculated column. And when you change a formula,
                 then this change is automatically expanded to the rest of the calculated column.</p>
             <p>The easiest way to create a new calculated column is to start typing in the column
-                immediately to the right of the table. The table will automatically extended.</p>
+                immediately to the right of the table. The table will automatically extend.</p>
             <note type="other" othertype="File"><filepath>Personnel.xlsx</filepath></note>
         </context>
 		<steps>

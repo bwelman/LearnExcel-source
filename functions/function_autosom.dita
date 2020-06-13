@@ -2,7 +2,7 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <task id="function_autosom" xml:lang="en-US">
     <title>Task: Autosum</title>
-    <shortdesc>For the most common <term>add</term> operation you can use the
+    <shortdesc>For the most common <term>add</term> operation, you can use the
             <uicontrol>Autosum</uicontrol> button on the ribbon.</shortdesc>
     <prolog>
         <critdates>
@@ -22,10 +22,10 @@
                 clicks. Because <varname>add</varname> is the most used operation, Excel has a
                 separate button on the ribbon for this, <image keyref="Button_Autosum"/> in the
                     <uicontrol>group Editing (tab Home)</uicontrol>, called
-                    <uicontrol>Autosum</uicontrol>. Using this buttons speeds up entering the add
-                function. Through the triangle arrow you get access to the functions
+                    <uicontrol>Autosum</uicontrol>. Using these buttons speeds up entering the add
+                function. Through the triangle arrow, you get access to the functions
                     <varname>Average</varname>, <varname>Count Numbers</varname>,
-                    <varname>Max</varname> en <varname>Min</varname>. In this way these functions
+                    <varname>Max</varname> en <varname>Min</varname>. In this way, these functions
                 are also quickly accessible.</p>
         </context>
         <steps>
@@ -34,7 +34,7 @@
             </step>
             <step>
                 <cmd>Enter in the cells <uicontrol>A1:A6</uicontrol> in succession the following
-                    numbers: <userinput>120, 121, 122, 123, 124 and 125</userinput>.</cmd>
+                    numbers: <userinput>120, 121, 122, 123, 124, and 125</userinput>.</cmd>
             </step>
             <step>
                 <cmd>Select cell <uicontrol>A7</uicontrol> and then click on <menucascade>
@@ -61,8 +61,8 @@
                         formula bar.</choice>
                     <choice>Press the <uicontrol>Enter</uicontrol> key on the keyboard.</choice>
                 </choices>
-                <stepresult>In cell <uicontrol>A7</uicontrol> appears the answer
-                        <systemoutput>735</systemoutput>. The formula in cell A7 is
+                <stepresult>In cell <uicontrol>A7</uicontrol> the answer
+                        <systemoutput>735</systemoutput> is displayed. The formula in cell A7 is
                         <systemoutput>=SUM(A1:A6)</systemoutput>. This formula is shorter and
                     clearer, therefore better than the formula
                         <userinput>=A1+A2+A3+A4+A5+A6</userinput>.</stepresult>

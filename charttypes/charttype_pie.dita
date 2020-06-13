@@ -2,7 +2,7 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <task id="charttype_pie" xml:lang="en-US">
     <title>Task: Pie Chart</title>
-    <shortdesc>A pie chart for showing the percentage distribution within one data series
+    <shortdesc>A pie chart, showing the percentage distribution within one data series
         (group).</shortdesc>
     <prolog>
         <critdates>
@@ -84,11 +84,11 @@
             </step>
             <step>
                 <cmd>Add data labels, position <uicontrol>Outside End</uicontrol></cmd>
-                <stepresult>The frequency of ech pet is displayed at the outside of each
+                <stepresult>The frequency of each pet is displayed at the outside of each
                     piece.</stepresult>
             </step>
             <step>
-                <cmd>Select the data labels, right click and select <uicontrol>Format Data
+                <cmd>Select the data labels, right-click and select <uicontrol>Format Data
                         Labels</uicontrol>.</cmd>
                 <stepresult>The task panel <wintitle>Format Data Labels</wintitle> is
                     displayed.</stepresult>
@@ -112,7 +112,7 @@
                 <cmd>Change chart title in <userinput>Favorite pet of 150 pupils</userinput>.</cmd>
             </step> 
         </steps>
-        <example><note type="tip">By choosing to add data labels as <option>Data Call Out</option> in stead of
+        <example><note type="tip">By choosing to add data labels as <option>Data Call Out</option> instead of
                     <option>Outside End</option>, you get immediately the category names and
                 percentages. Try it.</note></example>
     </taskbody>

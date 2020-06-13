@@ -14,7 +14,7 @@
     </prolog>
     <body>
         <section>
-            <p>In the next table you see the marks of some students.</p>
+            <p>In the following table, you see the marks of some students.</p>
             <fig>
                 <image keyref="ex_pivo005_data"/>
             </fig>
@@ -44,8 +44,9 @@
                     <stentry>Mark</stentry>
                 </strow>
             </simpletable>
-            <p conkeyref="pivot/options"/>/> <p>Change the type of calculation in
-                    <option>Count</option>.</p>
-            <p conkeyref="pivot/labels"/>/> </section>
+            <p conkeyref="pivot/options"/>
+            <p>Change the type of calculation in <option>Count</option>.</p>
+            <p conkeyref="pivot/labels"/>
+        </section>
     </body>
 </topic>

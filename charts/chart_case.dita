@@ -17,8 +17,8 @@
  <conbody>
   <example>
    <title>Case Stock Quotes</title>
-   <p>You can see the average monthly stock price of four companies for the months January through
-    March in the following figure:</p>
+   <p>You can see the average monthly stock price of four companies for the months of January
+                through March in the following figure:</p>
    <fig>
                 <title>Average monthly stock prices</title>
                 <image keyref="case_data">
@@ -47,7 +47,7 @@
     <li>Data for January through April are in the practice file.</li>
     <li>Chart type is a line chart (line with markers)</li>
     <li>When you create a chart Excel takes the rows as data series instead of the columns. Change
-     this situation by switching rows / columns.</li>
+                    this situation by switching rows/columns.</li>
     <li>Add chart title. Format the text of the title in Palatino, 14 pt, bold.</li>
     <li>Add a vertical axis title.</li>
     <li>Scale the vertical axis so that the primary unit is10.</li>

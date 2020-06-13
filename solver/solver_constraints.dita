@@ -20,7 +20,7 @@
 	            <alt>Dialog box add constraint</alt>
 	        </image>
 	    </fig>
-	    <p>Every constraint in the Solver consists of a cell reference, a relationship operator and a constraint.<dl>
+	    <p>Every constraint in the Solver consists of a cell reference, a relationship operator, and a constraint.<dl>
                 <dlentry>
                     <dt>Cell Reference</dt>
                     <dd>The cell address or name of the cell range whose values you want to
@@ -29,8 +29,8 @@
                 </dlentry>
                 <dlentry>
                     <dt>Relationship operator</dt>
-                    <dd>Select one of the possible operators: &lt;=, =, >=, int, bin or dif that you
-                        want between the referenced cell and the constraint.</dd>
+                    <dd>Select one of the possible operators: &lt;=, =, >=, int, bin, or dif that
+                        you want between the referenced cell and the constraint.</dd>
                 </dlentry>
                 <dlentry>
                     <dt>Constraint</dt>
@@ -38,14 +38,14 @@
                         match.</dd>
                 </dlentry>
             </dl></p>
-        <p>The relationship operators int, bin and dif can only applied to decision variable cells.
-            If int, bin or dif is selected, then the Constraint box displays respectively integer,
-            binary or alldifferent.</p>
+        <p>The relationship operators int, bin, and dif can only be applied to decision variable
+            cells. If int, bin, or dif is selected, then the Constraint box displays respectively
+            integer, binary, or alldifferent.</p>
         <dl>
             <dlentry>
                 <dt>int (integer)</dt>
                 <dd>This requires that the values in the referenced cells must be integers or whole
-                    numbers, such as -1, 0 or 2, to within a small tolerance (determined by the
+                    numbers, such as -1, 0, or 2, to within a small tolerance (determined by the
                     Constraint Precision option).</dd>
             </dlentry>
             <dlentry>

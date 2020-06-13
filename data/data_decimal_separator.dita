@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
 <concept id="data_decimal_separator" xml:lang="en-US">
     <title>Language-dependent number formats</title>
-    <shortdesc>Separators for decimals and thousands are dependent on the language of Windows, but
+    <shortdesc>Separators for decimals and thousands are dependent on the language of Windows but
         can be changed in Excel.</shortdesc>
     <prolog>
         <critdates>
@@ -17,8 +17,8 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>The way Excel is formatting numbers depends of the language version of Windows.
-            Especially for the decimal and thousands separators this may cause confusion and
+        <p>The way Excel is formatting numbers depends on the language version of Windows.
+            Especially for the decimal and thousands separators, this may cause confusion and
             problems. By default, Windows uses the following characters.</p>
         <ul>
             <li>Dutch<ul>
@@ -40,12 +40,12 @@
                     <uicontrol>Options</uicontrol>
                     <uicontrol>Advanced</uicontrol>
                 </menucascade></li>
-            <li>Under <q>Editing options</q> clear the check box <uicontrol>Use system
+            <li>Under <q>Editing options</q> clear the checkbox <uicontrol>Use system
                     separators</uicontrol>.</li>
             <li>Type new separators in the <uicontrol>Decimal separator</uicontrol> and
                     <uicontrol>Thousands separator</uicontrol> boxes.</li>
         </ol>
         <note type="tip">When you want to use the system separators again, select the <uicontrol>Use
-                system separators</uicontrol> check box.</note>
+                system separators</uicontrol> checkbox.</note>
     </conbody>
 </concept>

@@ -18,9 +18,8 @@
         <p>Entering data in a cell in a brief:<ol>
                 <li>Select cell.</li>
                 <li>Start typing.</li>
-                <li>End with <uicontrol>Enter key</uicontrol>.<note type="attention">Beware, if
-                        there is already content in the cell, this content will be
-                        overwritten.</note></li>
+                <li>End with <uicontrol>Enter key</uicontrol>.<note type="attention">Beware, if the
+                        cell already contains content, this content will be overwritten</note></li>
             </ol></p>
         <p>After using the <uicontrol>Enter key</uicontrol> the cell pointer moves automatically one
             cell downwards.</p>

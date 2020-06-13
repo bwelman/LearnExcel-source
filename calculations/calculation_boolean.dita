@@ -18,8 +18,8 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>There are formulas that don't perform calculations, but rather compare two things. Such
-            formulas have only two possible outcomes: <systemoutput>TRUE</systemoutput> or
+        <p>Some formulas don't perform calculations, but rather compare two things. Such formulas
+            have only two possible outcomes: <systemoutput>TRUE</systemoutput> or
                 <systemoutput>FALSE</systemoutput>.</p>
         <p>In these formulas you can use the following operators:</p>
         <simpletable frame="all">
@@ -52,9 +52,9 @@
                 <stentry>greater than or equal to</stentry>
             </strow>
         </simpletable>
-        <p>In the table below there are some examples of such formulas. In order to understand its
-            functioning well you could enter these in a cell. The parentheses you see in the
-            formulas are not really necessary, but provide more clarity on the intent of the
+        <p>In the table below there are some examples of such formulas. To understand its
+            functioning well, you could enter these in a cell. The parentheses you see in the
+            formulas are not strictly  necessary, but provide more clarity on the intent of the
             formula. Therefore it is recommended to always use parentheses.</p>
         <simpletable frame="all">
             <sthead>
@@ -106,24 +106,23 @@
                 <stentry>TRUE</stentry>
             </strow>
         </simpletable>
-        <note type="attention">In operations text should always be placed between double
-            quotes.</note>
-        <p>Just putting such formulas in cells does not make much sense. However, it is important
-            that they can appear in calculations. In that case Excel uses the following numerical
-            values: <ul>
+        <note type="attention">In operations, text should always be placed between
+            double-quotes.</note>
+        <p>Just putting such formulas in cells does not make much sense. However, they can appear in
+            calculations. In that case Excel uses the following numerical values: <ul>
                 <li>TRUE = 1</li>
                 <li>FALSE = 0</li>
             </ul></p>
         <p>Because of these numerical values you can calculate with it and create conditions in a
             calculation. The result depends of the outcome of the condition. In the following
-            example the postage for orders depends of the ordered quantity.</p>
+            example, the postage for orders depends on the ordered quantity.</p>
         <example>
             <title>Example</title>
-            <p>At a internet shop an order is delivered without postage for orders from $ 25. In the
-                next figure you can see that the postage is calculated with a true/false formula. At
-                the beginning of the formula is <codeph>(B5&lt;$B$2)</codeph>. This part has two
-                possible outcomes, TRUE (=1) or FALSE (=0). And this result is again multiplied by $
-                3,50. There are only two possible outcomes: <ul>
+            <p>At an internet shop, an order is delivered without postage for orders from $ 25. In
+                the next figure, you can see that the postage is calculated with a true/false
+                formula. At the beginning of the formula is <codeph>(B5&lt;$B$2)</codeph>. This part
+                has two possible outcomes, TRUE (=1) or FALSE (=0). And this result is again
+                multiplied by $ 3,50. There are only two possible outcomes: <ul>
                     <li>1 * 3.50 = 3.50</li>
                     <li>0 * 3.50 = 0</li>
                 </ul>
@@ -134,7 +133,7 @@
                     </image>
                 </fig>
                 <note type="tip">Create this example and check the correct working by entering
-                    different values in the cells B1, B2 and B5.</note>
+                    different values in the cells B1, B2, and B5.</note>
             </p>
         </example>
     </conbody>

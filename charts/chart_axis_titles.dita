@@ -18,7 +18,7 @@
     </prolog>
     <taskbody>
         <context>
-            <p>Axis titles are titles along the horizontal and vertical axis and and help you to
+            <p>Axis titles are titles along the horizontal and vertical axis and help you to
                 understand what the data is about.</p>
             <note conref="../common/reuse_task_parts.dita#reuse_task_parts/Chart_File"/>
         </context>

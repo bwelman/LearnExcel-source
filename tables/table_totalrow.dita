@@ -38,21 +38,21 @@
                         <uicontrol>Check Total Row (group Table Style Options)</uicontrol>
                     </menucascade></cmd>
                 <stepresult>
-                    <p>A row <systemoutput>Total</systemoutput> is inserted at the bottom of the table and a
-                            <varname>SUBTOTAL</varname> function is added below the last column. In
-                        this case the function is meningless because the last column is a date
-                        column.</p>
+                    <p>A row <systemoutput>Total</systemoutput> is inserted at the bottom of the
+                        table and a <varname>SUBTOTAL</varname> function is added below the last
+                        column. In this case, the function is meaningless because the last column is
+                        a date column.</p>
                 </stepresult>
             </step>
             <step>
                 <cmd>Select in the total row the cell below column <varname>Start date</varname>,
-                    then the selector <image keyref="subtotal_selector" id="image_rpj_4zx_r1b"/> and
+                    the selector <image keyref="subtotal_selector" id="image_rpj_4zx_r1b"/> and
                     choose <option>None</option>.</cmd>
             </step>
             <step>
-                <cmd>Select in the total row the cell below column <varname>Salary</varname>, then
-                    the selector <image keyref="subtotal_selector" id="image_tyv_rzx_r1b"/> and
-                    choose <option>Sum</option>.</cmd>
+                <cmd>Select in the total row the cell below column <varname>Salary</varname>, the
+                    selector <image keyref="subtotal_selector" id="image_tyv_rzx_r1b"/> and choose
+                        <option>Sum</option>.</cmd>
                 <stepresult>The total salary is <systemoutput>$
                     4,874,037.39</systemoutput>.</stepresult>
             </step>

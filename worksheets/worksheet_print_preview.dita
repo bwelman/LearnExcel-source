@@ -17,7 +17,7 @@
     </prolog>
     <taskbody>
         <context>
-            <p>OmTo judge if a print will look good, it is recommended to look at the print preview
+            <p>To judge if a print will look good, it is recommended to look at the print preview
                 first. From there you can easily change some print settings.</p>
             <note type="other" othertype="File"><filepath>Personnel.xlsx</filepath></note>
         </context>
@@ -30,7 +30,7 @@
                         <uicontrol>File</uicontrol>
                         <uicontrol>Print</uicontrol>
                     </menucascade>.</cmd>
-                <stepresult>An preview of the print and possibilities to change settings are displayed.<fig>
+                <stepresult>A preview of the print and possibilities to change settings are displayed.<fig>
                         <title>Print Preview</title>
                         <image keyref="Print_Preview">
                             <alt>Print Preview</alt>

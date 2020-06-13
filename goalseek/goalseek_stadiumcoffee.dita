@@ -17,9 +17,9 @@
 	<taskbody>
 		<context>
 			<p>Suppose you want to run a coffee stand in a soccer stadium. The monthly costs for rent, staff
-				and miscellaneous are known. You also know the costs and sales price for a cup of
-				coffee. In the next figure you see a model for calculating the monthly results,
-				depending on the number of cups of coffee sold.</p>
+                and miscellaneous are known. You also know the costs and sales price for a cup of
+                coffee. In the next figure, you see a model for calculating the monthly results,
+                depending on the number of cups of coffee sold.</p>
 			<fig>
 				<title>Calculation model for coffee stand Stadium</title>
 				<image keyref="stadiumcoffee_model">
@@ -27,8 +27,8 @@
 				</image>
 			</fig>
 			<p>What you would like to know now is how many cups of coffee you have to be sell per month to be
-				break-even. In this simple example you can easily calculate the answer by hand.
-				However the method Goal Seek as well.</p>
+                break-even. In this simple example, you can easily calculate the answer by hand.
+                However, the method Goal Seek as well.</p>
 			<note type="other" othertype="File"><filepath>Stadium_Coffee.xlsx</filepath></note>
 		</context>
 		<steps>
@@ -49,12 +49,12 @@
 					<dlentry>
 						<dt>Set cell</dt>
 						<dd>The address of the cell that contains the formula for which you want a specific result. In
-								this example it is the cell with the monthly result.</dd>
+                                this example, it is the cell with the monthly result.</dd>
 					</dlentry>
 						<dlentry>
 							<dt>To value</dt>
-							<dd>This is the desired result for the formula, hence the target. For break-even the value is
-								0.</dd>
+							<dd>This is the desired result for the formula, hence the target. For break-even, the value
+                                is 0.</dd>
 						</dlentry>
 						<dlentry>
 							<dt>By changing cell</dt>

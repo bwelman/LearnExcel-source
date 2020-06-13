@@ -17,15 +17,15 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>It is possible for the format of a cell to allow depend on certain conditions. For
-            example, the background of the cell can be made red when the value in the cell is less
-            then 6. This is called a <term>conditional format</term>. The formatting is applied if
-            the condition(s) are met. If not, the <q>ordinary</q> format will be applied.</p>
+        <p>The format of a cell can depend on certain conditions. For example, the background of the
+            cell can be made red when the value in the cell is less than 6. This is called a
+                <term>conditional format</term>. The formatting is applied if the condition(s) are
+            met. If not, the <q>ordinary</q> format will be applied.</p>
         <p>To apply conditional formatting, you can use any combination of the following formatting
-            options: number format, font, border and background.</p>
-        <p>In the condition test the numerical value in the cell(s) will be compared with a
-            different value. It is also possible to compare the numerical value with a range of
-            other values ​​in order to determine whether there is deviation from the average or, for
-            example, belongs to the top three. There is no limit to the number of conditions.</p>
+            options: number format, font, border, and background.</p>
+        <p>In the condition test, the numerical value in the cell(s) will be compared with a
+            different value. You can also compare the numerical value with a range of other values
+            ​to determine whether there is a deviation from the average or, for example, belongs to
+            the top three. There is no limit to the number of conditions.</p>
     </conbody>
 </concept>

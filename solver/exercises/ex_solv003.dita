@@ -15,14 +15,15 @@
   <body>
     <section>
       <p>A company in Hong Kong manufactures American running shoes. The company produces three
-        models: Runner, Lady T and Super A and wants to make as much profiit as possible.</p>
+                models: Runner, Lady T, and Super A. The company wants to make as much profit as
+                possible.</p>
       <ul>
         <li>Manufacturing 1 pair of Lady's needs 0.31 hour, Runner T needs 0.20 hour and Super A
           costs 0.25 hour. The maximum number of production hours is 150 hours per week.</li>
-        <li>The capital investment per pair for Runner, Lady T and Super A is respectively $16, $12
-          and $10. There is $8000 per week available.</li>
+        <li>The capital investment per pair for Runner, Lady T, and Super A is respectively $16,
+                    $12, and $10. There is $8000 per week available.</li>
         <li>Because of limited machine capacity the production per week is limited to 300 pair
-          Runner, 400 pair Lady T and 400 pair Super A.</li>
+                    Runner, 400 pair Lady T, and 400 pair Super A.</li>
         <li>The profit for Runner is $6 per pair, for Lady T $5 per pair and $4 per pair for Super
           A.</li>
       </ul>
@@ -45,7 +46,7 @@
       <title>Answer</title>
       <ol>
         <li>Three decision variables: Number model Runner per week (= R), number model Lady T per
-          week (= T) and number model Super A per week (= A).</li>
+                    week (= T), and number model Super A per week (= A).</li>
         <li>Objective function is the maximum profit per week (= P): <codeph>P = 6*R + 5*T +
             4*A</codeph></li>
         <li>Restrictions: <ul>

@@ -41,7 +41,7 @@
             </fig>
             <p>It is important to distinguish between Global and Current Workbook settings:<ul>
                     <li>GLOBAL: settings will affect all the projects you create.</li>
-                    <li>CURRENT WORKBOOK: settings will affect only the current Excel file .</li>
+                    <li>CURRENT WORKBOOK: settings will affect only the current Excel file.</li>
                 </ul></p>
             <p><uicontrol>Default Query Load Settings</uicontrol></p>
             <p>The data load settings affect how the queries are loaded. The standard load settings
@@ -49,9 +49,10 @@
                     <li>When loading a single query the query is loaded to a new worksheet.</li>
                     <li>When loading multiple queries the queries are loaded to the Data Model.</li>
                 </ul></p>
-            <p>A preferred method is to load a query manual. In that case you select <option>Specify
-                    custom default load settings</option> and unticking both choices. Then only a
-                connection is build and you need to load the query manually:</p>
+            <p>A preferred method is to load a query manually. In that case, you select
+                    <option>Specify custom default load settings</option> and unticking both
+                choices. Then only a connection is built and you need to load the query
+                manually:</p>
             <ul>
                 <li>In Excel: <menucascade>
                         <uicontrol>tab Data</uicontrol>
@@ -97,11 +98,10 @@
                     <alt>Window query options global privacy</alt>
                 </image>
             </fig>
-            <p>When you are combining data from various sources then it is possible that you get
-                lots of error messages because these actions can conflict with your privacy level
-                settings. These messages mostly make no sense to the end user. To avoid these
-                messages you can savely select <option>Always ignore Privacy Level
-                settings</option>.</p>
+            <p>When you are combining data from various sources then you may get lots of error
+                messages because these actions can conflict with your privacy level settings. These
+                messages mostly make no sense to the end-user. To avoid these messages you can
+                safely select <option>Always ignore Privacy Level settings</option>.</p>
         </section>
         <section>
             <title>Current Regional Settings</title>
@@ -111,7 +111,7 @@
                     <alt>Window query options current regional</alt>
                 </image>
             </fig>
-            <p>The regional settings affect how Power Query manipulates dates, currencies and other
+            <p>The regional settings affect how Power Query manipulates dates, currencies, and other
                 features specific to regions &amp; countries.</p>
         </section>
     </conbody>

@@ -18,9 +18,9 @@
         <context>
             <p>Excel offers many kinds of different charts. Choosing the most appropriate chart can
                 be difficult. Excel can help you with the Recommended Charts command, which produces
-                a list of charts that Excel recommends for your data. To use this feature you
-                allways must select the data first.</p>
-            <p>As an example, a file with the yearly sales by quarter of a bakery.</p>
+                a list of charts that Excel recommends for your data. To use this feature you should
+                always select the data first.</p>
+            <p>As an example, a file with the quarterly sales of a bakery.</p>
             <fig>
                 <title>Sales bakery per year by quarter</title>
                 <image keyref="bakery_data">
@@ -48,8 +48,8 @@
                         <uicontrol>Recommended Charts (group Charts)</uicontrol>
                     </menucascade>.</cmd>
                 <stepresult>
-                    <p>The dialogbox <wintitle>Insert Chart</wintitle> is displayed. On the left
-                        side you can scroll through the list of charts that Excel recommends for
+                    <p>The dialog box <wintitle>Insert Chart</wintitle> is displayed. On the left
+                        side, you can scroll through the list of charts that Excel recommends for
                         your data. And when you click on a chart, you will see a preview of the
                         chart on the right with your data.</p>
                     <fig>
@@ -67,7 +67,7 @@
                     </menucascade>.</cmd>
                 <stepresult>
                     <p>The chart is embedded in the worksheet and <uicontrol>Chart Tools</uicontrol>
-                        with the groups <uicontrol>Design</uicontrol> and
+                        with the group's <uicontrol>Design</uicontrol> and
                             <uicontrol>Format</uicontrol>, are added to the ribbon.<fig>
                             <title>Recommended Clustered Column Chart</title>
                             <image keyref="bakery_column_years">
@@ -84,7 +84,7 @@
         </steps>
         <example>
             <title>Faster way</title>
-            <p>There is faster way to insert a recommended chart:<ol>
+            <p>There is a faster way to insert a recommended chart:<ol>
                     <li>Select the data, including the headings.</li>
                     <li>Click the <uicontrol>Quick Analysis</uicontrol> button <image
                             keyref="button_quick_analysis"/> at the bottom right corner of the

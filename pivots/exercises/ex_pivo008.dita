@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
 <topic id="ex_pivo008" outputclass="exercise" xml:lang="en-US">
-    <title>Exercise: pivo008 - Own home and average value</title>
+    <title>Exercise: pivo008 - Own home and average home value</title>
     <shortdesc>Level: 3</shortdesc>
     <prolog>
         <critdates>
@@ -14,14 +14,15 @@
     </prolog>
     <body>
         <section>
-            <p>In the next table you see for some people how many years of study they have, whether
-                or not they have a own house and if applicable the value of the house.</p>
+            <p>In the following table, you see for some people how many years of study they have,
+                whether or not they have their own house and if applicable the value of the
+                house.</p>
             <fig>
                 <image keyref="ex_pivo008_data"/>
             </fig>
             <p>Enter the data in a worksheet. Determine using a pivot table the number of people
-                with a own house and the average value of the house as a function of the number of
-                years of study.</p>
+                with their own house and the average value of the house as a function of the number
+                of years of study.</p>
             <note type="other" othertype="File"><filepath>Pivo008.xlsx</filepath></note>
         </section>
         <section otherprops="answer">
@@ -47,9 +48,9 @@
                     <stentry>own house value</stentry>
                 </strow>
             </simpletable>
-            <p conkeyref="pivot/options"/>/> <p>Change type of calculation in
-                    <option>Average</option> and <uicontrol>Number Format</uicontrol> in
-                    <option>Accounting with 0 decimals</option>.</p>
+            <p conkeyref="pivot/options"/>
+            <p>Change type of calculation in <option>Average</option> and <uicontrol>Number
+                    Format</uicontrol> in <option>Accounting with 0 decimals</option>.</p>
             <p>Choose <menucascade>
                     <uicontrol>tab Design</uicontrol>
                     <uicontrol>Report Layout (group Layout)</uicontrol>

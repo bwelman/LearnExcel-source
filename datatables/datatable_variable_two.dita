@@ -13,7 +13,7 @@
 		</metadata>
 	</prolog>
 	<conbody>
-		<p>The two-variable data table uses a formula that contains two list of input values. The formula
+		<p>The two-variable data table uses a formula that contains two lists of input values. The formula
             must refer to two different input cells: the <term>row input cell</term> and the
                 <term>column input cell</term>.</p>
 		<fig>

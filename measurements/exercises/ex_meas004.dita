@@ -15,7 +15,7 @@
   <body>
     <section>
       <p>The resistance of a metal block depends on the temperature among other things. In the
-        following figure you see the resistance at some temperatures.</p>
+                following figure, you see the resistance at some temperatures.</p>
       <fig>
                 <title>Results resistance and temperature</title>
                 <image keyref="ex_meas004_data" alt="Resultaten weerstand en temperatuur"/>

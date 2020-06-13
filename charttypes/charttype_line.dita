@@ -17,14 +17,14 @@
     </prolog>
     <taskbody>
         <context>
-            <p>For line charts the time unit is plotted along the horizontal axis, the category
+            <p>For line charts, the time unit is plotted along the horizontal axis, the category
                 axis. The measured variable is plotted along the vertical axis. A line can be drawn
                 between the points on the graph to visualize a trend in data over intervals of
                 time.</p>
         </context>
         <section>
             <title>Problem</title>
-            <p>In the following figure you can find annual temperature data (<sup>o</sup>C) for
+            <p>In the following figure, you can find annual temperature data (<sup>o</sup>C) for
                 Amsterdam Airport Schiphol (source: <xref
                     href="https://en.tutiempo.net/climate/ws-62400.html" format="html"
                     scope="external"/>).<ul>

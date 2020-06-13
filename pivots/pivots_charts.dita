@@ -19,7 +19,7 @@
         <context>
             <p>A PivotChart shows data series, categories, and chart axes the same way a standard
                 chart does. But it also gives you interactive filtering so you can quickly analyze a
-                subset of your data. And you can using slicers for filtering data.</p>
+                subset of your data. And you can use slicers for filtering data.</p>
             <note type="other" othertype="File"><filepath>Sales.xlsx</filepath></note>
         </context>
         <steps>
@@ -41,8 +41,8 @@
                     <fig>
                         <image keyref="sales_chart_clustered-column"/>
                     </fig>
-                    <p>In the PivotChart are filters for Region and Salesman. When you use a filter
-                        in the chart, then also the data in the PivotTable will be filtered.</p>
+                    <p>The PivotChart has filters for Region and Salesman. When you use a filter in
+                        the chart, then also the data in the PivotTable will be filtered.</p>
                 </stepresult>
             </step>
             <step>

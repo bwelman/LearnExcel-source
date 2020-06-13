@@ -2,7 +2,7 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <task id="datatable_advertising" xml:lang="en-US">
     <title>Task: Revenues advertising campaign</title>
-    <shortdesc>An exampl of a data table with 2 <term>input cells</term> for the calculation of the
+    <shortdesc>An example of a data table with 2 <term>input cells</term> for the calculation of the
         effect of an advertising campaign.</shortdesc>
     <prolog>
         <critdates>
@@ -26,12 +26,12 @@
             </fig>
             <p>The calculation model uses 2 variables: the number of flyers sent and the response
                 percentage. The printing and shipping costs are fixed data, as well as the expected
-                revenue per response. The number of responses and total revenues, costs and profits
-                are calculated using formulas.</p>
+                revenue per response. The number of responses and total revenues, costs, and profits
+                is calculated using formulas.</p>
             <p>The range for the data table is <userinput>B14:I23</userinput>. The two input cells
                 are B1 and B2. The values for input cell B1 are in column
                     <userinput>B15:B23</userinput>. The values for input cell B2 are in row
-                    <userinput>C14:I14</userinput>. In B14 is a reference to the total profit
+                    <userinput>C14:I14</userinput>. In cell B14 is a reference to the total profit
                 formula, which in turn references to the two input cells.</p>
             <note type="other" othertype="File"
                 ><filepath>Advertising_Campaign.xlsx</filepath></note>
@@ -47,11 +47,11 @@
                 <cmd/>
             </step>
             <step>
-                <cmd>Put the cursor in box <option>Row input cell</option> and click on cell
+                <cmd>Put the cursor in the box <option>Row input cell</option> and click on cell
                         <userinput>B2</userinput>.</cmd>
             </step>
             <step>
-                <cmd>Put the cursor in box <option>Column input cell</option> and click on cell
+                <cmd>Put the cursor in the box <option>Column input cell</option> and click on cell
                         <userinput>B1</userinput>.</cmd>
             </step>
             <step>

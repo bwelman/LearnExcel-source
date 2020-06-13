@@ -15,15 +15,15 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>Many business-critical decisions depend on good forecasts for the future.Making a
+        <p>Many business-critical decisions depend on good forecasts for the future. Making a
             forecast is based on historical data.</p>
         <p>The historical data often includes trends, season patterns, and external factors. There
             are two common scenarios:</p>
         <ul>
-            <li>Financial forecasts of revenue, costs and profits as well as indicators such as
+            <li>Financial forecasts of revenue, costs, and profits as well as indicators such as the
                 number of new customers or sales price.</li>
             <li>Product demand forecasts are a critical step in the supply chain management of an
-                organization. Based on this is the purchase of raw materials and deployments of
+                organization. Based on this is the purchase of raw materials and the deployments of
                 people and machines. Forecasting is often unique for a line of business. For
                 example, an electricity company will estimate the energy to be delivered in the
                 future. And a hospital will plan the number of beds needed.</li>

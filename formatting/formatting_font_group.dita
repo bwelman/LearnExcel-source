@@ -15,17 +15,17 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>The <uicontrol>group Font (tab Home)</uicontrol> has a number of commands that allows to
-            change the appearance of text in cells. To apply these changes, you must first select
+        <p>The <uicontrol>group Font (tab Home)</uicontrol> has several commands that allows
+            changing the appearance of text in cells. To apply these changes, you must first select
             the cell(s) and then use the command button. The options in this group are:</p>
         <dl>
             <dlentry>
                 <dt><image keyref="Font"/></dt>
-                <dd>Font, choice list through down arrow.</dd>
+                <dd>Font, choice list through the down arrow.</dd>
             </dlentry>
             <dlentry>
                 <dt><image keyref="Font_Size"/></dt>
-                <dd>Font size, choice list through down arrow.</dd>
+                <dd>Font size, choice list through the down arrow.</dd>
             </dlentry>
             <dlentry>
                 <dt><image keyref="Font_Size_Adjust"/></dt>

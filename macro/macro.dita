@@ -14,9 +14,9 @@
 	</prolog>
 	<conbody>
 		<p>Common actions can be automated with macros. Using macros can increase efficiency and reduce
-			errors. Simple macro's that exist of a number of operations in a sequence, can be
-			recorded with the built-in macro recorder. Complex macros are programmed in the language
-			VBA (Visual Basic for Applications). Only simple macros will be discussed here, so
-			programming knowledge is not necessary.</p>
+            errors. Simple macro's that exist of some operations in a sequence, can be recorded with
+            the built-in macro recorder. Complex macros are programmed in the language VBA (Visual
+            Basic for Applications). Only simple macros will be discussed here, so programming
+            knowledge is not necessary.</p>
 	</conbody>
 </concept>

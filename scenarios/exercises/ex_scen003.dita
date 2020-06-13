@@ -15,18 +15,19 @@
   <body>
     <section>
       <p>A company makes three products (A, B en C). To manufacture each product a different number
-        of working hours and amount of materials is needed. In following figure you see the rates
-        for labour and material costs as well as the quantities needed to make these products. Also
-        the costs and revenues are calculated for the current production quantities.</p>
+                of working hours and materials is needed. In the following figure, you see the rates
+                for labor and material costs as well as the quantities needed to make these
+                products. Also, the costs and revenues are calculated for the current production
+                quantities.</p>
       <fig>
                 <image keyref="ex_scen003_data"/>
             </fig>
-      <p>Enter the model in a worksheet. Provide the right formulas in the cells which values have
-        to be calculated.</p>
+      <p>Enter the model in a worksheet. Provide the right formulas in the cells in which values
+                have to be calculated.</p>
       <p>Management wants a prediction of the operating profit, but there is still some uncertainty
-        about the amount of labor and material costs. For the prediction are therefore three
-        scenarios available: the most favorable case, the most bad case and the current (most
-        likely) case. The different rates are listed in the following table.</p>
+                about the amount of labor and material costs. For the prediction are therefore three
+                scenarios available: the favorable case, the bad case, and the current (most likely)
+                case. The different rates are listed in the following table.</p>
       <simpletable frame="all">
         <sthead>
           <stentry>scenario</stentry>

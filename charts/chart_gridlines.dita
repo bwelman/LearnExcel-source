@@ -18,7 +18,7 @@
         <context>
             <p>Gridlines are horizontal and vertical lines extending from the axes across the plot
                 area of the chart. Gridlines make the data in a chart easier to read. You can show
-                gridlines for the major or minor intervals on the axes. By default there are some
+                gridlines for the major or minor intervals on the axes. By default, there are some
                 gridlines added to most charts.</p>
             <note conref="../common/reuse_task_parts.dita#reuse_task_parts/Chart_File"/>
         </context>
@@ -37,7 +37,7 @@
             <step>
                 <cmd>Click the continuation arrow of <option>Gridlines</option> and hover the cursor
                     over the options.</cmd>
-                <stepresult>By each option you will see the result in the chart.</stepresult>
+                <stepresult>By each option, you will see the result in the chart.</stepresult>
             </step>
         </steps>
     </taskbody>

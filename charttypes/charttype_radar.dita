@@ -19,15 +19,15 @@
     </prolog>
     <taskbody>
         <context>
-            <p>In a radar chart multiple data series (categories) are plotted along separate axes
+            <p>In a radar chart, multiple data series (categories) are plotted along separate axes
                 starting from a point in the middle, the origin. The diagram looks like a spider web
-                and is therefore called spider chart or star chart. The angles between these axes
+                and is therefore called a spider chart or star chart. The angles between these axes
                 are equal. The data points on the axes are usually connected with a line.</p>
         </context>
         <section>
             <title>Problem</title>
-            <p>In the following figure you see the scores of a self-evaluation, according a 5-point
-                Likert scale.</p>
+            <p>In the following figure, you see the scores of a self-evaluation, according to a
+                5-point Likert scale.</p>
             <fig>
                 <title>Self-evaluation</title>
                 <image keyref="radar_data">

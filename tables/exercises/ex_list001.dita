@@ -21,8 +21,8 @@
         </fig>
       </p>
       <p>Now apply a filter so that only the rows are displayed for students who have no rating or a
-        mark 3 or lower.For this exercise the table is kept small. For your solution you should take
-        much larger tables into account.</p>
+                mark 3 or lower. For this exercise, the table is kept small. For your solution, you
+                should take much larger tables into account.</p>
       <note type="other" othertype="File"><filepath>List001.xlsx</filepath></note>
     </section>
     <section otherprops="answer">

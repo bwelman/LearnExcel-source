@@ -17,7 +17,7 @@
     <refbody>
         <section>
             <title>Goal Seek does not produce the right answer</title>
-            <p>It is possible that there is no answer or that Excel cannot find one. In that case a
+            <p>It is possible that there is no answer or that Excel cannot find one. In that case, a
                 dialog box pops up.</p>
             <p>If the solution exists, but Excel can not find it, then check the following possible
                 solutions:</p>

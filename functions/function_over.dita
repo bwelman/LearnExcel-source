@@ -16,7 +16,7 @@
     </prolog>
     <conbody>
         <p>Excel has more than 300 built-in functions to perform a variety of operations. Features
-            of the functions are divided into a number of categories:</p>
+            of the functions are divided into several categories:</p>
         <ul>
             <li>Financial</li>
             <li>Date &amp; Time</li>
@@ -34,7 +34,7 @@
         </ul>
         <p>A category can be useful when you are looking for a particular function. For example, if
             you are looking for a function to calculate the repayment of a loan, then this function
-            can be found in the <term>Financial</term> category. Also there are other categories:
+            can be found in the <term>Financial</term> category. Also, there are other categories:
                 <term>All</term>, <term>Most recently used</term> and <term>User defined</term>.</p>
         <p>With most of the features you need to specify what values or contents of cells the
             function should use in the calculation. These entries are called
@@ -43,14 +43,14 @@
                 <li>They begin with the equal sign <userinput>=</userinput>.</li>
                 <li>Then the function's name.</li>
                 <li>Then round brackets (parentheses) enclosing the <term>arguments</term>. The
-                        <term>arguments</term> are separated by the so called <term>argument
+                        <term>arguments</term> are separated by the so-called <term>argument
                         separator</term> the <userinput>comma (,)</userinput>. <note
                         type="attention">The <term>argument separator</term> used by Excel depends
                         on a Windows setting. Default is the comma for English versions and a
                         semicolon for the Dutch versions. You can change this through the
                             <term>control panel</term> of Windows. </note>
                 </li>
-                <li>The arguments may include: numbers, texts, operations, or also other
+                <li>The arguments may include numbers, texts, operations, or also other
                     functions.</li>
             </ul></p>
         <fig>

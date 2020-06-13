@@ -30,7 +30,7 @@
                 <cmd>Convert the data range to a table.</cmd>
             </step>
             <step>
-                <cmd>Click on the arrow besides the field name <varname>Division</varname> and only
+                <cmd>Click on the arrow beside the field name <varname>Division</varname> and only
                     select <option>Copiers</option>, then <uicontrol>OK</uicontrol>.</cmd>
                 <stepresult>Only the records for the Copiers division are now displayed. The arrow
                     at the column header <varname>Division</varname> is changed in the filter symbol
@@ -38,7 +38,7 @@
             </step>
             <step>
                 <cmd>Now refine your selection by filtering on the Accounting department.</cmd>
-                <stepresult>In the status bar at the bottom is displayed how may reacords are
+                <stepresult>In the status bar at the bottom is displayed how many records are
                     found.</stepresult>
             </step>
             <step id="filter_clear">
@@ -53,7 +53,7 @@
                     following example will be used to determine the top 10 salaries.</p>
             </stepsection>
             <step>
-                <cmd>Click on the arrow besides the field name <varname>Salary</varname> and choose <menucascade>
+                <cmd>Click on the arrow beside the field name <varname>Salary</varname> and choose <menucascade>
                         <uicontrol>Number Filters</uicontrol>
                         <uicontrol>Top 10...</uicontrol>
                     </menucascade>.</cmd>
@@ -64,7 +64,7 @@
                             <alt>Dialog box top 10 autofilter</alt>
                         </image>
                     </fig>
-                    <note type="tip"> In this window there are three options:<ul>
+                    <note type="tip"> In this window, there are three options:<ul>
                             <li>Top or Bottom</li>
                             <li>Any number for the count</li>
                             <li>Percent or Items</li>
@@ -87,12 +87,12 @@
                     the records of all people with a salary from $ 20,000 to $ 25,000.</p>
             </stepsection>
             <step>
-                <cmd>Click on the arrow besides the field name <varname>Salary</varname> and choose <menucascade>
+                <cmd>Click on the arrow beside the field name <varname>Salary</varname> and choose <menucascade>
                         <uicontrol>Number Filters</uicontrol>
                         <uicontrol>Custom Filter...</uicontrol>
                     </menucascade>.</cmd>
                 <stepresult>
-                    <p>The dialogbox <wintitle>Custom AutoFilter</wintitle> is displayed where you
+                    <p>The dialog box <wintitle>Custom AutoFilter</wintitle> is displayed where you
                         can specify the filter conditions.</p>
                 </stepresult>
             </step>
@@ -119,7 +119,7 @@
                         filters</term>. The following example will be used to determine the records
                     with a start date in September.</p></stepsection>
             <step>
-                <cmd>Click on the arrow besides the field name <varname>Start date</varname> and
+                <cmd>Click on the arrow beside the field name <varname>Start date</varname> and
                     choose <menucascade>
                         <uicontrol>Date Filters</uicontrol>
                         <uicontrol>All Dates in the Period</uicontrol>

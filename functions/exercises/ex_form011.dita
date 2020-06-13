@@ -14,7 +14,9 @@
   </prolog>
   <body>
     <section>
-      <p>A government bond with a maturity of 5 years annually pays 3.5% interest rate. Suppose you want to have $300,000 over 5 years, how much do you need to invest in this bond? Use Excels function for present value (PV) to calculate the answer.</p>
+      <p>A government bond with a maturity of 5 years annually pays a 3.5% interest rate. Suppose
+                you want to have $300,000 over 5 years, how much do you need to invest in this bond?
+                Use Excels function for present value (PV) to calculate the answer.</p>
     </section>
     <section otherprops="answer">
       <title>Answer</title>
@@ -23,9 +25,9 @@
     <section otherprops="solution">
       <title>Solution</title>
       <p>Formula: <codeph>=PV(3.5%,5,,300000)</codeph></p>
-      <p>The result of this formula is negative because it represents money that you need to pay, an
-        expense. To get a positive answer you can put a minus for the formula or insert a negative
-        value for the present value (-300000).</p>
+      <p>The result of this formula is negative because it represents money that you need to pay, so
+                an expense. To get a positive answer you can put a minus for the formula or insert a
+                negative value for the present value (-300000).</p>
     </section>
   </body>
 </topic>

@@ -18,9 +18,9 @@
     </prolog>
     <taskbody>
         <context>
-            <p>Excel has a number of options to quickly fill a row or column with data that follows
-                a pattern or is based on lists. For example, Excel has built-in lists for the days
-                of the weeks and the months of the year. But you can also make your own lists
+            <p>Excel has several options to quickly fill a row or column with data that follows a
+                pattern or is based on lists. For example, Excel has built-in lists for the days of
+                the weeks and the months of the year. But you can also make your custom lists
                 through the options of Excel. Another possibility is to create a pattern that Excel
                 recognizes. When filling the cells with new values ​​Excel makes use of this
                 pattern. Often two values for pattern recognition​​ are sufficient.</p>
@@ -35,13 +35,13 @@
                     </image>
                 </fig>
             </p>
-            <p>In the next exercise a built-in list is used first and then a pattern recognition. At
-                the end are examples with which you can experiment.</p>
+            <p>In the next exercise, a built-in list is used first and then a pattern recognition.
+                At the end are examples with which you can experiment.</p>
         </context>
         <steps>
             <stepsection>Built-in list</stepsection>
             <step>
-                <cmd>Start with a new worksheet..</cmd>
+                <cmd>Start with a new worksheet.</cmd>
             </step>
             <step>
                 <cmd>Select cell A1 and type the word <userinput>January</userinput>.</cmd>
@@ -50,9 +50,9 @@
                 <cmd>Select cell A1 again. Position the mouse over the fill handle of cell A1. Press
                     the left mouse button and drag to cell A12 and then release the left mouse
                     button.</cmd>
-                <stepresult>The result is that the area A1: A12 contains the months of the year. In
-                    fact you can start with every month. If you keep on dragging, the sequence will
-                    repeat itself. <fig>
+                <stepresult>The result is that the area A1: A12 contains the months of the year. You
+                    can start with every month. If you keep on dragging, the sequence will repeat
+                    itself. <fig>
                         <title>Months of the year</title>
                         <image keyref="Months_Names_Long">
                             <alt>Months of the year</alt>
@@ -68,8 +68,8 @@
                 <cmd>Select cell B2 and type the number <userinput>2</userinput>.</cmd>
             </step>
             <step>
-                <cmd>Select the area B1:B2 and drag the fill handle a number of cells downwards.
-                        <image keyref="Numbers_Autofill"/>.</cmd>
+                <cmd>Select the area B1:B2 and drag the fill handle some cells downwards. <image
+                        keyref="Numbers_Autofill"/>.</cmd>
                 <stepresult>The result is that the area is filled with the numbers 1, 2, 3, 4, 5,
                     ...</stepresult>
             </step>

@@ -25,9 +25,8 @@
                 chart. A scatter chart is often used to examine a certain relation, a correlation,
                 between the two variables.</p>
         </context>
-        <section><title>Problem</title><p>To investigate whether there is a relationship between
-                body length and weight the data is measured for 10 students. The measurement data is
-                showed in the following figure.</p><fig>
+        <section><title>Problem</title><p>To investigate whether there is a relationship between body length and weight the data is
+                measured for 10 students. The measurement data is shown in the following figure.</p><fig>
                 <title>Investigation body length - weight</title>
                 <image keyref="scatter_data">
                     <alt>Investigation body length - weight</alt>

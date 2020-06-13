@@ -15,10 +15,10 @@
   </metadata>
  </prolog>
  <conbody>
-  <p>Forecasting is is extrapolation of time series, to predict future values. This is done by using
-            different statistical techniques. In order to be able to make an accurate prediction, it
-            is important to discover a pattern in the historical data. This is done by analysis of
-            the time series.</p>
+  <p>Forecasting is extrapolation of time-series, to predict future values. This is done by using
+            different statistical techniques. To be able to make an accurate prediction, it is
+            important to discover a pattern in the historical data. This is done by the analysis of
+            the time-series.</p>
   <p>Excel has several options to make predictions.</p>
   <ul>
    <li>Through the equation of the trend line. The coefficients of the equation can be calculated
@@ -42,7 +42,8 @@
                     <li>FORECAST.ETS.STAT</li>
                 </ul></li>
    <li>Through the Add-in <term>Data Analysis</term>. This offers Exponential Smoothing and Moving
-                Average. Furthermore you can also make correlation and regression calculations.</li>
+                Average. Furthermore, you can also make a correlation and regression
+                calculation.</li>
   </ul>
  </conbody>
 </concept>

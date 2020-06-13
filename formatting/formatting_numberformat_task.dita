@@ -16,9 +16,9 @@
     </prolog>
     <taskbody>
         <context>
-            <p>In the following example you see a part of a worksheet containing many uses of number format.
-                All formatting has been applied with the predefined styles and / or the command
-                buttons for number formatting.</p>
+            <p>In the following example, you see a part of a worksheet containing many uses of
+                number format. All formatting has been applied with the predefined styles and / or
+                the command buttons for number formatting.</p>
             <fig>
                 <title>Example formatting numbers</title>
                 <image keyref="Number_Format_Example">
@@ -45,8 +45,8 @@
                     of decimals to 0.</li>
                 <li>Column D, numbers entered with the percent symbol and then adjust the number of
                     decimals.</li>
-                <li>Column E, dates entered, applied the short date format for the first two and the long date
-                    format for the last two.</li>
+                <li>Column E, dates entered, applied the short date format for the first two, and
+                    the long date format for the last two.</li>
             </ul>
         </example>       
     </taskbody>

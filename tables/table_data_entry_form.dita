@@ -29,10 +29,10 @@
 		</prereq>
 		<context>
 			<p>The easiest and best way to add <term>records</term> to a table is by using a data entry form.
-                Excel automatically create such form for you if you provide the field names of the
-                columns and type in the first record. In the following figure you see an example of
+                Excel automatically creates such form for you if you provide the field names of the
+                columns and type in the first record. In the following figure, you see an example of
                 a purchase list. The data of the first article have already been entered, including
-                the necessary formulas in F2 , G2 and H2.</p>
+                the necessary formulas in F2, G2, and H2.</p>
 			<fig>
                 <title>Purchase list with first record</title>
                 <image keyref="purchase_record1">
@@ -63,11 +63,11 @@
 						Toolbar</wintitle>.</cmd>
 				<stepresult>
 					<p>The data form appears. On the left side are the 8 <term>field names</term>. Besides 5
-							<term>field names</term> are entry boxes. Here you can enter or change
-						the data. The <term>field names</term>
-						<varname>total excl.</varname>, <varname>vat</varname> and <varname>total
-							incl.</varname> don't have boxes but values. This is because those
-						values are calculated through formulas.</p>
+                            <term>field names</term> are entry boxes. Here you can enter or change
+                        the data. The <term>field names</term>
+                        <varname>total excl.</varname>, <varname>vat</varname>, and <varname>total
+                            incl.</varname> don't have boxes but values. This is because those
+                        values are calculated through formulas.</p>
 					<fig>
                         <title>Form purchases</title>
                         <image keyref="purchase_form">

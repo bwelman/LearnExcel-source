@@ -27,7 +27,7 @@
         </ul>
         <p>When the cell is in editing mode, the mode on the status bar (bottom left) has been
             changed from <systemoutput>Ready</systemoutput> to <systemoutput>Edit</systemoutput>. To
-            the left of the formula bar two new icons appear: <image keyref="Formulabar_Icons"/>.
+            the left of the formula bar, two new icons appear: <image keyref="Formulabar_Icons"/>.
             The left one for <uicontrol>Cancel</uicontrol> and the next for
                 <uicontrol>Enter</uicontrol>.</p>
         <note type="attention">The operation must be terminated with the

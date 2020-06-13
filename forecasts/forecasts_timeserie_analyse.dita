@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
 <concept id="forecasts_timeserie_analyse" xml:lang="en-US">
-    <title>Time serie analysis</title>
+    <title>Time-series analysis</title>
     <shortdesc/>
     <prolog>
         <critdates>
@@ -15,32 +15,32 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>A time series analysis is the analysis of data collected over a certain period of time.
-            Thus it is a study of the coherence between two variables whose independent variable is
-            the time. A time series analysis can be used to predict future values ​​in the time
-            series (forecasting).</p>
+        <p>A time-series analysis is the analysis of data collected over a certain period. Thus it
+            is a study of the coherence between two variables whose independent variable is the
+            time. A time-series analysis can be used to predict future values ​​in the time series
+            (forecasting).</p>
         <p>A time series analysis always starts with displaying the time series in a chart. Always
             on the horizontal axis the time and on the vertical axis the variable to be tested.
             Mostly the chart gives you a first picture of the characteristics of the time series.
             Things to watch out for are:<ul>
                 <li>Is there a <term>trend</term>? This means that the variable tends to increase
                     (continuously rising) or decrease (continuously decreasing).</li>
-                <li>Is there <term>seasonality</term>? This means that a regular recurring pattern
+                <li>Is there <term>seasonality</term>? This means that a regularly recurring pattern
                     of peaks and drops can be seen related to certain times such as seasons,
                     quarters, months, weekdays, etc.</li>
                 <li>Are there <term>outliers</term>? These are values ​​that are far from the other
                     values.</li>
-                <li>Is there a <term>long term cycle</term>? This is not related to the seasonal
+                <li>Is there a <term>long term cycle</term>? This is not related to seasonal
                     factors.</li>
                 <li>Is there a <term>constant variance</term> of the variable over time or does it
                     becomes larger or smaller?</li>
                 <li>Are there <term>sudden changes</term> in size or variance?</li>
             </ul></p>
-        <p>On the basis of the characteristics in the chart you try to describe the course of the
-            time series and to determine what components the time series exists and make a model.
-            (For this latter you need some statistical knowledge). This is usually not easy because
-            you can not see these parts (patterns) in the chart. The most commonly used system
-            assumes that a time series consists of the following components:</p>
+        <p>Based on the characteristics in the chart, you try to describe the course of the time
+            series and to determine what components the time series exists and make a model. (For
+            this latter you need some statistical knowledge). This is usually not easy because you
+            can not see these parts (patterns) in the chart. The most commonly used system assumes
+            that a time series consists of the following components:</p>
         <fig>
             <title>Components of a time serie</title>
             <image keyref="timeserie_components">
@@ -50,8 +50,8 @@
         <!--Bovenstaand schema in Trends en Voorspellingen.docx
 Bron plaatjes componenten in subparagrafen: http://www.cbs.nl/NR/rdonlyres/9957DCCA-00AF-4427-A63D-EB6D7E726E65/0/2010x3707pub.pdf -->
         <p>There are two mathematical models for time series: Additive and Multiplicative. And
-            splitting a time serie in the individual components is called <term>decomposition</term>
-            of a time serie.</p>
+            splitting a time-serie in the individual components is called <term>decomposition</term>
+            of a time-serie.</p>
         <dl>
             <dlentry>
                 <dt>Additive model</dt>
@@ -70,11 +70,11 @@ Bron plaatjes componenten in subparagrafen: http://www.cbs.nl/NR/rdonlyres/9957D
                 </dd>
             </dlentry>
         </dl>
-        <p>A multiplicative time series can be converted into an additive time series through the
+        <p>A multiplicative time series can be converted into an additive time-series through the
             logarithm function:</p>
         <p><codeph>log(T*S*C*R) = log(T) + log(S) + log(C) + log(R)</codeph></p>
-        <p>There are different methods for determination of individual components. The moving
-            average is mostly used to adjust for the seasonality effect. After this the trend is
+        <p>There are different methods for the determination of individual components. The moving
+            average is mostly used to adjust for the seasonality effect. After this, the trend is
             determined for the seasonally adjusted serie. When the individual components are
             determined, forecasting can be started.</p>
         <p>Performing a decomposition is beyond the scope of this study book.</p>

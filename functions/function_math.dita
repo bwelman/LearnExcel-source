@@ -2,7 +2,7 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <task id="function_math" xml:lang="en-US">
     <title>Task: Mathematical Functions</title>
-    <shortdesc>A brief description of the <term>mathematical functions</term> category with an task
+    <shortdesc>A brief description of the <term>mathematical functions</term> category with a task
         of rounding numbers.</shortdesc>
     <prolog>
         <critdates>
@@ -17,16 +17,16 @@
     </prolog>
     <taskbody>
         <context>
-            <p>The mathematical functions category is quite extensive. Besides the well known SUM
+            <p>The mathematical functions category is quite extensive. Besides the well-known SUM
                 function for adding numbers, this category contains functions for various computing
                 activities, such as exponentiation, root calculations, PI, logarithms, etc.
-                Furthermore you will find a lot of trigonometric functions. So all kind of functions
-                for specific use.</p>
+                Furthermore, you will find a lot of trigonometric functions. So all kinds of
+                functions for a specific use.</p>
             <p>More common functions are those for rounding numbers. Excel has thirteen functions
                 for rounding and that is why it can be quite confusing to determine which function
-                to use in a given situation. For example there is a function ROUND for rounding a
+                to use in a given situation. For example, there is a function ROUND for rounding a
                 number up or down to a specified number of decimal places. There are also functions
-                for rounding to the nearest multiples of a given number, or rounding to an integer
+                for rounding to the nearest multiples of a given number or rounding to an integer
                 value.</p>
             <p>The following figure shows the results of some rounding functions.</p>
             <fig>

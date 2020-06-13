@@ -39,8 +39,10 @@
                     <stentry>Salary</stentry>
                 </strow>
             </simpletable>
-            <p conkeyref="pivot/options"/>/> <p>Change <uicontrol>Number Format</uicontrol> in
-                    <option>Accounting with 0 decimals</option>.</p>
-            <p conkeyref="pivot/labels"/>/> </section>
+            <p conkeyref="pivot/options"/>
+            <p>Change <uicontrol>Number Format</uicontrol> in <option>Accounting with 0
+                    decimals</option>.</p>
+            <p conkeyref="pivot/labels"/>
+        </section>
     </body>
 </topic>

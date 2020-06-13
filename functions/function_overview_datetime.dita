@@ -40,9 +40,9 @@
     </section> 
     <section>
       <title>DATE</title>
-      <p>This function converts the supplied year, month and date to a serial number that represents
-        a particular date. If the cell format is general then the result will be displayed as a
-        date.</p>
+      <p>This function converts the supplied year, month, and date to a serial number that
+                represents a particular date. If the cell format is general then the result will be
+                displayed as a date.</p>
       <codeblock>DATE(year, month, day)</codeblock>
       <parml>
         <plentry>
@@ -61,10 +61,10 @@
     </section>
     <section>
       <title>NOW</title>
-      <p>This function returns the current date and time. The function has no arguments. The result
-        is a serial number and if the cell format is general then it will be displayed as day and
-        time. The function updates every time your Excel worksheet is refreshed. Manual refreshing
-        is possible via key F9.</p>
+      <p>This function returns the current date and time. The function has no arguments. The result,
+                is a serial number and if the cell format is general then it will be displayed as
+                day and time. The function updates every time your Excel worksheet is refreshed.
+                Manual refreshing is possible via key F9.</p>
       <codeblock>NOW()</codeblock>
     </section>
   </refbody>

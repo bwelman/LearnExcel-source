@@ -2,7 +2,7 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <task id="function_nesting" xml:lang="en-US">
     <title>Task: Entering Nested Functions</title>
-    <shortdesc>Explanation what a <term>nested function</term> is and how you enter them with the
+    <shortdesc>Explanation of what a <term>nested function</term> is and how you enter them with the
         wizard.</shortdesc>
     <prolog>
         <critdates>
@@ -17,9 +17,9 @@
     </prolog>
     <taskbody>
         <context><p>A function as an argument inside another function is a <term>nested
-                    function</term>. Inside the parenthesis of a function there is another function.
-                An example:</p><codeph>=ROUNDDOWN(SUM(A1:A5),0)</codeph><p>In the following task
-                this nested function will be entered in the worksheet.</p></context>
+                    function</term>. Inside the parenthesis of a function, there is another
+                function. An example:</p><codeph>=ROUNDDOWN(SUM(A1:A5),0)</codeph><p>In the
+                following task, this nested function will be entered in the worksheet.</p></context>
         <steps>
             <step>
                 <cmd>Start with a new worksheet and enter the data you can see in the following
@@ -73,15 +73,15 @@
             <step>
                 <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
                 <stepresult>A warning message appears with the notification that you haven't entered
-                    enough arguments for this function. That is correct, because for the
+                    enough arguments for this function. That is correct because for the
                         <varname>ROUNDDOWN</varname> function the number of decimals is a required
                     argument.</stepresult>
             </step>
             <step>
                 <cmd>Click <uicontrol>OK</uicontrol>.</cmd>
                 <stepresult>The cursor blinks now between the last two closing parentheses <q>)
-                        )</q>. Here you need to enter the first the argument separator (comma) and
-                    then the number of decimals.<fig>
+                        )</q>. Here you need to enter the first argument separator (comma) and then
+                    the number of decimals.<fig>
                         <title>Location for entering second argument</title>
                         <image keyref="Example_Nesting_Rounddown">
                             <alt>Location for entering second argument</alt>

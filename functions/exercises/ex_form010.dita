@@ -40,8 +40,8 @@
           </strow>
         </simpletable>
       </p>
-      <p>Create a model in a worksheet in which current, the resistance and the time can be entered
-        and the amount of heat is calculated from the entered data.</p>
+      <p>Create a model in a worksheet in which current, the resistance, and the time can be entered
+                and the amount of heat is calculated from the entered data.</p>
       <note type="other" othertype="File"><filepath>Form010.xlsx</filepath></note>
     </section>
     <section otherprops="solution">
