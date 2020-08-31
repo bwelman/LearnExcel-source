@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/task.dtd">
+<task id="array_xlookup_2way" xml:lang="en-US">
+    <title>Task: Two way search</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2020-08-31"/>
+            <revised modified="2020-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context><p>XLOOKUP can also be used to search in two directions. This can be done by
+                including (nesting) an XLOOKUP function within another XLOOKUP function.</p>The
+            figure below shows a number of Starbucks coffee prices. In cell G3, the price must
+            appear based on the search criteria in G1 and G2.<fig>
+                <image keyref="Array_Xlookup_2Way"/>
+            </fig><note type="other" othertype="Bestand"
+            ><filepath>Tidy001.xlsx</filepath></note></context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Enter the data in F1:F3 and G1:G2.</cmd>
+            </step>
+            <step>
+                <cmd>Enter in G3 the formula
+                        <codeph>=XLOOKUP(G2,B1:D1,XLOOKUP(G1,A2:A10,B2:D10))</codeph>.</cmd>
+                <tutorialinfo>
+                    <p>Explanation</p>
+                    <p>The inner XLOOKUP looks up the coffee type in the product column and returns
+                        a row with the three prices.</p>
+                    <p>The outer XLOOKUP finds the correct size and returns the corresponding
+                        price.</p>
+                </tutorialinfo>
+            </step>
+        </steps>
+    </taskbody>
+</task>

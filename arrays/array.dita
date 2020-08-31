@@ -6,15 +6,21 @@
     <prolog>
         <critdates>
             <created date="2017-08-31"/>
-            <revised modified="2017-08-31"/>
+            <revised modified="2020-08-31"/>
         </critdates>
         <metadata>
             <keywords/>
         </metadata>
     </prolog>
     <conbody>
-        <p>Array formulas allow you to perform calculations that you can not perform with other
-            formulas. Array formulas are known as very difficult and not always easy to understand.
-            This chapter introduces you to array formulas and how you can use them.</p>
+        <p>An array formula is a formula that can perform multiple calculations on one or more items
+            in an array.</p>
+        <p>In Excel 365, working with array formulas and their behavior has changed compared to the
+            other Excel versions. Existing formulas that can produce multiple results also behave
+            like array formulas in Excel 365. Some new dynamic array formulas have also been
+            added.</p>
+        <p>This chapter explains what Excel understands by an array, what an array formula is and
+            how it behaves, and discusses the new dynamic array functions. As a result, the content
+            of this chapter is largely exclusive to Excel 365.</p>
     </conbody>
 </concept>

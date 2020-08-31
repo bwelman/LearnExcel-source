@@ -7,39 +7,81 @@
     <prolog>
         <critdates>
             <created date="2017-08-31"/>
-            <revised modified="2017-08-31"/>
+            <revised modified="2020-08-31"/>
         </critdates>
         <metadata>
             <keywords>
-                <indexterm>Array formula</indexterm>
-                <indexterm>CSE formula</indexterm>
+                <indexterm>Array</indexterm>
+                <indexterm>Vector</indexterm>
             </keywords>
         </metadata>
     </prolog>
     <conbody>
-        <p>An array formula is a formula that uses as input an array of values instead of single
-            cell value. An array formula can be seen as many formulas packed into a single super
-            formula.</p>
-        <p>An array in Excel is a data set. This data can be in one row (a 1-dimensional horizontal
-            array), in one column (a 1-dimensional vertical array) or in multiple rows and columns
-            (a 2-dimensional array).<fig>
+        <p>A <term>vector</term> is a list of numbers that are either in a row or in a column. You
+            then have a <term>row vector</term> or a <term>column vector</term> respectively. Excel
+            does not use the term vector, but <term>array</term>. An array in Excel can be:</p>
+        <ul>
+            <li>A row of values (actually a row vector). This is a 1-dimensional horizontal
+                matrix.</li>
+            <li>A column of values (actually a column vector). This is a 1-dimensional vertical
+                matrix.</li>
+            <li>A rectangle of rows and columns of values, so an area. This is a 2 dimensional
+                matrix.</li>
+        </ul>
+        <p>The following figure shows an example of each.
+            <fig>
                 <title>Array examples</title>
                 <image keyref="Array_Examples">
                     <alt>Array examples</alt>
                 </image>
             </fig>
         </p>
-        <p>An array formula is a formula with which you can perform multiple calculations for one or
-            more data in an array. Array formulas are formulas that can produce multiple results for
-            an outcome. The result is a row with values, a column with values or a table with
-            values. To use array formulas you should first think about how many results there are
-            and how these are arranged (one cell, one row, one column or one table).</p>
-        <p>Array formulas are also called <varname>CSE-formulas</varname> because you have to press
-            on the <uicontrol>CTRL+SHIFT+ENTER</uicontrol> keys to enter them. After entering these
-            shortcut keys braces are placed around the formula automatically.</p>
-        <note type="attention">
-            <p>Array formulas are identified by the braces around the formula. Never type these
-                braces yourself, they are placed automatically by Excel.</p>
-        </note>
+        <p>You can create a matrix with constant values as showed in the three examples, by starting
+            in a cell with the <codeph>=</codeph> symbol and then placing a row of values between
+            curly brackets <codeph>{}</codeph>. The values must be separated from each other by a
+            special symbol. Which symbols to use as separator symbol depends on the language and
+            regional settings on the computer.</p>
+        <ul>
+            <li>English language systems<ul>
+                    <li>Comma <codeph>,</codeph> for a new column.</li>
+                    <li>Semicolon <codeph>;</codeph> for a new row.</li>
+                </ul></li>
+            <li>Dutch language systems<ul>
+                    <li>Backslash <codeph>\</codeph> for a new column.</li>
+                    <li>Semicolon <codeph>;</codeph> for a new row.</li>
+                </ul></li>     
+        </ul>
+        <p>Furthermore, with a 2-dimensional array, you have to take into account:</p>
+        <p>
+            <ul>
+                <li>List in order of rows.</li>
+                <li>All rows must have the same number of columns.</li>
+            </ul>
+        </p>
+        <p>The three examples are entered into Excel as follows.</p>
+        <p><codeph>={1,2,3,4,5}</codeph> returns 1 row with 5 columns.<fig>
+                <title>1-dimensional horizontal array</title>
+                <image keyref="Array_1dim_h">
+                    <alt>1-dimensional horizontal array</alt>
+                </image>
+            </fig>
+        </p>
+        <p><codeph>={1;3;6}</codeph> returns 3 row with 1 column.<fig>
+                <title>1-dimensional vertical array</title>
+                <image keyref="Array_1dim_v">
+                    <alt>1-dimensional vertical array</alt>
+                </image>
+            </fig>
+        </p>
+        <p><codeph>={1,2,3,4,5;3,5,7,9,11;6,9,12,15,18}</codeph> returns 3 rows with 5 columns.<fig>
+                <title>2-dimensional array</title>
+                <image keyref="Array_2dim">
+                    <alt>2-dimensional array</alt>
+                </image>
+            </fig>
+        </p>
+        <note type="attention"><p>For all examples, only the first cell is editable. That is the cell where you entered the array.
+                When you select another cell in the values area, the content in the formula bar is
+                gray, and you cannot change the value.</p></note>
     </conbody>
 </concept>

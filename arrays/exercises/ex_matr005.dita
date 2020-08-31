@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_matr005" audience="level2" xml:lang="en-US">
+    <title>Exercise: matr005 - Sorting columns</title>
+    <shortdesc>Level: 2</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2020-08-31"/>
+            <revised modified="2020-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section><p>The figure below shows the population size of the Benelux countries for the years 2000, 2005,
+                2010 and 2015. If you want this data for the years in reverse order, you can easily
+                do this with the dynamic array formula SORT, which also allows you to sort
+                columns.</p>
+            <fig>
+                <image keyref="ex_matr005_data"/>
+            </fig>
+            <note type="other" othertype="Bestand"
+                ><filepath>Benelux_Population.xlsx</filepath></note>
+            <p>Open the practice file and copy the data in columns A and B respectively to H and I.
+                Now enter the formula SORT in cell J1 so that the data for the years appears in
+                descending order. The result should look like this.</p>
+            <fig>
+                <image keyref="ex_matr005_solution"/>
+            </fig>
+            <p>If you want to keep the file, save it under the name
+                    <filepath>matr005.xlsx</filepath>, then the original file is not changed.</p>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p>Formula in J1: <codeph>=SORT(C1:F7,1,-1,TRUE)</codeph></p>
+        </section>
+    </body>
+</topic>

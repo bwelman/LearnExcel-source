@@ -14,6 +14,7 @@
             <prodname>Excel</prodname>
             <vrmlist>
                 <vrm version="1.0" release="31 augustus 2017"/>
+                <vrm version="2.0" release="31 augustus 2020"/>
             </vrmlist>
         </prodinfo>
     </topicmeta>
@@ -22,10 +23,27 @@
     <mapref href="keys_array.ditamap" processing-role="resource-only"/>
     <!-- Content -->
     <topicref href="array.dita" scope="local" type="concept">
-        <topicref href="array_over.dita" scope="local" type="concept"/>
-        <topicref href="array_simple.dita" scope="local" type="task"/>
-        <topicref href="array_single.dita" scope="local" type="task"/>
-        <topicref href="array_complex.dita" scope="local" type="task"/>
+        <topicref href="array_over.dita" scope="local" type="concept">
+            <topicref href="array_simple.dita" scope="local" type="task"/>
+            <topicref href="array_single.dita" scope="local" type="task"/>
+            <topicref href="array_complex.dita" scope="local" type="task"/>
+            <topicref href="array_unit.dita" scope="local" type="task"/>
+            <topicref href="array_frequency.dita" scope="local" type="task"/>
+        </topicref>
+        <topicref href="array_dynamic.dita" scope="local" type="concept">
+            <topicref href="array_randarray.dita" scope="local" type="concept"/>
+            <topicref href="array_filter.dita" scope="local" type="concept"/>
+            <topicref href="array_sequence.dita" scope="local" type="concept"/>
+            <topicref href="array_sort.dita" scope="local" type="concept"/>
+            <topicref href="array_sortby.dita" scope="local" type="concept"/>
+            <topicref href="array_unique.dita" scope="local" type="concept"/>
+            <topicref href="array_tables.dita" scope="local" type="task"/>
+            <topicref href="array_xmatch.dita" scope="local" type="concept"/>
+        </topicref>
+        <topicref href="array_xlookup.dita" scope="local" type="concept">
+            <topicref href="array_xlookup_multiplevalues.dita" scope="local" type="task"/>
+            <topicref href="array_xlookup_2way.dita" scope="local" type="task"/>
+        </topicref>
         <mapref href="exercises/map_ex_matr.ditamap" format="ditamap"/>
     </topicref>
 </map>

@@ -6,7 +6,7 @@
 	<prolog>
 		<critdates>
 		    <created date="2017-08-31"/>
-		    <revised modified="2017-08-31"/>
+		    <revised modified="2020-08-31"/>
 		</critdates>
 		<metadata>
 			<keywords/>
@@ -14,6 +14,10 @@
 	</prolog>
 	<taskbody>
 		<context>
+            <p>An array formula is a formula that you use to perform calculations on matrices. The
+                result is an array. To use array formulas, you need to consider in advance how many
+                outcomes there are and how these outcomes are arranged (one cell, row, column,
+                table).</p>
 			<p>In the next figure, you can see that the sum and product of two numbers are calculated a few
                 times. This can be done with simple formulas. For example, the formula in D2 could
                 be <userinput>=A2+B2</userinput>. And the formula in E2 could be
@@ -25,8 +29,8 @@
                     <alt>Sum and product of two numbers</alt>
                 </image>
             </fig>
-			<p>This calculation can also be done with array formulas. This provides no benefits here, but it
-                is a good task to learn to work with array formulas.</p>
+			<p>This calculation can also be done with array formulas. It is good practice to learn the
+                behavior of an array formula.</p>
 			<note type="other" othertype="File"><filepath>Array1.xlsx</filepath></note>
 		</context>
 		<steps>
@@ -34,35 +38,43 @@
 				<cmd/>
 			</step>
 			<step>
-				<cmd>Select area <uicontrol>D2:D4</uicontrol> and type <userinput>=A2:A4+B2:B4</userinput> and
-					then press <uicontrol>CTRL SHIFT ENTER</uicontrol>.</cmd>
-				<info>Because the result of the addition is a column of three numbers, you should first select
-					an area of three cells for the results.</info>
-				<stepresult>
-					<fig>
+                <cmd>Select area <uicontrol>D2:D4</uicontrol> and type
+                        <userinput>=A2:A4+B2:B4</userinput> and then press
+                        <uicontrol>ENTER</uicontrol>.</cmd>
+                <info>
+                    <p>More convenient than typing in the cell addresses is by selecting them with
+                        the mouse.</p>
+                    <p>Because the result of the addition consists of a column of three numbers,
+                        Excel will automatically flow the result to cells D3: D4. You have to think
+                        about this in advance and make sure that these cells are empty, otherwise
+                        the error message #SPILL! will follow.</p>
+                </info>
+                <stepresult>
+                    <fig>
                         <title>Sum of two columns with array formula</title>
                         <image keyref="Example_Column_Sum">
                             <alt>Sum of two columns with array formula</alt>
                         </image>
                     </fig>
-					<p>The results you see in the cells D2:D4. On the formula bar, you see Excel surrounded the
-                        formula with braces.</p>
-				</stepresult>
-			</step>
+                    <p>The results are in cells D2: D4, and the box around the result shows that it
+                        is an array.</p>
+                </stepresult>
+            </step>
 			<step>
-				<cmd>Select area <uicontrol>E2:E4</uicontrol> and type <userinput>=A2:A4*B2:B4</userinput> and
-					then press <uicontrol>CTRL SHIFT ENTER</uicontrol>.</cmd>
-				<stepresult>
-					<fig>
+                <cmd>Select area <uicontrol>E2:E4</uicontrol> and type
+                        <userinput>=A2:A4*B2:B4</userinput> and then press
+                        <uicontrol>ENTER</uicontrol>.</cmd>
+                <stepresult>
+                    <fig>
                         <title>Product of two columns with array formula</title>
                         <image keyref="Example_Column_Product">
                             <alt>Product of two columns with array formula</alt>
                         </image>
                     </fig>
-					<p>The results you see in the cells E2:E4. On the formula bar, you see Excel surrounded the
-                        formula with braces.</p>
-				</stepresult>				
-			</step>
+                    <p>The results are in cells E2:E4, and the box around the result shows that it
+                        is an array.</p>
+                </stepresult>
+            </step>
 		</steps>
 		<example>
 			<title>Example: 1-dimensional horizontal array</title>

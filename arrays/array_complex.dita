@@ -6,7 +6,7 @@
 	<prolog>
 		<critdates>
 		    <created date="2017-08-31"/>
-		    <revised modified="2017-08-31"/>
+		    <revised modified="2020-08-31"/>
 		</critdates>
 		<metadata>
 			<keywords/>
@@ -32,9 +32,9 @@
 				<cmd>Select cell <uicontrol>C11</uicontrol>.</cmd>
 			</step>
 			<step>
-				<cmd>Type <userinput>=AVERAGE(IF(B2:B9="m",C2:C9))</userinput> and press <uicontrol>CTRL SHIFT
-						ENTER</uicontrol>.</cmd>
-			</step>
+                <cmd>Type <userinput>=AVERAGE(IF(B2:B9="m",C2:C9))</userinput> and press
+                        <uicontrol>ENTER</uicontrol>.</cmd>
+            </step>
 			<step>
 				<cmd>Repeat the action for cell C12, the entered formula is
 						<userinput>=AVERAGE(IF(B2:B9="f",C2:C9))</userinput>.</cmd>

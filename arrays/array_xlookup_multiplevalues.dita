@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/task.dtd">
+<task id="array_xlookup_multiplevalues" xml:lang="en-US">
+    <title>Task: Returning multiple values</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2020-08-31"/>
+            <revised modified="2020-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>XLOOKUP can return more than one value for the same match. In this task, four values
+                are returned with one formula.</p>
+            <note type="other" othertype="Bestand"><filepath>olympic2016.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Convert the data range to a table with <menucascade>
+                        <uicontrol>tab Insert</uicontrol>
+                        <uicontrol>Table</uicontrol>
+                    </menucascade> and specify <varname>Medals</varname> as table name.</cmd>
+            </step>
+            <step>
+                <cmd>Add a <varname>Total</varname> column to the table containing a formula for the
+                    total number of medals. This is done as follows:</cmd>
+                <substeps>
+                    <substep>
+                        <cmd>Enter <userinput>Total</userinput> in cell E1 and press ENTER.</cmd>
+                        <stepresult>A new column is now automatically created.</stepresult>
+                    </substep>
+                    <substep>
+                        <cmd>Select cell E2 and type <codeph>=SUM(</codeph>, then select the cells
+                            B2:D2, type <userinput>)</userinput> and press ENTER.</cmd>
+                        <stepresult>The values now appear in the <varname>Total</varname> column.
+                            Note further that Excel has changed the formula in cell E2 in
+                                <codeph>=SOM(Medals[@[Gold]:[Bronze]])</codeph>.</stepresult>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>Copy the texts in A1:E1 to G1:K1.</cmd>
+            </step>
+            <step>
+                <cmd>Enter <userinput>Netherlands</userinput>  in cell G2.</cmd>
+            </step>
+            <step>
+                <cmd>Select H2 and enter
+                        <codeph>=XLOOKUP(G2,Medals[Country],Medals[Gold]:Medals[Total])</codeph>.</cmd>
+                <stepresult>
+                    <p>The result will look like this:</p>
+                    <fig>
+                        <image keyref="Array_Xlookup_Multiplevalues"/>
+                    </fig>
+                </stepresult>
+            </step>
+        </steps>
+    </taskbody>
+</task>

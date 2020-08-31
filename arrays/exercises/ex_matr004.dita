@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_matr004" audience="level2" xml:lang="en-US">
+    <title>Exercise: matr004 - Random dates and times</title>
+    <shortdesc>Level: 2</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2020-08-31"/>
+            <revised modified="2020-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section><p>Dates and times are stored internally in Excel as a number. For example, <codeph>2020-06-30
+                    18:00:00</codeph> will be stored internally as <codeph>44012.75</codeph>.The
+                part before the comma is the date and the part after the comma is the time.Since you
+                can generate random numbers with the RANDARRAY function, you can also generate dates
+                and times with it. The figure below shows an example.</p>
+            <fig>
+                <image keyref="ex_matr004_data"/>
+            </fig>
+            <ol>
+                <li>In a new worksheet, enter the data for the first three rows and apply correct
+                    formatting.</li>
+                <li>Enter a formula in cell B5 to generate the dates and in cell E5 a formula to
+                    generate the times. Use the data in the first three rows as arguments. In the
+                    spill range you have to apply the correct formatting for dates or times because
+                    that does not happen automatically.</li>
+                <li>Experiment with different values in the first three rows. Note that the maximum
+                    value cannot be less than the minimum value.</li>
+            </ol>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <ol>
+                <li>Formula in B5: <codeph>=RANDARRAY(B3,1,B1,B2,TRUE)</codeph></li>
+                <li>Formula in E5: <codeph>=RANDARRAY(E3,1,E1,E2,FALSE)</codeph></li>
+            </ol>
+        </section>
+    </body>
+</topic>

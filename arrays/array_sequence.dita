@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept id="array_sequence" xml:lang="en-US">
+    <title>SEQUENCE</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2020-08-31"/>
+            <revised modified="2020-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>SEQUENCE</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Returns a sequence of numbers according to a pattern.</p>
+        <section>
+            <title>Syntax</title>
+            <codeblock>SEQUENCE(rows,[columns],[start],[step])</codeblock>
+            <ul>
+                <li>rows: the number of rows to return.</li>
+                <li>columns: the number of columns to return (default=1)</li>
+                <li>start: the first number in the sequence (default=1)</li>
+                <li>step: the amount to increment each subsequent value in the sequence
+                    (default=1)</li>
+            </ul>
+        </section>
+        <example>
+            <title>Example</title>
+            <codeph>=SEQUENCE(4,3,5,10)</codeph>
+            <fig>
+                <image keyref="Array_Dyn_Sequence"/>
+            </fig>
+        </example>
+    </conbody>
+</concept>

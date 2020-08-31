@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept id="array_unique" xml:lang="en-US">
+    <title>UNIQUE</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2020-08-31"/>
+            <revised modified="2020-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>UNIQUE</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Returns an array with unique values from an array.</p>
+        <section>
+            <title>Syntax</title>
+            <codeblock>UNIQUE(array,[by_col],[exactly_once])</codeblock>
+            <ul>
+                <li>array: the array from which to return unique rows or columns.</li>
+                <li>by_col: TRUE=return unique columns, FALSE= return unique rows
+                    (default=FALSE)</li>
+                <li>exactly_once: TRUE=returns unique values that occur exactly once, FALSE=returns
+                    all distinct rows or columns (default = FALSE)</li>
+            </ul>
+        </section>
+        <example>
+            <title>Example</title>
+            <fig>
+                <image keyref="Array_Dyn_Unique"/>
+            </fig>
+        </example>
+    </conbody>
+</concept>

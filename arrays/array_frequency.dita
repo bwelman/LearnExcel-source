@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/task.dtd">
+<task id="array_frequency" xml:lang="en-US">
+    <title>Task: Frequency distribution</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2020-08-31"/>
+            <revised modified="2020-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>With function FREQUENCY you can create a frequency distribution. </p>
+            <p>Syntax: <codeph>FREQUENCY(data_array,bins_array)</codeph>.</p>
+            <p>The first argument is an array with the values. The second argument is an array with
+                the intervals into which you want to group the values. The result is an array with
+                the frequencies.</p>
+            <fig>
+                <title>Frequency distribution</title>
+                <image keyref="Array_Frequency">
+                    <alt>Frequency distribution</alt>
+                </image>
+            </fig>
+        </context>
+        <steps>
+            <step>
+                <cmd>Create an new file or a new worksheet.</cmd>
+            </step>
+            <step>
+                <cmd>Enter the data in columns A and B as shown in the figure.</cmd>
+            </step>
+            <step>
+                <cmd>Enter in C2 the formula
+                        <userinput>=FREQUENCY(A2:A11,B2:B5)</userinput>.</cmd>
+            </step>
+        </steps>
+        <result>
+            <p>The result is a frequency table. In the explanation in the figure, you can read how
+                the boundaries of the interval are dealt with.</p>
+        </result>
+    </taskbody>
+</task>

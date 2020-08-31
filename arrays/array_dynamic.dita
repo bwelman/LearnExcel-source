@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept id="array_dynamic" xml:lang="en-US">
+    <title>Dynamic array formulas</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2020-08-31"/>
+            <revised modified="2020-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Matrix</indexterm>
+                <indexterm>Array</indexterm>
+                <indexterm>Dynamic</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>An array formula entered in one cell on the worksheet can give results in multiple cells
+            on the worksheet. This behavior is called <term>spilling</term>, and the results appear
+            in a <term>spill range</term>. Which cells and how many depends on the result of the
+            formula. If the source content of the formula changes, the results are dynamically
+            updated, and the spill range may grow or shrink. You get an #SPILL! Error when the
+            spilling is blocked by other data in the cells.</p>
+        <note type="important">Dynamic array formula's are only available in Excel365!</note>
+        <p><b>Referencing spill range</b></p>
+        <p>To create a reference to a spill range, put a hash symbol <codeph>#</codeph> after the
+            address of the first cell of the spill range. For example, if the spill range is J2: N4,
+            you refer to it with<codeph> =J2#</codeph>.</p>
+        <p>You can also include this reference in a formula. For example,
+                <codeph>=COUNT(J2#)</codeph> returns 15, the number of cells in this range. When on
+            a later moment, the size of the spill range changes, the result of the formula also
+            changes.</p>
+        <p><b>Naming arrays</b></p>
+        <p>When you are using arrays in formulas, it is very useful to provide them with a name.
+            This can be done the same way you are assigning a name to a cell.</p>
+        <p><b>New dynamic array functions</b></p>
+        <p>To support the behavior of dynamic arrays, a number of new dynamic array functions have
+            been released</p>
+        <p>: RANARRAY, FILTER, SEQUENCE, SORT, SORTBY, UNIQUE, XMATCH and XLOOKUP.</p>
+        <!--Zeer nuttige site met voorbeelden: https://exceljet.net/glossary/dynamic-array -->
+    </conbody>
+
+</concept>

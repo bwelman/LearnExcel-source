@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept id="array_filter" xml:lang="en-US">
+    <title>FILTER</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2020-08-31"/>
+            <revised modified="2020-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>FILTER</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Returns the filtered values from an array/range.</p>
+        <section>
+            <title>Syntax</title>
+            <codeblock>FILTER(array,include,[if_empty])</codeblock>
+            <ul>
+                <li>array: the range or array to filter.</li>
+                <li>include: an array of booleans where TRUE represents a row or column to
+                    retain.</li>
+                <li>if_empty: returned value if no items are retained.</li>
+            </ul>
+        </section>
+        <example>
+            <title>Example</title>
+            <fig>
+                <image keyref="Array_Dyn_Filter"/>
+            </fig>
+            <p>Replace in the formula "v" with "m" or "z".</p>
+            <p>You can also add multiple criteria. To filter for women less than 170 change the
+                formula in
+                <codeph>=FILTER(A32:C41,(B32:B41="f")*(C32:C41&lt;170),"None")</codeph></p>
+        </example>
+    </conbody>
+</concept>

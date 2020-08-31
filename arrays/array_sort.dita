@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
+<concept id="array_sort" xml:lang="en-US">
+    <title>SORT</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2020-08-31"/>
+            <revised modified="2020-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>SORT</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Returns a sorted array.</p>
+        <section>
+            <title>Syntax</title>
+            <codeblock>SORT(array,[sort_index],[sort_order],[by_col])</codeblock>
+            <ul>
+                <li>array: the array to sort.</li>
+                <li>sort_index: a number indicating the row or column to sort by (default=1)</li>
+                <li>sort_order: 1= the sort order, 1=ascending, -1=descending (default=1)</li>
+                <li>by_col: logical value for the sort direction,TRUE=sort columns, FALSE=sort rows
+                    (default=FALSE)</li>
+            </ul>
+        </section>
+        <example>
+            <title>Example</title>
+            <p>Sort on length.</p>
+            <fig>
+                <image keyref="Array_Dyn_Sort"/>
+            </fig>
+        </example>
+    </conbody>
+</concept>

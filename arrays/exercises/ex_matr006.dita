@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_matr006" audience="level2" xml:lang="en-US">
+    <title>Exercise: matr006 - Sequence of Roman numbers</title>
+    <shortdesc>Level: 2</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2020-08-31"/>
+            <revised modified="2020-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section>
+            <p>In a new worksheet, create an array with the numbers 1 to 100 as in the following
+                figure.</p>
+            <fig>
+                <image keyref="ex_matr006_data"/>
+            </fig>
+            <p>Then change the formula so that you get Roman numbers.</p>
+            <note type="tip">Function ROMAN converts Arabic numbers to Roman numbers, as
+                text.</note>
+            <fig>
+                <image keyref="ex_matr006_data_r"/>
+            </fig>
+            <p>If you want to keep the file, save it under the name
+                    <filepath>matr006.xlsx</filepath>.</p>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <p>Formula in A1: <codeph>=SEQUENCE(10,10)</codeph></p>
+            <p>Formula for Roman numbers: <codeph>=ROMAN(SEQUENCE(10,10))</codeph></p>
+        </section>
+    </body>
+</topic>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_matr003" audience="level2" xml:lang="en-US">
+    <title>Exercise: matr003 - Random integers</title>
+    <shortdesc>Level: 2</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2020-08-31"/>
+            <revised modified="2020-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords/>
+        </metadata>
+    </prolog>
+    <body>
+        <section><p>With function RANDARRAY you can generate random numbers. To experiment with this and study the
+                behavior of the dynamic array formulas, create a new file with the following
+                data:</p>
+            <fig>
+                <image keyref="ex_matr003_data"/>
+            </fig>
+            <ol>
+                <li>In cell B7, enter the formula to generate random integers, referring to cells in
+                    B1 through B4 for the first four arguments.</li>
+                <li>Enter a formula in cell B6 to calculate the average of the generated numbers.
+                    Use a reference to the spill range.</li>
+                <li>Experiment with different values in cells B1 through B4. Note that the maximum
+                    value cannot be less than the minimum value.</li>
+            </ol>
+        </section>
+        <section otherprops="solution">
+            <title>Solution</title>
+            <ol>
+                <li>Formula in B7: <codeph>=RANDARRAY(B1,B2,B3,B4,TRUE)</codeph></li>
+                <li>Formula in B6: <codeph>=AVERAGE(B7#)</codeph></li>
+            </ol>
+        </section>
+    </body>
+</topic>
