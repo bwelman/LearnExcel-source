@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<task id="tidydata_headervalues" xml:lang="en-US">
+    <title>Task: Variable values in column headers</title>
+    <shortdesc/>
+    <prolog>
+        <critdates>
+            <created date="2020-08-31"/>
+            <revised modified="2020-08-31"/>
+        </critdates>
+    </prolog>
+    <taskbody>
+        <context>
+            <p>A common form of a data set is a tabular form where the column headings are values,
+                not variable names. The following table is an example of this. The table shows the
+                number of male and female students who have achieved a scores A to E.</p>
+            <fig>
+                <image keyref="scores1"/>
+            </fig>
+            <p>This data set has three variables:</p>
+            <dl>
+                <dlentry>
+                    <dt>score</dt>
+                    <dd>With the values A to E.</dd>
+                </dlentry>
+                <dlentry>
+                    <dt>gender</dt>
+                    <dd>
+                        <p>With the values of man and female.</p>
+                    </dd>
+                </dlentry>
+                <dlentry>
+                    <dt>number</dt>
+                    <dd>With the number of times the score is achieved, the frequency.</dd>
+                </dlentry>
+            </dl>
+            <p>So the problem is that the values of the variable <varname>gender</varname> are in
+                two column headings.</p>
+            <p>The first variable <varname>score</varname> is already a column. New columns must be
+                created for the variables <varname>gender</varname> and <varname>number</varname>. A
+                row must be made for each combination of <varname>score</varname> and
+                    <varname>gender</varname>.</p>
+            <note type="other" othertype="File"><filepath>Scores1.xlsx</filepath></note>
+        </context>
+        <steps>
+            <step conref="../common/reuse_task_parts.dita#reuse_task_parts/File_Open">
+                <cmd/>
+            </step>
+            <step>
+                <cmd>Select any cell with data and choose <menucascade>
+                        <uicontrol>tab Data</uicontrol>
+                        <uicontrol>From Table / Range (Get &amp; Transform Data)</uicontrol>
+                    </menucascade>.</cmd>
+                <stepresult>
+                    <p>The <wintitle>Create Table</wintitle> dialog box appears, in which the table
+                        data can be specified. The data area is already filled in correctly by
+                        default.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Make sure the option for headers is selected and click
+                    <uicontrol>OK</uicontrol>.</cmd>
+                <stepresult>
+                    <p>The data on the worksheet is first converted into an Excel table. Then, in a
+                        new window, the Power Query Editor is started that reads the data from the
+                        table.</p>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Select in Power Query editor the first column <varname>score</varname>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                    <uicontrol>tab Transform</uicontrol>
+                    <uicontrol>Unpivot Columns (group Any Column)</uicontrol>
+                    <uicontrol>Unpivot other Columns</uicontrol>
+                </menucascade>.</cmd>
+                <stepresult>Two new columns have been created. An <varname>Attribute</varname>
+                    column (with the values for variable <varname>gender</varname>) and a
+                        <varname>Value</varname> column with the numbers. And a row is created for
+                    each combination of <varname>score</varname>, <varname>gender</varname>, and
+                        <varname>number</varname>.</stepresult>
+            </step>
+            <step>
+                <cmd>Select column <varname>Attribute</varname>, <menucascade>
+                        <uicontrol>Right mouse click on column header</uicontrol>
+                        <uicontrol>Rename</uicontrol>
+                    </menucascade> and change the name in <varname>gender</varname>.</cmd>
+            </step>
+            <step>
+                <cmd>Rename in the same way column <varname>Value</varname> in
+                        <varname>number</varname>.</cmd>
+            </step>
+            <step>
+                <cmd>Choose <menucascade>
+                        <uicontrol>tab Home</uicontrol>
+                        <uicontrol>Close &amp; Load (group Close)</uicontrol>
+                        <uicontrol>Close &amp; Load</uicontrol>
+                    </menucascade>.</cmd>
+            </step>
+        </steps>
+        <result>
+            <p>The result is a table with tidy data. Each column is one variable and each row is one
+                observation.</p>
+            <fig>
+                <title>Table with tidy data of  scores1</title>
+                <image keyref="scores1_result">
+                    <alt>Table with tidy data of  scores1</alt>
+                </image>
+            </fig>
+        </result>
+    </taskbody>
+</task>

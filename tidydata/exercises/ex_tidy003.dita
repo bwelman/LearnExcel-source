@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_tidy003" xml:lang="en-US">
+    <title>Exercise: tidy003 - School results for Math and English</title>
+    <shortdesc>Level: 3</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2020-08-31"/>
+            <revised modified="2020-08-31"/>
+        </critdates>
+    </prolog>
+    <body>
+        <section>
+            <p>At a primary school, every pupil is given a math and language test in every quarter
+                (Autumn, Winter, and Spring) of each year. The following table contains a limited
+                set of data.</p>
+            <fig>
+                <title>Results for Math and English</title>
+                <image keyref="ex_tidy003_data">
+                    <alt>Results for Math and English</alt>
+                </image>
+            </fig>
+            <p>The unit of analysis is ID-Year-Quarter. So every observation is that of a pupil
+                during a quarter in a given year. </p>
+            <ol>
+                <li>Create a tidy data set.</li>
+                <li>Create a pivot chart (bar chart) of the average math and language scores per
+                    year.</li>
+            </ol>
+            <note type="other" othertype="File"><filepath>Tidy003.xlsx</filepath></note>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <codeblock>Variables: ID, Year, Quarter, Math, English</codeblock>
+            <image keyref="ex_tidy003_result"/>
+        </section>
+    </body>
+</topic>

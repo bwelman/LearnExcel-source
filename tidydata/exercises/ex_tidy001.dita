@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_tidy001" xml:lang="en-US">
+    <title>Exercise: tidy001 - Prijzen koffiesoorten</title>
+    <shortdesc>Level: 2</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2020-08-31"/>
+            <revised modified="2020-08-31"/>
+        </critdates>
+    </prolog>
+    <body>
+        <section>
+            <p>The following table lists some of Starbucks coffee prices.</p>
+            <fig>
+                <title>Coffee prices for three different sizes</title>
+                <image keyref="ex_tidy001_data">
+                    <alt>Coffee prices for three different sizes</alt>
+                </image>
+            </fig>
+            <p>Create a tidy data set.</p>
+            <note type="other" othertype="File"><filepath>Tidy001.xlsx</filepath></note>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <codeblock>Variables: Product, Size, and Price</codeblock>
+            <image keyref="ex_tidy001_result"/>
+        </section>
+    </body>
+</topic>

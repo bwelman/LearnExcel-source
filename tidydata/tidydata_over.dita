@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="tidydata_over" xml:lang="en-US">
+    <title>What is Tidy Data?</title>
+    <shortdesc>Conditions that tidy data must meet.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2020-08-31"/>
+            <revised modified="2020-08-31"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>tidy</indexterm>
+                <indexterm>Power Query</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Well structured, tidy data must meet the following three conditions:<ol>
+                <li>Each measured variable is listed in a column.</li>
+                <li>Each observation of the variable is listed in a row.</li>
+                <li>Each type of observation forms a table.</li>
+            </ol></p>
+        <fig>
+            <title>Graphical picture of tidy data</title>
+            <image keyref="tidydata">
+                <alt>Graphical picture of tidy data</alt>
+            </image>
+        </fig>
+        <note type="note">When these three conditions are met, you actually have the 3rd normal form
+            of Codd.</note>
+        <p>The following table shows the data from a measurement in an imaginary experiment in a
+            format that you often encounter.</p>
+        <simpletable frame="all" relcolwidth="1* 1* 1*">
+            <sthead>
+                <stentry>Name</stentry>
+                <stentry>Treatment.A</stentry>
+                <stentry>Treatment.B</stentry>
+            </sthead>
+            <strow>
+                <stentry>Melissa</stentry>
+                <stentry>6</stentry>
+                <stentry>7</stentry>
+            </strow>
+            <strow>
+                <stentry>Roger</stentry>
+                <stentry/>
+                <stentry>18</stentry>
+            </strow>
+            <strow>
+                <stentry>Vicky</stentry>
+                <stentry>4</stentry>
+                <stentry>1</stentry>
+            </strow>
+        </simpletable>
+        <p>When you swap the rows and columns you have the same data, but the table will look
+            slightly different.</p>
+        <simpletable frame="all" relcolwidth="1* 1* 1* 1*">
+            <sthead>
+                <stentry>Treatment</stentry>
+                <stentry>Melissa</stentry>
+                <stentry>Roger</stentry>
+                <stentry>Vicky</stentry>
+            </sthead>
+            <strow>
+                <stentry>Treatment.A</stentry>
+                <stentry>6</stentry>
+                <stentry/>
+                <stentry>4</stentry>
+            </strow>
+            <strow>
+                <stentry>Treatment.B</stentry>
+                <stentry>7</stentry>
+                <stentry>18</stentry>
+                <stentry>1</stentry>
+            </strow>
+        </simpletable>
+        <p>The data set as tidy data:</p>
+        <simpletable frame="all" relcolwidth="1* 1* 1*">
+            <sthead>
+                <stentry>Name</stentry>
+                <stentry>Treatment</stentry>
+                <stentry>Measure</stentry>
+            </sthead>
+            <strow>
+                <stentry>Melissa</stentry>
+                <stentry>Treatment.A</stentry>
+                <stentry>6</stentry>
+            </strow>
+            <strow>
+                <stentry>Melissa</stentry>
+                <stentry>Treatment.B</stentry>
+                <stentry>7</stentry>
+            </strow>
+            <strow>
+                <stentry>Roger</stentry>
+                <stentry>Treatment.A</stentry>
+                <stentry/>
+            </strow>
+            <strow>
+                <stentry>Roger</stentry>
+                <stentry>Treatment.B</stentry>
+                <stentry>18</stentry>
+            </strow>
+            <strow>
+                <stentry>Vicky</stentry>
+                <stentry>Treatment.A</stentry>
+                <stentry>4</stentry>
+            </strow>
+            <strow>
+                <stentry>Vicky</stentry>
+                <stentry>Treatment.B</stentry>
+                <stentry>1</stentry>
+            </strow>
+        </simpletable>
+        <p>This makes the values, variables and observations clearer. The data set contains<ul>
+                <li>3 variables (columns): Name, Treatment, and Measure.</li>
+                <li>6 observations (rows).</li>
+            </ul></p>
+        <note>Check that the data collection meets the three conditions.</note>
+        <p>Real data sets often violate the three conditions for tidy data in almost every way. The
+            most common problems with improperly structured data collections are:</p>
+        <ul>
+            <li>Column headers contain values of a variable instead of a variable name.</li>
+            <li>Combination of variables in a column.</li>
+            <li>Variables in both rows and columns.</li>
+        </ul>
+        <p>In the tasks below, these problems will be demonstrated in small examples and solved
+            using Power Query.</p>
+    </conbody>
+</concept>

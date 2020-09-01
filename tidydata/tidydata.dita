@@ -6,7 +6,7 @@
     <prolog>
         <critdates>
             <created date="2018-10-09"/>
-            <revised modified="2018-10-09"/>
+            <revised modified="2020-08-31"/>
         </critdates>
         <metadata>
             <keywords>
@@ -24,7 +24,8 @@
             data to make it suitable for analysis. Actions that you perform with the Power
             Query-Editor are recorded in a script. Therefore try to use the Power-Query Editor as
             much as possible.</p>
-        <p>In this chapter, a number of tasks are addressed to create tidy data.</p>
-        <p>This chapter is still under development!</p>
+        <p>When the data is well structured, you can model, visualize and transform it more easily,
+            making analysis easier. When you have worked with relational databases, you will
+            recognize many of the concepts that you also encounter in normalization.</p>
     </conbody>
 </concept>

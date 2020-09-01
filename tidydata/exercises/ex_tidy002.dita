@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="ex_tidy002" xml:lang="en-US">
+    <title>Exercise: tidy002 - Cost of living</title>
+    <shortdesc>Level: 2</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2020-08-31"/>
+            <revised modified="2020-08-31"/>
+        </critdates>
+    </prolog>
+    <body>
+        <section>
+            <p>To compare the cost of living in Europe, the Numbeo (<xref
+                    href="https://www.numbeo.com/cost-of-living/" format="html" scope="external"/>)
+                website collected average market prices for bread (white, 500 grams), cheese (local,
+                1 kg), milk (regular, 1 liter), and rice (white, 1 kg).</p>
+            <fig>
+                <title>Average prices of four products</title>
+                <image keyref="ex_tidy002_data">
+                    <alt>Average prices of four products</alt>
+                </image>
+            </fig>
+            <ol>
+                <li>Create a tidy data set.</li>
+                <li>In which country is rice on average the cheapest and in which country is the
+                    most expensive?</li>
+            </ol>
+            <note type="other" othertype="File"><filepath>Tidy002.xlsx</filepath></note>
+        </section>
+        <section otherprops="answer">
+            <title>Answer</title>
+            <ol>
+                <li>Variables: City, Country, Product, Price</li>
+                <li>Rice is on average the cheapest in Poland and the most expensive in
+                    Switzerland.</li>
+            </ol>
+            <image keyref="ex_tidy002_result"/>
+        </section>
+    </body>
+</topic>
