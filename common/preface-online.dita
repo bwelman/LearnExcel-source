@@ -5,15 +5,18 @@
     <prolog>
         <critdates>
             <created date="2017-08-31"/>
-            <revised modified="2018-08-28"/>
+            <revised modified="2020-08-31"/>
         </critdates>
     </prolog>
     <body>
-        <p>Welcome to this online textbook of <ph keyref="productname"/>
-            <ph keyref="productversion"/>.</p>
-        <p>This textbook is intended to provide a thorough introduction to <ph keyref="productname"
-            /> and to present enough information about features in <ph keyref="productname"/> for
-            readers to be able to use them.</p>
+        <p>In this textbook, you will learn you to work with Excel 365, a constantly evolving
+            product, with new features arriving as each new version is released. One important
+            feature is the introduction of Dynamic Arrays and Dynamic Array functions in the July
+            2020 release. This has ensured that Excel 365 differs from other Excel versions,
+            including the 2016 and 2019 releases. Dynamic arrays are incompatible with all other
+            Excel versions.</p>
+        <p>Does this mean that you can't use this textbook with Excel 2016 and 2019? No, only the
+            array chapter is not suitable, but all other chapters don't give problems.</p>
         <p>The book is written for:<ol>
                 <li>students in the middle and higher education.</li>
                 <li>business people using <ph keyref="productname"/></li>
