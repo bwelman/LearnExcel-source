@@ -2,14 +2,17 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/task.dtd">
 <task id="array_frequency" xml:lang="en-US">
     <title>Task: Frequency distribution</title>
-    <shortdesc/>
+    <shortdesc>How to make a frequency distribution of the data with the FREQUENCY function.</shortdesc>
     <prolog>
         <critdates>
             <created date="2020-08-31"/>
-            <revised modified="2020-08-31"/>
+            <revised modified="2020-09-26"/>
         </critdates>
         <metadata>
-            <keywords/>
+            <keywords>
+                <keyword>FREQUENCY</keyword>
+                <keyword>Frequency distribution</keyword>
+            </keywords>
         </metadata>
     </prolog>
     <taskbody>

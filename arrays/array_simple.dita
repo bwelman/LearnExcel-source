@@ -2,11 +2,11 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <task id="array_simple" xml:lang="en-US" >
 	<title>Task: Simple Array Formulas</title>
-	<shortdesc>Learn how to create simple array formulas.</shortdesc>
+	<shortdesc>In this task, you learn to create simple array formulas.</shortdesc>
 	<prolog>
 		<critdates>
 		    <created date="2017-08-31"/>
-		    <revised modified="2020-08-31"/>
+		    <revised modified="2020-09-26"/>
 		</critdates>
 		<metadata>
 			<keywords/>

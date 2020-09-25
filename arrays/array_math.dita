@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="array_unit" xml:lang="en-US">
+    <title>Mathematical array functions</title>
+    <shortdesc>A brief description of the mathematical matrix functions.</shortdesc>
+    <prolog>
+        <critdates>
+            <created date="2020-09-25"/>
+            <revised modified="2020-09-26"/>
+        </critdates>
+        <metadata>
+            <keywords>
+                <indexterm>Array</indexterm>
+                <indexterm>Vector</indexterm>
+            </keywords>
+        </metadata>
+    </prolog>
+    <conbody>
+        <p>Especially in <xref href="https://en.wikipedia.org/wiki/Linear_algebra" format="html"
+                scope="external">linear algebra</xref>, many arithmetic operations are performed
+            with arrays. Excel offers support for this with a few specific functions.</p>
+        <dl>
+            <dlentry>
+                <dt>MUNIT()</dt>
+                <dd>Identity matrix.</dd>
+                <dd>Returns the identity matrix for the specified dimension. Mostly used in
+                    combination with other matrix functions, such as MMULT.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>MMULT()</dt>
+                <dd>Matrix product.</dd>
+                <dd>Returns the matrix product of two arrays.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>MINVERSE()</dt>
+                <dd>Inverse matrix.</dd>
+                <dd>Returns the inverse matrix. Generally used for solving systems of mathematical
+                    equations with several variables. The product of a matrix and its inverse is the
+                    identity matrix.</dd>
+            </dlentry>
+            <dlentry>
+                <dt>MDETERM()</dt>
+                <dd>Determinant.</dd>
+                <dd>Returns the determinant of a matrix. Generally used for solving systems of
+                    mathematical equations with several variables.</dd>
+            </dlentry>
+        </dl>
+        <p>The use of these functions is beyond the scope of this textbook.</p>
+    </conbody>
+</concept>

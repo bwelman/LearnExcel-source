@@ -2,11 +2,11 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
 <concept id="array_dynamic" xml:lang="en-US">
     <title>Dynamic array formulas</title>
-    <shortdesc/>
+    <shortdesc>The behavior of dynamic arrays and some new functions.</shortdesc>
     <prolog>
         <critdates>
             <created date="2020-08-31"/>
-            <revised modified="2020-08-31"/>
+            <revised modified="2020-09-26"/>
         </critdates>
         <metadata>
             <keywords>
@@ -23,7 +23,7 @@
             formula. If the source content of the formula changes, the results are dynamically
             updated, and the spill range may grow or shrink. You get an #SPILL! Error when the
             spilling is blocked by other data in the cells.</p>
-        <note type="important">Dynamic array formula's are only available in Excel365!</note>
+        <note type="important">Dynamic arrays are only available in Excel365!</note>
         <p><b>Referencing spill range</b></p>
         <p>To create a reference to a spill range, put a hash symbol <codeph>#</codeph> after the
             address of the first cell of the spill range. For example, if the spill range is J2: N4,
@@ -36,10 +36,8 @@
         <p>When you are using arrays in formulas, it is very useful to provide them with a name.
             This can be done the same way you are assigning a name to a cell.</p>
         <p><b>New dynamic array functions</b></p>
-        <p>To support the behavior of dynamic arrays, a number of new dynamic array functions have
-            been released</p>
-        <p>: RANARRAY, FILTER, SEQUENCE, SORT, SORTBY, UNIQUE, XMATCH and XLOOKUP.</p>
+        <p>To support the behavior of dynamic arrays, a number of new functions have been released:
+            RANDARRAY, FILTER, SEQUENCE, SORT, SORTBY, UNIQUE, XMATCH and XLOOKUP.</p>
         <!--Zeer nuttige site met voorbeelden: https://exceljet.net/glossary/dynamic-array -->
     </conbody>
-
 </concept>

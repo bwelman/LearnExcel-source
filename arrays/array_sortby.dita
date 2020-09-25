@@ -2,11 +2,11 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.1/OS/dtd/concept.dtd">
 <concept id="array_sortby" xml:lang="en-US">
     <title>SORTBY</title>
-    <shortdesc/>
+    <shortdesc>Sort range by another range or array.</shortdesc>
     <prolog>
         <critdates>
             <created date="2020-08-31"/>
-            <revised modified="2020-08-31"/>
+            <revised modified="2020-09-26"/>
         </critdates>
         <metadata>
             <keywords>
@@ -16,7 +16,7 @@
         </metadata>
     </prolog>
     <conbody>
-        <p>SReturns a sorted array with sorting based on the values in a corresponding array.</p>
+        <p>Returns a sorted array with sorting based on the values in a corresponding array.</p>
         <section>
             <title>Syntax</title>
             <codeblock>SORTBY(array,by_array1,[sort_order], ...)</codeblock>

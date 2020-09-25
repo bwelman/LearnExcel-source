@@ -2,11 +2,11 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
 <task id="array_complex" xml:lang="en-US">
 	<title>Task: Complex Array Formulas</title>
-	<shortdesc>A task with a more complex array formula.</shortdesc>
+	<shortdesc>In this task, you learn to create a more complex array formula.</shortdesc>
 	<prolog>
 		<critdates>
 		    <created date="2017-08-31"/>
-		    <revised modified="2020-08-31"/>
+		    <revised modified="2020-09-26"/>
 		</critdates>
 		<metadata>
 			<keywords/>

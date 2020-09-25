@@ -27,8 +27,8 @@
             <topicref href="array_simple.dita" scope="local" type="task"/>
             <topicref href="array_single.dita" scope="local" type="task"/>
             <topicref href="array_complex.dita" scope="local" type="task"/>
-            <topicref href="array_unit.dita" scope="local" type="task"/>
             <topicref href="array_frequency.dita" scope="local" type="task"/>
+            <topicref href="array_math.dita" scope="local" type="concept"/>
         </topicref>
         <topicref href="array_dynamic.dita" scope="local" type="concept">
             <topicref href="array_randarray.dita" scope="local" type="concept"/>
